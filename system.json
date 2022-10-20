@@ -98,7 +98,7 @@
     "primaryTokenAttribute": "attributes.pv",
     "secondaryTokenAttribute": "",
     "url": "https://gitlab.com/jhen-foundry-vtt/v10/systemes/distribution/fleaux",
-    "manifest": "https://gitlab.com/jhen-foundry-vtt/v10/systemes/distribution/fleaux/-/raw/master/system.json",
+    "manifest": "https://gitlab.com/jhen-foundry-vtt/v10/systemes/distribution/fleaux/-/raw/distrib/system.json",
     "download": "https://gitlab.com/jhen-foundry-vtt/v10/systemes/distribution/fleaux/-/archive/2022.3.01/fleaux.zip",
     "license": "LICENSE.txt"
 }
