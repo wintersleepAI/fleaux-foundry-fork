@@ -1,0 +1,7 @@
+fleaux*.lock
+/images/base
+.vscode/launch.json
+node_modules/
+package-lock.json
+package.json
+*_obfuscation.js

@@ -1,0 +1,24 @@
+{
+    "SYSTEM.label":"fleaux",
+
+    "SETTINGS.importData.name": "Importer les données",
+    "SETTINGS.importData.hint": "Mets à jour les compendiums du système à partir des fichiers JSON. Attention, les identifiants sont regénérés.",
+
+    "TAB.description": "Description",
+    "TAB.details": "Détails",
+
+    "MESSAGE.create.compendium": "Création du compendium",
+    "MESSAGE.update.compendium": "Mise à jour du compendium",
+    "MESSAGE.wait": "veuillez patienter...",
+
+    "ERREUR.objet.initialise": "Le système n'a pas réussi à initialiser les données pour",
+    
+    "CONTROL.item.top": "Monter l'élément",
+    "CONTROL.item.bottom": "Descendre l'élément",
+    "CONTROL.item.edit": "Editer l'élément",
+    "CONTROL.item.delete": "Supprimer l'élément",
+    
+    "ACTOR.TypeCharacter": "Character",
+    "ITEM.TypeItem": "Item",
+    "ITEM.TypePeuple": "Nation"
+}

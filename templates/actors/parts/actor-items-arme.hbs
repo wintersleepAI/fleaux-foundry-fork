@@ -1,0 +1,10 @@
+	{{#with item}}
+		<div style="{{../headers.1.style}}">
+			{{getLibelleTypeAttaque system.typeAttaque}}
+		</div>
+		<div style="{{../headers.2.style}}">
+			<i class="fas fa-hand-paper"></i>{{#if system.deuxMains}}<i class="fas fa-hand-paper"></i>{{/if}}
+		</div>
+		<!-- Commun-->
+		{{> (actorPartial "actor-items-commun") style-usure=../headers.3.style style-equipe=../headers.4.style style-prix=../headers.5.style}}
+	{{/with}}

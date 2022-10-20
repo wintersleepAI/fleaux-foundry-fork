@@ -1,0 +1,104 @@
+{
+    "id": "fleaux",
+    "title": "Fléaux ! ",
+    "description": "Un jeu de rôle écrit par Kobayashi, Direction Artistique EDgarra Studio",
+    "version": "2022.3.01",
+    "templateVersion": 1,
+    "authors": [
+        {
+            "name": "Jhenriot alias lemeran81",
+            "flags": {}
+        }
+    ],
+    "compatibility": {
+        "minimum": "10"
+      },    
+    "esmodules": [
+        "fleaux.js"
+    ],
+    "scripts": [
+        "./scripts/config.js"
+    ],
+    "styles": [
+        "./styles/simple.css"
+    ],
+    "packs": [
+        {
+            "name": "attributs",
+            "label": "Attributs",
+            "system": "fleaux",
+            "path": "./packs/attributs.db",
+            "type": "Item"
+        },
+        {
+            "name": "peuples",
+            "label": "Peuples",
+            "system": "fleaux",
+            "path": "./packs/peuples.db",
+            "type": "Item"
+        },
+        {
+            "name": "crimes",
+            "label": "Crimes",
+            "system": "fleaux",
+            "path": "./packs/crimes.db",
+            "type": "Item"
+        },
+        {
+            "name": "professions",
+            "label": "Professions",
+            "system": "fleaux",
+            "path": "./packs/professions.db",
+            "type": "Item"
+        },
+        {
+            "name": "equipements",
+            "label": "Equipements",
+            "system": "fleaux",
+            "path": "./packs/equipements.db",
+            "type": "Item"
+        },
+        {
+            "name": "talents",
+            "label": "Talents",
+            "system": "fleaux",
+            "path": "./packs/talents.db",
+            "type": "Item"
+        },
+        {
+            "name": "sorts",
+            "label": "Sorts",
+            "system": "fleaux",
+            "path": "./packs/sorts.db",
+            "type": "Item"
+        },
+        {
+            "name": "tables",
+            "label": "Tables diverses",
+            "system": "fleaux",
+            "path": "./packs/tables.db",
+            "type": "RollTable"
+        }
+    ],
+    "languages": [
+        {
+            "lang": "fr",
+            "name": "Français",
+            "path": "./lang/fr.json"
+        },
+        {
+            "lang": "en",
+            "name": "Anglais",
+            "path": "./lang/en.json"
+        }
+    ],
+    "socket": true,
+    "gridDistance": 5,
+    "gridUnits": "mt",
+    "primaryTokenAttribute": "attributes.pv",
+    "secondaryTokenAttribute": "",
+    "url": "https://gitlab.com/jhen-foundry-vtt/v10/systemes/distribution/fleaux",
+    "manifest": "https://gitlab.com/jhen-foundry-vtt/v10/systemes/distribution/fleaux/-/raw/master/system.json",
+    "download": "https://gitlab.com/jhen-foundry-vtt/v10/systemes/distribution/fleaux/-/archive/2022.3.01/fleaux.zip",
+    "license": "LICENSE.txt"
+}

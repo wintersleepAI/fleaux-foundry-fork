@@ -1,0 +1,24 @@
+<div class="bloc-usage-degats" {{#if affichage-ligne}}style="margin: -1px;"{{/if}}>
+	{{ localize label }}
+	<div style="{{#if afficher-de-actuel}} {{#unless affichage-ligne}} margin: 0px 23px; {{/unless}} {{else}} display: none;{{/if}}">
+		<select class="des-usage" name="{{data-str}}.actuel" data-type="String" {{{getStyleForDice data.actuel affichage-ligne}}}>
+			{{#select data.actuel}}
+				<option value="0"></option>
+				{{> (communPartial "des-usage-options")}}
+			{{/select}}
+		</select>
+	</div>
+	{{#if affichage-ligne}}{{#if afficher-de-max}}/{{/if}}{{/if}}
+	<div {{#unless afficher-de-max}}style="display: none;"{{/unless}}>
+		<select class="des-usage" name="{{data-str}}.max" data-type="String" {{{getStyleForDice data.max affichage-ligne}}}>
+			{{#select data.max}}
+				{{> (communPartial "des-usage-options")}}
+			{{/select}}
+		</select>
+	</div>
+	<div {{#unless afficher-de-lancer}}style="display: none;"{{/unless}}>
+		<a class="roll-des-usage" data-de-usage={{de-usage}} data-title="{{localize label}}">
+			<i class="fas fa-dice" style="color: #820912;"></i>
+		</a>
+	</div>
+</div>

@@ -1,0 +1,4 @@
+	{{#with item}}
+		<div style="{{../headers.2.style}}"><i class="fa fa-shield-alt"></i>{{#if (eq system.protection "PR2") }}<i class="fa fa-shield-alt"></i>{{/if}}</div>
+		{{> (actorPartial "actor-items-commun")  style-usure=../headers.2.style style-equipe=../headers.3.style style-prix=../headers.4.style}}
+	{{/with}}

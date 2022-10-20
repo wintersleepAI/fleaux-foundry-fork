@@ -1,0 +1,23 @@
+<!-- PEUPLE, CRIME et PROFESSION -->
+<div class="information width30">
+	<a class="info-label fleaux-compendium-pack" data-open="0" data-pack="{{pack}}" title="ouvrir le compendium">
+		<i class="fas fa-atlas"></i>
+		<span>{{localize label1}}&nbsp;</span>
+	</a>
+	{{#with item}}
+		<input class="info-input" type="text" value="{{name}}" disabled="disabled">
+		<a class="{{type}}-delete" data-id="{{_id}}" title="{{ localize 'Supprimer'}} {{localize ../label2}}">
+			<i class="fas fa-times" style="padding-right: 10px;"></i>
+		</a>
+	{{/with}}
+</div>
+<div class="information" data-type="{{label1}}">
+	<a class="info-label {{class}}" title="lancer le dé pour déterminer votre {{localize label2}}" data-choisir=false>
+		<i class="fas fa-dice"></i>
+		<span>{{localize label2}}&nbsp;</span>
+	</a>
+	<input class="info-input" type="text" value="{{getRoleLibelle item.type data}}" disabled="disabled">
+	<a class="info-label {{class}}" title="Choisissez dans {{localize label2}}" data-choisir=true>
+		<i class="fas fa-list"></i>
+	</a>
+</div>

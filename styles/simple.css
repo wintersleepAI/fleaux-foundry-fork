@@ -1,0 +1,559 @@
+/** local fonts ------------------------------------------------------------------------------------------------------------------------------------*/
+@font-face {
+	font-family: "HudsonNY";
+	src: url("../fonts/Hudson NY.otf");
+}
+@font-face {
+	font-family: "Benjamin Franklin";
+	src: url("../fonts/BenjaminFranklin.ttf");
+}
+/** Actor ------------------------------------------------------------------------------------------------------------------------------------*/
+.info-col {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 150px;
+}
+.fleaux-title {
+	display: flex;
+	flex-direction:  row;
+	justify-content: left;
+	width: 100%;
+	height: 150px;
+	padding-bottom: 15px;
+}
+.title-image {
+	object-fit: cover;
+	border: none;
+	position:absolute;
+	z-index:1;
+}
+.sheet {
+	font-family: "Benjamin Franklin";
+	background-color: white;
+}
+.sheet-header {
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-bottom: 5px;
+}
+.sheet-container {
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 5px;
+	font-size: large;
+	font-weight: bolder;
+	text-align: center;
+}
+.panel-volonte {
+	width: 33%;
+}
+.panel-degats {
+	width: 33%;
+}
+.panel-vie {
+	width: 33%;
+}
+.img-volonte {
+	background: url(../images/ui/de-volonte.png) no-repeat;
+	background-position: top;
+	width: auto;
+	height: 70px;
+}
+.img-degats {
+	background: url(../images/ui/des-de-degats.png) no-repeat;
+	background-position: top;
+	width: auto;
+	height: 70px;
+}
+.img-vie {
+	background: url(../images/ui/points-de-vie.png) no-repeat;
+	background-position: top;
+	width: auto;
+	height: 70px;
+}
+.img-vie input[type=number] {
+	background: transparent; 
+	color:#820912; 
+	border:none;
+	width: calc(fit-content + 10px);
+}
+.info-header {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 40px;
+}
+.info-name {
+	width: 100%;
+	padding-left: 16px;
+	padding-top: 45px;
+	background: url(../images/ui/baniere-nom.png) round;
+}
+.info-name input[type=text] {
+	text-align: center;
+	font-size: 30px;
+	border: none transparent;
+	background: transparent;  
+	color: #820912;
+	height: auto;
+}
+.info-name input[type=text]:focus {
+	box-shadow: none;
+}
+.info-niveau {
+	position: static;
+	background: url(../images/ui/niveau.png) no-repeat; 
+	width: 14%; 
+	background-position-y: bottom;
+	text-align: center;
+	font-size: large; 
+	max-width: fit-content; 
+	color: #820912;
+}
+.char-info-row {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	flex-wrap: wrap;
+}
+.information {
+	display: flex;
+	flex-direction: row;
+	width: calc(68% - 2px);
+	height: 25px;
+	flex-wrap: nowrap;
+	align-content: stretch;
+	justify-content: flex-start;
+	align-items: center;
+	box-shadow: 0px 2px 0px 0px rgb(0 0 0 / 60%);
+	border-bottom-right-radius: 10px;
+	margin-bottom: 10px;
+	margin-right: 4px;
+}
+.width30 {
+	width: 30%;
+	font-weight: normal;
+}
+.width20 {
+	width: 20%;
+	font-weight: normal;
+}
+.width10 {
+	width: 10%;
+	font-weight: normal;
+}
+.info-label {
+	font-weight: normal;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	background-color: #820912;
+	white-space: nowrap;
+	height: 100%;
+	padding: 5px;
+	border-radius: 10px 0px;
+}
+.information input[type=text] {
+	background-color: transparent;
+	height: 100%;
+	padding-left: 5px;
+	flex-wrap: wrap;
+	border: none;
+}
+.information input[type=number] {
+	background-color: transparent;
+	text-align: center;
+	height: 100%;
+	padding-left: 5px;
+	flex-wrap: wrap;
+	border: none;
+}
+.bloc-usage-degats{
+	display: inline-flex;
+	align-items: center;
+	margin-top: 10px;
+	margin-left: 10px;
+	font-size: medium;
+}
+.bloc-vie {
+	display: inline-flex;
+	align-items: center;
+	width: 115px;
+	margin-top: 20px;
+	font-size: large;  
+}
+/** char-image-----------------------------------------------------------------------------------*/
+.char-image {
+	display: flex;
+	height: 200px;
+	width: 200px;
+	margin-right: 10px;
+}
+.char-image img{
+	height: 230px;
+	width: 200px;
+	object-fit: round;
+	/* background-color: black; */
+	border: none;
+}
+/** Actor - attibuts -----------------------------------------------------------------------------------*/
+.attribut-header {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+	height: 100%;
+	width: 100%;
+}
+.attribut-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	width: 100%;
+	height: 80px;
+	margin: 5px 10px 5px 10px;
+	border-bottom-right-radius: 10px;
+}
+.attribut-box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+}
+.attribut-box input[type=number] {
+	margin: auto 0 auto 0;
+	height: 20px;
+	width: 20%;
+	text-align: center;
+	border: none; 
+	background: transparent;
+	margin-left: 20px;
+	margin-top: 20px;
+	color: #820912;
+}
+.attribut-negative input[type=text] {
+	box-shadow: inset 0 0 5px #820912;
+}
+.attribut-img {
+	width: 70px;
+	height: 60px; 
+	border-style: none; 
+}
+.box-header {
+	font-family: "HudsonNY";
+	font-size: large;
+	text-align: center;
+}
+/** Actor sheet nav tabs tab editor-------------------------------------------------------------------------------------------------------------------------------------*/
+.sheet .sheet-body {
+	height: calc(100% - 60px);
+	margin: 5px
+}
+.sheet nav.sheet-tabs {
+	border-top: none;
+	border-bottom: none;
+	font-family: 'HudsonNY';
+	background-color: #820912;
+	color: white;
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, .6);
+	border-radius: 10px;
+	font-size: medium;
+	font-weight: 100 ;
+	border-radius: 10px 0px;
+}
+.sheet .tabs {
+	flex: 1 1 30px;
+	margin: 5px;
+}
+.sheet .tabs .item {
+	line-height: 20px;
+}
+.sheet .tabs .item:hover .item.active {
+	color: black;
+}
+.sheet .tabs .item.active {
+	color: black;
+}
+.sheet .sheet-body .tab {
+	height: 100%;
+}
+.sheet .sheet-body .editor, .editor-content {
+	width: 100%;
+	height: 100%;
+	min-height: 100px;
+	color: black;
+	text-align: justify;
+}
+.editor-box {
+	text-align: center;
+	margin: 0px 5px 10px 5px;
+	box-shadow: 1px 3px 0px -1px rgb(0 0 0 / 60%);
+	border-bottom-right-radius: 10px;
+}
+.editor-box .editor-header {
+	background-color: black;
+	height: 20px;
+	color: white;
+	font-family: 'Benjamin Franklin';
+	font-size: 12px;
+	text-align: center;
+	border-radius: 10px 0px;
+}
+.editor-box .editor-container {
+	flex-direction: row;
+	width: 100%;
+	height: 100%;
+	flex-wrap: wrap;
+	justify-content: left;
+	padding: 5px;
+}
+/** sheet items -------------------------------------------------------------------------------------------------------------------------------------*/
+.items-box {
+	list-style: none;
+	margin: 7px 0;
+	padding: 0;
+	overflow-y: auto;  
+	margin: 0px 5px 10px 5px;
+	box-shadow: 1px 3px 0px -1px rgb(0 0 0 / 60%);
+	border-bottom-right-radius: 10px;
+}
+.items-box .items-header {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	background-color: black;
+	height: 20px;
+	color: white;
+	font-family: 'Benjamin Franklin';
+	font-size: 12px;
+	text-align: left;
+	padding-left: 5px;
+	border-radius: 10px 0px;
+}
+.items-box .items-list {
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;
+	height: 100%;
+	justify-content: left;
+	padding: 5px;
+}
+.items-list .item-summary {
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 100%;
+	flex: 0 0 100%;
+	font-size: 12px;
+	font-style: italic;
+	color: gray;
+	line-height: 16px;
+	padding: 0.25em 0.5em;
+}
+/** Repeater ---------------------------------------------------------------------------------------------------------------------------------*/
+.fleaux.sheet h4.repeater-entete {
+	margin: 0px;
+	padding: 1px;
+	font-weight: bold;
+	line-height: 24px;
+	color: black;
+	}
+.fleaux.sheet .repeater {
+	list-style: none;
+	margin: 0;
+	flex: 0 0 100%;
+	padding: 1px;
+}
+.fleaux.sheet .repeater input {
+	margin-left: 5px;
+	flex: content;
+}
+.fleaux.sheet .repeater  select {
+	margin-left: 5px;
+	flex: 1;
+}
+.fleaux.sheet .repeater-bouton {
+	width: 18px;
+	flex: 0 0 18px;
+	line-height: 24px;
+	float: right;
+	text-align: right;
+	color: #7a7971;
+}
+/** dice ---------------------------------------------------------------------------------------------------------------------------------*/
+.fleaux .des-usage {
+	border: none;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	height: 45px;
+	text-align: center;
+	text-align-last: center;
+	-moz-text-align-last: center;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background-color: transparent;
+	font-weight: 800;
+	cursor: pointer;
+}
+select.des-usage:focus {
+	box-shadow: none;
+}
+.fleaux option {
+	color: #fff;
+	background: #37372d;
+}
+.fleaux option:checked, .fleaux option:hover {
+	color: #fff;
+	background: #37372d;
+}
+.dice-tooltip .part-header .part-total {
+    flex: none;
+    font-size: var(--font-size-16);
+    font-weight: normal;
+    padding: 0 5px;
+    background-color: black;
+	color: white;
+	border-radius: 10px 0px;
+	border-color: black;
+}
+.dice-tooltip .dice-rolls .roll {
+    width: 35px;
+    line-height: 35px;
+    float: left;
+    margin-right: 1px;
+    background-repeat: no-repeat;
+    background-size: 35px 35px;
+    font-weight: normal;
+    text-align: center;
+}
+/** chat ---------------------------------------------------------------------------------------------------------------------------------*/
+.tchat-lance-de {
+	flex: 0 0 100%;
+    position: relative;
+    margin-bottom: 0;
+    line-height: 24px;
+    text-align: center;
+    background: black;
+	color: white;
+    border-radius: 10px 0px;
+    word-break: break-all;
+	font-size: large;
+	cursor: pointer;
+}	
+.tchat-de-attributs-titre, 
+.tchat-de-usage-titre,
+.tchat-de-degats-titre {
+	font-weight: 400;
+}
+.tchat-de-attributs,
+.tchat-de-usage, 
+.tchat-de-degats {
+	font-family: 'Benjamin Franklin', cursive;
+	background: white;    
+	background-size: cover;
+	color: black;
+}
+.lance-echec {
+	background: #820912;
+	border: 1px solid #4b0505;
+	color: #cf121e;
+}
+.lance-succes {
+	background: #045a04;
+	border: 1px solid #033003;
+	color: rgb(15, 199, 15);
+}
+/** UI---------------------------------------------------------------------------------------------------------------------------------*/
+.window-app .window-content {
+	font-family: "Benjamin Franklin";
+	background-image: none;
+	background-color: white;
+	border-radius: 0px 10px;
+}
+.window-app .window-header {
+	font-family: "Benjamin Franklin";
+	background-color: black;
+	border-radius: 10px 0px;
+}
+input[type="text"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="date"]:focus, input[type="time"]:focus {
+	box-shadow: none; /*0 0 5px #820912;*/
+	
+}
+.tabs .item.active {
+    text-shadow: none;
+}
+.system-fleaux {
+	background: url(../images/ui/fond.png)  round;
+}
+.chat-message {
+	background: white;
+	font-family: 'Benjamin Franklin', cursive;
+	font-size: inherit;
+}
+.chat-message .message-header .message-sender {
+	font-weight: bold;
+	color: #820912;
+}
+form button {
+    background: black;
+	border: none;
+	font-family: "Benjamin Franklin";
+}
+button {
+    background: black;
+	border: none;
+	border-radius: 10px 0px;
+	box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 60%);
+	font-family: "Benjamin Franklin";
+    font-size: var(--font-size-14);
+    line-height: 28px;
+    font-family: var(--font-primary);
+	color: white;
+}
+
+button[type="submit"] {
+    background: #820912;
+}
+
+.dialog .dialog-buttons button {
+    background: black;
+	color: white;
+	border: none;
+	border-radius: 10px 0px;
+    margin: 0 5px 0 0;
+	height: 28px;
+}
+.dialog .dialog-buttons button.default {
+    background: #820912;
+	border: none;
+}
+
+.roll-table-config ol.table-results .table-result .result-range {
+    flex: 0 0 94px;
+}
+.roll-table-config ol.table-results .table-result .result-controls {
+    flex: 0 0 45px;
+}
+.roll-table-config ol.table-results .table-result .result-details .result-target {
+    width: 55%;
+ }
+ .roll-table-config ol.table-results .table-result .result-type {
+    flex: 0 0 115px;
+}
+
+.directory .directory-list {
+    flex: 1;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    scrollbar-width: thin;
+}

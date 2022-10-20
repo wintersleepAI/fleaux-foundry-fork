@@ -1,0 +1,15 @@
+<div class="tchat-de-usage">
+	<h4 class="tchat-de-usage-titre">{{titreTchat}}</h4>
+	<div>
+		{{#unless (eq typeDes 0) }}
+		<span>
+			{{#if (eq typeDes 1)}} {{localize "CHAT.des.lanceAvecAvantage"}}
+			{{else}} {{localize "CHAT.des.lanceAvecDesavantage"}} {{/if}} <br>
+		</span>
+		{{/unless}}
+		{{#if resourceLost}} {{localize "CHAT.des.ressourcePerdue"}} {{/if}}
+	</div>
+</div>
+<div class="dice-roll tchat-de-usage">
+	{{> (tchatPartial "des-resultats")}}
+</div>

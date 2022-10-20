@@ -1,0 +1,296 @@
+[
+    {
+        "type": "peuple",
+        "img": "/systems/fleaux/images/system/peuples/elfe.webp",
+        "name": "PEUPLE.elfe.nom",
+        "data": {
+            "typeName": "ITEM.TypePeuple",
+            "description": "PEUPLE.elfe.description",
+            "reference": "p. 14",
+            "educations": [
+                [
+                    1,
+                    "PEUPLE.elfe.education.1",
+                    1,
+                    "CHA"
+                ],
+                [
+                    2,
+                    "PEUPLE.elfe.education.2",
+                    1,
+                    "ERU"
+                ],
+                [
+                    3,
+                    "PEUPLE.elfe.education.3",
+                    1,
+                    "TIR"
+                ],
+                [
+                    4,
+                    "PEUPLE.elfe.education.4",
+                    1,
+                    "MEL"
+                ],
+                [
+                    5,
+                    "PEUPLE.elfe.education.5",
+                    1,
+                    "DEX"
+                ],
+                [
+                    6,
+                    "PEUPLE.elfe.education.6",
+                    1,
+                    "CHA"
+                ]
+            ],
+            "de": "1d6"
+        }
+    },
+    {
+        "type": "peuple",
+        "img": "/systems/fleaux/images/system/peuples/halfling.webp",
+        "name": "PEUPLE.halfling.nom",
+        "data": {
+            "typeName": "ITEM.TypePeuple",
+            "description": "PEUPLE.halfling.description",
+            "reference": "p. 14",
+            "educations": [
+                [
+                    1,
+                    "PEUPLE.halfling.education.1",
+                    1,
+                    "CHA"
+                ],
+                [
+                    2,
+                    "PEUPLE.halfling.education.2",
+                    1,
+                    "FOR"
+                ],
+                [
+                    3,
+                    "PEUPLE.halfling.education.3",
+                    1,
+                    "DEX"
+                ],
+                [
+                    4,
+                    "PEUPLE.halfling.education.4",
+                    1,
+                    "ERU"
+                ],
+                [
+                    5,
+                    "PEUPLE.halfling.education.5",
+                    1,
+                    "MELTIR"
+                ],
+                [
+                    6,
+                    "PEUPLE.halfling.education.1",
+                    1,
+                    "AUCHOIX"
+                ]
+            ],
+            "de": "1d6"
+        }
+    },
+    {
+        "type": "peuple",
+        "img": "/systems/fleaux/images/system/peuples/humain.webp",
+        "name": "PEUPLE.humain.nom",
+        "data": {
+            "typeName": "ITEM.TypePeuple",
+            "description": "PEUPLE.humain.description",
+            "reference": "p. 14",
+            "educations": [
+                [
+                    1,
+                    "PEUPLE.humain.education.1",
+                    1,
+                    "CHA"
+                ],
+                [
+                    2,
+                    "PEUPLE.humain.education.2",
+                    1,
+                    "FOR"
+                ],
+                [
+                    3,
+                    "PEUPLE.humain.education.3",
+                    1,
+                    "DEX"
+                ],
+                [
+                    4,
+                    "PEUPLE.humain.education.4",
+                    1,
+                    "ERU"
+                ],
+                [
+                    5,
+                    "PEUPLE.humain.education.5",
+                    1,
+                    "MELTIR"
+                ],
+                [
+                    6,
+                    "PEUPLE.humain.education.6",
+                    1,
+                    "AUCHOIX"
+                ]
+            ],
+            "de": "1d6"
+        }
+    },
+    {
+        "type": "peuple",
+        "img": "/systems/fleaux/images/system/peuples/nain.webp",
+        "name": "PEUPLE.nain.nom",
+        "data": {
+            "typeName": "ITEM.TypePeuple",
+            "description": "PEUPLE.nain.description",
+            "reference": "p. 14",
+            "educations": [
+                [
+                    1,
+                    "PEUPLE.nain.education.1",
+                    1,
+                    "CHA"
+                ],
+                [
+                    2,
+                    "PEUPLE.nain.education.2",
+                    1,
+                    "FOR"
+                ],
+                [
+                    3,
+                    "PEUPLE.nain.education.3",
+                    1,
+                    "FOR"
+                ],
+                [
+                    4,
+                    "PEUPLE.nain.education.4",
+                    1,
+                    "MEL"
+                ],
+                [
+                    5,
+                    "PEUPLE.nain.education.5",
+                    1,
+                    "DEX"
+                ],
+                [
+                    6,
+                    "PEUPLE.nain.education.6",
+                    1,
+                    "FOR"
+                ]
+            ],
+            "de": "1d6"
+        }
+    },
+    {
+        "type": "peuple",
+        "img": "/systems/fleaux/images/system/peuples/gobelin.webp",
+        "name": "PEUPLE.gobelin.nom",
+        "data": {
+            "typeName": "ITEM.TypePeuple",
+            "description": "PEUPLE.gobelin.description",
+            "reference": "p. 15",
+            "educations": [
+                [
+                    1,
+                    "PEUPLE.gobelin.education.1",
+                    1,
+                    "ERU"
+                ],
+                [
+                    2,
+                    "PEUPLE.gobelin.education.2",
+                    1,
+                    "SFR"
+                ],
+                [
+                    3,
+                    "PEUPLE.gobelin.education.3",
+                    1,
+                    "DEX"
+                ],
+                [
+                    4,
+                    "PEUPLE.gobelin.education.4",
+                    1,
+                    "FOR"
+                ],
+                [
+                    5,
+                    "PEUPLE.gobelin.education.5",
+                    1,
+                    "CHA"
+                ],
+                [
+                    6,
+                    "PEUPLE.gobelin.education.6",
+                    1,
+                    "MEL"
+                ]
+            ],
+            "de": "1d6"
+        }
+    },
+    {
+        "type": "peuple",
+        "img": "/systems/fleaux/images/system/peuples/ogre.webp",
+        "name": "PEUPLE.ogre.nom",
+        "data": {
+            "typeName": "ITEM.TypePeuple",
+            "description": "PEUPLE.ogre.description",
+            "reference": "p. 15",
+            "educations": [
+                [
+                    1,
+                    "PEUPLE.ogre.education.1",
+                    1,
+                    "FOR"
+                ],
+                [
+                    2,
+                    "PEUPLE.ogre.education.2",
+                    1,
+                    "MEL"
+                ],
+                [
+                    3,
+                    "PEUPLE.ogre.education.3",
+                    1,
+                    "ERU"
+                ],
+                [
+                    4,
+                    "PEUPLE.ogre.education.4",
+                    1,
+                    "FOR"
+                ],
+                [
+                    5,
+                    "PEUPLE.ogre.education.5",
+                    1,
+                    "CHA"
+                ],
+                [
+                    6,
+                    "PEUPLE.ogre.education.6",
+                    1,
+                    "FOR"
+                ]
+            ],
+            "de": "1d5"
+        }
+    }
+]

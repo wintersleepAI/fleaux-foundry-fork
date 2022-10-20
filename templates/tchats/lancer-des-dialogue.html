@@ -1,0 +1,25 @@
+<form>
+	{{#if (or (eq typeLancerDes "de-attributs") (eq typeLancerDes "de-degats" ))}}
+	<div class="form-group">
+		<label class="information" style="width: auto;">
+			<input name="seDepasser" type="checkbox" data-dtype="Boolean">{{localize "DIALOGUE.des.se-depasser"}}
+		</label>
+	</div>
+	{{/if}}
+	{{#if (eq typeLancerDes "de-attributs" )}}
+	<!-- <div class="form-group">
+		<label>{{localize "DIALOGUE.des.bonusMalus"}}</label>
+		<input class="field-value" name="bonusMalus" type="text" value="" data-dtype="Number">
+	</div> -->
+	{{/if}}
+	<div class="form-group">
+		<label>{{localize "DIALOGUE.des.typeJet"}}</label>
+		<select name="modeJet">
+			{{#select modeJet}}
+			{{#each modesJet as |label mode|}}
+			<option value="{{mode}}">{{localize label}}</option>
+			{{/each}}
+			{{/select}}
+		</select>
+	</div>
+</form>

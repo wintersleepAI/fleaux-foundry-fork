@@ -1,0 +1,189 @@
+{
+	"Actor": {
+		"types": [
+			"character"
+		],
+		"templates": {
+			"attributs": {
+				"attributs": {
+					"for": {
+						"actuel": 0,
+						"init2d6": false,
+						"malus": 0
+					},
+					"dex": {
+						"actuel": 0,
+						"init2d6": false,
+						"malus": 0
+					},
+					"eru": {
+						"actuel": 0,
+						"init2d6": false,
+						"malus": 0
+					},
+					"cha": {
+						"actuel": 0,
+						"init2d6": false,
+						"malus": 0
+					},
+					"sfr": {
+						"actuel": 0,
+						"init2d6": false,
+						"malus": 0
+					},
+					"mel": {
+						"actuel": 0,
+						"init2d6": false,
+						"malus": 0
+					},
+					"tir": {
+						"actuel": 0,
+						"init2d6": false,
+						"malus": 0
+					}
+				}
+			},
+			"actorCommun": {
+				"typeName": "ACTOR.TypeCharacter",
+				"niveau": 1,
+				"description": "",
+				"relations": "",
+				"notes":"",
+				"objectifs":"",
+				"attributes": {
+					"pv": {
+						"value": 0,
+						"max": 0
+					}
+				},
+				"fortune": 0
+			}
+		},
+		"character": {
+			"templates": [
+				"actorCommun",
+				"attributs"
+			],
+			"education": null,
+			"accusation": null,
+			"profession1": null,
+			"profession2": null,
+			"de-volonte": {
+				"actuel": "d6",
+				"max": "d6"
+			},
+			"bouclier": false,
+			"affame-et-sale": false,
+			"effetsMordreLaPoussiere": {
+				"eraflure": false,
+				"rateDePeu": false,
+				"handicape": false,
+				"blesse": false,
+				"amoche": false,
+				"mort": false
+			},
+			"de-degats": {
+				"actuel": "d4",
+				"max": "d4"
+			},
+			"de-degats-arme": {
+				"actuel": "d6",
+				"max": "d6"
+			}
+		}
+	},
+	"Item": {
+		"types": [
+			"attribut",
+			"peuple",
+			"crime",
+			"profession",
+			"talent",
+			"sort",
+			"equipement"
+		],
+		"templates": {
+			"itemCommon": {
+				"typeName": "",
+				"description": "",
+				"reference": ""
+			}
+		},
+		"attribut": {
+			"templates": [
+				"itemCommon"
+			],
+			"code": ""
+		},
+		"peuple": {
+			"templates": [
+				"itemCommon"
+			],
+			"educations": [],
+			"de": "1d6"
+		},
+		"crime": {
+			"templates": [
+				"itemCommon"
+			],
+			"accusations": [],
+			"de": "1d8"
+		},
+		"profession": {
+			"templates": [
+				"itemCommon"
+			],
+			"professions": [],
+			"de": "1d6"
+		},
+		"talent": {
+			"templates": [
+				"itemCommon"
+			]
+		},
+		"sort": {
+			"templates": [
+				"itemCommon"
+			]
+		},
+		"equipement": {
+			"templates": [
+				"itemCommon"
+			],
+			"categorie": "arme",
+			"typeAttaque": "melee",
+			"deuxMains": false,
+			"armeAfeu": false,
+			"protection": 0,
+			"equipe": false,
+			"formulePrix": "d6",
+			"prix": 0,
+			"avantageDegats": false,
+			"avantageParade": false,
+			"quantite": 0,
+			"enchantement": {
+				"enchante": false,
+				"arme": {
+					"tueuse": false,
+					"acierIlmarien": false
+				},
+				"objet": {
+					"avantage": false,
+					"attributCode": "",
+					"effetSort": false,
+					"sort": {
+						"id": null,
+						"de-usure": {
+							"actuel": "d6",
+							"max": "d6"
+						}
+					}
+				}
+			},
+			"de-usure": {
+				"actuel": "d6",
+				"max": "d6"
+			}
+		}
+	}
+}

@@ -1,0 +1,20 @@
+<form class="{{cssClass}}" autocomplete="off">
+	{{> (itemPartial "item-header")}}
+	{{!-- Educations --}}
+	<div class="form-group flexrow">
+		<h4 class="repeater-entete">
+			{{localize "Vous êtes maintenant sur les routes parce qu'on vous a accusé..."}}
+			<a class="repeater-bouton ajouter-accusation"><i class="fas fa-plus"></i></a>
+		</h4>
+		<ol class="repeater form-group">
+			{{#each item.system.accusations as |accusation i| }}
+			<li class="repeater flexrow" data-repeater="{{i}}">
+				<input style="flex: 0 0 22px;" type="number" name="system.accusations.{{i}}.0" value="{{lookup this '0'}}" readonly />
+				<input style="flex: 0 0 500px;" type="text" name="system.accusations.{{i}}.1" value="{{lookup this '1'}}" />
+				<a class="repeater-bouton enlever-accusation"><i class="fas fa-minus"></i></a>
+			</li>
+			{{/each}}
+		</ol>
+	</div>
+</form>
+

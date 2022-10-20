@@ -1,0 +1,28 @@
+image: python:3-alpine
+
+before_script:
+  - apk update
+  - apk add zip
+
+stages:
+  - test
+  - build
+
+test:
+  stage: test
+  script:
+    - python -mjson.tool 'system.json' > /dev/null
+
+build:
+  stage: build
+  script:
+    - zip fleaux.zip -r _jsons fonts images lang packs scripts sounds styles templates  fleaux.js system.json template.json README.md license.txt
+  artifacts:
+    name: fleaux
+    expire_in: never
+    when: on_success
+    paths:
+      - fleaux.zip
+  when: on_success
+  only:
+    - tags
