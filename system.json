@@ -2,7 +2,7 @@
   "id": "fleaux",
   "title": "Fléaux !",
   "description": "Un jeu de rôle écrit par Kobayashi, Direction Artistique EDgarra Studio",
-  "version": "2022.3.02",
+  "version": "2022.3.03",
   "authors": [
     {
       "name": "Jhenriot alias lemeran81",
@@ -115,6 +115,6 @@
   "primaryTokenAttribute": "attributes.pv",
   "url": "https://gitlab.com/jhen-foundry-vtt/v10/systemes/distribution/fleaux",
   "manifest": "https://gitlab.com/jhen-foundry-vtt/v10/systemes/distribution/fleaux/-/raw/distrib/system.json",
-  "download": "https://gitlab.com/jhen-foundry-vtt/v10/systemes/distribution/fleaux/-/archive/2022.3.02/fleaux.zip",
+  "download": "https://gitlab.com/jhen-foundry-vtt/v10/systemes/distribution/fleaux/-/archive/2022.3.03/fleaux.zip",
   "license": "LICENSE.txt"
 }
