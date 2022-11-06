@@ -31,7 +31,7 @@
     "ITEM.TypeSort": "Sort",
     "ITEM.TypeEquipement": "Equipement",
 
-    "ATTRIBUTS.minuscule.nom": "Les Attributs",
+    "ATTRIBUTS.minuscule.nom": "Les attributs",
     "ATTRIBUT.force.nom": "Force",
     "ATTRIBUT.force.description": "Sa puissance physique et son endurance.",
     "ATTRIBUT.charisme.nom": "Charisme",
@@ -47,7 +47,7 @@
     "ATTRIBUT.tir.nom": "Tir",
     "ATTRIBUT.tir.description": "Son talent à tuer de loin.",
 
-    "PEUPLES.minuscule.nom": "Les Peuples",
+    "PEUPLES.minuscule.nom": "Les peuples",
     "PEUPLE.libelle.vous-avez-grandi": "Vous avez grandi ou reçu votre éducation...",
     "PEUPLE.libelle.melee-ou-Tir": "En Mélée ou en Tir",
     "PEUPLE.libelle.choisir-attribut":"Dans un attribut au choix",
@@ -100,7 +100,7 @@
     "PEUPLE.ogre.education.5": "Dans un cirque itinérant.",
     "PEUPLE.ogre.education.6": "La fanfare d’une troupe mercenaire.",
 
-    "CRIMES.minuscule.nom": "Les Crimes",
+    "CRIMES.minuscule.nom": "Les crimes",
     "CRIME.libelle.vous-etes-accuse": "Vous êtes maintenant sur les routes parce qu'on vous a accusé...",
     "CRIME.crime-de-base.nom": "Crime de base",
     "CRIME.crime-de-base.description": "",
@@ -125,8 +125,8 @@
     "CRIME.crime-de-base.accusation.19": "D’avoir déserté.",    
     "CRIME.crime-de-base.accusation.20": "D’avoir chassé sur une réserve royale.",
 
-    "PROFESSIONS.minuscule.nom": "Les Professions",
-    "PROFESSION.libelle.vous-etes-accuse": "Vous êtes maintenant sur les routes parce qu'on vous a accusé...",
+    "PROFESSIONS.minuscule.nom": "Les professions",
+    "PROFESSION.libelle.pour-survivre": "Vous êtes maintenant sur les routes parce qu'on vous a accusé...",
     "PROFESSION.violence.nom": "Violence",
     "PROFESSION.violence.description": "",
     "PROFESSION.violence.profession.1.nom": "MERCENAIRE",
@@ -176,7 +176,7 @@
     "PROFESSION.erudition.profession.2.nom": "APPRENTI SORCIER",
     "PROFESSION.erudition.profession.2.description": "Votre personnage connaît deux sorts déterminés au hasard.",
     "PROFESSION.erudition.profession.3.nom": "HERBORISTE",
-    "PROFESSION.erudition.profession.3.description": "Créer d4 décoction entre chaque repos long. Vos préparations non utilisées se périment dans la journée.",
+    "PROFESSION.erudition.profession.3.description": "Créer d4 décoction entre chaque repos long. Vos préparations non utilisées se périment dans la journée.\nQuelques exemples de décoctions : baumes de cicatrisation (2 pv), anti-poison (fait vomir la victime), anti-venin (annule les effets d’un venin), poison (inflige le dé de dégâts de l’herboriste)...",
     "PROFESSION.erudition.profession.4.nom": "INTERPRÈTE",
     "PROFESSION.erudition.profession.4.description": "Vous connaissez deux langues supplémentaires et parvenez toujours à vous faire comprendre (si votre interlocuteur fait également un effort de son côté). Vous agissez en premier en combat si votre première action consiste à parler à vos adversaires.",
     "PROFESSION.erudition.profession.5.nom": "CHRONIQUEUR",
@@ -184,7 +184,7 @@
     "PROFESSION.erudition.profession.6.nom": "INTENDANT",
     "PROFESSION.erudition.profession.6.description": "Choisissez une ressource au début de chaque partie (munitions, rations, etc.). Le dé d'usage lié à cette ressource ne se dégrade que sur un résultat de 1 (pour l'ensemble des personnages du groupe).",
 
-    "TALENTS.minuscule.nom": "Les Talents",
+    "TALENTS.minuscule.nom": "Les talents",
     "TALENT.acharne.nom": "Acharné",
     "TALENT.acharne.description": "Une fois par partie, ajoutez votre dé de Volonté à vos dégâts.",
     "TALENT.adepte-magie-sang.nom": "Adepte de la magie du sang",
@@ -244,7 +244,7 @@
     "TALENT.touche-obscur.nom": "Touché par l’Obscur",
     "TALENT.touche-obscur.description": "Vous bénéficiez d’un Avantage lorsque vous faites un jet sur la table de Revanche du Chaos.",
     
-    "SORTS.minuscule.nom": "Les Sorts",
+    "SORTS.minuscule.nom": "Les sorts",
     "SORT.berceuse-lugubre.nom": "Berceuse lugubre",
     "SORT.berceuse-lugubre.description": "Votre cible perd conscience. Un résultat de 1 sur le dé de Volonté signifie que la cible ne se réveillera pas.",
     "SORT.combustion-spontanee.nom": "Combustion spontanée",
