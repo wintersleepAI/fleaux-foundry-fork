@@ -1,0 +1,362 @@
+[
+	{
+		"name":"EQUIPEMENT.gantelet-metallique.nom",
+		"type":"equipement",
+		"img": "/systems/fleaux/images/system/equipements/gantelet-metallique.webp",
+		"system": {
+			"typeName": "ITEM.TypeAttribut",
+			"description": "EQUIPEMENT.gantelet-metallique.description",
+			"reference":"p. 26-27",
+			"categorie":"arme",
+			"typeAttaque":"melee",
+			"deuxMains":true,
+			"armeAfeu":false,
+			"protection":null,
+			"equipe":false,
+			"formulePrix":"d6*10",
+			"prix":0
+		}
+	},
+	{
+		"name":"EQUIPEMENT.epee.nom",
+		"type":"equipement",
+		"img": "/systems/fleaux/images/system/equipements/epee.webp",
+		"system": {
+			"typeName": "ITEM.TypeAttribut",
+			"description": "EQUIPEMENT.epee.description",
+			"reference":"p. 26-27",
+			"categorie":"arme",
+			"typeAttaque":"melee",
+			"deuxMains":false,
+			"armeAfeu":false,
+			"protection":null,
+			"equipe":false,
+			"formulePrix":"d6*100",
+			"prix":0
+		}
+	},
+	{
+		"name": "EQUIPEMENT.masse.nom",
+		"type": "equipement",
+		"img": "/systems/fleaux/images/system/equipements/masse.webp",
+		"system": {
+			"typeName": "ITEM.TypeAttribut",
+			"description": "EQUIPEMENT.masse.description",
+			"reference":"p. 26-27",
+			"categorie": "arme",
+			"typeAttaque": "melee",
+			"deuxMains": false,
+			"armeAfeu": false,
+			"protection": null,
+			"equipe": false,
+			"formulePrix": "d6*10",
+			"prix": 0
+		}
+	},
+	{
+		"name": "EQUIPEMENT.claymore.nom",
+		"type": "equipement",
+		"img": "/systems/fleaux/images/system/equipements/claymore.webp",
+		"system": {
+			"typeName": "ITEM.TypeAttribut",
+			"description": "EQUIPEMENT.claymore.description",
+			"reference":"p. 26-27",
+			"categorie": "arme",
+			"typeAttaque": "melee",
+			"deuxMains": true,
+			"armeAfeu": false,
+			"protection": null,
+			"equipe": false,
+			"formulePrix": "d6*100",
+			"prix": 0
+		}
+	},
+	{
+		"name": "EQUIPEMENT.pioche.nom",
+		"type": "equipement",
+		"img": "/systems/fleaux/images/system/equipements/pioche.webp",
+		"system": {
+			"typeName": "ITEM.TypeAttribut",
+			"description": "EQUIPEMENT.pioche.description",
+			"reference":"p. 26-27",
+			"categorie": "arme",
+			"typeAttaque": "melee",
+			"deuxMains": false,
+			"armeAfeu": false,
+			"protection": null,
+			"equipe": false,
+			"formulePrix": "d6*10",
+			"prix": 0
+		}
+	},
+	{
+		"name": "EQUIPEMENT.couteau.nom",
+		"type": "equipement",
+		"img": "/systems/fleaux/images/system/equipements/couteau.webp",
+		"system": {
+			"typeName": "ITEM.TypeAttribut",
+			"description": "EQUIPEMENT.couteau.description",
+			"reference":"p. 26-27",
+			"categorie": "arme",
+			"typeAttaque": "melee-tir",
+			"deuxMains": false,
+			"armeAfeu": false,
+			"protection": null,
+			"equipe": false,
+			"formulePrix": "d6*10",
+			"prix": 0
+		}
+	},
+	{
+		"name": "EQUIPEMENT.lance.nom",
+		"type": "equipement",
+		"img": "/systems/fleaux/images/system/equipements/lance.webp",
+		"system": {
+			"typeName": "ITEM.TypeAttribut",
+			"description": "EQUIPEMENT.lance.description",
+			"reference":"p. 26-27",
+			"categorie": "arme",
+			"typeAttaque": "melee-tir",
+			"deuxMains": true,
+			"armeAfeu": false,
+			"protection": null,
+			"equipe": false,
+			"formulePrix": "d6*10",
+			"prix": 0		
+		}
+	},
+	{
+		"name": "EQUIPEMENT.serpe.nom",
+		"type": "equipement",
+		"img": "/systems/fleaux/images/system/equipements/serpe.webp",
+		"system": {
+			"typeName": "ITEM.TypeAttribut",
+			"description": "EQUIPEMENT.serpe.description",
+			"reference": "p. 26-27",
+			"categorie": "arme",
+			"typeAttaque": "melee",
+			"deuxMains": false,
+			"armeAfeu": false,
+			"protection": null,
+			"equipe": false,
+			"formulePrix": "d6*10",
+			"prix": 0
+		}
+	},
+	{
+		"name": "EQUIPEMENT.baton-ferre.nom",
+		"type": "equipement",
+		"img": "systems/fleaux/images/system/equipements/baton-ferre.webp",
+		"system": {
+			"typeName": "ITEM.TypeAttribut",
+			"description": "EQUIPEMENT.baton-ferre.description",
+			"reference":"p. 26-27",
+			"categorie": "arme",
+			"typeAttaque": "melee",
+			"deuxMains": true,
+			"armeAfeu": false,
+			"protection": null,
+			"equipe": false,
+			"formulePrix": "d6*10",
+			"prix": 0
+		}
+	},
+	{
+		"name": "EQUIPEMENT.fleau.nom",
+		"type": "equipement",
+		"img": "/systems/fleaux/images/system/equipements/fleau.webp",
+		"system": {
+			"typeName": "ITEM.TypeAttribut",
+			"description": "EQUIPEMENT.fleau.description",
+			"reference":"p. 26-27",
+			"categorie": "arme",
+			"typeAttaque": "melee",
+			"deuxMains": false,
+			"armeAfeu": false,
+			"protection": null,
+			"equipe": false,
+			"formulePrix": "d6*100",
+			"prix": 0
+		}
+	},
+	{
+		"name": "EQUIPEMENT.arbalete.nom",
+		"type": "equipement",
+		"img": "systems/fleaux/images/system/equipements/arbalete.webp",
+		"system": {
+			"typeName": "ITEM.TypeAttribut",
+			"description": "EQUIPEMENT.arbalete.description",
+			"reference":"p. 26-27",
+			"categorie": "arme",
+			"typeAttaque": "tir",
+			"deuxMains": true,
+			"armeAfeu": false,
+			"protection": null,
+			"equipe": false,
+			"formulePrix": "d6*100",
+			"prix": 0
+		}
+	},
+	{
+		"name": "EQUIPEMENT.pelle.nom",
+		"type": "equipement",
+		"img": "/systems/fleaux/images/system/equipements/pelle.webp",
+		"system": {
+			"typeName": "ITEM.TypeAttribut",
+			"description": "EQUIPEMENT.pelle.description",
+			"reference":"p. 26-27",
+			"categorie": "arme",
+			"typeAttaque": "melee",
+			"deuxMains": false,
+			"armeAfeu": false,
+			"protection": null,
+			"equipe": false,
+			"formulePrix": "d6*10",
+			"prix": 0
+		}
+	},
+	{
+		"name": "EQUIPEMENT.hachoir.nom",
+		"type": "equipement",
+		"img": "/systems/fleaux/images/system/equipements/hachoir.webp",
+		"system": {
+			"typeName": "ITEM.TypeAttribut",
+			"description": "EQUIPEMENT.hachoir.description",
+			"reference":"p. 26-27",
+			"categorie": "arme",
+			"typeAttaque": "melee",
+			"deuxMains": false,
+			"armeAfeu": false,
+			"protection": null,
+			"equipe": false,
+			"formulePrix": "d6*10",
+			"prix": 0
+		}
+	},
+	{
+		"name": "EQUIPEMENT.fronde.nom",
+		"type": "equipement",
+		"img": "/systems/fleaux/images/system/equipements/fronde.webp",
+		"system": {
+			"typeName": "ITEM.TypeAttribut",
+			"description": "EQUIPEMENT.fronde.description",
+			"reference":"p. 26-27",
+			"categorie": "arme",
+			"typeAttaque": "tir",
+			"deuxMains": false,
+			"armeAfeu": false,
+			"protection": null,
+			"equipe": false,
+			"formulePrix": "d6*10",
+			"prix": 0
+		}
+	},
+	{
+		"name": "EQUIPEMENT.dague.nom",
+		"type": "equipement",
+		"img": "/systems/fleaux/images/system/equipements/dague.webp",
+		"system": {
+			"typeName": "ITEM.TypeAttribut",
+			"description": "EQUIPEMENT.dague.description",
+			"reference":"p. 26-27",
+			"categorie": "arme",
+			"typeAttaque": "melee-tir",
+			"deuxMains": false,
+			"armeAfeu": false,
+			"protection": null,
+			"equipe": false,
+			"formulePrix": "d6*10",
+			"prix": 0
+		}
+	},
+	{
+		"name": "EQUIPEMENT.hache.nom",
+		"type": "equipement",
+		"img": "/systems/fleaux/images/system/equipements/hache.webp",
+		"system": {
+			"typeName": "ITEM.TypeAttribut",
+			"description": "EQUIPEMENT.hache.description",
+			"reference":"p. 26-27",
+			"categorie": "arme",
+			"typeAttaque": "melee",
+			"deuxMains": false,
+			"armeAfeu": false,
+			"protection": null,
+			"equipe": false,
+			"formulePrix": "d6*10",
+			"prix": 0
+		}
+	},
+	{
+		"name": "EQUIPEMENT.hache-bataille.nom",
+		"type": "equipement",
+		"img": "/systems/fleaux/images/system/equipements/hache-bataille.webp",
+		"system": {
+			"typeName": "ITEM.TypeAttribut",
+			"description": "EQUIPEMENT.hache-bataille.description",
+			"reference":"p. 26-27",
+			"categorie": "arme",
+			"typeAttaque": "melee",
+			"deuxMains": true,
+			"armeAfeu": false,
+			"protection": null,
+			"equipe": false,
+			"formulePrix": "d6*100",
+			"prix": 0
+		}
+	},
+	{
+		"name": "EQUIPEMENT.arc.nom",
+		"type": "equipement",
+		"img": "systems/fleaux/images/system/equipements/arc.webp",
+		"system": {
+			"typeName": "ITEM.TypeAttribut",
+			"description": "EQUIPEMENT.arc.description",
+			"reference":"p. 26-27",
+			"categorie": "arme",
+			"typeAttaque": "tir",
+			"deuxMains": true,
+			"armeAfeu": false,
+			"protection": null,
+			"equipe": false,
+			"formulePrix": "d6*100",
+			"prix": 0
+		}
+	},
+	{
+		"name": "EQUIPEMENT.epee-batarde.nom",
+		"type": "equipement",
+		"img": "/systems/fleaux/images/system/equipements/epee-batarde.webp",
+		"system": {
+			"typeName": "ITEM.TypeAttribut",
+			"description": "EQUIPEMENT.epee-batarde.description",
+			"reference":"p. 26-27",
+			"categorie": "arme",
+			"typeAttaque": "melee",
+			"deuxMains": false,
+			"armeAfeu": false,
+			"protection": null,
+			"equipe": false,
+			"formulePrix": "d6*100",
+			"prix": 0
+		}
+	},
+	{
+		"name": "EQUIPEMENT.marteau-guerre.nom",
+		"type": "equipement",
+		"img": "/systems/fleaux/images/system/equipements/marteau-guerre.webp",
+		"system": {
+			"typeName": "ITEM.TypeAttribut",
+			"description": "EQUIPEMENT.marteau-guerre.description",
+			"reference":"p. 26-27",
+			"categorie": "arme",
+			"typeAttaque": "melee",
+			"deuxMains": false,
+			"armeAfeu": false,
+			"protection": null,
+			"equipe": false,
+			"formulePrix": "d6*10",
+			"prix": 0
+		}
+	}
+]

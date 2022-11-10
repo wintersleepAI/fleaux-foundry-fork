@@ -3,7 +3,7 @@
         "type": "crime",
         "img": "/systems/fleaux/images/system/crimes/crime-de-base.webp",
         "name": "CRIME.crime-de-base.nom",
-        "data": {
+        "system": {
             "typeName": "ITEM.TypeCrime",
             "description": "CRIME.crime-de-base.description",
             "reference": "Page 17",
