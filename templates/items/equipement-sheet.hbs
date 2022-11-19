@@ -26,7 +26,7 @@
 	<div class="form-group stacked">
 		<div class="form-fields">
 			<!-- Type d'attaque -->
-			<label>Type d'attaque</label>
+			<label>{{ localize "Type d'attaque" }}</label>
 			<select name="system.typeAttaque" value="item.system.typeAttaque">
 				{{#select item.system.typeAttaque}}
 				<option value="melee">{{localize 'Mêlée'}}</option>
@@ -34,21 +34,28 @@
 				<option value="melee-tir">{{localize 'Les deux'}}</option>
 				{{/select}}
 			</select>
-			<!-- Arme à deux mains -->
-			<label class="checkbox">
-				<input type="checkbox" name="system.deuxMains" {{checked item.system.deuxMains}}> {{localize "Armes à deux mains"}}
-			</label>
+			<!-- Emplacement -->
+			<label>{{ localize "Emplacement" }}</label>
+			<select name="system.emplacement" value="item.system.emplacement">
+				{{#select item.system.emplacement}}
+				<option value="0">{{localize 'Aucun'}}</option>
+				<option value="1">{{localize 'Dans une main'}}</option>
+				<option value="2">{{localize 'Avec les deux mains'}}</option>
+				<option value="3">{{localize 'Sur le corps'}}</option>
+				{{/select}}
+			</select>
 		</div>
 	</div>
 
 	<div class="form-group stacked">
 		<div class="form-fields">
 			<!-- Protection -->			
-			<label>Protection</label>
+			<label>{{localize "Protection"}}</label>
 			<select name="system.protection" value="item.system.protection">
 				{{#select item.system.protection}}
-				<option value="PR1">Protection 1</option>
-				<option value="PR2">Protection 2</option>
+				<option value="PR0">{{localize "Aucune protection"}}</option>
+				<option value="PR1">{{localize "Protection 1"}}</option>
+				<option value="PR2">{{localize "Protection 2"}}</option>
 				{{/select}}
 			</select>
 		</div>

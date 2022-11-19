@@ -154,13 +154,14 @@
 			"typeAttaque": "melee",
 			"deuxMains": false,
 			"armeAfeu": false,
-			"protection": 0,
+			"protection": "PR0",
 			"equipe": false,
 			"formulePrix": "d6",
 			"prix": 0,
 			"avantageDegats": false,
 			"avantageParade": false,
 			"quantite": 0,
+			"emplacement": "0",
 			"enchantement": {
 				"enchante": false,
 				"arme": {
