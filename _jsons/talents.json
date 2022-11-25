@@ -1,292 +1,292 @@
 [
-    {
-        "type": "talent",
-        "img": "/systems/fleaux/images/system/talents/acharne.webp",
-        "name": "TALENT.acharne.nom",
-        "system": {
-            "typeName": "ITEM.TypeTalent",
-            "description": "TALENT.acharne.description",
-            "reference": "p. 22"
-        }
-    },
-    {
-        "type": "talent",
-        "img": "/systems/fleaux/images/system/talents/adepte-magie-sang.webp",
-        "name": "TALENT.adepte-magie-sang.nom",
-        "system": {
-            "typeName": "ITEM.TypeTalent",
-            "description": "TALENT.adepte-magie-sang.description",
-            "reference": "p. 22"
-        }
-    },
-    {
-        "type": "talent",
-        "img": "/systems/fleaux/images/system/talents/ange-mort.webp",
-        "name": "TALENT.ange-mort.nom",
-        "system": {
-            "typeName": "ITEM.TypeTalent",
-            "description": "TALENT.ange-mort.description",
-            "reference": "p. 22"
-        }
-    },
-    {
-        "type": "talent",
-        "img": "/systems/fleaux/images/system/talents/charognard.webp",
-        "name": "TALENT.charognard.nom",
-        "system": {
-            "typeName": "ITEM.TypeTalent",
-            "description": "TALENT.charognard.description",
-            "reference": "p. 22"
-        }
-    },
-    {
-        "type": "talent",
-        "img": "/systems/fleaux/images/system/talents/coriace.webp",
-        "name": "TALENT.coriace.nom",
-        "system": {
-            "typeName": "ITEM.TypeTalent",
-            "description": "TALENT.coriace.description",
-            "reference": "p. 22"
-        }
-    },
-    {
-        "type": "talent",
-        "img": "/systems/fleaux/images/system/talents/couture-cicatrices.webp",
-        "name": "TALENT.couture-cicatrices.nom",
-        "system": {
-            "typeName": "ITEM.TypeTalent",
-            "description": "TALENT.couture-cicatrices.description",
-            "reference": "p. 22"
-        }
-    },
-    {
-        "type": "talent",
-        "img": "/systems/fleaux/images/system/talents/cuistot.webp",
-        "name": "TALENT.cuistot.nom",
-        "system": {
-            "typeName": "ITEM.TypeTalent",
-            "description": "TALENT.cuistot.description",
-            "reference": "p. 22"
-        }
-    },
-    {
-        "type": "talent",
-        "img": "/systems/fleaux/images/system/talents/dangereux.webp",
-        "name": "TALENT.dangereux.nom",
-        "system": {
-            "typeName": "ITEM.TypeTalent",
-            "description": "TALENT.dangereux.description",
-            "reference": "p. 22"
-        }
-    },
-    {
-        "type": "talent",
-        "img": "/systems/fleaux/images/system/talents/debrouillard.webp",
-        "name": "TALENT.debrouillard.nom",
-        "system": {
-            "typeName": "ITEM.TypeTalent",
-            "description": "TALENT.debrouillard.description",
-            "reference": "p. 22"
-        }
-    },
-    {
-        "type": "talent",
-        "img": "/systems/fleaux/images/system/talents/duelliste.webp",
-        "name": "TALENT.duelliste.nom",
-        "system": {
-            "typeName": "ITEM.TypeTalent",
-            "description": "TALENT.duelliste.description",
-            "reference": "p. 22"
-        }
-    },
-    {
-        "type": "talent",
-        "img": "/systems/fleaux/images/system/talents/fetichiste.webp",
-        "name": "TALENT.fetichiste.nom",
-        "system": {
-            "typeName": "ITEM.TypeTalent",
-            "description": "TALENT.fetichiste.description",
-            "reference": "p. 22"
-        }
-    },
-    {
-        "type": "talent",
-        "img": "/systems/fleaux/images/system/talents/foutu-veinard.webp",
-        "name": "TALENT.foutu-veinard.nom",
-        "system": {
-            "typeName": "ITEM.TypeTalent",
-            "description": "TALENT.foutu-veinard.description",
-            "reference": "p. 22"
-        }
-    },
-    {
-        "type": "talent",
-        "img": "/systems/fleaux/images/system/talents/hante.webp",
-        "name": "TALENT.hante.nom",
-        "system": {
-            "typeName": "ITEM.TypeTalent",
-            "description": "TALENT.hante.description",
-            "reference": "p. 22"
-        }
-    },
-    {
-        "type": "talent",
-        "img": "/systems/fleaux/images/system/talents/impassible.webp",
-        "name": "TALENT.impassible.nom",
-        "system": {
-            "typeName": "ITEM.TypeTalent",
-            "description": "TALENT.impassible.description",
-            "reference": "p. 22"
-        }
-    },
-    {
-        "type": "talent",
-        "img": "/systems/fleaux/images/system/talents/increvable.webp",
-        "name": "TALENT.increvable.nom",
-        "system": {
-            "typeName": "ITEM.TypeTalent",
-            "description": "TALENT.increvable.description",
-            "reference": "p. 22"
-        }
-    },
-    {
-        "type": "talent",
-        "img": "/systems/fleaux/images/system/talents/meticuleux.webp",
-        "name": "TALENT.meticuleux.nom",
-        "system": {
-            "typeName": "ITEM.TypeTalent",
-            "description": "TALENT.meticuleux.description",
-            "reference": "p. 22"
-        }
-    },
-    {
-        "type": "talent",
-        "img": "/systems/fleaux/images/system/talents/paranoiaque.webp",
-        "name": "TALENT.paranoiaque.nom",
-        "system": {
-            "typeName": "ITEM.TypeTalent",
-            "description": "TALENT.paranoiaque.description",
-            "reference": "p. 22"
-        }
-    },
-    {
-        "type": "talent",
-        "img": "/systems/fleaux/images/system/talents/parcimonieux.webp",
-        "name": "TALENT.parcimonieux.nom",
-        "system": {
-            "typeName": "ITEM.TypeTalent",
-            "description": "TALENT.parcimonieux.description",
-            "reference": "p. 22"
-        }
-    },
-    {
-        "type": "talent",
-        "img": "/systems/fleaux/images/system/talents/protecteur.webp",
-        "name": "TALENT.protecteur.nom",
-        "system": {
-            "typeName": "ITEM.TypeTalent",
-            "description": "TALENT.protecteur.description",
-            "reference": "p. 23"
-        }
-    },
-    {
-        "type": "talent",
-        "img": "/systems/fleaux/images/system/talents/rassurant.webp",
-        "name": "TALENT.rassurant.nom",
-        "system": {
-            "typeName": "ITEM.TypeTalent",
-            "description": "TALENT.rassurant.description",
-            "reference": "p. 23"
-        }
-    },
-    {
-        "type": "talent",
-        "img": "/systems/fleaux/images/system/talents/roi-evasion.webp",
-        "name": "TALENT.roi-evasion.nom",
-        "system": {
-            "typeName": "ITEM.TypeTalent",
-            "description": "TALENT.roi-evasion.description",
-            "reference": "p. 23"
-        }
-    },
-    {
-        "type": "talent",
-        "img": "/systems/fleaux/images/system/talents/rat-bibliotheque.webp",
-        "name": "TALENT.rat-bibliotheque.nom",
-        "system": {
-            "typeName": "ITEM.TypeTalent",
-            "description": "TALENT.rat-bibliotheque.description",
-            "reference": "p. 23"
-        }
-    },
-    {
-        "type": "talent",
-        "img": "/systems/fleaux/images/system/talents/rancunier.webp",
-        "name": "TALENT.rancunier.nom",
-        "system": {
-            "typeName": "ITEM.TypeTalent",
-            "description": "TALENT.rancunier.description",
-            "reference": "p. 23"
-        }
-    },
-    {
-        "type": "talent",
-        "img": "/systems/fleaux/images/system/talents/resolu.webp",
-        "name": "TALENT.resolu.nom",
-        "system": {
-            "typeName": "ITEM.TypeTalent",
-            "description": "TALENT.resolu.description",
-            "reference": "p. 23"
-        }
-    },
-    {
-        "type": "talent",
-        "img": "/systems/fleaux/images/system/talents/sanguinaire.webp",
-        "name": "TALENT.sanguinaire.nom",
-        "system": {
-            "typeName": "ITEM.TypeTalent",
-            "description": "TALENT.sanguinaire.description",
-            "reference": "p. 23"
-        }
-    },
-    {
-        "type": "talent",
-        "img": "/systems/fleaux/images/system/talents/suicidaire.webp",
-        "name": "TALENT.suicidaire.nom",
-        "system": {
-            "typeName": "ITEM.TypeTalent",
-            "description": "TALENT.suicidaire.description",
-            "reference": "p. 23"
-        }
-    },
-    {
-        "type": "talent",
-        "img": "/systems/fleaux/images/system/talents/opiniatre.webp",
-        "name": "TALENT.opiniatre.nom",
-        "system": {
-            "typeName": "ITEM.TypeTalent",
-            "description": "TALENT.opiniatre.description",
-            "reference": "p. 23"
-        }
-    },
-    {
-        "type": "talent",
-        "img": "/systems/fleaux/images/system/talents/tacticien.webp",
-        "name": "TALENT.tacticien.nom",
-        "system": {
-            "typeName": "ITEM.TypeTalent",
-            "description": "TALENT.tacticien.description",
-            "reference": "p. 23"
-        }
-    },
-    {
-        "type": "talent",
-        "img": "/systems/fleaux/images/system/talents/touche-obscur.webp",
-        "name": "TALENT.touche-obscur.nom",
-        "system": {
-            "typeName": "ITEM.TypeTalent",
-            "description": "TALENT.touche-obscur.description",
-            "reference": "p. 23"
-        }
-    }
+	{
+		"type": "talent",
+		"img": "/systems/fleaux/images/system/talents/acharne.webp",
+		"name": "TALENT.acharne.nom",
+		"system": {
+			"typeName": "ITEM.TypeTalent",
+			"description": "TALENT.acharne.description",
+			"reference": "p. 22"
+		}
+	},
+	{
+		"type": "talent",
+		"img": "/systems/fleaux/images/system/talents/adepte-magie-sang.webp",
+		"name": "TALENT.adepte-magie-sang.nom",
+		"system": {
+			"typeName": "ITEM.TypeTalent",
+			"description": "TALENT.adepte-magie-sang.description",
+			"reference": "p. 22"
+		}
+	},
+	{
+		"type": "talent",
+		"img": "/systems/fleaux/images/system/talents/ange-mort.webp",
+		"name": "TALENT.ange-mort.nom",
+		"system": {
+			"typeName": "ITEM.TypeTalent",
+			"description": "TALENT.ange-mort.description",
+			"reference": "p. 22"
+		}
+	},
+	{
+		"type": "talent",
+		"img": "/systems/fleaux/images/system/talents/charognard.webp",
+		"name": "TALENT.charognard.nom",
+		"system": {
+			"typeName": "ITEM.TypeTalent",
+			"description": "TALENT.charognard.description",
+			"reference": "p. 22"
+		}
+	},
+	{
+		"type": "talent",
+		"img": "/systems/fleaux/images/system/talents/coriace.webp",
+		"name": "TALENT.coriace.nom",
+		"system": {
+			"typeName": "ITEM.TypeTalent",
+			"description": "TALENT.coriace.description",
+			"reference": "p. 22"
+		}
+	},
+	{
+		"type": "talent",
+		"img": "/systems/fleaux/images/system/talents/couture-cicatrices.webp",
+		"name": "TALENT.couture-cicatrices.nom",
+		"system": {
+			"typeName": "ITEM.TypeTalent",
+			"description": "TALENT.couture-cicatrices.description",
+			"reference": "p. 22"
+		}
+	},
+	{
+		"type": "talent",
+		"img": "/systems/fleaux/images/system/talents/cuistot.webp",
+		"name": "TALENT.cuistot.nom",
+		"system": {
+			"typeName": "ITEM.TypeTalent",
+			"description": "TALENT.cuistot.description",
+			"reference": "p. 22"
+		}
+	},
+	{
+		"type": "talent",
+		"img": "/systems/fleaux/images/system/talents/dangereux.webp",
+		"name": "TALENT.dangereux.nom",
+		"system": {
+			"typeName": "ITEM.TypeTalent",
+			"description": "TALENT.dangereux.description",
+			"reference": "p. 22"
+		}
+	},
+	{
+		"type": "talent",
+		"img": "/systems/fleaux/images/system/talents/debrouillard.webp",
+		"name": "TALENT.debrouillard.nom",
+		"system": {
+			"typeName": "ITEM.TypeTalent",
+			"description": "TALENT.debrouillard.description",
+			"reference": "p. 22"
+		}
+	},
+	{
+		"type": "talent",
+		"img": "/systems/fleaux/images/system/talents/duelliste.webp",
+		"name": "TALENT.duelliste.nom",
+		"system": {
+			"typeName": "ITEM.TypeTalent",
+			"description": "TALENT.duelliste.description",
+			"reference": "p. 22"
+		}
+	},
+	{
+		"type": "talent",
+		"img": "/systems/fleaux/images/system/talents/fetichiste.webp",
+		"name": "TALENT.fetichiste.nom",
+		"system": {
+			"typeName": "ITEM.TypeTalent",
+			"description": "TALENT.fetichiste.description",
+			"reference": "p. 22"
+		}
+	},
+	{
+		"type": "talent",
+		"img": "/systems/fleaux/images/system/talents/foutu-veinard.webp",
+		"name": "TALENT.foutu-veinard.nom",
+		"system": {
+			"typeName": "ITEM.TypeTalent",
+			"description": "TALENT.foutu-veinard.description",
+			"reference": "p. 22"
+		}
+	},
+	{
+		"type": "talent",
+		"img": "/systems/fleaux/images/system/talents/hante.webp",
+		"name": "TALENT.hante.nom",
+		"system": {
+			"typeName": "ITEM.TypeTalent",
+			"description": "TALENT.hante.description",
+			"reference": "p. 22"
+		}
+	},
+	{
+		"type": "talent",
+		"img": "/systems/fleaux/images/system/talents/impassible.webp",
+		"name": "TALENT.impassible.nom",
+		"system": {
+			"typeName": "ITEM.TypeTalent",
+			"description": "TALENT.impassible.description",
+			"reference": "p. 22"
+		}
+	},
+	{
+		"type": "talent",
+		"img": "/systems/fleaux/images/system/talents/increvable.webp",
+		"name": "TALENT.increvable.nom",
+		"system": {
+			"typeName": "ITEM.TypeTalent",
+			"description": "TALENT.increvable.description",
+			"reference": "p. 22"
+		}
+	},
+	{
+		"type": "talent",
+		"img": "/systems/fleaux/images/system/talents/meticuleux.webp",
+		"name": "TALENT.meticuleux.nom",
+		"system": {
+			"typeName": "ITEM.TypeTalent",
+			"description": "TALENT.meticuleux.description",
+			"reference": "p. 22"
+		}
+	},
+	{
+		"type": "talent",
+		"img": "/systems/fleaux/images/system/talents/paranoiaque.webp",
+		"name": "TALENT.paranoiaque.nom",
+		"system": {
+			"typeName": "ITEM.TypeTalent",
+			"description": "TALENT.paranoiaque.description",
+			"reference": "p. 22"
+		}
+	},
+	{
+		"type": "talent",
+		"img": "/systems/fleaux/images/system/talents/parcimonieux.webp",
+		"name": "TALENT.parcimonieux.nom",
+		"system": {
+			"typeName": "ITEM.TypeTalent",
+			"description": "TALENT.parcimonieux.description",
+			"reference": "p. 22"
+		}
+	},
+	{
+		"type": "talent",
+		"img": "/systems/fleaux/images/system/talents/protecteur.webp",
+		"name": "TALENT.protecteur.nom",
+		"system": {
+			"typeName": "ITEM.TypeTalent",
+			"description": "TALENT.protecteur.description",
+			"reference": "p. 23"
+		}
+	},
+	{
+		"type": "talent",
+		"img": "/systems/fleaux/images/system/talents/rassurant.webp",
+		"name": "TALENT.rassurant.nom",
+		"system": {
+			"typeName": "ITEM.TypeTalent",
+			"description": "TALENT.rassurant.description",
+			"reference": "p. 23"
+		}
+	},
+	{
+		"type": "talent",
+		"img": "/systems/fleaux/images/system/talents/roi-evasion.webp",
+		"name": "TALENT.roi-evasion.nom",
+		"system": {
+			"typeName": "ITEM.TypeTalent",
+			"description": "TALENT.roi-evasion.description",
+			"reference": "p. 23"
+		}
+	},
+	{
+		"type": "talent",
+		"img": "/systems/fleaux/images/system/talents/rat-bibliotheque.webp",
+		"name": "TALENT.rat-bibliotheque.nom",
+		"system": {
+			"typeName": "ITEM.TypeTalent",
+			"description": "TALENT.rat-bibliotheque.description",
+			"reference": "p. 23"
+		}
+	},
+	{
+		"type": "talent",
+		"img": "/systems/fleaux/images/system/talents/rancunier.webp",
+		"name": "TALENT.rancunier.nom",
+		"system": {
+			"typeName": "ITEM.TypeTalent",
+			"description": "TALENT.rancunier.description",
+			"reference": "p. 23"
+		}
+	},
+	{
+		"type": "talent",
+		"img": "/systems/fleaux/images/system/talents/resolu.webp",
+		"name": "TALENT.resolu.nom",
+		"system": {
+			"typeName": "ITEM.TypeTalent",
+			"description": "TALENT.resolu.description",
+			"reference": "p. 23"
+		}
+	},
+	{
+		"type": "talent",
+		"img": "/systems/fleaux/images/system/talents/sanguinaire.webp",
+		"name": "TALENT.sanguinaire.nom",
+		"system": {
+			"typeName": "ITEM.TypeTalent",
+			"description": "TALENT.sanguinaire.description",
+			"reference": "p. 23"
+		}
+	},
+	{
+		"type": "talent",
+		"img": "/systems/fleaux/images/system/talents/suicidaire.webp",
+		"name": "TALENT.suicidaire.nom",
+		"system": {
+			"typeName": "ITEM.TypeTalent",
+			"description": "TALENT.suicidaire.description",
+			"reference": "p. 23"
+		}
+	},
+	{
+		"type": "talent",
+		"img": "/systems/fleaux/images/system/talents/opiniatre.webp",
+		"name": "TALENT.opiniatre.nom",
+		"system": {
+			"typeName": "ITEM.TypeTalent",
+			"description": "TALENT.opiniatre.description",
+			"reference": "p. 23"
+		}
+	},
+	{
+		"type": "talent",
+		"img": "/systems/fleaux/images/system/talents/tacticien.webp",
+		"name": "TALENT.tacticien.nom",
+		"system": {
+			"typeName": "ITEM.TypeTalent",
+			"description": "TALENT.tacticien.description",
+			"reference": "p. 23"
+		}
+	},
+	{
+		"type": "talent",
+		"img": "/systems/fleaux/images/system/talents/touche-obscur.webp",
+		"name": "TALENT.touche-obscur.nom",
+		"system": {
+			"typeName": "ITEM.TypeTalent",
+			"description": "TALENT.touche-obscur.description",
+			"reference": "p. 23"
+		}
+	}
 ]

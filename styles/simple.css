@@ -423,9 +423,8 @@
 
 .fleaux.sheet .repeater {
 	list-style: none;
-	margin: 0;
 	flex: 0 0 100%;
-	padding: 1px;
+	/**padding: 1px;*/
 }
 
 .fleaux.sheet .repeater input {
@@ -450,6 +449,7 @@
 /** dice ---------------------------------------------------------------------------------------------------------------------------------*/
 .fleaux .des-usage {
 	border: none;
+	color: black;
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
@@ -466,6 +466,7 @@
 
 select.des-usage:focus {
 	box-shadow: none;
+	color: #820912;
 }
 
 .fleaux option {
@@ -615,6 +616,38 @@ button[type="submit"] {
 	border-radius: 10px 0px;
 	margin: 0 5px 0 0;
 	height: 28px;
+}
+
+select {
+	color: white;
+	background-color: #37372d;
+	white-space: nowrap;
+	height: 100%;
+	padding: 5px;
+	border-radius: 10px 0px;
+	border: none;
+}
+
+select:focus {
+	box-shadow: none;
+	color: #820912;
+	outline: none;
+}
+
+textarea {
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	box-shadow: rgb(0 0 0 / 60%) 0px 1px 0px 0px;
+	border-bottom-right-radius: 5px;
+	margin: 0px 0px 5px;
+	background-color: transparent;
+	font-family: "Benjamin Franklin";
+	min-height: 70px;
+}
+
+textarea:read-only {
+	color: var(--color-text-dark-secondary);
 }
 
 .dialog .dialog-buttons button.default {

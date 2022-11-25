@@ -1,252 +1,252 @@
 [
-    {
-        "type": "sort",
-        "img": "/systems/fleaux/images/system/sorts/berceuse-lugubre.webp",
-        "name": "SORT.berceuse-lugubre.nom",
-        "system": {
-            "typeName": "ITEM.TypeSort",
-            "description": "SORT.berceuse-lugubre.description",
-            "reference": "p. 42"
-        }
-    },
-    {
-        "type": "sort",
-        "img": "/systems/fleaux/images/system/sorts/combustion-spontanee.webp",
-        "name": "SORT.combustion-spontanee.nom",
-        "system": {
-            "typeName": "ITEM.TypeSort",
-            "description": "SORT.combustion-spontanee.description",
-            "reference": "p. 42"
-        }
-    },
-    {
-        "type": "sort",
-        "img": "/systems/fleaux/images/system/sorts/cri-infernal.webp",
-        "name": "SORT.cri-infernal.nom",
-        "system": {
-            "typeName": "ITEM.TypeSort",
-            "description": "SORT.cri-infernal.description",
-            "reference": "p. 42"
-        }
-    },
-    {
-        "type": "sort",
-        "img": "/systems/fleaux/images/system/sorts/fantome-acier.webp",
-        "name": "SORT.fantome-acier.nom",
-        "system": {
-            "typeName": "ITEM.TypeSort",
-            "description": "SORT.fantome-acier.description",
-            "reference": "p. 42"
-        }
-    },
-    {
-        "type": "sort",
-        "img": "/systems/fleaux/images/system/sorts/guide-chthonien.webp",
-        "name": "SORT.guide-chthonien.nom",
-        "system": {
-            "typeName": "ITEM.TypeSort",
-            "description": "SORT.guide-chthonien.description",
-            "reference": "p. 42"
-        }
-    },
-    {
-        "type": "sort",
-        "img": "/systems/fleaux/images/system/sorts/inquisition.webp",
-        "name": "SORT.inquisition.nom",
-        "system": {
-            "typeName": "ITEM.TypeSort",
-            "description": "SORT.inquisition.description",
-            "reference": "p. 42"
-        }
-    },
-    {
-        "type": "sort",
-        "img": "/systems/fleaux/images/system/sorts/main-avide.webp",
-        "name": "SORT.main-avide.nom",
-        "system": {
-            "typeName": "ITEM.TypeSort",
-            "description": "SORT.main-avide.description",
-            "reference": "p. 42"
-        }
-    },
-    {
-        "type": "sort",
-        "img": "/systems/fleaux/images/system/sorts/malediction-muet.webp",
-        "name": "SORT.malediction-muet.nom",
-        "system": {
-            "typeName": "ITEM.TypeSort",
-            "description": "SORT.malediction-muet.description",
-            "reference": "p. 42"
-        }
-    },
-    {
-        "type": "sort",
-        "img": "/systems/fleaux/images/system/sorts/marque-sanglante.webp",
-        "name": "SORT.marque-sanglante.nom",
-        "system": {
-            "typeName": "ITEM.TypeSort",
-            "description": "SORT.marque-sanglante.description",
-            "reference": "p. 42"
-        }
-    },
-    {
-        "type": "sort",
-        "img": "/systems/fleaux/images/system/sorts/memoire-defaillante.webp",
-        "name": "SORT.memoire-defaillante.nom",
-        "system": {
-            "typeName": "ITEM.TypeSort",
-            "description": "SORT.memoire-defaillante.description",
-            "reference": "p. 42"
-        }
-    },
-    {
-        "type": "sort",
-        "img": "/systems/fleaux/images/system/sorts/message-onirique.webp",
-        "name": "SORT.message-onirique.nom",
-        "system": {
-            "typeName": "ITEM.TypeSort",
-            "description": "SORT.message-onirique.description",
-            "reference": "p. 42"
-        }
-    },
-    {
-        "type": "sort",
-        "img": "/systems/fleaux/images/system/sorts/molosse-infernal.webp",
-        "name": "SORT.molosse-infernal.nom",
-        "system": {
-            "typeName": "ITEM.TypeSort",
-            "description": "SORT.molosse-infernal.description",
-            "reference": "p. 43"
-        }
-    },
-    {
-        "type": "sort",
-        "img": "/systems/fleaux/images/system/sorts/os-serpent.webp",
-        "name": "SORT.os-serpent.nom",
-        "system": {
-            "typeName": "ITEM.TypeSort",
-            "description": "SORT.os-serpent.description",
-            "reference": "p. 43"
-        }
-    },
-    {
-        "type": "sort",
-        "img": "/systems/fleaux/images/system/sorts/partage-fraternel.webp",
-        "name": "SORT.partage-fraternel.nom",
-        "system": {
-            "typeName": "ITEM.TypeSort",
-            "description": "SORT.partage-fraternel.description",
-            "reference": "p. 43"
-        }
-    },
-    {
-        "type": "sort",
-        "img": "/systems/fleaux/images/system/sorts/projectile-empoisonne.webp",
-        "name": "SORT.projectile-empoisonne.nom",
-        "system": {
-            "typeName": "ITEM.TypeSort",
-            "description": "SORT.projectile-empoisonne.description",
-            "reference": "p. 43"
-        }
-    },
-    {
-        "type": "sort",
-        "img": "/systems/fleaux/images/system/sorts/reflet-vivant.webp",
-        "name": "SORT.reflet-vivant.nom",
-        "system": {
-            "typeName": "ITEM.TypeSort",
-            "description": "SORT.reflet-vivant.description",
-            "reference": "p. 43"
-        }
-    },
-    {
-        "type": "sort",
-        "img": "/systems/fleaux/images/system/sorts/sang-acide.webp",
-        "name": "SORT.sang-acide.nom",
-        "system": {
-            "typeName": "ITEM.TypeSort",
-            "description": "SORT.sang-acide.description",
-            "reference": "p. 43"
-        }
-    },
-    {
-        "type": "sort",
-        "img": "/systems/fleaux/images/system/sorts/saut-ange.webp",
-        "name": "SORT.saut-ange.nom",
-        "system": {
-            "typeName": "ITEM.TypeSort",
-            "description": "SORT.saut-ange.description",
-            "reference": "p. 43"
-        }
-    },
-    {
-        "type": "sort",
-        "img": "/systems/fleaux/images/system/sorts/silence-mort.webp",
-        "name": "SORT.silence-mort.nom",
-        "system": {
-            "typeName": "ITEM.TypeSort",
-            "description": "SORT.silence-mort.description",
-            "reference": "p. 43"
-        }
-    },
-    {
-        "type": "sort",
-        "img": "/systems/fleaux/images/system/sorts/souffle-demon.webp",
-        "name": "SORT.souffle-demon.nom",
-        "system": {
-            "typeName": "ITEM.TypeSort",
-            "description": "SORT.souffle-demon.description",
-            "reference": "p. 43"
-        }
-    },
-    {
-        "type": "sort",
-        "img": "/systems/fleaux/images/system/sorts/vin-mort.webp",
-        "name": "SORT.vin-mort.nom",
-        "system": {
-            "typeName": "ITEM.TypeSort",
-            "description": "SORT.vin-mort.description",
-            "reference": "p. 43"
-        }
-    },
-    {
-        "type": "sort",
-        "img": "/systems/fleaux/images/system/sorts/voleur-vie.webp",
-        "name": "SORT.voleur-vie.nom",
-        "system": {
-            "typeName": "ITEM.TypeSort",
-            "description": "SORT.voleur-vie.description",
-            "reference": "p. 43"
-        }
-    },
-    {
-        "type": "sort",
-        "img": "/systems/fleaux/images/system/sorts/voleur-voix.webp",
-        "name": "SORT.voleur-voix.nom",
-        "system": {
-            "typeName": "ITEM.TypeSort",
-            "description": "SORT.voleur-voix.description",
-            "reference": "p. 43"
-        }
-    },
-    {
-        "type": "sort",
-        "img": "/systems/fleaux/images/system/sorts/voile-tenebres.webp",
-        "name": "SORT.voile-tenebres.nom",
-        "system": {
-            "typeName": "ITEM.TypeSort",
-            "description": "SORT.voile-tenebres.description",
-            "reference": "p. 43"
-        }
-    },
-    {
-        "type": "sort",
-        "img": "/systems/fleaux/images/system/sorts/yeux-corbeau.webp",
-        "name": "SORT.yeux-corbeau.nom",
-        "system": {
-            "typeName": "ITEM.TypeSort",
-            "description": "SORT.yeux-corbeau.description",
-            "reference": "p. 43"
-        }
-    }    
+	{
+		"type": "sort",
+		"img": "/systems/fleaux/images/system/sorts/berceuse-lugubre.webp",
+		"name": "SORT.berceuse-lugubre.nom",
+		"system": {
+			"typeName": "ITEM.TypeSort",
+			"description": "SORT.berceuse-lugubre.description",
+			"reference": "p. 42"
+		}
+	},
+	{
+		"type": "sort",
+		"img": "/systems/fleaux/images/system/sorts/combustion-spontanee.webp",
+		"name": "SORT.combustion-spontanee.nom",
+		"system": {
+			"typeName": "ITEM.TypeSort",
+			"description": "SORT.combustion-spontanee.description",
+			"reference": "p. 42"
+		}
+	},
+	{
+		"type": "sort",
+		"img": "/systems/fleaux/images/system/sorts/cri-infernal.webp",
+		"name": "SORT.cri-infernal.nom",
+		"system": {
+			"typeName": "ITEM.TypeSort",
+			"description": "SORT.cri-infernal.description",
+			"reference": "p. 42"
+		}
+	},
+	{
+		"type": "sort",
+		"img": "/systems/fleaux/images/system/sorts/fantome-acier.webp",
+		"name": "SORT.fantome-acier.nom",
+		"system": {
+			"typeName": "ITEM.TypeSort",
+			"description": "SORT.fantome-acier.description",
+			"reference": "p. 42"
+		}
+	},
+	{
+		"type": "sort",
+		"img": "/systems/fleaux/images/system/sorts/guide-chthonien.webp",
+		"name": "SORT.guide-chthonien.nom",
+		"system": {
+			"typeName": "ITEM.TypeSort",
+			"description": "SORT.guide-chthonien.description",
+			"reference": "p. 42"
+		}
+	},
+	{
+		"type": "sort",
+		"img": "/systems/fleaux/images/system/sorts/inquisition.webp",
+		"name": "SORT.inquisition.nom",
+		"system": {
+			"typeName": "ITEM.TypeSort",
+			"description": "SORT.inquisition.description",
+			"reference": "p. 42"
+		}
+	},
+	{
+		"type": "sort",
+		"img": "/systems/fleaux/images/system/sorts/main-avide.webp",
+		"name": "SORT.main-avide.nom",
+		"system": {
+			"typeName": "ITEM.TypeSort",
+			"description": "SORT.main-avide.description",
+			"reference": "p. 42"
+		}
+	},
+	{
+		"type": "sort",
+		"img": "/systems/fleaux/images/system/sorts/malediction-muet.webp",
+		"name": "SORT.malediction-muet.nom",
+		"system": {
+			"typeName": "ITEM.TypeSort",
+			"description": "SORT.malediction-muet.description",
+			"reference": "p. 42"
+		}
+	},
+	{
+		"type": "sort",
+		"img": "/systems/fleaux/images/system/sorts/marque-sanglante.webp",
+		"name": "SORT.marque-sanglante.nom",
+		"system": {
+			"typeName": "ITEM.TypeSort",
+			"description": "SORT.marque-sanglante.description",
+			"reference": "p. 42"
+		}
+	},
+	{
+		"type": "sort",
+		"img": "/systems/fleaux/images/system/sorts/memoire-defaillante.webp",
+		"name": "SORT.memoire-defaillante.nom",
+		"system": {
+			"typeName": "ITEM.TypeSort",
+			"description": "SORT.memoire-defaillante.description",
+			"reference": "p. 42"
+		}
+	},
+	{
+		"type": "sort",
+		"img": "/systems/fleaux/images/system/sorts/message-onirique.webp",
+		"name": "SORT.message-onirique.nom",
+		"system": {
+			"typeName": "ITEM.TypeSort",
+			"description": "SORT.message-onirique.description",
+			"reference": "p. 42"
+		}
+	},
+	{
+		"type": "sort",
+		"img": "/systems/fleaux/images/system/sorts/molosse-infernal.webp",
+		"name": "SORT.molosse-infernal.nom",
+		"system": {
+			"typeName": "ITEM.TypeSort",
+			"description": "SORT.molosse-infernal.description",
+			"reference": "p. 43"
+		}
+	},
+	{
+		"type": "sort",
+		"img": "/systems/fleaux/images/system/sorts/os-serpent.webp",
+		"name": "SORT.os-serpent.nom",
+		"system": {
+			"typeName": "ITEM.TypeSort",
+			"description": "SORT.os-serpent.description",
+			"reference": "p. 43"
+		}
+	},
+	{
+		"type": "sort",
+		"img": "/systems/fleaux/images/system/sorts/partage-fraternel.webp",
+		"name": "SORT.partage-fraternel.nom",
+		"system": {
+			"typeName": "ITEM.TypeSort",
+			"description": "SORT.partage-fraternel.description",
+			"reference": "p. 43"
+		}
+	},
+	{
+		"type": "sort",
+		"img": "/systems/fleaux/images/system/sorts/projectile-empoisonne.webp",
+		"name": "SORT.projectile-empoisonne.nom",
+		"system": {
+			"typeName": "ITEM.TypeSort",
+			"description": "SORT.projectile-empoisonne.description",
+			"reference": "p. 43"
+		}
+	},
+	{
+		"type": "sort",
+		"img": "/systems/fleaux/images/system/sorts/reflet-vivant.webp",
+		"name": "SORT.reflet-vivant.nom",
+		"system": {
+			"typeName": "ITEM.TypeSort",
+			"description": "SORT.reflet-vivant.description",
+			"reference": "p. 43"
+		}
+	},
+	{
+		"type": "sort",
+		"img": "/systems/fleaux/images/system/sorts/sang-acide.webp",
+		"name": "SORT.sang-acide.nom",
+		"system": {
+			"typeName": "ITEM.TypeSort",
+			"description": "SORT.sang-acide.description",
+			"reference": "p. 43"
+		}
+	},
+	{
+		"type": "sort",
+		"img": "/systems/fleaux/images/system/sorts/saut-ange.webp",
+		"name": "SORT.saut-ange.nom",
+		"system": {
+			"typeName": "ITEM.TypeSort",
+			"description": "SORT.saut-ange.description",
+			"reference": "p. 43"
+		}
+	},
+	{
+		"type": "sort",
+		"img": "/systems/fleaux/images/system/sorts/silence-mort.webp",
+		"name": "SORT.silence-mort.nom",
+		"system": {
+			"typeName": "ITEM.TypeSort",
+			"description": "SORT.silence-mort.description",
+			"reference": "p. 43"
+		}
+	},
+	{
+		"type": "sort",
+		"img": "/systems/fleaux/images/system/sorts/souffle-demon.webp",
+		"name": "SORT.souffle-demon.nom",
+		"system": {
+			"typeName": "ITEM.TypeSort",
+			"description": "SORT.souffle-demon.description",
+			"reference": "p. 43"
+		}
+	},
+	{
+		"type": "sort",
+		"img": "/systems/fleaux/images/system/sorts/vin-mort.webp",
+		"name": "SORT.vin-mort.nom",
+		"system": {
+			"typeName": "ITEM.TypeSort",
+			"description": "SORT.vin-mort.description",
+			"reference": "p. 43"
+		}
+	},
+	{
+		"type": "sort",
+		"img": "/systems/fleaux/images/system/sorts/voleur-vie.webp",
+		"name": "SORT.voleur-vie.nom",
+		"system": {
+			"typeName": "ITEM.TypeSort",
+			"description": "SORT.voleur-vie.description",
+			"reference": "p. 43"
+		}
+	},
+	{
+		"type": "sort",
+		"img": "/systems/fleaux/images/system/sorts/voleur-voix.webp",
+		"name": "SORT.voleur-voix.nom",
+		"system": {
+			"typeName": "ITEM.TypeSort",
+			"description": "SORT.voleur-voix.description",
+			"reference": "p. 43"
+		}
+	},
+	{
+		"type": "sort",
+		"img": "/systems/fleaux/images/system/sorts/voile-tenebres.webp",
+		"name": "SORT.voile-tenebres.nom",
+		"system": {
+			"typeName": "ITEM.TypeSort",
+			"description": "SORT.voile-tenebres.description",
+			"reference": "p. 43"
+		}
+	},
+	{
+		"type": "sort",
+		"img": "/systems/fleaux/images/system/sorts/yeux-corbeau.webp",
+		"name": "SORT.yeux-corbeau.nom",
+		"system": {
+			"typeName": "ITEM.TypeSort",
+			"description": "SORT.yeux-corbeau.description",
+			"reference": "p. 43"
+		}
+	}    
 ]

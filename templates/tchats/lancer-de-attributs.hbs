@@ -9,8 +9,11 @@
 		{{/unless}}
 		{{#unless (eq bonusMalus 0) }}
 		<span>
-			{{#if (estPositive bonusMalus)}} {{ localize "CHAT.des.avecBonus" bonusMalus=bonusMalus}}
-			{{else}} {{localize "CHAT.des.avecMalus" bonusMalus=bonusMalus}} {{/if}}<br>
+			{{#if (estPositive bonusMalus)}} {{ localize "CHAT.des.avecBonus" bonusMalus=bonusMalus }}
+			{{else}} {{ localize "CHAT.des.avecMalus" bonusMalus=bonusMalus }} {{/if}}
+			<br>
+			{{ localize "CHAT.des.nouvelleDifficulte" }} {{data.nouvelleDifficulte}}.
+			<br>
 		</span>
 		{{/unless}}
 		{{#if succes}} {{localize "CHAT.des.success"}} {{else}} {{localize "CHAT.des.echec"}} {{/if}}

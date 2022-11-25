@@ -126,7 +126,7 @@
 	"CRIME.crime-de-base.accusation.20": "D’avoir chassé sur une réserve royale.",
 
 	"PROFESSIONS.minuscule.nom": "Les professions",
-	"PROFESSION.libelle.pour-survivre": "Vous êtes maintenant sur les routes parce qu'on vous a accusé...",
+	"PROFESSION.libelle.pour-survivre": "Pour survivre, vous avez compté sur la profession...",
 	"PROFESSION.violence.nom": "Violence",
 	"PROFESSION.violence.description": "",
 	"PROFESSION.violence.profession.1.nom": "MERCENAIRE",
@@ -176,7 +176,7 @@
 	"PROFESSION.erudition.profession.2.nom": "APPRENTI SORCIER",
 	"PROFESSION.erudition.profession.2.description": "Votre personnage connaît deux sorts déterminés au hasard.",
 	"PROFESSION.erudition.profession.3.nom": "HERBORISTE",
-	"PROFESSION.erudition.profession.3.description": "Créer d4 décoction entre chaque repos long. Vos préparations non utilisées se périment dans la journée.\nQuelques exemples de décoctions : baumes de cicatrisation (2 pv), anti-poison (fait vomir la victime), anti-venin (annule les effets d’un venin), poison (inflige le dé de dégâts de l’herboriste)...",
+	"PROFESSION.erudition.profession.3.description": "Créer d4 décoction entre chaque repos long. Vos préparations non utilisées se périment dans la journée. Quelques exemples de décoctions : baumes de cicatrisation (2 pv), anti-poison (fait vomir la victime), anti-venin (annule les effets d’un venin), poison (inflige le dé de dégâts de l’herboriste)...",
 	"PROFESSION.erudition.profession.4.nom": "INTERPRÈTE",
 	"PROFESSION.erudition.profession.4.description": "Vous connaissez deux langues supplémentaires et parvenez toujours à vous faire comprendre (si votre interlocuteur fait également un effort de son côté). Vous agissez en premier en combat si votre première action consiste à parler à vos adversaires.",
 	"PROFESSION.erudition.profession.5.nom": "CHRONIQUEUR",
@@ -341,7 +341,6 @@
 	"EQUIPEMENT.armurelegere.description": "",
 	"EQUIPEMENT.armurelourde.nom": "Armure lourde",
 	"EQUIPEMENT.armurelourde.description": "",
-	
 	"EQUIPEMENT.corde.nom": "Corde",
 	"EQUIPEMENT.corde.description": "",
 	"EQUIPEMENT.flasquehuile.nom": "Flasque d'huile",
@@ -400,8 +399,9 @@
 	"CHAT.des.attribut": "Jet d'attribut :",
 	"CHAT.des.lanceAvecAvantage": "- Lancé avec avantage.",
 	"CHAT.des.lanceAvecDesavantage": "- Lancé avec désavantage.",
-	"CHAT.des.avecBonus": "- Lancé avec bonus de {bonusMalus}.",
-	"CHAT.des.avecMalus": "- Lancé avec malus de {bonusMalus}.",
+	"CHAT.des.avecBonus": "- Lancé avec un bonus de {bonusMalus}.",
+	"CHAT.des.avecMalus": "- Lancé avec un malus de {bonusMalus}.",
+	"CHAT.des.nouvelleDifficulte": "- Nouvelle difficulté de",
 	"CHAT.des.success": "C'est un succès !",
 	"CHAT.des.echec": "C'est un échec !",
 	"CHAT.des.critique": "C'est un critique !",
@@ -415,10 +415,6 @@
 	"DIALOGUE.des.normal": "Normal",
 	"DIALOGUE.des.avantage": "Avantage",
 	"DIALOGUE.des.desavantage": "Désavantage",
-	"DIALOGUE.des.bonusMalus": "Bonus/malus (+/-)",
-	"DIALOGUE.des.ResourceRollPromptTitle": "Jet de {resource}",
-	"DIALOGUE.des.MiscResource": "Ressource diverse",
-	"DIALOGUE.des.ResourceRollFailure": "Perte de ressource",
-	"DIALOGUE.des.DamageDiceRollPrompt": "Jet de dé(s) de dégâts avec {item}"
+	"DIALOGUE.des.bonusMalus": "Bonus/malus (+/-)"
 }
 
