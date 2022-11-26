@@ -11,7 +11,9 @@
 		}
 	],
 	"compatibility": {
-		"minimum": "10"
+		"minimum": "10",
+		"verified": "10",
+		"maximum": "10"
 	  },    
 	"esmodules": [
 		"fleaux.js"
