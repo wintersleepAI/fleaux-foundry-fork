@@ -4,7 +4,7 @@
 		"img": "/systems/fleaux/images/system/attributs/force.webp",
 		"name": "ATTRIBUT.force.nom",
 		"system": {
-			"code": "FOR",
+			"code": "for",
 			"typeName": "ITEM.TypeAttribut",
 			"description": "ATTRIBUT.force.description",
 			"reference": "p. 12"
@@ -15,7 +15,7 @@
 		"img": "/systems/fleaux/images/system/attributs/charisme.webp",
 		"name": "ATTRIBUT.charisme.nom",
 		"system": {
-			"code": "CHA",
+			"code": "cha",
 			"typeName": "ITEM.TypeAttribut",
 			"description": "ATTRIBUT.charisme.description",
 			"reference": "p. 12"
@@ -26,7 +26,7 @@
 		"img": "/systems/fleaux/images/system/attributs/sang-froid.webp",
 		"name": "ATTRIBUT.sang-froid.nom",
 		"system": {
-			"code": "SFR",
+			"code": "sfr",
 			"typeName": "ITEM.TypeAttribut",
 			"description": "ATTRIBUT.sang-froid.description",
 			"reference": "p. 12"
@@ -37,7 +37,7 @@
 		"img": "/systems/fleaux/images/system/attributs/dexterite.webp",
 		"name": "ATTRIBUT.dexterite.nom",
 		"system": {
-			"code": "DEX",
+			"code": "dex",
 			"typeName": "ITEM.TypeAttribut",
 			"description": "ATTRIBUT.dexterite.description",
 			"reference": "p. 12"
@@ -48,7 +48,7 @@
 		"img": "/systems/fleaux/images/system/attributs/erudition.webp",
 		"name": "ATTRIBUT.erudition.nom",
 		"system": {
-			"code": "ERU",
+			"code": "eru",
 			"typeName": "ITEM.TypeAttribut",
 			"description": "ATTRIBUT.erudition.description",
 			"reference": "p. 12"
@@ -59,7 +59,7 @@
 		"img": "/systems/fleaux/images/system/attributs/melee.webp",
 		"name": "ATTRIBUT.melee.nom",
 		"system": {
-			"code": "MEL",
+			"code": "mel",
 			"typeName": "ITEM.TypeAttribut",
 			"description": "ATTRIBUT.melee.description",
 			"reference": "p. 12"
@@ -70,7 +70,7 @@
 		"img": "/systems/fleaux/images/system/attributs/tir.webp",
 		"name": "ATTRIBUT.tir.nom",
 		"system": {
-			"code": "TIR",
+			"code": "tir",
 			"typeName": "ITEM.TypeAttribut",
 			"description": "ATTRIBUT.tir.description",
 			"reference": "p. 12"

@@ -13,42 +13,42 @@
 					"PROFESSION.violence.profession.1.nom",
 					"PROFESSION.violence.profession.1.description",
 					1,
-					"MEL"
+					"mel"
 				],
 				[
 					2,
 					"PROFESSION.violence.profession.2.nom",
 					"PROFESSION.violence.profession.2.description",
 					1,
-					"TIR"
+					"tir"
 				],
 				[
 					3,
 					"PROFESSION.violence.profession.3.nom",
 					"PROFESSION.violence.profession.3.description",
 					1,
-					"MEL"
+					"mel"
 				],
 				[
 					4,
 					"PROFESSION.violence.profession.4.nom",
 					"PROFESSION.violence.profession.4.description",
 					1,
-					"MEL"
+					"mel"
 				],
 				[
 					5,
 					"PROFESSION.violence.profession.5.nom",
 					"PROFESSION.violence.profession.5.description",
 					1,
-					"FOR"
+					"for"
 				],
 				[
 					6,
 					"PROFESSION.violence.profession.6.nom",
 					"PROFESSION.violence.profession.6.description",
 					1,
-					"DEX"
+					"dex"
 				]
 			],
 			"de": "1d6"
@@ -68,42 +68,42 @@
 					"PROFESSION.isolement.profession.1.nom",
 					"PROFESSION.isolement.profession.1.description",
 					1,
-					"FOR"
+					"for"
 				],
 				[
 					2,
 					"PROFESSION.isolement.profession.2.nom",
 					"PROFESSION.isolement.profession.2.description",
 					1,
-					"SFR"
+					"sfr"
 				],
 				[
 					3,
 					"PROFESSION.isolement.profession.3.nom",
 					"PROFESSION.isolement.profession.3.description",
 					1,
-					"TIR"
+					"tir"
 				],
 				[
 					4,
 					"PROFESSION.isolement.profession.4.nom",
 					"PROFESSION.isolement.profession.4.description",
 					1,
-					"SFR"
+					"sfr"
 				],
 				[
 					5,
 					"PROFESSION.isolement.profession.5.nom",
 					"PROFESSION.isolement.profession.5.description",
 					1,
-					"ERU"
+					"eru"
 				],
 				[
 					6,
 					"PROFESSION.isolement.profession.6.nom",
 					"PROFESSION.isolement.profession.6.description",
 					1,
-					"SFR"
+					"sfr"
 				]
 			],
 			"de": "1d6"
@@ -123,42 +123,42 @@
 					"PROFESSION.debrouillardise.profession.1.nom",
 					"PROFESSION.debrouillardise.profession.1.description",
 					1,
-					"DEX"
+					"dex"
 				],
 				[
 					2,
 					"PROFESSION.debrouillardise.profession.2.nom",
 					"PROFESSION.debrouillardise.profession.2.description",
 					1,
-					"CHA"
+					"cha"
 				],
 				[
 					3,
 					"PROFESSION.debrouillardise.profession.3.nom",
 					"PROFESSION.debrouillardise.profession.3.description",
 					1,
-					"CHA"
+					"cha"
 				],
 				[
 					4,
 					"PROFESSION.debrouillardise.profession.4.nom",
 					"PROFESSION.debrouillardise.profession.4.description",
 					1,
-					"FOR"
+					"for"
 				],
 				[
 					5,
 					"PROFESSION.debrouillardise.profession.5.nom",
 					"PROFESSION.debrouillardise.profession.5.description",
 					1,
-					"SFR"
+					"sfr"
 				],
 				[
 					6,
 					"PROFESSION.debrouillardise.profession.6.nom",
 					"PROFESSION.debrouillardise.profession.6.description",
 					1,
-					"DEX"
+					"dex"
 				]
 			],
 			"de": "1d6"
@@ -178,42 +178,42 @@
 					"PROFESSION.erudition.profession.1.nom",
 					"PROFESSION.erudition.profession.1.description",
 					1,
-					"DEX"
+					"dex"
 				],
 				[
 					2,
 					"PROFESSION.erudition.profession.2.nom",
 					"PROFESSION.erudition.profession.2.description",
 					1,
-					"SFR"
+					"sfr"
 				],
 				[
 					3,
 					"PROFESSION.erudition.profession.3.nom",
 					"PROFESSION.erudition.profession.3.description",
 					1,
-					"ERU"
+					"eru"
 				],
 				[
 					4,
 					"PROFESSION.erudition.profession.4.nom",
 					"PROFESSION.erudition.profession.4.description",
 					1,
-					"CHA"
+					"cha"
 				],
 				[
 					5,
 					"PROFESSION.erudition.profession.5.nom",
 					"PROFESSION.erudition.profession.5.description",
 					1,
-					"ERU"
+					"eru"
 				],
 				[
 					6,
 					"PROFESSION.erudition.profession.6.nom",
 					"PROFESSION.erudition.profession.6.description",
 					1,
-					"ERU"
+					"eru"
 				]
 			],
 			"de": "1d6"

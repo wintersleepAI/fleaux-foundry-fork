@@ -399,8 +399,8 @@
 	"CHAT.des.attribut": "Jet d'attribut :",
 	"CHAT.des.lanceAvecAvantage": "- Lancé avec avantage.",
 	"CHAT.des.lanceAvecDesavantage": "- Lancé avec désavantage.",
-	"CHAT.des.avecBonus": "- Lancé avec un bonus de {bonusMalus}.",
-	"CHAT.des.avecMalus": "- Lancé avec un malus de {bonusMalus}.",
+	"CHAT.des.avecBonus": "- Lancé avec un bonus de ",
+	"CHAT.des.avecMalus": "- Lancé avec un malus de ",
 	"CHAT.des.nouvelleDifficulte": "- Nouvelle difficulté de",
 	"CHAT.des.success": "C'est un succès !",
 	"CHAT.des.echec": "C'est un échec !",
@@ -415,6 +415,16 @@
 	"DIALOGUE.des.normal": "Normal",
 	"DIALOGUE.des.avantage": "Avantage",
 	"DIALOGUE.des.desavantage": "Désavantage",
-	"DIALOGUE.des.bonusMalus": "Bonus/malus (+/-)"
+	"DIALOGUE.des.bonusMalus": "Bonus/malus (+/-)",
+	"DIALOGUE.calculerPrixEquipement.contenu": "<p><i class='fa fa-coins'></i>&nbsp;Voulez-vous déduire le prix de l'équipement <b>{nom}</b> de votre fortune ?</p>",
+
+	"NOTIFICATION.reposcourt.info": "{nom} vient de récupérer {pvArecuperer} points de vie.",
+	"NOTIFICATION.reposlong.info": "{nom} vient de récupérer tous ces points de vie et son dé de volonté.",
+	"NOTIFICATION.calculerPrixEquipement.info": "Votre fortune n'est pas suffisante !!!",
+	"NOTIFICATION.mourir.info": "{nom} vient de mourir.",
+	"NOTIFICATION.pionsansscene.avertissement": "{nom} n'as pas de pion dans une scène.",
+	"NOTIFICATION.recupererVie.info": "{nom} récupère {pv} point(s) de vie.",
+	"NOTIFICATION.perdreVie.info": "{nom} perd {pv} point(s) de vie."
+
 }
 

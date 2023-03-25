@@ -35,20 +35,22 @@
 			<!-- ATTRIBUTS -->
 			<div class="attribut-header">
 				<div>
-					<a class="reinitialiser" title={{localize "Tout réinitialiser"}}> <i class="fas fa-undo-alt"></i></a>
+					{{#if (getIsGM)}}
+						<a class="reinitialiser" title={{localize "Tout réinitialiser"}}> <i class="fas fa-undo-alt"></i></a>
+					{{/if}}
 					<a class="recuperation" title={{localize "Récupération"}}> <i class="fa-solid fa-bed"></i></a>
 				</div>
 				{{#each actor.system.attributs as |attrib key|}}
 				<div class="attribut-box">
 					<div class="box-header">
-						<a class="attribut-name" title="{{ getAttributProperty key 'description' }}" data-key="{{key}}">{{ getAttributProperty key 'name' }}</a>
+						<a class="attribut-name" title="{{ getAttributProperty key 'system.description' }}" data-key="{{key}}">{{ getAttributProperty key 'name' }}</a>
 						<a class="attribut-2d6" data-attribut="{{key}}"
 							title="lancer 2d6 pour déterminer votre {{ getAttributProperty key 'name' }}">
 							{{#unless attrib.init2d6 }}<i class="fas fa-dice" style="color: #820912;"></i>{{/unless}}
 						</a>
 					</div>
 					<div class="attribut-img"
-						style="background: url('../systems/fleaux/images/ui/{{ getAttributProperty key 'name' }}.png') no-repeat;">
+						style="background: url('../systems/fleaux/images/ui/attribut-{{ getAttributProperty key 'system.code' }}.png') no-repeat;">
 						<input class="attribut-change" type="number" min="0" max="18" data-attribut="{{key}}" name="system.attributs.{{key}}.actuel" value="{{attrib.actuel}}" />
 					</div>
 				</div>

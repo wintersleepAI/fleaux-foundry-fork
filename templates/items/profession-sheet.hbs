@@ -19,7 +19,7 @@
 							{{#select (lookup this "4")}}
 							<option value=""/>
 							{{#each ../attributs as |attribut|}}
-							<option value="{{localize attribut.system.code}}">{{localize 'FLEAUX.libelle.en'}}{{localize attribut.name}}</option>
+							<option value="{{attribut.system.code}}">{{localize 'FLEAUX.libelle.en'}}{{localize attribut.name}}</option>
 							{{/each}}
 							{{/select}}
 						</select>

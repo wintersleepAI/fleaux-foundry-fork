@@ -415,5 +415,15 @@
 	"DIALOGUE.des.normal": "Normal",
 	"DIALOGUE.des.avantage": "Advantage",
 	"DIALOGUE.des.desavantage": "Disadvantage",
-	"DIALOGUE.des.bonusMalus": "Bonus/malus (+/-)"
+	"DIALOGUE.des.bonusMalus": "Bonus/malus (+/-)",
+	"DIALOGUE.calculerPrixEquipement.contenu": "<p><i class='fa fa-coins'></i>&nbsp;Do you want to deduct the price of the <b>{nom}</b> equipment from your wealth?</p>",
+
+	"NOTIFICATION.reposcourt.info": "{nom} has just recovered {pvArecuperer} life points.",
+	"NOTIFICATION.reposlong.info": "{nom} has just recovered all his hit points and his willpower die.",
+	"NOTIFICATION.calculerPrixEquipement.info": "Your wealth is not enough!",
+	"NOTIFICATION.mourir.info": "{nom} has just died.",
+	"NOTIFICATION.pionsansscene.avertissement": "{nom} do not have a pawn in a scene.",
+	"NOTIFICATION.recupererVie.info": "{nom} recovers {pv} life point(s).",
+	"NOTIFICATION.perdreVie.info": "{nom} loses {pv} life point(s)."
+
 }

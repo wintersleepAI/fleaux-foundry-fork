@@ -1,5 +1,5 @@
 <div class="dice-tooltip">
-    {{#each terms}}
+    {{#each parts}}
     <section class="tooltip-part">
         <div class="dice" style="margin-top: 5px;">
             <header class="part-header flexrow" style="border-radius: 10px 0px;">
@@ -8,7 +8,7 @@
                 <span class="part-total">{{this.total}}</span>
             </header>
             <ol class="dice-rolls">
-                {{#each this.results}}
+                {{#each this.rolls}}
                 <li class="roll des-usage {{this.classes}}" {{{getStyleForDice ../this.faces false}}}>{{this.result}}</li>
                 {{/each}}
             </ol>

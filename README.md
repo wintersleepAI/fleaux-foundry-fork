@@ -9,6 +9,13 @@ Adapatation du jeux de rôle **Fléaux!** sur **Foundry VTT**.
 <details>
 <summary>Versions</summary>
 
+* **2023.1.1**
+	>	* Mettre en place l'initiative. 
+	>	* Refactorisation du système de dés conforme foundry v10 -> classe FleauxDes
+	>	* Rendre le bouton 'Tout réinitialiser' seulement disponible pour le MJ.
+	>	* Compatibilité des images de l'UI pour les systèmes linux.
+	>	* Ajout de la scène de bienvenue sur Fléaux !, identique à l'image de fond.
+	>	* Localisation 'fr', 'en' et maintenance corrective.
 * **2022.5.3**
 	>	* Ajout de la notion de bonus/malus lors des jets d'attribut.
 	>	* Ajout de la notion de récupération avec repos court et long.
