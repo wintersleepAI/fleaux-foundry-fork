@@ -29,7 +29,8 @@
 	"ITEM.TypeProfession": "Profession",
 	"ITEM.TypeTalent": "Talent",
 	"ITEM.TypeSort": "Spell",
-	"ITEM.TypeEquipement": "Equiement",
+	"ITEM.TypeEquipement": "Equipment",
+	"ITEM.TypeEtat": "Status",
 
 	"ATTRIBUTS.minuscule.nom": "The attributes",
 	"ATTRIBUT.force.nom": "Strength",

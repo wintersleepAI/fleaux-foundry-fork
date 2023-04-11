@@ -56,7 +56,11 @@
 						"max": 0
 					}
 				},
-				"fortune": 0
+				"fortune": 0,
+				"critique": {
+					"reussite": 1,
+					"echec": 20
+				}
 			}
 		},
 		"character": {
@@ -100,14 +104,25 @@
 			"profession",
 			"talent",
 			"sort",
-			"equipement"
+			"equipement",
+			"etat"
 		],
 		"templates": {
 			"itemCommon": {
 				"typeName": "",
 				"description": "",
 				"reference": ""
-			}
+			},
+			"macro": {
+				"macroScript": {
+					"idMacro": null,
+					"active": false,
+					"parent": {
+						"modifiable": true,
+						"supprimable": true
+					}
+				}
+			} 
 		},
 		"attribut": {
 			"templates": [
@@ -138,17 +153,20 @@
 		},
 		"talent": {
 			"templates": [
-				"itemCommon"
+				"itemCommon",
+				"macro"
 			]
 		},
 		"sort": {
 			"templates": [
-				"itemCommon"
+				"itemCommon",
+				"macro"
 			]
 		},
 		"equipement": {
 			"templates": [
-				"itemCommon"
+				"itemCommon",
+				"macro"
 			],
 			"categorie": "arme",
 			"typeAttaque": "melee",
@@ -185,6 +203,16 @@
 				"actuel": "d6",
 				"max": "d6"
 			}
+		},
+		"etat": {
+			"templates": [
+				"itemCommon",
+				"macro"
+			],
+			"date" : null,
+			"idActeur": "",
+			"typeDuree": "par-scene",
+			"duree":null
 		}
 	}
 }

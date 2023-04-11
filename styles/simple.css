@@ -704,3 +704,8 @@ img {
 .image-popout figure img {
 	background-color: transparent;
 }
+.macro-sheet .form-group.command textarea {
+	font-family: cursive;
+	background-color: #37372d;
+	color: white;
+}

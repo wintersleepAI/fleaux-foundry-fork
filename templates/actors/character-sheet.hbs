@@ -5,7 +5,7 @@
 			<div class="info-header">
 				<!-- IMAGE/TOKEN -->
 				<div class="char-image">
-					<img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" />
+					<img class="profile-img" src="{{actor.img}}" data-edit="img" data-tooltip="{{actor.name}}" />
 				</div>
 				<div class="info-col">
 					<!-- NOM PERSONNAGE -->
@@ -36,16 +36,16 @@
 			<div class="attribut-header">
 				<div>
 					{{#if (getIsGM)}}
-						<a class="reinitialiser" title={{localize "Tout réinitialiser"}}> <i class="fas fa-undo-alt"></i></a>
+						<a class="reinitialiser" data-tooltip={{localize "Réinitialiser la fiche"}}> <i class="fas fa-undo-alt"></i></a>
 					{{/if}}
-					<a class="recuperation" title={{localize "Récupération"}}> <i class="fa-solid fa-bed"></i></a>
+					<a class="recuperation" data-tooltip={{localize "Récupération"}}> <i class="fa-solid fa-bed"></i></a>
 				</div>
 				{{#each actor.system.attributs as |attrib key|}}
 				<div class="attribut-box">
 					<div class="box-header">
-						<a class="attribut-name" title="{{ getAttributProperty key 'system.description' }}" data-key="{{key}}">{{ getAttributProperty key 'name' }}</a>
+						<a class="attribut-name" data-tooltip="{{ getAttributProperty key 'system.description' }}" data-key="{{key}}">{{ getAttributProperty key 'name' }}</a>
 						<a class="attribut-2d6" data-attribut="{{key}}"
-							title="lancer 2d6 pour déterminer votre {{ getAttributProperty key 'name' }}">
+							data-tooltip="lancer 2d6 pour déterminer votre {{ getAttributProperty key 'name' }}">
 							{{#unless attrib.init2d6 }}<i class="fas fa-dice" style="color: #820912;"></i>{{/unless}}
 						</a>
 					</div>
@@ -111,10 +111,11 @@
 		</div>
 		<!-- NAVIGATION ONGLETS -->
 		<nav class="sheet-tabs tabs" data-group="primary">
-			<a class="item" data-tab="tabEquipements">Équipement</a>
-			<a class="item" data-tab="tabTalentsSorts">Talents & sorts</a>
-			<a class="item" data-tab="tabBiographie">Biographie & relations</a>
-			<a class="item" data-tab="tabNotes">Notes & objectifs</a>
+			<a class="item" data-tab="tabEquipements">{{localize 'Équipement'}}</a>
+			<a class="item" data-tab="tabEtats">{{localize 'Etats'}}</a>
+			<a class="item" data-tab="tabTalentsSorts">{{localize 'Talents & sorts'}}</a>
+			<a class="item" data-tab="tabBiographie">{{localize 'Biographie & relations'}}</a>
+			<a class="item" data-tab="tabNotes">{{localize 'Notes & objectifs'}}</a>
 		</nav>
 		<!-- SECTION POUR CHAQUE ONGLET -->
 		<section class="sheet-body">
@@ -123,18 +124,18 @@
 				<div class="char-info-row">
 					<!-- BOURSE -->
 					<div class="information width30">
-						<a class="info-label calculer-fortune" title="lancer le dé pour déterminer votre fortune">
+						<a class="info-label calculer-fortune" data-tooltip="lancer le dé pour déterminer votre fortune">
 							<i class="fa fa-coins"></i>
 							<span>{{localize 'Fortune (en Shilling)'}}&nbsp;</span>
 						</a>
 						<input class="info-input" type="number" name="system.fortune" value={{actor.system.fortune}} >
 					</div>			
 					<!-- AFFAME & SALE -->					
-					<label class="information width20" title='{{localize "Si le personnage préfère rester affamé et sale, il subira un Désavantage à l'ensemble de ses jets au cours de cette partie, ça vous apprendra à être une pince."}}'>
+					<label class="information width20" data-tooltip='{{localize "Si le personnage préfère rester affamé et sale, il subira un Désavantage à l'ensemble de ses jets au cours de cette partie, ça vous apprendra à être une pince."}}'>
 						<input type="checkbox" name="system.affame-et-sale" {{checked actor.system.affame-et-sale}}> {{localize "Rester affamé et sale"}}
 					</label>
 					<!-- BOUCLIER -->
-					<label class="information width20" title="{{localize 'Un bouclier accorde un Avantage à vos jets de Parade.'}}">
+					<label class="information width20" data-tooltip="{{localize 'Un bouclier accorde un Avantage à vos jets de Parade.'}}">
 						<input class="bouclier" type="checkbox" name="system.bouclier" {{checked actor.system.bouclier}}> {{localize "Protection bouclier"}}&nbsp;<i class="fa fa-shield-alt"></i>
 					</label>
 				</div>
@@ -145,7 +146,11 @@
 				<!-- OBJECTS -->
 				{{> (actorPartial "actor-items") data-type="equipement" data-categorie="objet" items=objets headers=colObjets}}
 			</div>
-			<!-- TALENTS & SORTS -->			
+			<!-- ETATS -->
+			<div class="tab" data-group="primary" data-tab="tabEtats">
+				{{> (actorPartial "actor-items") data-type="etat" data-categorie='etat' items=etats headers=colEtats }}
+			</div>
+			<!-- TALENTS & SORTS -->
 			<div class="tab" data-group="primary" data-tab="tabTalentsSorts">
 				<!-- TALENTS-->
 				{{> (actorPartial "actor-items") data-type="talent" data-categorie=false items=talents headers=colTalents }}

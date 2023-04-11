@@ -30,6 +30,7 @@
 	"ITEM.TypeTalent": "Talent",
 	"ITEM.TypeSort": "Sort",
 	"ITEM.TypeEquipement": "Equipement",
+	"ITEM.TypeEtat": "Etat",
 
 	"ATTRIBUTS.minuscule.nom": "Les attributs",
 	"ATTRIBUT.force.nom": "Force",

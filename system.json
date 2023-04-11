@@ -2,11 +2,12 @@
 	"id": "fleaux",
 	"title": "Fléaux ! ",
 	"description": "Un jeu de rôle écrit par Kobayashi, Direction Artistique EDgarra Studio",
-	"version": "2023.1.1",
+	"version": "2023.2.1",
 	"templateVersion": 1,
 	"authors": [
 		{
 			"name": "Jhenriot alias lemeran81",
+			"email": "lemeran81@free.fr",
 			"flags": {}
 		}
 	],
@@ -30,28 +31,32 @@
 			"label": "Les attributs",
 			"system": "fleaux",
 			"path": "./packs/attributs.db",
-			"type": "Item"
+			"type": "Item",
+			"private": true
 		},
 		{
 			"name": "peuples",
 			"label": "Les peuples",
 			"system": "fleaux",
 			"path": "./packs/peuples.db",
-			"type": "Item"
+			"type": "Item",
+			"private": true
 		},
 		{
 			"name": "crimes",
 			"label": "Les crimes",
 			"system": "fleaux",
 			"path": "./packs/crimes.db",
-			"type": "Item"
+			"type": "Item",
+			"private": true
 		},
 		{
 			"name": "professions",
 			"label": "Les professions",
 			"system": "fleaux",
 			"path": "./packs/professions.db",
-			"type": "Item"
+			"type": "Item",
+			"private": true
 		},
 		{
 			"name": "equipements",
@@ -79,14 +84,16 @@
 			"label": "Tables diverses",
 			"system": "fleaux",
 			"path": "./packs/tables.db",
-			"type": "RollTable"
+			"type": "RollTable",
+			"private": true
 		},
 		{
 			"name": "scenes",
 			"label": "Scènes",
 			"system": "fleaux",
 			"path": "./packs/scenes.db",
-			"type": "Scene"
+			"type": "Scene",
+			"private": true
 		}
 	],
 	"languages": [
@@ -108,6 +115,6 @@
 	"secondaryTokenAttribute": "",
 	"url": "https://gitlab.com/jhen-javascript/rpg-engine/vtt/foundry/v10/distributions/fleaux",
 	"manifest": "https://gitlab.com/jhen-javascript/rpg-engine/vtt/foundry/v10/distributions/fleaux/-/raw/distrib/system.json",
-	"download": "https://gitlab.com/jhen-javascript/rpg-engine/vtt/foundry/v10/distributions/fleaux/-/archive/2023.1.1/fleaux.zip",
+	"download": "https://gitlab.com/jhen-javascript/rpg-engine/vtt/foundry/v10/distributions/fleaux/-/archive/2023.2.1/fleaux.zip",
 	"license": "LICENSE.txt"
 }
