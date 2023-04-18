@@ -1,4 +1,5 @@
 <form class="{{cssClass}}" autocomplete="off" style="height: 250px;">
     {{> (itemPartial "item-header")}}
-    {{> (communPartial "editor-box") libelle= "DESCRIPTION" data = item.system.description data-str ="system.description"}}
+    {{> (itemPartial "item-macro")}}
+	{{> (communPartial "editor-box") libelle= "DESCRIPTION" data = item.system.description data-str ="system.description"}}
 </form>

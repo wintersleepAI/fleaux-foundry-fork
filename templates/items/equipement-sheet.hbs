@@ -69,7 +69,8 @@
 									 affichage-ligne = true
 									 label = "Dés d'usure"
 									 de-usage = "de-usage-equipement"}}
-	<br><br>
+	<br>
+	<br>
 	<!-- l'enchantement d'objet-->
 	<div class="form-group stacked">
 		<!-- enchanté ?-->
@@ -130,6 +131,6 @@
 			</div>
 		</div>
 	</div>
-	<br>
+    {{> (itemPartial "item-macro")}}
 	{{> (communPartial "editor-box") libelle= "DESCRIPTION" data = item.system.description data-str = "system.description"}}
 </form>

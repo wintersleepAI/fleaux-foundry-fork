@@ -12,7 +12,7 @@
 	{{#each items}}
 		<li class="items-list" data-item-id="{{_id}}">
 			<div class="item-image" style="{{../headers.0.style}}">
-				<img src="{{img}}" style="background-color: black;" width="24" height="24"/>
+				<img src="{{img}}" style="background-color: black; filter: drop-shadow(2px 3px 3px black);" width="24" height="24"/>
 				<span style="cursor: pointer;">&nbsp;&nbsp;{{name}}</span>
 			</div>
 			{{#if ../data-categorie}}

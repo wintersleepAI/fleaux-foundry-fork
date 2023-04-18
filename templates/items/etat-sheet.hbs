@@ -19,17 +19,6 @@
 		</select>
 	</div>
 	<br>
-	<!-- actif et macro -->
-	<div class="form-fields" style="display: flex; flex-direction: row-reverse; align-items: center;">
-		<label class="information width30" for="active">
-			<input class="macro-active" id="active" type="checkbox" name="system.macroScript.active" {{checked item.system.macroScript.active}}>{{localize "Activer
-			l'état"}}
-		</label>
-		<div class="macro" data-macro-id="{{item.system.macroScript.idMacro}}" style="display: flex; align-items: center;">
-			<label for="icon">{{localize "Macro"}}</label>&nbsp;
-			<img class="macro-icon" id="icon" src="icons/svg/dice-target.svg" data-tooltip="{{localize 'Editer la macro'}}" style="width: 10%; cursor: pointer;">
-		</div>
-	</div>
-	<br>
+    {{> (itemPartial "item-macro")}}
 	{{> (communPartial "editor-box") libelle= "DESCRIPTION" data = item.system.description data-str="system.description"}}
 </form>

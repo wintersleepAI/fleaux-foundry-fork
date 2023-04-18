@@ -1,7 +1,8 @@
 {
 	"Actor": {
 		"types": [
-			"character"
+			"character",
+			"pnj"
 		],
 		"templates": {
 			"attributs": {
@@ -61,39 +62,49 @@
 					"reussite": 1,
 					"echec": 20
 				}
+			},
+			"character": {
+				"education": null,
+				"accusation": null,
+				"profession1": null,
+				"profession2": null,
+				"de-volonte": {
+					"actuel": "d6",
+					"max": "d6"
+				},
+				"bouclier": false,
+				"affame-et-sale": false,
+				"effetsMordreLaPoussiere": {
+					"eraflure": false,
+					"rateDePeu": false,
+					"handicape": false,
+					"blesse": false,
+					"amoche": false,
+					"mort": false
+				},
+				"de-degats": {
+					"actuel": "d4",
+					"max": "d4"
+				},
+				"de-degats-arme": {
+					"actuel": "d6",
+					"max": "d6"
+				}	
 			}
 		},
 		"character": {
 			"templates": [
 				"actorCommun",
-				"attributs"
-			],
-			"education": null,
-			"accusation": null,
-			"profession1": null,
-			"profession2": null,
-			"de-volonte": {
-				"actuel": "d6",
-				"max": "d6"
-			},
-			"bouclier": false,
-			"affame-et-sale": false,
-			"effetsMordreLaPoussiere": {
-				"eraflure": false,
-				"rateDePeu": false,
-				"handicape": false,
-				"blesse": false,
-				"amoche": false,
-				"mort": false
-			},
-			"de-degats": {
-				"actuel": "d4",
-				"max": "d4"
-			},
-			"de-degats-arme": {
-				"actuel": "d6",
-				"max": "d6"
-			}
+				"attributs", 
+				"character"
+			]
+		}, 
+		"pnj": {
+			"templates": [
+				"actorCommun",
+				"attributs",
+				"character"
+			]
 		}
 	},
 	"Item": {

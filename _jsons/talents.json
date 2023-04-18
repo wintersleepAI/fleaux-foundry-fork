@@ -6,15 +6,7 @@
 		"system": {
 			"typeName": "ITEM.TypeTalent",
 			"description": "TALENT.acharne.description",
-			"reference": "p. 22",
-			"macroScript": {
-				"idMacro": null,
-				"active": false,
-				"parent": {
-					"modifiable": true,
-					"supprimable": true
-				}
-			}
+			"reference": "p. 22"
 		}
 	},
 	{

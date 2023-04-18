@@ -9,10 +9,15 @@ Adapatation du jeux de rôle **Fléaux!** sur **Foundry VTT**.
 <details><summary>Versions</summary>
 
 * **à venir**
-	>	* Implémeter les macros pour les équipements, les talents et les sorts.
 	>	* Mettre en place le système de magie.	
 	>	* Mettre en place le compendium du bestiaire.	
 	>	* Localisation 'fr', 'en' et maintenance corrective.
+
+* **2023.3.1**
+	>	* Implémenter les macros pour les équipements, les talents et les sorts. https://gitlab.com/jhen-javascript/rpg-engine/vtt/foundry/v10/distributions/fleaux/-/issues/1
+	>	* Maintenance corrective :
+			>> - [x] https://gitlab.com/jhen-javascript/rpg-engine/vtt/foundry/v10/distributions/fleaux/-/issues/5
+			>> - [x] https://gitlab.com/jhen-javascript/rpg-engine/vtt/foundry/v10/distributions/fleaux/-/issues/6
 
 * **2023.2.1**
 	>	* Finaliser Se Défendre avec la parade ou l'esquive (page 35).
@@ -43,6 +48,6 @@ Adapatation du jeux de rôle **Fléaux!** sur **Foundry VTT**.
 
 <details><summary>Libs</summary>
 
-* **core-foundry 2023.1.1** 
+* **core-foundry 2023.1.2** 
 
 </details>
