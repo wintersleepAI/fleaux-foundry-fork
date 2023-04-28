@@ -2,7 +2,7 @@
 	"id": "fleaux",
 	"title": "Fléaux ! ",
 	"description": "Un jeu de rôle écrit par Kobayashi, Direction Artistique EDgarra Studio",
-	"version": "2023.3.1",
+	"version": "2023.4.1",
 	"templateVersion": 1,
 	"authors": [
 		{
@@ -115,6 +115,6 @@
 	"secondaryTokenAttribute": "",
 	"url": "https://gitlab.com/jhen-javascript/rpg-engine/vtt/foundry/v10/distributions/fleaux",
 	"manifest": "https://gitlab.com/jhen-javascript/rpg-engine/vtt/foundry/v10/distributions/fleaux/-/raw/distrib/system.json",
-	"download": "https://gitlab.com/jhen-javascript/rpg-engine/vtt/foundry/v10/distributions/fleaux/-/archive/2023.3.1/fleaux.zip",
+	"download": "https://gitlab.com/jhen-javascript/rpg-engine/vtt/foundry/v10/distributions/fleaux/-/archive/2023.4.1/fleaux.zip",
 	"license": "LICENSE.txt"
 }

@@ -420,7 +420,7 @@
 	"DIALOGUE.calculerPrixEquipement.contenu": "<p><i class='fa fa-coins'></i>&nbsp;Do you want to deduct the price of the <b>{nom}</b> equipment from your wealth?</p>",
 
 	"NOTIFICATION.reposcourt.info": "{nom} has just recovered {pvArecuperer} life points.",
-	"NOTIFICATION.reposlong.info": "{nom} has just recovered all his hit points and his willpower die.",
+	"NOTIFICATION.reposlong.info": "{nom} has just recovered all his hit points, his states and his willpower die.",
 	"NOTIFICATION.calculerPrixEquipement.info": "Your wealth is not enough!",
 	"NOTIFICATION.mourir.info": "{nom} has just died.",
 	"NOTIFICATION.pionsansscene.avertissement": "{nom} do not have a pawn in a scene.",

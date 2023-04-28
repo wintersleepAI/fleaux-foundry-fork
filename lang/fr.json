@@ -420,7 +420,7 @@
 	"DIALOGUE.calculerPrixEquipement.contenu": "<p><i class='fa fa-coins'></i>&nbsp;Voulez-vous déduire le prix de l'équipement <b>{nom}</b> de votre fortune ?</p>",
 
 	"NOTIFICATION.reposcourt.info": "{nom} vient de récupérer {pvArecuperer} points de vie.",
-	"NOTIFICATION.reposlong.info": "{nom} vient de récupérer tous ces points de vie et son dé de volonté.",
+	"NOTIFICATION.reposlong.info": "{nom} vient de récupérer tous ces points de vie, ses états et son dé de volonté.",
 	"NOTIFICATION.calculerPrixEquipement.info": "Votre fortune n'est pas suffisante !!!",
 	"NOTIFICATION.mourir.info": "{nom} vient de mourir.",
 	"NOTIFICATION.pionsansscene.avertissement": "{nom} n'as pas de pion dans une scène.",

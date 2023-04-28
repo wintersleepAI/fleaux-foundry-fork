@@ -89,7 +89,19 @@
 				"de-degats-arme": {
 					"actuel": "d6",
 					"max": "d6"
-				}	
+				},
+				"sorcellerie": {
+					"dernierSortLance": {
+						"sort": null,
+						"resultatDesVolonte": null
+					},
+					"effetsRevancheDuChaos": {
+						"reduitAuSilence" : false,
+						"arrongance": false,
+						"espritConsume": false,
+						"autreDimension": false
+					}
+				}
 			}
 		},
 		"character": {

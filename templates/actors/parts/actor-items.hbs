@@ -19,8 +19,29 @@
 				{{>(itemsActorPartial ../data-categorie) item=this headers=../headers }}
 			{{/if}} 
 			<div class="item-controls" style="flex: 1; text-align: center;">
-				{{#if (etatEstModifiable system.macroScript.parent.modifiable) }}<a class="item-control item-edit" data-tooltip="{{localize "Editer"}}"><i class="fas fa-edit"></i></a>{{/if}}
-				{{#if (etatEstsupprimable system.macroScript.parent.supprimable) }}<a class="item-control item-delete" data-tooltip="{{localize "Supprimer"}}"><i class="fas fa-trash"></i></a>{{/if}}
+				{{#if (eq type "sort") }}
+					{{#if ./actor.system.sorcellerie.effetsRevancheDuChaos.reduitAuSilence}}
+						<i class="fas fa-dice" style="color: lightgrey;"></i>
+					{{else}}
+						<a class="roll-des-usage" data-tooltip="{{localize "Lancer le sort" }}" data-de-usage="de-volonte" data-title="{{localize 'FLEAUX.libelle.de-volonte'}}">
+							<i class="fas fa-dice" style="color: #820912;"></i>
+						</a>					
+					{{/if}}
+				{{/if}}
+				{{#if (etatEstModifiable system.macroScript.parent.modifiable) }}
+					<a class="item-control item-edit" data-tooltip="{{localize "Editer"}}">
+						<i class="fas fa-edit"></i>
+					</a>
+				{{else}}
+						<i class="fas fa-edit" style="color: lightgrey;"></i>
+				{{/if}}
+				{{#if (etatEstsupprimable system.macroScript.parent.supprimable) }}
+					<a class="item-control item-delete" data-tooltip="{{localize "Supprimer"}}">
+						<i class="fas fa-trash"></i>
+					</a>
+				{{else}}
+						<i class="fas fa-trash" style="color: lightgrey;"></i>
+				{{/if}}
 			</div>
 		</li>
 	{{/each}}

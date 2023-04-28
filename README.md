@@ -9,8 +9,13 @@ Adapatation du jeux de rôle **Fléaux!** sur **Foundry VTT**.
 <details><summary>Versions</summary>
 
 * **à venir**
-	>	* Mettre en place le système de magie.	
-	>	* Mettre en place le compendium du bestiaire.	
+	>	* Compléter la saisie du compendium des sorts.
+	>	* Mettre en place le compendium du bestiaire.
+	>	* Mettre en place le système de progression avec la gestion de l'expérience.
+	>	* Localisation 'fr', 'en' et maintenance corrective.
+
+* **2023.4.1**
+	>	* Mettre en place le système de magie. https://gitlab.com/jhen-javascript/rpg-engine/vtt/foundry/v10/distributions/fleaux/-/issues/2
 	>	* Localisation 'fr', 'en' et maintenance corrective.
 
 * **2023.3.1**
