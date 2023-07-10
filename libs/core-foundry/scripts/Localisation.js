@@ -6,7 +6,7 @@ const Res = await import("../../" + system.id + "/scripts/Ressources.mjs")
 //#endregion
 /**
  * @class Localisation
- * @classdesc intègre le système de localisation du core-rpg dans la classe foundry.Localization
+ * @classdesc Intègre le système de localisation du core-rpg dans la classe foundry.Localization
  * @extends foundry.Localization
  */
 export class Localisation extends Localization {
@@ -15,6 +15,19 @@ export class Localisation extends Localization {
 	//#endregion
 
 	//#region méthodes
+	/**
+	 * @method initialiser
+	 * @description Initialise les nouvelles valeurs de langue et de module. Est à appeller dans le hook ready.
+	 * @example déclaration de l'objet 		-> Game.i18n = new Localisation();
+	 * 			Initialisation de la config	-> Game.i18n.initialiser(Configuration);
+	 */
+	initialiser(configuration = null) {
+		this.lang = game?.i18n.lang;
+		this.defaultModule = game?.i18n.defaultModule;
+		this.configuration = configuration;
+		this.configuration.Langue = game?.i18n.lang
+		Handlebars.registerHelper('localiser', function (stringId) { return Game?.i18n.localize(stringId, null, Game?.i18n.lang); });			
+	}
 	/**
 	 * @override
 	 * @example Localizing a simple string in JavaScript

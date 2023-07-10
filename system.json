@@ -2,7 +2,7 @@
 	"id": "fleaux",
 	"title": "Fléaux ! ",
 	"description": "Un jeu de rôle écrit par Kobayashi, Direction Artistique EDgarra Studio",
-	"version": "2023.4.1",
+	"version": "2023.5.1",
 	"templateVersion": 1,
 	"authors": [
 		{
@@ -12,9 +12,9 @@
 		}
 	],
 	"compatibility": {
-		"minimum": "10",
-		"verified": "10",
-		"maximum": "10"
+		"minimum": "11",
+		"verified": "11",
+		"maximum": "11"
 	  },    
 	"esmodules": [
 		"fleaux.js"
@@ -31,32 +31,28 @@
 			"label": "Les attributs",
 			"system": "fleaux",
 			"path": "./packs/attributs.db",
-			"type": "Item",
-			"private": true
+			"type": "Item"
 		},
 		{
 			"name": "peuples",
 			"label": "Les peuples",
 			"system": "fleaux",
 			"path": "./packs/peuples.db",
-			"type": "Item",
-			"private": true
+			"type": "Item"
 		},
 		{
 			"name": "crimes",
 			"label": "Les crimes",
 			"system": "fleaux",
 			"path": "./packs/crimes.db",
-			"type": "Item",
-			"private": true
+			"type": "Item"
 		},
 		{
 			"name": "professions",
 			"label": "Les professions",
 			"system": "fleaux",
 			"path": "./packs/professions.db",
-			"type": "Item",
-			"private": true
+			"type": "Item"
 		},
 		{
 			"name": "equipements",
@@ -84,16 +80,14 @@
 			"label": "Tables diverses",
 			"system": "fleaux",
 			"path": "./packs/tables.db",
-			"type": "RollTable",
-			"private": true
+			"type": "RollTable"
 		},
 		{
 			"name": "scenes",
 			"label": "Scènes",
 			"system": "fleaux",
 			"path": "./packs/scenes.db",
-			"type": "Scene",
-			"private": true
+			"type": "Scene"
 		}
 	],
 	"languages": [
@@ -113,8 +107,8 @@
 	"gridUnits": "mt",
 	"primaryTokenAttribute": "attributes.pv",
 	"secondaryTokenAttribute": "",
-	"url": "https://gitlab.com/jhen-javascript/rpg-engine/vtt/foundry/v10/distributions/fleaux",
-	"manifest": "https://gitlab.com/jhen-javascript/rpg-engine/vtt/foundry/v10/distributions/fleaux/-/raw/distrib/system.json",
-	"download": "https://gitlab.com/jhen-javascript/rpg-engine/vtt/foundry/v10/distributions/fleaux/-/archive/2023.4.1/fleaux.zip",
+	"url": "https://gitlab.com/jhen-javascript/rpg-engine/vtt/foundry/distributions/fleaux",
+	"manifest": "https://gitlab.com/jhen-javascript/rpg-engine/vtt/foundry/distributions/fleaux/-/raw/distrib/system.json",
+	"download": "https://gitlab.com/jhen-javascript/rpg-engine/vtt/foundry/distributions/fleaux/-/archive/2023.5.1/fleaux.zip",
 	"license": "LICENSE.txt"
 }

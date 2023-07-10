@@ -566,16 +566,20 @@ textarea:read-only {
 	background: #820912;
 	border: none;
 }
-.roll-table-config ol.table-results .table-result .result-range {
+.roll-table-config table.table-results .table-result .result-image {
+	margin-right: 3px;
+	margin-top: 3px;
+}
+.roll-table-config table.table-results .table-result .result-range {
 	flex: 0 0 94px;
 }
-.roll-table-config ol.table-results .table-result .result-controls {
+.roll-table-config table.table-results .table-result .result-controls {
 	flex: 0 0 45px;
 }
-.roll-table-config ol.table-results .table-result .result-details .result-target {
+.roll-table-config table.table-results .table-result .result-details .result-target {
 	width: 55%;
 }
-.roll-table-config ol.table-results .table-result .result-type {
+.roll-table-config table.table-results .table-result .result-type {
 	flex: 0 0 115px;
 }
 .table-result .result-image {

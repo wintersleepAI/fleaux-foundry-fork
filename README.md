@@ -2,6 +2,8 @@
 
 Adapatation du jeux de rôle **Fléaux!** sur **Foundry VTT**.
 
+Pour pouvoir profiter du système dans les meilleures conditions, il vous faut mettre en place une grille sur vos scènes, cela permet de calculer automatiquement les distances pour certaines actions.
+
 ---
 > **Important** : Le système fonctionne seulement sur les navigateurs **Chrome** et **Edge**. Les tests sur **Firefox** ne sont pas concluant.
 ---
@@ -13,6 +15,10 @@ Adapatation du jeux de rôle **Fléaux!** sur **Foundry VTT**.
 	>	* Mettre en place le compendium du bestiaire.
 	>	* Mettre en place le système de progression avec la gestion de l'expérience.
 	>	* Localisation 'fr', 'en' et maintenance corrective.
+
+* **2023.5.1**
+	>	* Passage Foundry v10 -> v11
+	> 	* Correction des distances adjacentes
 
 * **2023.4.1**
 	>	* Mettre en place le système de magie. https://gitlab.com/jhen-javascript/rpg-engine/vtt/foundry/v10/distributions/fleaux/-/issues/2

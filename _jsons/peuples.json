@@ -4,7 +4,7 @@
 		"img": "/systems/fleaux/images/system/peuples/elfe.webp",
 		"name": "PEUPLE.elfe.nom",
 		"system": {
-			"typeName": "ITEM.TypePeuple",
+			"typeName": "TYPES.Item.peuple",
 			"description": "PEUPLE.elfe.description",
 			"reference": "p. 14",
 			"educations": [
@@ -53,7 +53,7 @@
 		"img": "/systems/fleaux/images/system/peuples/halfling.webp",
 		"name": "PEUPLE.halfling.nom",
 		"system": {
-			"typeName": "ITEM.TypePeuple",
+			"typeName": "TYPES.Item.peuple",
 			"description": "PEUPLE.halfling.description",
 			"reference": "p. 14",
 			"educations": [
@@ -102,7 +102,7 @@
 		"img": "/systems/fleaux/images/system/peuples/humain.webp",
 		"name": "PEUPLE.humain.nom",
 		"system": {
-			"typeName": "ITEM.TypePeuple",
+			"typeName": "TYPES.Item.peuple",
 			"description": "PEUPLE.humain.description",
 			"reference": "p. 14",
 			"educations": [
@@ -151,7 +151,7 @@
 		"img": "/systems/fleaux/images/system/peuples/nain.webp",
 		"name": "PEUPLE.nain.nom",
 		"system": {
-			"typeName": "ITEM.TypePeuple",
+			"typeName": "TYPES.Item.peuple",
 			"description": "PEUPLE.nain.description",
 			"reference": "p. 14",
 			"educations": [
@@ -200,7 +200,7 @@
 		"img": "/systems/fleaux/images/system/peuples/gobelin.webp",
 		"name": "PEUPLE.gobelin.nom",
 		"system": {
-			"typeName": "ITEM.TypePeuple",
+			"typeName": "TYPES.Item.peuple",
 			"description": "PEUPLE.gobelin.description",
 			"reference": "p. 15",
 			"educations": [
@@ -249,7 +249,7 @@
 		"img": "/systems/fleaux/images/system/peuples/ogre.webp",
 		"name": "PEUPLE.ogre.nom",
 		"system": {
-			"typeName": "ITEM.TypePeuple",
+			"typeName": "TYPES.Item.peuple",
 			"description": "PEUPLE.ogre.description",
 			"reference": "p. 15",
 			"educations": [

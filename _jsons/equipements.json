@@ -4,7 +4,7 @@
 		"type":"equipement",
 		"img": "/systems/fleaux/images/system/equipements/gantelet-metallique.webp",
 		"system": {
-			"typeName": "ITEM.TypeAttribut",
+			"typeName": "TYPES.Item.equipement",
 			"description": "EQUIPEMENT.gantelet-metallique.description",
 			"reference":"p. 26-27",
 			"categorie":"arme",
@@ -23,7 +23,7 @@
 		"type":"equipement",
 		"img": "/systems/fleaux/images/system/equipements/epee.webp",
 		"system": {
-			"typeName": "ITEM.TypeAttribut",
+			"typeName": "TYPES.Item.equipement",
 			"description": "EQUIPEMENT.epee.description",
 			"reference":"p. 26-27",
 			"categorie":"arme",
@@ -42,7 +42,7 @@
 		"type": "equipement",
 		"img": "/systems/fleaux/images/system/equipements/masse.webp",
 		"system": {
-			"typeName": "ITEM.TypeAttribut",
+			"typeName": "TYPES.Item.equipement",
 			"description": "EQUIPEMENT.masse.description",
 			"reference":"p. 26-27",
 			"categorie": "arme",
@@ -61,7 +61,7 @@
 		"type": "equipement",
 		"img": "/systems/fleaux/images/system/equipements/claymore.webp",
 		"system": {
-			"typeName": "ITEM.TypeAttribut",
+			"typeName": "TYPES.Item.equipement",
 			"description": "EQUIPEMENT.claymore.description",
 			"reference":"p. 26-27",
 			"categorie": "arme",
@@ -80,7 +80,7 @@
 		"type": "equipement",
 		"img": "/systems/fleaux/images/system/equipements/pioche.webp",
 		"system": {
-			"typeName": "ITEM.TypeAttribut",
+			"typeName": "TYPES.Item.equipement",
 			"description": "EQUIPEMENT.pioche.description",
 			"reference":"p. 26-27",
 			"categorie": "arme",
@@ -99,7 +99,7 @@
 		"type": "equipement",
 		"img": "/systems/fleaux/images/system/equipements/couteau.webp",
 		"system": {
-			"typeName": "ITEM.TypeAttribut",
+			"typeName": "TYPES.Item.equipement",
 			"description": "EQUIPEMENT.couteau.description",
 			"reference":"p. 26-27",
 			"categorie": "arme",
@@ -118,7 +118,7 @@
 		"type": "equipement",
 		"img": "/systems/fleaux/images/system/equipements/lance.webp",
 		"system": {
-			"typeName": "ITEM.TypeAttribut",
+			"typeName": "TYPES.Item.equipement",
 			"description": "EQUIPEMENT.lance.description",
 			"reference":"p. 26-27",
 			"categorie": "arme",
@@ -137,7 +137,7 @@
 		"type": "equipement",
 		"img": "/systems/fleaux/images/system/equipements/serpe.webp",
 		"system": {
-			"typeName": "ITEM.TypeAttribut",
+			"typeName": "TYPES.Item.equipement",
 			"description": "EQUIPEMENT.serpe.description",
 			"reference": "p. 26-27",
 			"categorie": "arme",
@@ -156,7 +156,7 @@
 		"type": "equipement",
 		"img": "systems/fleaux/images/system/equipements/baton-ferre.webp",
 		"system": {
-			"typeName": "ITEM.TypeAttribut",
+			"typeName": "TYPES.Item.equipement",
 			"description": "EQUIPEMENT.baton-ferre.description",
 			"reference":"p. 26-27",
 			"categorie": "arme",
@@ -175,7 +175,7 @@
 		"type": "equipement",
 		"img": "/systems/fleaux/images/system/equipements/fleau.webp",
 		"system": {
-			"typeName": "ITEM.TypeAttribut",
+			"typeName": "TYPES.Item.equipement",
 			"description": "EQUIPEMENT.fleau.description",
 			"reference":"p. 26-27",
 			"categorie": "arme",
@@ -194,7 +194,7 @@
 		"type": "equipement",
 		"img": "systems/fleaux/images/system/equipements/arbalete.webp",
 		"system": {
-			"typeName": "ITEM.TypeAttribut",
+			"typeName": "TYPES.Item.equipement",
 			"description": "EQUIPEMENT.arbalete.description",
 			"reference":"p. 26-27",
 			"categorie": "arme",
@@ -213,7 +213,7 @@
 		"type": "equipement",
 		"img": "/systems/fleaux/images/system/equipements/pelle.webp",
 		"system": {
-			"typeName": "ITEM.TypeAttribut",
+			"typeName": "TYPES.Item.equipement",
 			"description": "EQUIPEMENT.pelle.description",
 			"reference":"p. 26-27",
 			"categorie": "arme",
@@ -232,7 +232,7 @@
 		"type": "equipement",
 		"img": "/systems/fleaux/images/system/equipements/hachoir.webp",
 		"system": {
-			"typeName": "ITEM.TypeAttribut",
+			"typeName": "TYPES.Item.equipement",
 			"description": "EQUIPEMENT.hachoir.description",
 			"reference":"p. 26-27",
 			"categorie": "arme",
@@ -251,7 +251,7 @@
 		"type": "equipement",
 		"img": "/systems/fleaux/images/system/equipements/fronde.webp",
 		"system": {
-			"typeName": "ITEM.TypeAttribut",
+			"typeName": "TYPES.Item.equipement",
 			"description": "EQUIPEMENT.fronde.description",
 			"reference":"p. 26-27",
 			"categorie": "arme",
@@ -270,7 +270,7 @@
 		"type": "equipement",
 		"img": "/systems/fleaux/images/system/equipements/dague.webp",
 		"system": {
-			"typeName": "ITEM.TypeAttribut",
+			"typeName": "TYPES.Item.equipement",
 			"description": "EQUIPEMENT.dague.description",
 			"reference":"p. 26-27",
 			"categorie": "arme",
@@ -289,7 +289,7 @@
 		"type": "equipement",
 		"img": "/systems/fleaux/images/system/equipements/hache.webp",
 		"system": {
-			"typeName": "ITEM.TypeAttribut",
+			"typeName": "TYPES.Item.equipement",
 			"description": "EQUIPEMENT.hache.description",
 			"reference":"p. 26-27",
 			"categorie": "arme",
@@ -308,7 +308,7 @@
 		"type": "equipement",
 		"img": "/systems/fleaux/images/system/equipements/hache-bataille.webp",
 		"system": {
-			"typeName": "ITEM.TypeAttribut",
+			"typeName": "TYPES.Item.equipement",
 			"description": "EQUIPEMENT.hache-bataille.description",
 			"reference":"p. 26-27",
 			"categorie": "arme",
@@ -327,7 +327,7 @@
 		"type": "equipement",
 		"img": "systems/fleaux/images/system/equipements/arc.webp",
 		"system": {
-			"typeName": "ITEM.TypeAttribut",
+			"typeName": "TYPES.Item.equipement",
 			"description": "EQUIPEMENT.arc.description",
 			"reference":"p. 26-27",
 			"categorie": "arme",
@@ -346,7 +346,7 @@
 		"type": "equipement",
 		"img": "/systems/fleaux/images/system/equipements/epee-batarde.webp",
 		"system": {
-			"typeName": "ITEM.TypeAttribut",
+			"typeName": "TYPES.Item.equipement",
 			"description": "EQUIPEMENT.epee-batarde.description",
 			"reference":"p. 26-27",
 			"categorie": "arme",
@@ -365,7 +365,7 @@
 		"type": "equipement",
 		"img": "/systems/fleaux/images/system/equipements/marteau-guerre.webp",
 		"system": {
-			"typeName": "ITEM.TypeAttribut",
+			"typeName": "TYPES.Item.equipement",
 			"description": "EQUIPEMENT.marteau-guerre.description",
 			"reference":"p. 26-27",
 			"categorie": "arme",
@@ -384,7 +384,7 @@
 		"type": "equipement",
 		"img": "/systems/fleaux/images/system/equipements/armurelegere.webp",
 		"system": {
-			"typeName": "ITEM.TypeAttribut",
+			"typeName": "TYPES.Item.equipement",
 			"description": "EQUIPEMENT.armurelegere.description",
 			"reference":"p. 26-27",
 			"categorie": "armure",
@@ -403,7 +403,7 @@
 		"type": "equipement",
 		"img": "/systems/fleaux/images/system/equipements/armurelourde.webp",
 		"system": {
-			"typeName": "ITEM.TypeAttribut",
+			"typeName": "TYPES.Item.equipement",
 			"description": "EQUIPEMENT.armurelourde.description",
 			"reference":"p. 26-27",
 			"categorie": "armure",
@@ -422,7 +422,7 @@
 		"type": "equipement",
 		"img": "/systems/fleaux/images/system/equipements/corde.webp",
 		"system": {
-			"typeName": "ITEM.TypeAttribut",
+			"typeName": "TYPES.Item.equipement",
 			"description": "EQUIPEMENT.corde.description",
 			"reference":"p. 26-27",
 			"categorie": "objet",
@@ -441,7 +441,7 @@
 		"type": "equipement",
 		"img": "/systems/fleaux/images/system/equipements/flasquehuile.webp",
 		"system": {
-			"typeName": "ITEM.TypeAttribut",
+			"typeName": "TYPES.Item.equipement",
 			"description": "EQUIPEMENT.flasquehuile.description",
 			"reference":"p. 26-27",
 			"categorie": "objet",
@@ -460,7 +460,7 @@
 		"type": "equipement",
 		"img": "/systems/fleaux/images/system/equipements/grappin.webp",
 		"system": {
-			"typeName": "ITEM.TypeAttribut",
+			"typeName": "TYPES.Item.equipement",
 			"description": "EQUIPEMENT.grappin.description",
 			"reference":"p. 26-27",
 			"categorie": "objet",
@@ -479,7 +479,7 @@
 		"type": "equipement",
 		"img": "/systems/fleaux/images/system/equipements/miroir.webp",
 		"system": {
-			"typeName": "ITEM.TypeAttribut",
+			"typeName": "TYPES.Item.equipement",
 			"description": "EQUIPEMENT.miroir.description",
 			"reference":"p. 26-27",
 			"categorie": "objet",
@@ -498,7 +498,7 @@
 		"type": "equipement",
 		"img": "/systems/fleaux/images/system/equipements/outre.webp",
 		"system": {
-			"typeName": "ITEM.TypeAttribut",
+			"typeName": "TYPES.Item.equipement",
 			"description": "EQUIPEMENT.outre.description",
 			"reference":"p. 26-27",
 			"categorie": "objet",
@@ -517,7 +517,7 @@
 		"type": "equipement",
 		"img": "/systems/fleaux/images/system/equipements/parchemin.webp",
 		"system": {
-			"typeName": "ITEM.TypeAttribut",
+			"typeName": "TYPES.Item.equipement",
 			"description": "EQUIPEMENT.parchemin.description",
 			"reference":"p. 26-27",
 			"categorie": "objet",
@@ -536,7 +536,7 @@
 		"type": "equipement",
 		"img": "/systems/fleaux/images/system/equipements/pieux.webp",
 		"system": {
-			"typeName": "ITEM.TypeAttribut",
+			"typeName": "TYPES.Item.equipement",
 			"description": "EQUIPEMENT.pieux.description",
 			"reference":"p. 26-27",
 			"categorie": "objet",
@@ -555,7 +555,7 @@
 		"type": "equipement",
 		"img": "/systems/fleaux/images/system/equipements/rations.webp",
 		"system": {
-			"typeName": "ITEM.TypeAttribut",
+			"typeName": "TYPES.Item.equipement",
 			"description": "EQUIPEMENT.rations.description",
 			"reference":"p. 26-27",
 			"categorie": "objet",
@@ -574,7 +574,7 @@
 		"type": "equipement",
 		"img": "/systems/fleaux/images/system/equipements/sacados.webp",
 		"system": {
-			"typeName": "ITEM.TypeAttribut",
+			"typeName": "TYPES.Item.equipement",
 			"description": "EQUIPEMENT.sacados.description",
 			"reference":"p. 26-27",
 			"categorie": "objet",
@@ -593,7 +593,7 @@
 		"type": "equipement",
 		"img": "/systems/fleaux/images/system/equipements/sifflet.webp",
 		"system": {
-			"typeName": "ITEM.TypeAttribut",
+			"typeName": "TYPES.Item.equipement",
 			"description": "EQUIPEMENT.sifflet.description",
 			"reference":"p. 26-27",
 			"categorie": "objet",
@@ -612,7 +612,7 @@
 		"type": "equipement",
 		"img": "/systems/fleaux/images/system/equipements/vetementspouilleux.webp",
 		"system": {
-			"typeName": "ITEM.TypeAttribut",
+			"typeName": "TYPES.Item.equipement",
 			"description": "EQUIPEMENT.vetementspouilleux.description",
 			"reference":"p. 26-27",
 			"categorie": "armure",
@@ -631,7 +631,7 @@
 		"type": "equipement",
 		"img": "/systems/fleaux/images/system/equipements/boiteetanche.webp",
 		"system": {
-			"typeName": "ITEM.TypeAttribut",
+			"typeName": "TYPES.Item.equipement",
 			"description": "EQUIPEMENT.boiteetanche.description",
 			"reference":"p. 26-27",
 			"categorie": "objet",
@@ -650,7 +650,7 @@
 		"type": "equipement",
 		"img": "/systems/fleaux/images/system/equipements/bottes.webp",
 		"system": {
-			"typeName": "ITEM.TypeAttribut",
+			"typeName": "TYPES.Item.equipement",
 			"description": "EQUIPEMENT.bottes.description",
 			"reference":"p. 26-27",
 			"categorie": "armure",
@@ -669,7 +669,7 @@
 		"type": "equipement",
 		"img": "/systems/fleaux/images/system/equipements/chausses-trappes.webp",
 		"system": {
-			"typeName": "ITEM.TypeAttribut",
+			"typeName": "TYPES.Item.equipement",
 			"description": "EQUIPEMENT.chausses-trappes.description",
 			"reference":"p. 26-27",
 			"categorie": "objet",
@@ -688,7 +688,7 @@
 		"type": "equipement",
 		"img": "/systems/fleaux/images/system/equipements/droguespoissons.webp",
 		"system": {
-			"typeName": "ITEM.TypeAttribut",
+			"typeName": "TYPES.Item.equipement",
 			"description": "EQUIPEMENT.droguespoissons.description",
 			"reference":"p. 26-27",
 			"categorie": "objet",
@@ -707,7 +707,7 @@
 		"type": "equipement",
 		"img": "/systems/fleaux/images/system/equipements/fioleeaubenite.webp",
 		"system": {
-			"typeName": "ITEM.TypeAttribut",
+			"typeName": "TYPES.Item.equipement",
 			"description": "EQUIPEMENT.fioleeaubenite.description",
 			"reference":"p. 26-27",
 			"categorie": "objet",
@@ -726,7 +726,7 @@
 		"type": "equipement",
 		"img": "/systems/fleaux/images/system/equipements/lanterne.webp",
 		"system": {
-			"typeName": "ITEM.TypeAttribut",
+			"typeName": "TYPES.Item.equipement",
 			"description": "EQUIPEMENT.lanterne.description",
 			"reference":"p. 26-27",
 			"categorie": "objet",
@@ -745,7 +745,7 @@
 		"type": "equipement",
 		"img": "/systems/fleaux/images/system/equipements/longue-vue.webp",
 		"system": {
-			"typeName": "ITEM.TypeAttribut",
+			"typeName": "TYPES.Item.equipement",
 			"description": "EQUIPEMENT.longue-vue.description",
 			"reference":"p. 26-27",
 			"categorie": "objet",
@@ -764,7 +764,7 @@
 		"type": "equipement",
 		"img": "/systems/fleaux/images/system/equipements/instrumentmusique.webp",
 		"system": {
-			"typeName": "ITEM.TypeAttribut",
+			"typeName": "TYPES.Item.equipement",
 			"description": "EQUIPEMENT.instrumentmusique.description",
 			"reference":"p. 26-27",
 			"categorie": "objet",
@@ -783,7 +783,7 @@
 		"type": "equipement",
 		"img": "/systems/fleaux/images/system/equipements/piedbiche.webp",
 		"system": {
-			"typeName": "ITEM.TypeAttribut",
+			"typeName": "TYPES.Item.equipement",
 			"description": "EQUIPEMENT.piedbiche.description",
 			"reference":"p. 26-27",
 			"categorie": "objet",
@@ -802,7 +802,7 @@
 		"type": "equipement",
 		"img": "/systems/fleaux/images/system/equipements/fontes.webp",
 		"system": {
-			"typeName": "ITEM.TypeAttribut",
+			"typeName": "TYPES.Item.equipement",
 			"description": "EQUIPEMENT.fontes.description",
 			"reference":"p. 26-27",
 			"categorie": "objet",
@@ -821,7 +821,7 @@
 		"type": "equipement",
 		"img": "/systems/fleaux/images/system/equipements/tente.webp",
 		"system": {
-			"typeName": "ITEM.TypeAttribut",
+			"typeName": "TYPES.Item.equipement",
 			"description": "EQUIPEMENT.tente.description",
 			"reference":"p. 26-27",
 			"categorie": "objet",
@@ -840,7 +840,7 @@
 		"type": "equipement",
 		"img": "/systems/fleaux/images/system/equipements/ballespoudre.webp",
 		"system": {
-			"typeName": "ITEM.TypeAttribut",
+			"typeName": "TYPES.Item.equipement",
 			"description": "EQUIPEMENT.ballespoudre.description",
 			"reference":"p. 26-27",
 			"categorie": "objet",
@@ -859,7 +859,7 @@
 		"type": "equipement",
 		"img": "/systems/fleaux/images/system/equipements/vetementchic.webp",
 		"system": {
-			"typeName": "ITEM.TypeAttribut",
+			"typeName": "TYPES.Item.equipement",
 			"description": "EQUIPEMENT.vetementchic.description",
 			"reference":"p. 26-27",
 			"categorie": "armure",
@@ -878,7 +878,7 @@
 		"type": "equipement",
 		"img": "/systems/fleaux/images/system/equipements/charette.webp",
 		"system": {
-			"typeName": "ITEM.TypeAttribut",
+			"typeName": "TYPES.Item.equipement",
 			"description": "EQUIPEMENT.charette.description",
 			"reference":"p. 26-27",
 			"categorie": "objet",
@@ -897,7 +897,7 @@
 		"type": "equipement",
 		"img": "/systems/fleaux/images/system/equipements/cheval.webp",
 		"system": {
-			"typeName": "ITEM.TypeAttribut",
+			"typeName": "TYPES.Item.equipement",
 			"description": "EQUIPEMENT.cheval.description",
 			"reference":"p. 26-27",
 			"categorie": "objet",
@@ -916,7 +916,7 @@
 		"type": "equipement",
 		"img": "/systems/fleaux/images/system/equipements/gemme.webp",
 		"system": {
-			"typeName": "ITEM.TypeAttribut",
+			"typeName": "TYPES.Item.equipement",
 			"description": "EQUIPEMENT.gemme.description",
 			"reference":"p. 26-27",
 			"categorie": "objet",

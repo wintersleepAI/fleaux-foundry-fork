@@ -4,7 +4,7 @@
 		"img": "/systems/fleaux/images/system/professions/violence.webp",
 		"name": "PROFESSION.violence.nom",
 		"system": {
-			"typeName": "ITEM.TypeProfession",
+			"typeName": "TYPES.Item.profession",
 			"description": "PROFESSION.violence.description",
 			"reference": "p. 19",
 			"professions": [
@@ -59,7 +59,7 @@
 		"img": "/systems/fleaux/images/system/professions/isolement.webp",
 		"name": "PROFESSION.isolement.nom",
 		"system": {
-			"typeName": "ITEM.TypeProfession",
+			"typeName": "TYPES.Item.profession",
 			"description": "PROFESSION.isolement.description",
 			"reference": "p. 18",
 			"professions": [
@@ -114,7 +114,7 @@
 		"img": "/systems/fleaux/images/system/professions/debrouillardise.webp",
 		"name": "PROFESSION.debrouillardise.nom",
 		"system": {
-			"typeName": "ITEM.TypeProfession",
+			"typeName": "TYPES.Item.profession",
 			"description": "PROFESSION.debrouillardise.description",
 			"reference": "p. 18",
 			"professions": [
@@ -169,7 +169,7 @@
 		"img": "/systems/fleaux/images/system/professions/erudition.webp",
 		"name": "PROFESSION.erudition.nom",
 		"system": {
-			"typeName": "ITEM.TypeProfession",
+			"typeName": "TYPES.Item.profession",
 			"description": "PROFESSION.erudition.description",
 			"reference": "p. 19",
 			"professions": [

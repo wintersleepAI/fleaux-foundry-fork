@@ -9,7 +9,7 @@
 	}}
 </div>
 <div style="{{style-equipe}}">
-	{{#if (booleenNonNul system.equipe) }}
+	{{#if (peutEtreEquipable system) }}
 		<i class="fa fa-user-shield" data-tooltip="{{#if system.equipe}}Déséquiper{{else}}Équiper{{/if}}" style="color: {{#if system.equipe}} black {{else}} lightgrey {{/if}};"></i>
 	{{/if}}
 </div>

@@ -4,7 +4,7 @@
 		"img": "/systems/fleaux/images/system/crimes/crime-de-base.webp",
 		"name": "CRIME.crime-de-base.nom",
 		"system": {
-			"typeName": "ITEM.TypeCrime",
+			"typeName": "TYPES.Item.crime",
 			"description": "CRIME.crime-de-base.description",
 			"reference": "p. 17",
 			"accusations": [
