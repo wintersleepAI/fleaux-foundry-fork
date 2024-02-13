@@ -2,7 +2,8 @@
 	"Actor": {
 		"types": [
 			"character",
-			"pnj"
+			"pnj",
+			"creature"
 		],
 		"templates": {
 			"attributs": {
@@ -117,6 +118,19 @@
 				"attributs",
 				"character"
 			]
+		},
+		"creature": {
+			"typeName": "BESTIAIRE.TypeBestiaire",
+            "niveau": 1,
+			"description": "",
+			"attributes": {
+				"pv": {
+					"value": 5,
+					"max": 5
+				}
+			},
+            "actions": [],
+            "reference": ""
 		}
 	},
 	"Item": {

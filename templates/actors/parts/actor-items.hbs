@@ -5,7 +5,7 @@
 		{{/each}}
 		<div class="item-controls" style="flex: 1; text-align: left;">
 			<a class="item-control item-create" data-type="{{data-type}}" data-categorie="{{data-categorie}}">
-				<i class="fas fa-plus"></i>&nbsp;{{localize 'Créer'}}&nbsp;&nbsp;
+				<i class="fas fa-plus"></i>&nbsp;{{localize 'FORMULAIRE.commun.libelle.creer'}}&nbsp;&nbsp;
 			</a>
 		</div>
 	</li>
@@ -23,20 +23,20 @@
 					{{#if ./actor.system.sorcellerie.effetsRevancheDuChaos.reduitAuSilence}}
 						<i class="fas fa-dice" style="color: lightgrey;"></i>
 					{{else}}
-						<a class="roll-des-usage" data-tooltip="{{localize "Lancer le sort" }}" data-de-usage="de-volonte" data-title="{{localize 'FLEAUX.libelle.de-volonte'}}">
+						<a class="roll-des-usage" data-tooltip="{{localize "FORMULAIRE.personnage.libelle.lancersort" }}" data-de-usage="de-volonte" data-title="{{localize 'FORMULAIRE.commun.libelle.desvolonte'}}">
 							<i class="fas fa-dice" style="color: #820912;"></i>
 						</a>					
 					{{/if}}
 				{{/if}}
 				{{#if (etatEstModifiable system.macroScript.parent.modifiable) }}
-					<a class="item-control item-edit" data-tooltip="{{localize "Editer"}}">
+					<a class="item-control item-edit" data-tooltip="{{localize "FORMULAIRE.commun.libelle.editer"}}">
 						<i class="fas fa-edit"></i>
 					</a>
 				{{else}}
 						<i class="fas fa-edit" style="color: lightgrey;"></i>
 				{{/if}}
 				{{#if (etatEstsupprimable system.macroScript.parent.supprimable) }}
-					<a class="item-control item-delete" data-tooltip="{{localize "Supprimer"}}">
+					<a class="item-control item-delete" data-tooltip="{{localize "FORMULAIRE.commun.libelle.supprimer"}}">
 						<i class="fas fa-trash"></i>
 					</a>
 				{{else}}

@@ -6,7 +6,7 @@
 		"system": {
 			"typeName": "TYPES.Item.profession",
 			"description": "PROFESSION.violence.description",
-			"reference": "p. 19",
+			"reference": "p. 21",
 			"professions": [
 				[
 					1,
@@ -61,7 +61,7 @@
 		"system": {
 			"typeName": "TYPES.Item.profession",
 			"description": "PROFESSION.isolement.description",
-			"reference": "p. 18",
+			"reference": "p. 20",
 			"professions": [
 				[
 					1,
@@ -116,7 +116,7 @@
 		"system": {
 			"typeName": "TYPES.Item.profession",
 			"description": "PROFESSION.debrouillardise.description",
-			"reference": "p. 18",
+			"reference": "p. 20",
 			"professions": [
 				[
 					1,
@@ -171,7 +171,7 @@
 		"system": {
 			"typeName": "TYPES.Item.profession",
 			"description": "PROFESSION.erudition.description",
-			"reference": "p. 19",
+			"reference": "p. 21",
 			"professions": [
 				[
 					1,

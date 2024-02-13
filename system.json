@@ -2,7 +2,7 @@
 	"id": "fleaux",
 	"title": "Fléaux ! ",
 	"description": "Un jeu de rôle écrit par Kobayashi, Direction Artistique EDgarra Studio",
-	"version": "2023.5.1",
+	"version": "2024.1.1",
 	"templateVersion": 1,
 	"authors": [
 		{
@@ -15,7 +15,7 @@
 		"minimum": "11",
 		"verified": "11",
 		"maximum": "11"
-	  },    
+	},
 	"esmodules": [
 		"fleaux.js"
 	],
@@ -26,6 +26,13 @@
 		"./styles/simple.css"
 	],
 	"packs": [
+		{
+			"name": "bestiaire",
+			"label": "Le bestiaire",
+			"system": "fleaux",
+			"path": "./packs/bestiaire.db",
+			"type": "Actor"
+		},
 		{
 			"name": "attributs",
 			"label": "Les attributs",
@@ -77,14 +84,14 @@
 		},
 		{
 			"name": "tables",
-			"label": "Tables diverses",
+			"label": "Les tables",
 			"system": "fleaux",
 			"path": "./packs/tables.db",
 			"type": "RollTable"
 		},
 		{
 			"name": "scenes",
-			"label": "Scènes",
+			"label": "Les scènes",
 			"system": "fleaux",
 			"path": "./packs/scenes.db",
 			"type": "Scene"
@@ -102,13 +109,26 @@
 			"path": "./lang/en.json"
 		}
 	],
+	"relationships": {
+		"requires": [
+			{
+				"id": "socketlib",
+				"type": "module",
+				"manifest": "https://raw.githubusercontent.com/manuelVo/foundryvtt-socketlib/master/module.json",
+				"compatibility": {
+					"verified": "1.0.13"
+				}
+			}
+		]
+	},
 	"socket": true,
 	"gridDistance": 5,
 	"gridUnits": "mt",
 	"primaryTokenAttribute": "attributes.pv",
 	"secondaryTokenAttribute": "",
+	"background": "systems/fleaux/images/ui/fond.png",
 	"url": "https://gitlab.com/jhen-javascript/rpg-engine/vtt/foundry/distributions/fleaux",
 	"manifest": "https://gitlab.com/jhen-javascript/rpg-engine/vtt/foundry/distributions/fleaux/-/raw/distrib/system.json",
-	"download": "https://gitlab.com/jhen-javascript/rpg-engine/vtt/foundry/distributions/fleaux/-/archive/2023.5.1/fleaux.zip",
+	"download": "https://gitlab.com/jhen-javascript/rpg-engine/vtt/foundry/distributions/fleaux/-/archive/2024.1.1/fleaux.zip",
 	"license": "LICENSE.txt"
 }

@@ -1,61 +1,60 @@
 <form class="{{cssClass}}" autocomplete="off" style="height: 250px;">
 	{{> (itemPartial "item-header") }}
 	<div class="form-group stacked">
-		<div class="form-fields">
+		<div class="form-fields" style="padding-bottom: 15px;">
 			<!-- Catégorie -->
-			<label>Catégorie</label>
+			<label>{{localize 'FORMULAIRE.equipement.libelle.categorie'}}</label>
 			<select name="system.categorie" value="item.system.categorie">
 				{{#select item.system.categorie}}
-				<option value="arme">{{localize 'Arme'}}</option>
-				<option value="armure">{{localize 'Armure'}}</option>
-				<option value="objet">{{localize 'Objet'}}</option>
-				<option value="service">{{localize 'Service'}}</option>
+				<option value="arme">{{localize 'FORMULAIRE.equipement.combocategorie.arme'}}</option>
+				<option value="armure">{{localize 'FORMULAIRE.equipement.combocategorie.armure'}}</option>
+				<option value="objet">{{localize 'FORMULAIRE.equipement.combocategorie.objet'}}</option>
+				{{!-- <option value="service">{{localize 'Service'}}</option> --}}
 				{{/select}}
 			</select>
 			<!-- Type de prix -->
-			<label>Type de prix</label>
+			<label style="flex: initial;">{{localize 'FORMULAIRE.equipement.libelle.typeprix'}}</label>
 			<select name="system.formulePrix" value="item.system.formulePrix">
 				{{#select item.system.formulePrix}}
-				<option value="d6">{{localize 'Prix normal'}}</option>
-				<option value="d6*10">{{localize 'Prix moyen'}}</option>
-				<option value="d6*100">{{localize 'Prix fort'}}</option>
+				<option value="d6">{{localize 'FORMULAIRE.equipement.combotypeprix.prixnormal'}}</option>
+				<option value="d6*10">{{localize 'FORMULAIRE.equipement.combotypeprix.prixmoyen'}}</option>
+				<option value="d6*100">{{localize 'FORMULAIRE.equipement.combotypeprix.prixfort'}}</option>
 				{{/select}}
 			</select>
 		</div>
 	</div>
 	<div class="form-group stacked">
-		<div class="form-fields">
+		<div class="form-fields" style="padding-bottom: 15px;">
 			<!-- Type d'attaque -->
-			<label>{{ localize "Type d'attaque" }}</label>
+			<label style="flex: initial;">{{ localize "FORMULAIRE.equipement.libelle.typeattaque" }}</label>
 			<select name="system.typeAttaque" value="item.system.typeAttaque">
 				{{#select item.system.typeAttaque}}
-				<option value="melee">{{localize 'Mêlée'}}</option>
-				<option value="tir">{{localize 'Tir'}}</option>
-				<option value="melee-tir">{{localize 'Les deux'}}</option>
+				<option value="melee">{{localize 'FORMULAIRE.equipement.combotypeattaque.melee'}}</option>
+				<option value="tir">{{localize 'FORMULAIRE.equipement.combotypeattaque.tir'}}</option>
+				<option value="melee-tir">{{localize 'FORMULAIRE.equipement.combotypeattaque.meleetir'}}</option>
 				{{/select}}
 			</select>
 			<!-- Emplacement -->
-			<label>{{ localize "Emplacement" }}</label>
+			<label>{{ localize "FORMULAIRE.commun.libelle.emplacement" }}</label>
 			<select name="system.emplacement" value="item.system.emplacement">
 				{{#select item.system.emplacement}}
-				<option value="0">{{localize 'Aucun'}}</option>
-				<option value="1">{{localize 'Dans une main'}}</option>
-				<option value="2">{{localize 'Avec les deux mains'}}</option>
-				<option value="3">{{localize 'Sur le corps'}}</option>
+				<option value="0">{{localize 'FORMULAIRE.equipement.comboemplacement.aucun'}}</option>
+				<option value="1">{{localize 'FORMULAIRE.equipement.comboemplacement.unemain'}}</option>
+				<option value="2">{{localize 'FORMULAIRE.equipement.comboemplacement.deuxmains'}}</option>
+				<option value="3">{{localize 'FORMULAIRE.equipement.comboemplacement.corps'}}</option>
 				{{/select}}
 			</select>
 		</div>
 	</div>
-
 	<div class="form-group stacked">
 		<div class="form-fields">
 			<!-- Protection -->			
-			<label>{{localize "Protection"}}</label>
+			<label>{{localize "FORMULAIRE.commun.libelle.protection"}}</label>
 			<select name="system.protection" value="item.system.protection">
 				{{#select item.system.protection}}
-				<option value="PR0">{{localize "Aucune protection"}}</option>
-				<option value="PR1">{{localize "Protection 1"}}</option>
-				<option value="PR2">{{localize "Protection 2"}}</option>
+				<option value="PR0">{{localize "FORMULAIRE.equipement.comboprotection.pr0"}}</option>
+				<option value="PR1">{{localize "FORMULAIRE.equipement.comboprotection.pr1"}}</option>
+				<option value="PR2">{{localize "FORMULAIRE.equipement.comboprotection.pr2"}}</option>
 				{{/select}}
 			</select>
 		</div>
@@ -67,26 +66,26 @@
 									 afficher-de-actuel = true
 									 afficher-de-max = true
 									 affichage-ligne = true
-									 label = "Dés d'usure"
+									 label = "FORMULAIRE.commun.libelle.usure"
 									 de-usage = "de-usage-equipement"}}
 	<br>
 	<br>
 	<!-- l'enchantement d'objet-->
 	<div class="form-group stacked">
 		<!-- enchanté ?-->
-		<label class="information" data-tooltip="{{localize 'Un personnage ne devrait pas posséder plus d’un objet de ce type. En fait nous vous conseillons même de vous limiter à un maximum de deux objets par groupe.'}}">
-			<input type="checkbox" name="system.enchantement.enchante" {{checked item.system.enchantement.enchante}}> {{localize "L'équipement est enchanté"}}
+		<label class="information" data-tooltip="{{localize 'FORMULAIRE.equipement.libelle.enchante'}}">
+			<input type="checkbox" name="system.enchantement.enchante" {{checked item.system.enchantement.enchante}}> {{localize "FORMULAIRE.equipement.caseacocher.enchante"}}
 		</label>
 		<!-- enchantement des armes -->
 		<div class="form-group stacked" style="display:{{#if item.system.enchantement.enchante}}{{else}}none{{/if}};">
 			<div class="form-fields">
 				<!-- arme tueuse ?-->
-				<label class="information" style="flex: auto;" data-tooltip="{{localize 'Ce type d’arme inflige des dégâts maximum lors d’une attaque réussie contre sa cible de prédilection (vampires, sangrelins, morts-vivants, etc.).'}}">
-					<input type="checkbox" name="system.enchantement.arme.tueuse" {{checked item.system.enchantement.arme.tueuse}}> {{localize "Arme tueuse"}}
+				<label class="information" style="flex: auto;" data-tooltip="{{localize 'FORMULAIRE.equipement.libelle.armetueuse'}}">
+					<input type="checkbox" name="system.enchantement.arme.tueuse" {{checked item.system.enchantement.arme.tueuse}}> {{localize "FORMULAIRE.equipement.caseacocher.armetueuse"}}
 				</label>
 				<!-- arme en acier ilmarien ?-->
-				<label class="information" style="flex: auto;" data-tooltip="{{localize 'L’acier ilmarien est le matériau le plus résistant que l’on puisse trouver. Le secret de sa fabrication s’est malheureusement perdu et les armes faites de cet acier sont rarissimes et leur valeur est inestimable. Une arme en acier ilmarien inflige 1 point de dégâts supplémentaire.'}}">
-					<input type="checkbox" name="system.enchantement.arme.acierIlmarien" {{checked item.system.enchantement.arme.acierIlmarien}}>{{localize "Arme en acier Ilmarien"}}
+				<label class="information" style="flex: auto;" data-tooltip="{{localize 'FORMULAIRE.equipement.libelle.acierilmarien'}}">
+					<input type="checkbox" name="system.enchantement.arme.acierIlmarien" {{checked item.system.enchantement.arme.acierIlmarien}}>{{localize "FORMULAIRE.equipement.caseacocher.acierilmarien"}}
 				</label>
 			</div>
 		</div>
@@ -95,21 +94,21 @@
 		<div class="form-group stacked" style="display:{{#if item.system.enchantement.enchante}}{{else}}none{{/if}};">
 			<div class="form-fields">
 				<!-- avantage ? -->
-				<label class="information" style="flex: auto;" data-tooltip="{{localize 'Un objet de ce genre peut accorder un Avantage à un type d’action précis, comme une cape de dissimulation qui accorde un Avantage à tout jet de Dextérité dédié à la discrétion.'}}">
-					<input type="checkbox" name="system.enchantement.objet.avantage" {{checked item.system.enchantement.objet.avantage}}> {{localize "Accorde un Avantage"}}
+				<label class="information" style="flex: auto;" data-tooltip="{{localize 'FORMULAIRE.equipement.libelle.accordeavantage'}}">
+					<input type="checkbox" name="system.enchantement.objet.avantage" {{checked item.system.enchantement.objet.avantage}}> {{localize "FORMULAIRE.equipement.caseacocher.accordeavantage"}}
 				</label>
 				<select name="system.enchantement.objet.attributCode" style="display: {{#if item.system.enchantement.objet.avantage}}{{else}}none{{/if}};">
 					{{#select item.system.enchantement.objet.attributCode}}
 					{{#each ./attributs as |attribut|}}
-					<option value="{{attribut.system.code}}">{{localize 'FLEAUX.libelle.en'}} {{localize attribut.name}}</option>
+					<option value="{{attribut.system.code}}" title="{{localize attribut.system.description }}">{{localize 'FORMULAIRE.commun.libelle.en'}} {{localize attribut.name}}</option>
 					{{/each}}
 					{{/select}}
 				</select>
 			</div>
 			<!-- sortilège -->			
 			<div class="form-fields">
-				<label class="information" style="flex: auto;" data-tooltip="{{localize 'Un objet de ce genre peut accorder l’effet d’un sort (dans ce cas l’objet possède un d6 d’utilisation).'}}">
-					<input type="checkbox" name="system.enchantement.objet.effetSort" {{checked item.system.enchantement.objet.effetSort}}> {{localize "Accorde un effet de sort"}}
+				<label class="information" style="flex: auto;" data-tooltip="{{localize 'FORMULAIRE.equipement.libelle.accordeenchantement'}}">
+					<input type="checkbox" name="system.enchantement.objet.effetSort" {{checked item.system.enchantement.objet.effetSort}}> {{localize "FORMULAIRE.equipement.caseacocher.accordeenchantement"}}
 				</label>
 				<select name="system.enchantement.objet.sort.id" style="display: {{#if item.system.enchantement.objet.effetSort}}{{else}}none{{/if}};">
 					{{#select item.system.enchantement.objet.sort.id}}
@@ -125,7 +124,7 @@
 													 afficher-de-actuel = true 
 													 afficher-de-max = true 
 													 affichage-ligne = true
-													 label = "Dés d'usage"
+													 label = "FORMULAIRE.commun.libelle.usage"
 													 de-usage = "de-usage-sort"}}
 				</span>
 			</div>

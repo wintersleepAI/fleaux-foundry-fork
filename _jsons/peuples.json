@@ -6,7 +6,7 @@
 		"system": {
 			"typeName": "TYPES.Item.peuple",
 			"description": "PEUPLE.elfe.description",
-			"reference": "p. 14",
+			"reference": "p. 16",
 			"educations": [
 				[
 					1,
@@ -55,7 +55,7 @@
 		"system": {
 			"typeName": "TYPES.Item.peuple",
 			"description": "PEUPLE.halfling.description",
-			"reference": "p. 14",
+			"reference": "p. 16",
 			"educations": [
 				[
 					1,
@@ -104,7 +104,7 @@
 		"system": {
 			"typeName": "TYPES.Item.peuple",
 			"description": "PEUPLE.humain.description",
-			"reference": "p. 14",
+			"reference": "p. 16",
 			"educations": [
 				[
 					1,
@@ -153,7 +153,7 @@
 		"system": {
 			"typeName": "TYPES.Item.peuple",
 			"description": "PEUPLE.nain.description",
-			"reference": "p. 14",
+			"reference": "p. 16",
 			"educations": [
 				[
 					1,
@@ -202,7 +202,7 @@
 		"system": {
 			"typeName": "TYPES.Item.peuple",
 			"description": "PEUPLE.gobelin.description",
-			"reference": "p. 15",
+			"reference": "p. 17",
 			"educations": [
 				[
 					1,
@@ -251,7 +251,7 @@
 		"system": {
 			"typeName": "TYPES.Item.peuple",
 			"description": "PEUPLE.ogre.description",
-			"reference": "p. 15",
+			"reference": "p. 17",
 			"educations": [
 				[
 					1,

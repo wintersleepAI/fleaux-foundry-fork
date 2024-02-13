@@ -8,7 +8,7 @@
 		<div style="{{../headers.3.style}}">
 			{{#if (booleenNonNul system.macroScript.active) }}
 				{{#if (etatEstModifiable system.macroScript.parent.modifiable) }}
-					<i class="etat-activation fas fa-toggle-{{#if system.macroScript.active}}on{{else}}off{{/if}}" data-tooltip="{{#if system.macroScript.active}}{{localize "Désactiver"}}{{else}}{{localize "Activer"}}{{/if}}" style="color: {{#if system.macroScript.active}} black {{else}} lightgrey {{/if}};"></i>
+					<i class="etat-activation fas fa-toggle-{{#if system.macroScript.active}}on{{else}}off{{/if}}" data-tooltip="{{#if system.macroScript.active}}{{localize "FORMULAIRE.personnage.libelle.desactiver"}}{{else}}{{localize "FORMULAIRE.personnage.libelle.activer"}}{{/if}}" style="color: {{#if system.macroScript.active}} black {{else}} lightgrey {{/if}};"></i>
 				{{else}}
 					<span class=" fas fa-toggle-{{#if system.macroScript.active}}on{{else}}off{{/if}}" style="color: lightgrey; cursor: auto;"></span>
 				{{/if}}					

@@ -7,7 +7,7 @@
 			"code": "for",
 			"typeName": "TYPES.Item.attribut",
 			"description": "ATTRIBUT.force.description",
-			"reference": "p. 12"
+			"reference": "p. 14"
 		}
 	},
 	{
@@ -18,7 +18,7 @@
 			"code": "cha",
 			"typeName": "TYPES.Item.attribut",
 			"description": "ATTRIBUT.charisme.description",
-			"reference": "p. 12"
+			"reference": "p. 14"
 		}
 	},
 	{
@@ -29,7 +29,7 @@
 			"code": "sfr",
 			"typeName": "TYPES.Item.attribut",
 			"description": "ATTRIBUT.sang-froid.description",
-			"reference": "p. 12"
+			"reference": "p. 14"
 		}
 	},
 	{
@@ -40,7 +40,7 @@
 			"code": "dex",
 			"typeName": "TYPES.Item.attribut",
 			"description": "ATTRIBUT.dexterite.description",
-			"reference": "p. 12"
+			"reference": "p. 14"
 		}
 	},
 	{
@@ -51,7 +51,7 @@
 			"code": "eru",
 			"typeName": "TYPES.Item.attribut",
 			"description": "ATTRIBUT.erudition.description",
-			"reference": "p. 12"
+			"reference": "p. 14"
 		}
 	},
 	{
@@ -62,7 +62,7 @@
 			"code": "mel",
 			"typeName": "TYPES.Item.attribut",
 			"description": "ATTRIBUT.melee.description",
-			"reference": "p. 12"
+			"reference": "p. 14"
 		}
 	},
 	{
@@ -73,7 +73,7 @@
 			"code": "tir",
 			"typeName": "TYPES.Item.attribut",
 			"description": "ATTRIBUT.tir.description",
-			"reference": "p. 12"
+			"reference": "p. 14"
 		}
 	}
 ]

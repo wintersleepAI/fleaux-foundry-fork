@@ -6,7 +6,7 @@
 		"system": {
 			"typeName": "TYPES.Item.talent",
 			"description": "TALENT.acharne.description",
-			"reference": "p. 22"
+			"reference": "p. 24"
 		}
 	},
 	{
@@ -16,7 +16,7 @@
 		"system": {
 			"typeName": "TYPES.Item.talent",
 			"description": "TALENT.adepte-magie-sang.description",
-			"reference": "p. 22"
+			"reference": "p. 24"
 		}
 	},
 	{
@@ -26,7 +26,7 @@
 		"system": {
 			"typeName": "TYPES.Item.talent",
 			"description": "TALENT.ange-mort.description",
-			"reference": "p. 22"
+			"reference": "p. 24"
 		}
 	},
 	{
@@ -36,7 +36,7 @@
 		"system": {
 			"typeName": "TYPES.Item.talent",
 			"description": "TALENT.charognard.description",
-			"reference": "p. 22"
+			"reference": "p. 24"
 		}
 	},
 	{
@@ -46,7 +46,7 @@
 		"system": {
 			"typeName": "TYPES.Item.talent",
 			"description": "TALENT.coriace.description",
-			"reference": "p. 22"
+			"reference": "p. 24"
 		}
 	},
 	{
@@ -56,7 +56,7 @@
 		"system": {
 			"typeName": "TYPES.Item.talent",
 			"description": "TALENT.couture-cicatrices.description",
-			"reference": "p. 22"
+			"reference": "p. 24"
 		}
 	},
 	{
@@ -66,7 +66,7 @@
 		"system": {
 			"typeName": "TYPES.Item.talent",
 			"description": "TALENT.cuistot.description",
-			"reference": "p. 22"
+			"reference": "p. 24"
 		}
 	},
 	{
@@ -76,7 +76,7 @@
 		"system": {
 			"typeName": "TYPES.Item.talent",
 			"description": "TALENT.dangereux.description",
-			"reference": "p. 22"
+			"reference": "p. 24"
 		}
 	},
 	{
@@ -86,7 +86,7 @@
 		"system": {
 			"typeName": "TYPES.Item.talent",
 			"description": "TALENT.debrouillard.description",
-			"reference": "p. 22"
+			"reference": "p. 24"
 		}
 	},
 	{
@@ -96,7 +96,7 @@
 		"system": {
 			"typeName": "TYPES.Item.talent",
 			"description": "TALENT.duelliste.description",
-			"reference": "p. 22"
+			"reference": "p. 24"
 		}
 	},
 	{
@@ -106,7 +106,7 @@
 		"system": {
 			"typeName": "TYPES.Item.talent",
 			"description": "TALENT.fetichiste.description",
-			"reference": "p. 22"
+			"reference": "p. 24"
 		}
 	},
 	{
@@ -116,7 +116,7 @@
 		"system": {
 			"typeName": "TYPES.Item.talent",
 			"description": "TALENT.foutu-veinard.description",
-			"reference": "p. 22"
+			"reference": "p. 24"
 		}
 	},
 	{
@@ -126,7 +126,7 @@
 		"system": {
 			"typeName": "TYPES.Item.talent",
 			"description": "TALENT.hante.description",
-			"reference": "p. 22"
+			"reference": "p. 24"
 		}
 	},
 	{
@@ -136,7 +136,7 @@
 		"system": {
 			"typeName": "TYPES.Item.talent",
 			"description": "TALENT.impassible.description",
-			"reference": "p. 22"
+			"reference": "p. 24"
 		}
 	},
 	{
@@ -146,7 +146,7 @@
 		"system": {
 			"typeName": "TYPES.Item.talent",
 			"description": "TALENT.increvable.description",
-			"reference": "p. 22"
+			"reference": "p. 24"
 		}
 	},
 	{
@@ -156,7 +156,7 @@
 		"system": {
 			"typeName": "TYPES.Item.talent",
 			"description": "TALENT.meticuleux.description",
-			"reference": "p. 22"
+			"reference": "p. 24"
 		}
 	},
 	{
@@ -166,7 +166,7 @@
 		"system": {
 			"typeName": "TYPES.Item.talent",
 			"description": "TALENT.paranoiaque.description",
-			"reference": "p. 22"
+			"reference": "p. 24"
 		}
 	},
 	{
@@ -176,7 +176,7 @@
 		"system": {
 			"typeName": "TYPES.Item.talent",
 			"description": "TALENT.parcimonieux.description",
-			"reference": "p. 22"
+			"reference": "p. 24"
 		}
 	},
 	{
@@ -186,7 +186,7 @@
 		"system": {
 			"typeName": "TYPES.Item.talent",
 			"description": "TALENT.protecteur.description",
-			"reference": "p. 23"
+			"reference": "p. 25"
 		}
 	},
 	{
@@ -196,7 +196,7 @@
 		"system": {
 			"typeName": "TYPES.Item.talent",
 			"description": "TALENT.rassurant.description",
-			"reference": "p. 23"
+			"reference": "p. 25"
 		}
 	},
 	{
@@ -206,7 +206,7 @@
 		"system": {
 			"typeName": "TYPES.Item.talent",
 			"description": "TALENT.roi-evasion.description",
-			"reference": "p. 23"
+			"reference": "p. 25"
 		}
 	},
 	{
@@ -216,7 +216,7 @@
 		"system": {
 			"typeName": "TYPES.Item.talent",
 			"description": "TALENT.rat-bibliotheque.description",
-			"reference": "p. 23"
+			"reference": "p. 25"
 		}
 	},
 	{
@@ -226,7 +226,7 @@
 		"system": {
 			"typeName": "TYPES.Item.talent",
 			"description": "TALENT.rancunier.description",
-			"reference": "p. 23"
+			"reference": "p. 25"
 		}
 	},
 	{
@@ -236,7 +236,7 @@
 		"system": {
 			"typeName": "TYPES.Item.talent",
 			"description": "TALENT.resolu.description",
-			"reference": "p. 23"
+			"reference": "p. 25"
 		}
 	},
 	{
@@ -246,7 +246,7 @@
 		"system": {
 			"typeName": "TYPES.Item.talent",
 			"description": "TALENT.sanguinaire.description",
-			"reference": "p. 23"
+			"reference": "p. 25"
 		}
 	},
 	{
@@ -256,7 +256,7 @@
 		"system": {
 			"typeName": "TYPES.Item.talent",
 			"description": "TALENT.suicidaire.description",
-			"reference": "p. 23"
+			"reference": "p. 25"
 		}
 	},
 	{
@@ -266,7 +266,7 @@
 		"system": {
 			"typeName": "TYPES.Item.talent",
 			"description": "TALENT.opiniatre.description",
-			"reference": "p. 23"
+			"reference": "p. 25"
 		}
 	},
 	{
@@ -276,7 +276,7 @@
 		"system": {
 			"typeName": "TYPES.Item.talent",
 			"description": "TALENT.tacticien.description",
-			"reference": "p. 23"
+			"reference": "p. 25"
 		}
 	},
 	{
@@ -286,7 +286,7 @@
 		"system": {
 			"typeName": "TYPES.Item.talent",
 			"description": "TALENT.touche-obscur.description",
-			"reference": "p. 23"
+			"reference": "p. 25"
 		}
 	}
 ]

@@ -2,11 +2,11 @@
 {{#if item.system.macroScript }}
     <div class="form-fields macro-script">
         <label class="information width30" for="active">
-        <input class="macro-active" id="active" type="checkbox" name="system.macroScript.active" {{checked item.system.macroScript.active}}>{{localize "Activer le script"}}
+        <input class="macro-active" id="active" type="checkbox" name="system.macroScript.active" {{checked item.system.macroScript.active}}>{{localize "FORMULAIRE.commun.libelle.activerscript"}}
         </label>
         <div class="macro" data-macro-id="{{item.system.macroScript.idMacro}}">
             <label for="icon">{{localize "Macro"}}</label>&nbsp;
-            <img class="macro-icon" id="icon" src="/systems/fleaux/images/system/macro-script.webp" data-tooltip="{{localize 'Editer la macro'}}">
+            <img class="macro-icon" id="icon" src="/systems/fleaux/images/system/macro-script.webp" data-tooltip="{{localize "FORMULAIRE.commun.libelle.editer" }}">
         </div>
     </div>
 {{/if}}

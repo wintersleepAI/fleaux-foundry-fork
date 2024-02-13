@@ -4,10 +4,12 @@
 		<div>
 			{{#unless (eq typeDes 0) }}
 			<span>
-				{{#if (eq typeDes 1)}} {{localize "CHAT.des.lanceAvecAvantage"}}
-				{{else}} {{localize "CHAT.des.lanceAvecDesavantage"}} {{/if}} <br>
+				{{#if (eq typeDes 1)}} {{localize "TCHAT.des.lanceAvecAvantage"}}
+				{{else}} {{localize "TCHAT.des.lanceAvecDesavantage"}} {{/if}} <br>
 			</span>
 			{{/unless}}
+			<span>{{libelleDefoncer}}</span><br>
+			<span>{{libelleSuccesCritique}}</span>
 		</div>
 	</div>
 {{/with}}

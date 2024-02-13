@@ -7,9 +7,9 @@
 	</div>
 	{{/if}}
 	{{#if (eq typeLancerDes "de-attributs" )}}
-	<div class="form-group">
-		<label>{{localize "DIALOGUE.des.bonusMalus"}}</label>
-		<input class="field-value" name="bonusMalus" type="text" value="" data-dtype="Number">
+	<div class="information" style="width: 100%;">
+		<label class="info-label">{{localize "DIALOGUE.des.bonusMalus"}}</label>
+		<input class="info-input" name="bonusMalus" type="number" value="{{bonusMalus}}" data-dtype="Number">
 	</div>
 	{{/if}}
 	<div class="form-group">

@@ -1,0 +1,68 @@
+<form class="{{cssClass}}" autocomplete="off">
+	<div class="sheet">
+		<hearder class="sheet-header">
+			<!-- INFOS GENERALES -->
+			<div class="info-header">
+				<!-- IMAGE/TOKEN -->
+				<img class="char-image profile-img" src="{{actor.img}}" data-edit="img" data-tooltip="{{actor.name}}" />
+				<div class="info-col">
+					<div class="fleaux-title" style="padding-bottom: inherit;">
+						<!-- NOM  -->
+						<div class="header-fields information" style="flex: none; width: calc(90% - 2px)">
+							<div class="info-label width20">
+								<h4 class="item-type">{{localize actor.system.typeName}}</h4>
+							</div>
+							<h1 class="info-input" style="font-size: x-large; width: inherit; border-bottom: none;">
+								<input name="name" type="text" value="{{actor.name}}" placeholder="Name" />
+							</h1>
+						</div>
+						<!-- REFERENCE-->
+						<div class="information">
+							<input class="info-input" style="font-style: italic; font-size: initial; color: #4b0505;" name="system.reference" type="text" value="{{actor.system.reference}}" data-dtype="String" />
+						</div>
+					</div>
+					<div class="sheet-container"
+						style="width: 100%; overflow: inherit; justify-content: space-between;">
+						<!-- NIVEAU -->
+						<div class=" info-niveau">
+							<div class="" style="padding: 0px 15px;">{{ localize 'FORMULAIRE.commun.libelle.niveau' }}</div>
+							<div class="" style="padding: 30px 20px">
+								<input class="attribut-change" name="system.niveau" type="number" value="{{actor.system.niveau}}" min=1 max=10 style="background-color: transparent; border:none" />
+							</div>
+						</div>
+						<!-- Points de vie -->
+						<div class="panel-vie">
+							{{ localize 'FORMULAIRE.commun.libelle.pointdevie' }}
+							<div class="img-vie">
+								<div class="bloc-vie">
+									<input class="pv-actuel" type="number" min="0" max="{{actor.system.attributes.pv.max}}" name="system.attributes.pv.value" value="{{actor.system.attributes.pv.value}}" />
+									<input style="width: fit-content;" type="number" name="system.attributes.pv.max" value="{{actor.system.attributes.pv.max}}" disabled="disabled" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</hearder>
+		<section class="sheet-body">
+			{{> (communPartial "editor-box") libelle= "DESCRIPTION" data = actor.system.description data-str = "system.description"}}
+			<h4 class="repeater-entete">
+				{{localize "Actions"}}
+				<a class="repeater-bouton ajouter-action" style="color: #4b0505;"><i class="fas fa-plus" data-tooltip="{{localize "FORMULAIRE.commun.libelle.creer" }}"></i></a>
+			</h4>
+			<ol class="repeater form-group" style="padding: 0px;">
+				{{#each actor.system.actions as |action i| }}
+				<li class="repeater flexrow" data-repeater="{{i}}">
+					<div class="information" style="width: auto;">
+						<input class="info-input" style="flex: 0 0 22%; font-weight: bold; color: #4b0505;" type="text" name="system.actions.{{i}}.0" value="{{lookup this '0'}}" placeholder="{{ localize 'FORMULAIRE.commun.libelle.nom' }}"/>
+						<input class="info-input" style="flex: 0 0 73%;" type="text" name="system.actions.{{i}}.1" value="{{lookup this '1'}}" placeholder="Description" data-tooltip="{{lookup this '1'}}"/>
+						<input style="flex: 0 0 3%;" type="number" name="system.actions.{{i}}.2" value="{{lookup this '2'}}"/>
+					</div>
+					<a class="repeater-bouton enlever-action" style="color: #4b0505;"><i class="fas fa-minus" data-tooltip="{{localize "FORMULAIRE.commun.libelle.supprimer" }}"></i></a>
+				</li>
+				{{/each}}
+			</ol>
+
+		</section>
+	</div>
+</form>

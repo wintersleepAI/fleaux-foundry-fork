@@ -1,24 +1,24 @@
 {{#with fleaux}}
 	<div class="tchat-de-attributs">
-		<h4 class="tchat-de-attributs-titre">{{localize "CHAT.des.attribut"}} {{titreTchat}}</h4>
+		<h4 class="tchat-de-attributs-titre">{{localize "TCHAT.des.attribut"}} {{titreTchat}}</h4>
 		<div>
 			{{#unless (eq typeDes 0) }}
 			<span>
-				{{#if (eq typeDes 1) }} {{localize "CHAT.des.lanceAvecAvantage"}}
-				{{else}} {{localize "CHAT.des.lanceAvecDesavantage"}} {{/if}} <br>
+				{{#if (eq typeDes 1) }} {{localize "TCHAT.des.lanceAvecAvantage"}}
+				{{else}} {{localize "TCHAT.des.lanceAvecDesavantage"}} {{/if}} <br>
 			</span>
 			{{/unless}}
 			{{#unless (eq bonusMalus 0) }}
 			<span>
-				{{#if (estPositive bonusMalus)}} {{ localize "CHAT.des.avecBonus" }} {{bonusMalus}}.
-				{{else}} {{ localize "CHAT.des.avecMalus" }} {{bonusMalus}}. {{/if}}
+				{{#if (estPositive bonusMalus)}} {{ localize "TCHAT.des.avecBonus" }} {{bonusMalus}}.
+				{{else}} {{ localize "TCHAT.des.avecMalus" }} {{bonusMalus}}. {{/if}}
 				<br>
-				{{ localize "CHAT.des.nouvelleDifficulte" }} {{nouvelleDifficulte}}.
+				{{ localize "TCHAT.des.nouvelleDifficulte" }} {{nouvelleDifficulte}}.
 				<br>
 			</span>
 			{{/unless}}
-			{{#if succes}} {{localize "CHAT.des.success"}} {{else}} {{localize "CHAT.des.echec"}} {{/if}}
-			{{#if critique}}<br><span>{{localize "CHAT.des.critique"}}</span>{{/if}}
+			{{#if succes}} {{localize "TCHAT.des.success"}} {{else}} {{localize "TCHAT.des.echec"}} {{/if}}
+			{{#if critique}}<br><span>{{localize "TCHAT.des.critique"}}</span>{{/if}}
 		</div>
 	</div>
 {{/with}}	

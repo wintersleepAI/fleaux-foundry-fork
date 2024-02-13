@@ -10,7 +10,7 @@
 </div>
 <div style="{{style-equipe}}">
 	{{#if (peutEtreEquipable system) }}
-		<i class="fa fa-user-shield" data-tooltip="{{#if system.equipe}}Déséquiper{{else}}Équiper{{/if}}" style="color: {{#if system.equipe}} black {{else}} lightgrey {{/if}};"></i>
+		<i class="fa fa-user-shield" data-tooltip="{{#if system.equipe}}{{localize 'FORMULAIRE.personnage.libelle.desequiper'}}{{else}}{{localize 'FORMULAIRE.personnage.libelle.equiper'}}{{/if}}" style="color: {{#if system.equipe}} black {{else}} lightgrey {{/if}};"></i>
 	{{/if}}
 </div>
 <div style="{{style-prix}}">{{system.prix}}&nbsp;

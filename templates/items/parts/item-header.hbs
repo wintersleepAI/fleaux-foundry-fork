@@ -1,11 +1,13 @@
 <header class="sheet-header">
-	<img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}"/>
+	<div style="padding-right: 4px;">
+		<img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}"/>
+	</div>
 	<div class="header-fields information" style="flex: auto;">
 		<div class="info-label width20">
 			<h4 class="item-type">{{localize item.system.typeName}}</h4>
 		</div>
 		<h1 class="info-input" style="font-size: x-large;">
-			<input name="name" type="text" value="{{item.name}}" placeholder="Name"/>
+			<input name="name" type="text" value="{{item.name}}" placeholder="{{localize 'FORMULAIRE.commun.libelle.nom' }}"/>
 		</h1>
 	</div>
 	<div class="information">

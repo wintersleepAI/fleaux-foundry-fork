@@ -4,7 +4,7 @@
 	<div class="form-group flexrow">
 		<h4 class="repeater-entete">
 			{{localize "PEUPLE.libelle.vous-avez-grandi"}}
-			<a class="repeater-bouton ajouter-education" style="color: #4b0505;"><i class="fas fa-plus"></i></a>
+			<a class="repeater-bouton ajouter-education" style="color: #4b0505;"><i class="fas fa-plus" data-tooltip="{{localize "FORMULAIRE.commun.libelle.creer" }}"></i></a>
 		</h4>
 		<ol class="repeater form-group" style="padding: 0px;">
 			{{#each item.system.educations as |education i| }}
@@ -16,14 +16,14 @@
 					<select name="system.educations.{{i}}.3">
 						{{#select (lookup this "3")}}
 						{{#each ../attributs as |attribut|}}
-						<option value="{{attribut.system.code}}">{{localize 'FLEAUX.libelle.en'}}{{localize attribut.name}}</option>
+						<option value="{{attribut.system.code}}">{{localize 'FORMULAIRE.commun.libelle.en'}}{{localize attribut.name}}</option>
 						{{/each}}
 						<option value="meltir">{{localize 'PEUPLE.libelle.melee-ou-Tir'}}</option>
 						<option value="auchoix">{{localize 'PEUPLE.libelle.choisir-attribut'}}</option>
 						{{/select}}
 					</select>
 				</div>
-				<a class="repeater-bouton enlever-education" style="color: #4b0505;"><i class="fas fa-minus"></i></a>
+				<a class="repeater-bouton enlever-education" style="color: #4b0505;"><i class="fas fa-minus" data-tooltip="{{localize "FORMULAIRE.commun.libelle.supprimer" }}"></i></a>
 			</li>
 			{{/each}}
 		</ol>    

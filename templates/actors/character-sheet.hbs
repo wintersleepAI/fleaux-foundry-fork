@@ -4,29 +4,35 @@
 			<!-- INFOS GENERALES -->
 			<div class="info-header">
 				<!-- IMAGE/TOKEN -->
-					<img class="char-image profile-img" src="{{actor.img}}" data-edit="img" data-tooltip="{{actor.name}}" />
+				<img class="char-image profile-img" src="{{actor.img}}" data-edit="img" data-tooltip="{{actor.name}}" />
 				<div class="info-col">
 					<!-- NOM PERSONNAGE -->
 					<div class="fleaux-title">
 						<div class="info-name">
-							<input name="name" type="text" value="{{actor.name}}" placeholder={{"localize 'nom'"}}/>
+							<input name="name" type="text" value="{{actor.name}}"
+								placeholder={{"localize 'FORMULAIRE.commun.libelle.nom'"}}/>
 						</div> 
 						<!-- NIVEAU -->
 						<div class=" info-niveau">
-							<div class="" style="padding: 1px 15px;">{{ localize 'Niveau' }}</div>
+							<div class="" style="padding: 1px 15px;">{{ localize 'FORMULAIRE.commun.libelle.niveau' }}
+							</div>
 							<div class="" style="padding: 30px 28px">
-								<input class="attribut-change" name="system.niveau" type="number" value="{{actor.system.niveau}}" 
-									min=1 max=10 style="background-color: transparent; border:none"/>
+								<input class="attribut-change" name="system.niveau" type="number"
+									value="{{actor.system.niveau}}" min=1 max=10
+									style="background-color: transparent; border:none" />
 							</div>
 						</div>
 					</div>
 					<div class="char-info-row">
 						<!-- PEUPLE -->
-						{{> (actorPartial "actor-infos") pack = "peuples" label1 ="Peuple" item = peuple class = "educations-d6" label2 = "Éducation" data = actor.system }}
+						{{> (actorPartial "actor-infos") pack="peuples" label1="FORMULAIRE.personnage.libelle.peuple"
+						item=peuple class="educations-d6" label2="FORMULAIRE.personnage.libelle.education" data=actor.system }}
 						<!-- CRIME -->
-						{{> (actorPartial "actor-infos") pack = "crimes" label1 ="Crime" item = crime class = "accusations" label2 = "Mon crime" data = actor.system }}
+						{{> (actorPartial "actor-infos") pack="crimes" label1="FORMULAIRE.personnage.libelle.crime"
+						item=crime class="accusations" label2="FORMULAIRE.personnage.libelle.moncrime" data=actor.system }}
 						<!-- PROFESSION -->
-						{{> (actorPartial "actor-infos") pack = "professions" label1 ="Profession" item = profession class = "professions-d6" label2 = "Mes professions" data = actor.system }}
+						{{> (actorPartial "actor-infos") pack="professions" label1="FORMULAIRE.personnage.libelle.profession" 
+						item=profession class="professions-d6" label2="FORMULAIRE.personnage.libelle.mesprofessions" data=actor.system }}
 					</div>
 				</div>
 			</div>
@@ -34,22 +40,26 @@
 			<div class="attribut-header">
 				<div>
 					{{#if (getIsGM)}}
-						<a class="reinitialiser" data-tooltip={{localize "Réinitialiser la fiche"}}> <i class="fas fa-undo-alt"></i></a>
+					<a class="reinitialiser" data-tooltip={{localize "FORMULAIRE.personnage.libelle.reinitialiser" }}>
+						<i class="fas fa-undo-alt"></i></a>
 					{{/if}}
-					<a class="recuperation" data-tooltip={{localize "Récupération"}}> <i class="fa-solid fa-bed"></i></a>
+					<a class="recuperation" data-tooltip={{localize "FORMULAIRE.personnage.libelle.recuperation" }}> <i
+							class="fa-solid fa-bed"></i></a>
 				</div>
 				{{#each actor.system.attributs as |attrib key|}}
 				<div class="attribut-box">
 					<div class="box-header">
-						<a class="attribut-name" data-tooltip="{{ getAttributProperty key 'system.description' }}" data-key="{{key}}">{{ getAttributProperty key 'name' }}</a>
+						<a class="attribut-name" data-tooltip="{{ getAttributProperty key 'system.description' }}"
+							data-key="{{key}}">{{ getAttributProperty key 'name' }}</a>
 						<a class="attribut-2d6" data-attribut="{{key}}"
-							data-tooltip="lancer 2d6 pour déterminer votre {{ getAttributProperty key 'name' }}">
+							data-tooltip="{{ localize 'FORMULAIRE.personnage.libelle.attributlancer2d6'}} {{ getAttributProperty key 'name' }}">
 							{{#unless attrib.init2d6 }}<i class="fas fa-dice" style="color: #820912;"></i>{{/unless}}
 						</a>
 					</div>
 					<div class="attribut-img"
 						style="background: url('../systems/fleaux/images/ui/attribut-{{ getAttributProperty key 'system.code' }}.png') no-repeat;">
-						<input class="attribut-change" type="number" min="0" max="18" data-attribut="{{key}}" name="system.attributs.{{key}}.actuel" value="{{attrib.actuel}}" />
+						<input class="attribut-change" type="number" min="0" max="18" data-attribut="{{key}}"
+							name="system.attributs.{{key}}.actuel" value="{{attrib.actuel}}" />
 					</div>
 				</div>
 				{{/each}}
@@ -59,61 +69,65 @@
 		<div class="sheet-container">
 			<!-- Dé de volonté -->
 			<div class="panel-volonte">
-				{{ localize 'Dé de volonté' }}
-				<a class="roll-des-usage" data-de-usage="de-volonte" data-title="{{localize 'FLEAUX.libelle.de-volonte'}}">
+				{{ localize 'FORMULAIRE.commun.libelle.desvolonte' }}
+				<a class="roll-des-usage" data-de-usage="de-volonte"
+					data-title="{{localize 'FORMULAIRE.commun.libelle.desvolonte'}}">
 					<i class="fas fa-dice" style="color: #820912;"></i>
 				</a>
 				<div class="img-volonte">
-					{{> (communPartial "des-usage")  data = actor.system.de-volonte 
-													 data-str = "system.de-volonte"
-													 afficher-de-actuel = true
-													 afficher-de-max = true
-													 affichage-ligne = false
+					{{> (communPartial "des-usage") data = actor.system.de-volonte
+					data-str = "system.de-volonte"
+					afficher-de-actuel = true
+					afficher-de-max = true
+					affichage-ligne = false
 					}}
 				</div>
 			</div>
 			<!-- Dés de dégats -->
 			<div class="panel-degats">
-				{{ localize 'Dés de dégats' }}
-				<a class="roll-des-usage" data-de-usage="de-degats{{#if armeEquipee }}-arme{{/if}}" data-title="{{localize 'Dés de dégats'}}">
+				{{ localize 'FORMULAIRE.commun.libelle.desdegats' }}
+				<a class="roll-des-usage" data-de-usage="de-degats{{#if armeEquipee }}-arme{{/if}}"
+					data-title="{{localize 'FORMULAIRE.commun.libelle.desdegats'}}">
 					<i class="fas fa-dice" style="color: #820912;"></i>
 				</a>
 				<div class="img-degats">
-					{{#if armeEquipee }} 
-							{{> (communPartial "des-usage")  data = actor.system.de-degats-arme 
-															 data-str = "system.de-degats-arme"
-															 afficher-de-max = true
-															 affichage-ligne = false
-															 label = "Armé" 
-							}}
+					{{#if armeEquipee }}
+					{{> (communPartial "des-usage") data = actor.system.de-degats-arme
+					data-str = "system.de-degats-arme"
+					afficher-de-max = true
+					affichage-ligne = false
+					label = "FORMULAIRE.personnage.libelle.estarme"
+					}}
 					{{else}}
-							{{> (communPartial "des-usage")  data = actor.system.de-degats 
-															 data-str = "system.de-degats"
-															 afficher-de-max = true
-															 affichage-ligne = false
-															 label = "Désarmé" 
-							}}
+					{{> (communPartial "des-usage") data = actor.system.de-degats
+					data-str = "system.de-degats"
+					afficher-de-max = true
+					affichage-ligne = false
+					label = "FORMULAIRE.personnage.libelle.estdesarme"
+					}}
 					{{/if}}
 				</div>
 			</div>
 			<!-- Points de vie -->
 			<div class="panel-vie">
-				{{ localize 'Points de vie' }}
+				{{ localize 'FORMULAIRE.commun.libelle.pointdevie' }}
 				<div class="img-vie">
 					<div class="bloc-vie">
-						<input type="number" min="0" max="{{actor.system.attributes.pv.max}}" name="system.attributes.pv.value" value="{{actor.system.attributes.pv.value}}"  />
-						<input style="width: fit-content;" type="number" name="system.attributes.pv.max" value="{{actor.system.attributes.pv.max}}"  disabled="disabled" />
+						<input class="pv-actuel" type="number" min="0" max="{{actor.system.attributes.pv.max}}"
+							name="system.attributes.pv.value" value="{{actor.system.attributes.pv.value}}" />
+						<input style="width: fit-content;" type="number" name="system.attributes.pv.max"
+							value="{{actor.system.attributes.pv.max}}" disabled="disabled" />
 					</div>
 				</div>
 			</div>
 		</div>
 		<!-- NAVIGATION ONGLETS -->
 		<nav class="sheet-tabs tabs" data-group="primary">
-			<a class="item" data-tab="tabEquipements">{{localize 'Équipement'}}</a>
-			<a class="item" data-tab="tabEtats">{{localize 'Etats'}}</a>
-			<a class="item" data-tab="tabTalentsSorts">{{localize 'Talents & sorts'}}</a>
-			<a class="item" data-tab="tabBiographie">{{localize 'Biographie & relations'}}</a>
-			<a class="item" data-tab="tabNotes">{{localize 'Notes & objectifs'}}</a>
+			<a class="item" data-tab="tabEquipements">{{localize 'FORMULAIRE.personnage.onglet.equipement'}}</a>
+			<a class="item" data-tab="tabEtats">{{localize 'FORMULAIRE.personnage.onglet.etats'}}</a>
+			<a class="item" data-tab="tabTalentsSorts">{{localize 'FORMULAIRE.personnage.onglet.talents'}}</a>
+			<a class="item" data-tab="tabBiographie">{{localize 'FORMULAIRE.personnage.onglet.biographie'}}</a>
+			<a class="item" data-tab="tabNotes">{{localize 'FORMULAIRE.personnage.onglet.notes'}}</a>
 		</nav>
 		<!-- SECTION POUR CHAQUE ONGLET -->
 		<section class="sheet-body">
@@ -122,19 +136,25 @@
 				<div class="char-info-row">
 					<!-- BOURSE -->
 					<div class="information width30">
-						<a class="info-label calculer-fortune" data-tooltip="lancer le dé pour déterminer votre fortune">
+						<a class="info-label calculer-fortune"
+							data-tooltip={{localize 'FORMULAIRE.personnage.libelle.fortune'}}>
 							<i class="fa fa-coins"></i>
-							<span>{{localize 'Fortune (en Shilling)'}}&nbsp;</span>
+							<span>{{localize 'Fortune (Shilling)'}}&nbsp;</span>
 						</a>
-						<input class="info-input" type="number" name="system.fortune" value={{actor.system.fortune}} >
-					</div>			
-					<!-- AFFAME & SALE -->					
-					<label class="information width20" data-tooltip='{{localize "Si le personnage préfère rester affamé et sale, il subira un Désavantage à l'ensemble de ses jets au cours de cette partie, ça vous apprendra à être une pince."}}'>
-						<input type="checkbox" name="system.affame-et-sale" {{checked actor.system.affame-et-sale}}> {{localize "Rester affamé et sale"}}
+						<input class="info-input" type="number" name="system.fortune" value={{actor.system.fortune}}>
+					</div>
+					<!-- AFFAME & SALE -->
+					<label class="information width20"
+						data-tooltip='{{localize "FORMULAIRE.personnage.libelle.affamesale"}}'>
+						<input type="checkbox" name="system.affame-et-sale" {{checked actor.system.affame-et-sale}}>
+						{{localize "FORMULAIRE.personnage.caseacocher.affamesale"}}
 					</label>
 					<!-- BOUCLIER -->
-					<label class="information width20" data-tooltip="{{localize 'Un bouclier accorde un Avantage à vos jets de Parade.'}}">
-						<input class="bouclier" type="checkbox" name="system.bouclier" {{checked actor.system.bouclier}}> {{localize "Protection bouclier"}}&nbsp;<i class="fa fa-shield-alt"></i>
+					<label class="information width20"
+						data-tooltip="{{localize 'FORMULAIRE.personnage.libelle.bouclier'}}">
+						<input class="bouclier" type="checkbox" name="system.bouclier" {{checked
+							actor.system.bouclier}}> {{localize "FORMULAIRE.personnage.caseacocher.bouclier"}}&nbsp;<i
+							class="fa fa-shield-alt"></i>
 					</label>
 				</div>
 				<!-- ARMES -->
@@ -157,13 +177,13 @@
 			</div>
 			<!-- BIOGRAPHIE-->
 			<div class="tab" data-group="primary" data-tab="tabBiographie">
-				{{> (communPartial "editor-box") libelle= "DESCRIPTION" data = actor.system.description data-str = "system.description"}}
-				{{> (communPartial "editor-box") libelle= "RELATIONS" data = actor.system.relations data-str = "system.relations"}}
+				{{> (communPartial "editor-box") libelle="DESCRIPTION" data=actor.system.description data-str="system.description"}}
+				{{> (communPartial "editor-box") libelle="FORMULAIRE.personnage.libelle.relations" data=actor.system.relations data-str="system.relations"}}
 			</div>
 			<!-- NOTES-->
 			<div class="tab" data-group="primary" data-tab="tabNotes">
-				{{> (communPartial "editor-box") libelle= "NOTES" data = actor.system.notes data-str = "system.notes"}}
-				{{> (communPartial "editor-box") libelle= "OBJECTIFS" data = actor.system.objectifs data-str = "system.objectifs"}}
+				{{> (communPartial "editor-box") libelle="NOTES" data=actor.system.notes data-str="system.notes"}}
+				{{> (communPartial "editor-box") libelle="FORMULAIRE.personnage.libelle.objectifs" data=actor.system.objectifs data-str="system.objectifs"}}
 			</div>
 		</section>
 	</div>

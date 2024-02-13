@@ -193,6 +193,7 @@
 .char-image {
 	height: 230px;
 	margin-right: 10px;
+	filter: drop-shadow(2px 6px 3px black);
 }
 .char-image img {
 	height: 230px;
@@ -248,6 +249,10 @@
 	font-family: "HudsonNY";
 	font-size: large;
 	text-align: center;
+}
+.sheet header.sheet-header img {
+	background-color: black;
+	filter: drop-shadow(3px 3px 3px black);
 }
 .sheet .sheet-body {
 	height: calc(100% - 60px);
@@ -489,13 +494,38 @@ input[type="date"]:focus,
 input[type="time"]:focus {
 	box-shadow: none;
 	/*0 0 5px #820912;*/
-
 }
-.tabs .item.active {
-	text-shadow: none;
+#ui-left {
+	background-color: black;
+}
+#ui-right {
+	background-color: black;
+}
+.compendium-sidebar .directory-item.compendium .compendium-name {
+	border-radius: 10px 0px;
+}
+.compendium.directory .directory-header .compendium-name {
+	border-radius: 10px 0px;
+}
+.directory .directory-header {
+	background-color: dimgrey;
+}
+div#hotbar {
+	background: url(../images/ui/compendiums.png);
+	background-size: 100% 100%;
+}
+#hotbar .macro {
+	border-radius: 10px 0px;
+	height: auto;
+}
+#hotbar #macro-list {
+	border: none;
+	opacity: 0.8;		
 }
 .system-fleaux {
-	background: url(../images/ui/fond.png) round;
+	background: url(../images/ui/scroll.png) no-repeat;
+	background-size: 92% auto;
+	background-position-x: right;
 }
 .chat-message {
 	background: white;
@@ -584,6 +614,7 @@ textarea:read-only {
 }
 .table-result .result-image {
 	background-color: black;
+	filter: drop-shadow(2px 6px 3px black);
 }
 .table-header .result-image {
 	background-color: initial;
@@ -598,6 +629,9 @@ textarea:read-only {
 }
 img {
 	background-color: transparent;
+}
+.sheet img[data-edit] {
+	border: none;
 }
 #logo {
 	background-color: transparent;

@@ -3,19 +3,19 @@
 	<!-- date et acteur d'origine -->
 	<div class="information">
 		<span class="info-label">{{item.system.date}}</span>&nbsp;&nbsp;
-		<span class="info-input">Acteur.{{item.actor.id}}</span>
+		<span class="info-input">{{item.actor.type}}.{{item.actor.id}}</span>
 	</div>
 	<!-- type d'état-->
 	<div class="form-fields" style="display: grid;">
-		<label>{{localize "Type de l'état"}}</label>
+		<label>{{localize "FORMULAIRE.etat.libelle.typeetat"}}</label>
 		<select name="system.typeDuree">
 			{{#select item.system.typeDuree}}
-			<option value="permanent">{{localize "Permanent"}}</option>
-			<option value="par-partie">{{localize "Par partie"}}</option>
-			<option value="par-journee">{{localize "Par journée"}}</option>
-			<option value="par-scene">{{localize "Par scène"}}</option>
-			<option value="par-combat">{{localize "Par combat"}}</option>
-			<option value="par-tour">{{localize "Par tour"}}</option>
+			<option value="permanent">{{localize "FORMULAIRE.etat.combotypeetat.permanent"}}</option>
+			<option value="par-partie">{{localize "FORMULAIRE.etat.combotypeetat.parpartie"}}</option>
+			<option value="par-journee">{{localize "FORMULAIRE.etat.combotypeetat.parjournee"}}</option>
+			<option value="par-scene">{{localize "FORMULAIRE.etat.combotypeetat.parscene"}}</option>
+			<option value="par-combat">{{localize "FORMULAIRE.etat.combotypeetat.parcombat"}}</option>
+			<option value="par-tour">{{localize "FORMULAIRE.etat.combotypeetat.partour"}}</option>
 			{{/select}}
 		</select>
 	</div>
