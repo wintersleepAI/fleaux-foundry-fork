@@ -111,7 +111,7 @@ Veuillez rejoindre le serveur Discord FR [La Fonderie->Système Fléaux](https:/
 
 <details><summary>Modules Foundry</summary>
 
-* [**socketlib 1.0.13**]{https://github.com/manuelVo/foundryvtt-socketlib}
+* [**socketlib 1.0.13**](https://github.com/manuelVo/foundryvtt-socketlib)
 
 </details>
 
