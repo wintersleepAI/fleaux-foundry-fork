@@ -1,0 +1,8 @@
+{{#if equipable }}
+	<a class="boutons bouton-equiper" data-cle={{cle}}>
+		<i 	class="fa fa-user-shield" 
+			data-tooltip="{{#if equipe}}{{localiser 'FORMULAIRE.Bouton.libelle.desequiper'}}{{else}}{{localiser 'FORMULAIRE.Bouton.libelle.equiper'}}{{/if}}" 
+			style="color: {{#if equipe}} antiquewhite {{else}} #4b4a44; {{/if}};">
+		</i>
+	</a>
+{{/if}}

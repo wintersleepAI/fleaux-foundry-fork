@@ -58,6 +58,10 @@ Veuillez rejoindre le serveur Discord FR [La Fonderie->Système Fléaux](https:/
 	>	* Mettre en place les armes à feu et les Runes
 	>	* Mettre en place le système d'alchimie.
 
+* **2024.2.1**
+	>	* Intégration de la version core-foundry 2024.1.3.
+	>	* Maintenance corrective.
+
 * **2024.1.1**
 	>	* L'option de chargement des données est supprimée, elle se fait automatiquement quand on est le GameMaster.
 	>	* Mise en place des sockets.
@@ -117,6 +121,6 @@ Veuillez rejoindre le serveur Discord FR [La Fonderie->Système Fléaux](https:/
 
 <details><summary>Librairies</summary>
 
-* **core-foundry 2024.1.1** 
+* **core-foundry 2024.1.3** 
 
 </details>
