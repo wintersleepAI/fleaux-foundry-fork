@@ -129,6 +129,6 @@
 	"background": "systems/fleaux/images/ui/fond.png",
 	"url": "https://gitlab.com/jhen-javascript/rpg-engine/vtt/foundry/distributions/fleaux",
 	"manifest": "https://gitlab.com/jhen-javascript/rpg-engine/vtt/foundry/distributions/fleaux/-/raw/distrib/system.json",
-	"download": "https://gitlab.com/jhen-javascript/rpg-engine/vtt/foundry/distributions/fleaux/-/archive/2024.1.1/fleaux.zip",
+	"download": "https://gitlab.com/jhen-javascript/rpg-engine/vtt/foundry/distributions/fleaux/-/archive/2024.2.1/fleaux.zip",
 	"license": "LICENSE.txt"
 }
