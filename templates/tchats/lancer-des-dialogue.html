@@ -1,6 +1,9 @@
 <form>
 	{{#if (or (eq typeLancerDes "de-attributs") (eq typeLancerDes "de-degats" ))}}
 	<div class="form-group">
+		<label class="pioncible">---[ {{pionCible}} ]---</label>
+	</div>
+	<div class="form-group">
 		<label class="information" style="width: auto;">
 			<input name="seDepasser" type="checkbox" data-dtype="Boolean">{{localize "DIALOGUE.des.se-depasser"}}
 		</label>

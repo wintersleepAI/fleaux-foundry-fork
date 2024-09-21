@@ -1065,6 +1065,8 @@
 	"DIALOGUE.des.avantage": "Avantage",
 	"DIALOGUE.des.desavantage": "Désavantage",
 	"DIALOGUE.des.bonusMalus": "Niveau de menace (bonus/malus)",
+	"DIALOGUE.des.pionCible": "Pion(s) ciblé(s) : ",
+	"DIALOGUE.des.aucunPionCible": "Aucun pion ciblé",
 	"DIALOGUE.calculerPrixEquipement.contenu": "<p><i class='fa fa-coins'></i>&nbsp;Voulez-vous déduire le prix de l'équipement <b>{nom}</b> de votre fortune ?</p>",
 	"DIALOGUE.reinitialiser.titre": "Réinitialiser la fiche ?",
 	"DIALOGUE.reinitialiser.contenu": "<p>Etes-vous sûr de vouloir remettre à zéro la fiche de {nom} ?</p>",
@@ -1144,5 +1146,7 @@
 	"NOTIFICATION.effrayer.warn": "Pris de peur, {nom} prend ses jambes à son cou.",
 	"NOTIFICATION.desarmer.info": "{nom} lâche son arme ({arme}).",
 	"NOTIFICATION.attaqueEffets.warn": "{nom} doit choisir un effet à l'attaque.",
+	"NOTIFICATION.verifierTypeAttaque.warn": "Le type d'attaque de l'arme ne correspond pas avec le choix du lancer de dés !!!",
+	"NOTIFICATION.lancerArmeDeJet.info": "{nom} lance son arme ({arme}) vers la cible ({pion}).",
 	"NOTIFICATION.xxx.info": ""
 }

@@ -669,3 +669,10 @@ img {
 	border: none; 
 	filter: drop-shadow(2px 6px 3px black);
 }
+.pioncible {
+	color: #820912;
+	text-align: center;
+}
+#chat-controls .roll-type-select {
+	color: #820912;
+}

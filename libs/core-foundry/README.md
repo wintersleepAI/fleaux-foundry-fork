@@ -7,6 +7,9 @@ Bibliothèque pour Foundry VTT
 <details>
 <summary>Versions</summary>
 
+* **2024.2.1**
+	> * [x] Compatibilité foundry v12
+
 * **2024.1.3**
 	> * [x] Réorganisation et refactoring du code
 	> * [x] Finalisation de la classe Localisation avec ajout du fichier langs

@@ -413,7 +413,7 @@
 			"armeAfeu": false,
 			"protection": "PR2",
 			"equipe": false,
-			"formulePrix": "d6x10",
+			"formulePrix": "d6*10",
 			"prix": 0
 		}
 	},

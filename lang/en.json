@@ -1065,6 +1065,8 @@
 	"DIALOGUE.des.avantage": "Advantage",
 	"DIALOGUE.des.desavantage": "Disadvantage",
 	"DIALOGUE.des.bonusMalus": "Threat level (bonus/malus)",
+	"DIALOGUE.des.pionCible": "Targeted pawn(s): ",
+	"DIALOGUE.des.aucunPionCible": "No pawn targeted",
 	"DIALOGUE.calculerPrixEquipement.contenu": "<p><i class='fa fa-coins'></i>&nbsp;Do you want to deduct the price of the <b>{nom}</b> equipment from your wealth?</p>",
 	"DIALOGUE.reinitialiser.titre": "Reset the sheet?",
 	"DIALOGUE.reinitialiser.contenu": "<p>Are you sure you want to reset the data sheet of {nom}?</p>",
@@ -1144,5 +1146,7 @@
 	"NOTIFICATION.effrayer.warn": "Taken with fear, {nom} runs away.",
 	"NOTIFICATION.desarmer.info": "{nom} drops his weapon ({arme}).",
 	"NOTIFICATION.attaqueEffets.warn": "{nom} must choose an attack effect.",
+	"NOTIFICATION.verifierTypeAttaque.warn": "The attack type of the weapon does not correspond with the choice of dice roll!",
+	"NOTIFICATION.lancerArmeDeJet.info": "{nom} throws his weapon ({arme}) at the target ({pion}).",
 	"NOTIFICATION.xxx.info": ""
 }

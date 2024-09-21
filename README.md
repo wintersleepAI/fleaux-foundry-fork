@@ -58,6 +58,14 @@ Veuillez rejoindre le serveur Discord FR [La Fonderie->Système Fléaux](https:/
 	>	* Mettre en place les armes à feu et les Runes
 	>	* Mettre en place le système d'alchimie.
 
+* **2024.3.1**
+	>	* Intégration de la version core-foundry 2024.2.1 spéciale Foundry v12.
+	>	* Passage Foundry v11 -> v12.
+	>	* Nettoyage des macros obsolètes.
+	>	* Vérification du type d'arme lors d'un lancer de dés de mêlée ou de tir.
+	>	* Affichage dans la fenêtre de dialogue de lancer de dés d'attribut et de dégats du pion ciblé ou aucun pion ciblé.
+	>	* Maintenance corrective.
+
 * **2024.2.1**
 	>	* Intégration de la version core-foundry 2024.1.3.
 	>	* Maintenance corrective.
@@ -121,6 +129,6 @@ Veuillez rejoindre le serveur Discord FR [La Fonderie->Système Fléaux](https:/
 
 <details><summary>Librairies</summary>
 
-* **core-foundry 2024.1.3** 
+* **core-foundry 2024.2.1** 
 
 </details>
