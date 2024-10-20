@@ -102,6 +102,17 @@
 						"espritConsume": false,
 						"autreDimension": false
 					}
+				},
+				"experience": {
+					"niveau2": {"attribut": null, "nom": null, "valeur": null},
+					"niveau3": {"talent": null},
+					"niveau4": {"attribut": null, "nom": null, "valeur": null},
+					"niveau5": {"profession": null},
+					"niveau6": {"attribut": null, "nom": null, "valeur": null},
+					"niveau7": {"talent": null},
+					"niveau8": {"attribut": null, "nom": null, "valeur": null},
+					"niveau9": {"talent": null},
+					"niveau10": {"de-volonte": null}
 				}
 			}
 		},

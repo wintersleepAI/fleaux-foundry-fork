@@ -9,6 +9,7 @@ Bibliothèque pour Foundry VTT
 
 * **2024.2.1**
 	> * [x] Compatibilité foundry v12
+	> * [x] Ajouter le lien du tableau des tickets gitlab
 
 * **2024.1.3**
 	> * [x] Réorganisation et refactoring du code

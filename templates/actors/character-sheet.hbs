@@ -14,12 +14,13 @@
 						</div> 
 						<!-- NIVEAU -->
 						<div class=" info-niveau">
-							<div class="" style="padding: 1px 15px;">{{ localize 'FORMULAIRE.commun.libelle.niveau' }}
-							</div>
-							<div class="" style="padding: 30px 28px">
+							<div class="niveau-experience" style="cursor: pointer;" data-tooltip="{{localize "FORMULAIRE.commun.libelle.niveauinfobulle"}}">{{localize "FORMULAIRE.commun.libelle.niveau" }}</div>
+							<div class="" style="padding: 29px 24px;display: flex;flex-direction: column;align-items: center;">
+								<i class="passage-niveau fa-solid fa-angles-up fa-xs" style="cursor: pointer;" data-tooltip="{{localize "FORMULAIRE.commun.libelle.niveaupassageinfobulle"}}"></i>
 								<input class="attribut-change" name="system.niveau" type="number"
 									value="{{actor.system.niveau}}" min=1 max=10
-									style="background-color: transparent; border:none" />
+									style="background-color: transparent; border:none; padding-top: 2px; padding-bottom: 6px;" disabled/>
+								<i class="perte-niveau fa-solid fa-angles-down fa-xs" style="cursor: pointer;" data-tooltip="{{localize "FORMULAIRE.commun.libelle.niveauperteinfobulle"}}"></i>
 							</div>
 						</div>
 					</div>
@@ -40,10 +41,10 @@
 			<div class="attribut-header">
 				<div>
 					{{#if (getIsGM)}}
-					<a class="reinitialiser" data-tooltip={{localize "FORMULAIRE.personnage.libelle.reinitialiser" }}>
+					<a class="reinitialiser" data-tooltip="{{localize "FORMULAIRE.personnage.libelle.reinitialiser" }}">
 						<i class="fas fa-undo-alt"></i></a>
 					{{/if}}
-					<a class="recuperation" data-tooltip={{localize "FORMULAIRE.personnage.libelle.recuperation" }}> <i
+					<a class="recuperation" data-tooltip="{{localize "FORMULAIRE.personnage.libelle.recuperation" }}"> <i
 							class="fa-solid fa-bed"></i></a>
 				</div>
 				{{#each actor.system.attributs as |attrib key|}}
@@ -59,7 +60,7 @@
 					<div class="attribut-img"
 						style="background: url('../systems/fleaux/images/ui/attribut-{{ getAttributProperty key 'system.code' }}.png') no-repeat;">
 						<input class="attribut-change" type="number" min="0" max="18" data-attribut="{{key}}"
-							name="system.attributs.{{key}}.actuel" value="{{attrib.actuel}}" />
+							name="system.attributs.{{key}}.actuel" value="{{attrib.actuel}}"/>
 					</div>
 				</div>
 				{{/each}}

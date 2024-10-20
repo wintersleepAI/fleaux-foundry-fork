@@ -1,6 +1,8 @@
 {
 	"SYSTEM.label":"fleaux",
 
+	"FOUNDRY.ajouterUrlSuiviTickets.titre": "Tableau du suivi des tickets [gitlab]",
+
 	"SETTINGS.importData.name": "Importer les données",
 	"SETTINGS.importData.hint": "Mets à jour les compendiums du système à partir des fichiers JSON. Attention, les identifiants sont regénérés.",
 
@@ -14,7 +16,8 @@
 	"ERREUR.objet.initialise": "Le système n'a pas réussi à initialiser les données pour",
 	"ERREUR.FleauxDes.dejalance": "Ce lancé de dés a déjà été fait.",
 	"ERREUR.FleauxDes.aucundes": "Cet objet Roll nécessite de lancer des dés.",
-	
+	"ERREUR.FleauxActeur.verifierattribut": "La valeur de l'attribut doit être comprise en 8 et 18.",
+
 	"TYPES.Actor.character": "Personnage",
 	"TYPES.Actor.pnj": "Personnage non joueur",
 	"TYPES.Actor.creature": "Créature",
@@ -597,6 +600,7 @@
 	"CRIME.crime-de-base.accusation.19": "D’avoir déserté.",    
 	"CRIME.crime-de-base.accusation.20": "D’avoir chassé sur une réserve royale.",
 
+	"PROFESSIONS.diaglogue.choisir": "Choisissez une profession",
 	"PROFESSIONS.minuscule.nom": "Les professions",
 	"PROFESSION.libelle.pour-survivre": "Pour survivre, vous avez compté sur la profession...",
 	"PROFESSION.violence.nom": "Violence",
@@ -657,6 +661,7 @@
 	"PROFESSION.erudition.profession.6.description": "Choisissez une ressource au début de chaque partie (munitions, rations, etc.). Le dé d'usage lié à cette ressource ne se dégrade que sur un résultat de 1 (pour l'ensemble des personnages du groupe).",
 
 	"TALENTS.minuscule.nom": "Les talents",
+	"TALENTS.diaglogue.choisir": "Choisissez un talent",
 	"TALENT.acharne.nom": "Acharné",
 	"TALENT.acharne.description": "Une fois par partie, ajoutez votre dé de Volonté à vos dégâts.",
 	"TALENT.adepte-magie-sang.nom": "Adepte de la magie du sang",
@@ -932,7 +937,11 @@
 
 	"FORMULAIRE.commun.libelle.nom": "Nom",
 	"FORMULAIRE.commun.libelle.pointdevie": "Points de vie",
+	"FORMULAIRE.commun.libelle.pointdevieabrege": "PV",
 	"FORMULAIRE.commun.libelle.niveau": "Niveau",
+	"FORMULAIRE.commun.libelle.niveauinfobulle": "Afficher l'expérience acquise",
+	"FORMULAIRE.commun.libelle.niveaupassageinfobulle": "Passage de niveau",
+	"FORMULAIRE.commun.libelle.niveauperteinfobulle": "Perte de niveau",
 	"FORMULAIRE.commun.libelle.activerscript": "Activer le script",
 	"FORMULAIRE.commun.libelle.creer": "Créer",	
 	"FORMULAIRE.commun.libelle.edit": "Editer",
@@ -1021,7 +1030,12 @@
 	"FORMULAIRE.equipement.caseacocher.accordeavantage": "Accorde un Avantage",
 	"FORMULAIRE.equipement.libelle.accordeenchantement": "Un objet de ce genre peut accorder l’effet d’un sort (dans ce cas l’objet possède un d6 d’utilisation).",
 	"FORMULAIRE.equipement.caseacocher.accordeenchantement": "Accorde un effet de sort",
-	
+	"FORMULAIRE.experience.libelle.regles": "Règles",
+	"FORMULAIRE.experience.libelle.benefices": "Bénéfices",
+	"FORMULAIRE.experience.libelle.regleattribut": "Attribut +1 (max 18)",
+	"FORMULAIRE.experience.libelle.regletalent": "Gagner un talent",
+	"FORMULAIRE.experience.libelle.regleprofession": "Nouvelle profession (sans bonus)",
+
 	"TCHAT.des.attribut": "Jet d'attribut :",
 	"TCHAT.des.lanceAvecAvantage": "- Lancé avec avantage.",
 	"TCHAT.des.lanceAvecDesavantage": "- Lancé avec désavantage.",
@@ -1117,6 +1131,12 @@
 	"DIALOGUE.attaqueEffets.bouton.defoncer":"Défoncer",
 	"DIALOGUE.attaqueEffets.bouton.desarmer":"Désarmer",
 	"DIALOGUE.attaqueEffets.bouton.distribuer":"Distribuer",
+	"DIALOGUE.experience.titre": "Experience de {nom}",
+	"DIALOGUE.experience.bouton.valider":"Valider",
+	"DIALOGUE.passageniveau.titre":"Passer au niveau {niveau}",
+	"DIALOGUE.passageniveau.attribut.contenu":"Choisissez l'attribut pour lequel vous voulez ajouter un point.",
+	"DIALOGUE.perteniveau.titre":"Perdre le niveau {niveau}",
+	"DIALOGUE.perteniveau.contenu":"Attention, la perte de niveau annule les bénéfices acquis, voulez-vous continuer ?",
 
 	"NOTIFICATION.reposcourt.info": "{nom} vient de récupérer {pvArecuperer} points de vie.",
 	"NOTIFICATION.reposlong.info": "{nom} vient de récupérer tous ces points de vie, ses états et son dé de volonté.",
@@ -1148,5 +1168,7 @@
 	"NOTIFICATION.attaqueEffets.warn": "{nom} doit choisir un effet à l'attaque.",
 	"NOTIFICATION.verifierTypeAttaque.warn": "Le type d'attaque de l'arme ne correspond pas avec le choix du lancer de dés !!!",
 	"NOTIFICATION.lancerArmeDeJet.info": "{nom} lance son arme ({arme}) vers la cible ({pion}).",
+	"NOTIFICATION.niveaumaximum.avertissement": "Niveau maximum atteint, félicitations {nom} !",
+	"NOTIFICATION.niveauminimum.avertissement": "Niveau minimum atteint pour {nom} !",
 	"NOTIFICATION.xxx.info": ""
 }

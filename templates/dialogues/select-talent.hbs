@@ -1,0 +1,9 @@
+<div class="form-group">
+	<select name="select-talent" >
+		<option value="null">{{localize 'TALENTS.diaglogue.choisir'}}</option>
+		{{#each talents as |talent| }}
+			<option value="{{talent._id}}" title="{{localize talent.system.description }}">{{localize talent.name}}</option>
+		{{/each}}
+	</select>
+</div>
+<br>

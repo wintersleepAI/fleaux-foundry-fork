@@ -1,6 +1,8 @@
 {
 	"SYSTEM.label":"fleaux",
-
+	
+	"FOUNDRY.ajouterUrlSuiviTickets.titre": "Ticket tracking table [gitlab]",
+	
 	"SETTINGS.importData.name": "Import data",
 	"SETTINGS.importData.hint": "Update the system compendiums from JSON files.",
 
@@ -14,6 +16,7 @@
 	"ERREUR.objet.initialise": "The system has failed to initialize the data for",
 	"ERREUR.FleauxDes.dejalance": "This Roll object has already been rolled.",
 	"ERREUR.FleauxDes.aucundes": "This Roll object need dice to be rolled.",
+	"ERREUR.FleauxActeur.verifierattribut": "The attribute value must be between 8 and 18.",
 
 	"TYPES.Actor.character": "Character",
 	"TYPES.Actor.pnj": "Non-player character",
@@ -597,6 +600,7 @@
 	"CRIME.crime-de-base.accusation.19": "Being a deserte.",
 	"CRIME.crime-de-base.accusation.20": "To have hunted on a royal reserve.",
 
+	"PROFESSIONS.diaglogue.choisir": "Choose a profession",
 	"PROFESSIONS.minuscule.nom": "The professions",
 	"PROFESSION.libelle.pour-survivre": "To survive, you relied on the profession...",
 	"PROFESSION.violence.nom": "Violence",
@@ -657,6 +661,7 @@
 	"PROFESSION.erudition.profession.6.description": "Choose a resource at the beginning of each session (ammunition, rations, etc.). The usage die for this resource only degrades on a result of 1 for all characters in the group.",
 
 	"TALENTS.minuscule.nom": "The talents",
+	"TALENTS.diaglogue.choisir": "Choose a talent",
 	"TALENT.acharne.nom": "Relentless",
 	"TALENT.acharne.description": "Once per session, add your Willpower die to your damage.",
 	"TALENT.adepte-magie-sang.nom": "Blood Magic Adept",
@@ -932,7 +937,11 @@
 	
 	"FORMULAIRE.commun.libelle.nom": "Name",
 	"FORMULAIRE.commun.libelle.pointdevie": "Hit point",
+	"FORMULAIRE.commun.libelle.pointdevieabrege": "HP",
 	"FORMULAIRE.commun.libelle.niveau": "Level",
+	"FORMULAIRE.commun.libelle.niveauinfobulle": "Display acquired experience",
+	"FORMULAIRE.commun.libelle.niveaupassageinfobulle": "Level crossing",
+	"FORMULAIRE.commun.libelle.niveauperteinfobulle": "Loss of level",
 	"FORMULAIRE.commun.libelle.activerscript": "Activate script",
 	"FORMULAIRE.commun.libelle.creer": "Add    ",
 	"FORMULAIRE.commun.libelle.editer": "Edit",
@@ -1021,6 +1030,11 @@
 	"FORMULAIRE.equipement.caseacocher.accordeavantage": "Grants an Advantage",
 	"FORMULAIRE.equipement.libelle.accordeenchantement": "An object of this type can grant the effect of a spell (in this case the object has a d6 of use).",
 	"FORMULAIRE.equipement.caseacocher.accordeenchantement": "Grants a spell effect",
+	"FORMULAIRE.experience.libelle.regles": "Rules",
+	"FORMULAIRE.experience.libelle.benefices": "Benefits",
+	"FORMULAIRE.experience.libelle.regleattribut": "Attribut +1 (max 18)",
+	"FORMULAIRE.experience.libelle.regletalent": "Win a talent",
+	"FORMULAIRE.experience.libelle.regleprofession": "New profession (no bonus)",
 
 	"TCHAT.des.attribut": "Attribute roll :",
 	"TCHAT.des.lanceAvecAvantage": "- Launched with advantage.",
@@ -1117,6 +1131,12 @@
 	"DIALOGUE.attaqueEffets.bouton.defoncer":"Butcher",
 	"DIALOGUE.attaqueEffets.bouton.desarmer":"Disarm",
 	"DIALOGUE.attaqueEffets.bouton.distribuer":"Whirlwind",
+	"DIALOGUE.experience.titre": "Experience of {nom}",
+	"DIALOGUE.experience.bouton.valider":"Confirm",
+	"DIALOGUE.passageniveau.titre":"Upgrade to level  {niveau}",
+	"DIALOGUE.passageniveau.attribut.contenu":"Select the attribute for which you want to add a dot.",
+	"DIALOGUE.perteniveau.titre":"Lose the level  {niveau}",
+	"DIALOGUE.perteniveau.contenu":"Please note that loss of level cancels the benefits acquired. Would you like to continue?",
 
 	"NOTIFICATION.reposcourt.info": "{nom} has just recovered {pvArecuperer} life points.",
 	"NOTIFICATION.reposlong.info": "{nom} has just recovered all his hit points, his states and his willpower die.",
@@ -1148,5 +1168,7 @@
 	"NOTIFICATION.attaqueEffets.warn": "{nom} must choose an attack effect.",
 	"NOTIFICATION.verifierTypeAttaque.warn": "The attack type of the weapon does not correspond with the choice of dice roll!",
 	"NOTIFICATION.lancerArmeDeJet.info": "{nom} throws his weapon ({arme}) at the target ({pion}).",
+	"NOTIFICATION.niveaumaximum.avertissement": "Maximum level reached, congratulations {nom} !",
+	"NOTIFICATION.niveauminimum.avertissement": "Minimum level reached for {nom} !",
 	"NOTIFICATION.xxx.info": ""
 }
