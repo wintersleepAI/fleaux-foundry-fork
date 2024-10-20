@@ -93,10 +93,11 @@ Veuillez rejoindre le serveur Discord FR [La Fonderie->Système Fléaux](https:/
 	> * [x] Localisation 'fr', 'en' et maintenance corrective.
 
 * **2023.3.1**
-	> * [x] [Implémenter les macros pour les équipements, les talents et les sorts.](https://gitlab.com/jhen-javascript/rpg-engine/vtt/foundry/v10/distributions/fleaux/-/issues/1)
-	> * [x] Maintenance corrective :
-			>> - [x] [Image de l'avatar > Déformation](https://gitlab.com/jhen-javascript/rpg-engine/vtt/foundry/v10/distributions/fleaux/-/issues/5)
-			>> - [x] [Créer un actor PNJ](https://gitlab.com/jhen-javascript/rpg-engine/vtt/foundry/v10/distributions/fleaux/-/issues/6)
+  >>>
+  * [x] [Implémenter les macros pour les équipements, les talents et les sorts.](https://gitlab.com/jhen-javascript/rpg-engine/vtt/foundry/v10/distributions/fleaux/-/issues/1)
+  * [x] Maintenance corrective :  
+    * [x] [Image de l'avatar \> Déformation](https://gitlab.com/jhen-javascript/rpg-engine/vtt/foundry/v10/distributions/fleaux/-/issues/5) 
+    * [x] [Créer un actor PNJ](https://gitlab.com/jhen-javascript/rpg-engine/vtt/foundry/v10/distributions/fleaux/-/issues/6)
 
 * **2023.2.1**
 	> * [x] Finaliser Se Défendre avec la parade ou l'esquive (page 35).
