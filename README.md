@@ -57,6 +57,9 @@ Veuillez rejoindre le serveur Discord FR [La Fonderie->Système Fléaux](https:/
 	> * [ ] Mettre en place les armes à feu et les Runes
 	> * [ ] Mettre en place le système d'alchimie.
 
+* **2024.4.2**
+	> * [x] [fix 2024.4 : les sorts ne peuvent plus être ajouter dans la fiche](https://gitlab.com/jhen-javascript/rpg-engine/vtt/foundry/distributions/fleaux/-/issues/incident/11)
+
 * **2024.4.1**
 	> * [x] [Mettre en place le système de progression avec la gestion de l'expérience.](https://gitlab.com/jhen-javascript/rpg-engine/vtt/foundry/distributions/fleaux/-/issues/8)
 	> * [x] Ajouter un lien 'tableau du suivi des tickets [gitlab]' dans Paramètres/Informations générales.
