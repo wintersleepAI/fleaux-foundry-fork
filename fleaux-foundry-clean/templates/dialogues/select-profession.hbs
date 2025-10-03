@@ -1,0 +1,12 @@
+<div class="form-group">
+	<select name="select-profession" >
+		<option value="null">{{localize 'PROFESSIONS.diaglogue.choisir'}}</option>
+		{{#each groupes as |groupe| }}
+			<option value="{{groupe.id}}" title="{{localize groupe.system.description }}" disabled>{{localize groupe.name}}</option>
+			{{#each groupe.system.professions as |i| }}
+				<option value="{{groupe.id}}-{{[0]}}" title="{{localize [2] }}">&nbsp;&nbsp;&nbsp;&nbsp;{{localize [1]}}</option>
+			{{/each}}
+		{{/each}}
+	</select>
+</div>
+<br>

@@ -1,0 +1,266 @@
+{
+	"Actor": {
+		"types": [
+			"character",
+			"pnj",
+			"creature"
+		],
+		"templates": {
+			"attributs": {
+				"attributs": {
+					"for": {
+						"actuel": 0,
+						"init2d6": false,
+						"malus": 0
+					},
+					"dex": {
+						"actuel": 0,
+						"init2d6": false,
+						"malus": 0
+					},
+					"eru": {
+						"actuel": 0,
+						"init2d6": false,
+						"malus": 0
+					},
+					"cha": {
+						"actuel": 0,
+						"init2d6": false,
+						"malus": 0
+					},
+					"sfr": {
+						"actuel": 0,
+						"init2d6": false,
+						"malus": 0
+					},
+					"mel": {
+						"actuel": 0,
+						"init2d6": false,
+						"malus": 0
+					},
+					"tir": {
+						"actuel": 0,
+						"init2d6": false,
+						"malus": 0
+					}
+				}
+			},
+			"actorCommun": {
+				"typeName": "ACTOR.TypeCharacter",
+				"niveau": 1,
+				"description": "",
+				"relations": "",
+				"notes":"",
+				"objectifs":"",
+				"attributes": {
+					"pv": {
+						"value": 0,
+						"max": 0
+					}
+				},
+				"fortune": 0,
+				"critique": {
+					"reussite": 1,
+					"echec": 20
+				}
+			},
+			"character": {
+				"education": null,
+				"accusation": null,
+				"profession1": null,
+				"profession2": null,
+				"de-volonte": {
+					"actuel": "d6",
+					"max": "d6"
+				},
+				"bouclier": false,
+				"affame-et-sale": false,
+				"effetsMordreLaPoussiere": {
+					"eraflure": false,
+					"rateDePeu": false,
+					"handicape": false,
+					"blesse": false,
+					"amoche": false,
+					"mort": false
+				},
+				"de-degats": {
+					"actuel": "d4",
+					"max": "d4"
+				},
+				"de-degats-arme": {
+					"actuel": "d6",
+					"max": "d6"
+				},
+				"sorcellerie": {
+					"dernierSortLance": {
+						"sort": null,
+						"resultatDesVolonte": null
+					},
+					"effetsRevancheDuChaos": {
+						"reduitAuSilence" : false,
+						"arrongance": false,
+						"espritConsume": false,
+						"autreDimension": false
+					}
+				},
+				"experience": {
+					"niveau2": {"attribut": null, "nom": null, "valeur": null},
+					"niveau3": {"talent": null},
+					"niveau4": {"attribut": null, "nom": null, "valeur": null},
+					"niveau5": {"profession": null},
+					"niveau6": {"attribut": null, "nom": null, "valeur": null},
+					"niveau7": {"talent": null},
+					"niveau8": {"attribut": null, "nom": null, "valeur": null},
+					"niveau9": {"talent": null},
+					"niveau10": {"de-volonte": null}
+				}
+			}
+		},
+		"character": {
+			"templates": [
+				"actorCommun",
+				"attributs", 
+				"character"
+			]
+		}, 
+		"pnj": {
+			"templates": [
+				"actorCommun",
+				"attributs",
+				"character"
+			]
+		},
+		"creature": {
+			"typeName": "BESTIAIRE.TypeBestiaire",
+            "niveau": 1,
+			"description": "",
+			"attributes": {
+				"pv": {
+					"value": 5,
+					"max": 5
+				}
+			},
+            "actions": [],
+            "reference": ""
+		}
+	},
+	"Item": {
+		"types": [
+			"attribut",
+			"peuple",
+			"crime",
+			"profession",
+			"talent",
+			"sort",
+			"equipement",
+			"etat"
+		],
+		"templates": {
+			"itemCommon": {
+				"typeName": "",
+				"description": "",
+				"reference": ""
+			},
+			"macro": {
+				"macroScript": {
+					"idMacro": null,
+					"active": false,
+					"parent": {
+						"modifiable": true,
+						"supprimable": true
+					}
+				}
+			} 
+		},
+		"attribut": {
+			"templates": [
+				"itemCommon"
+			],
+			"code": ""
+		},
+		"peuple": {
+			"templates": [
+				"itemCommon"
+			],
+			"educations": [],
+			"de": "1d6"
+		},
+		"crime": {
+			"templates": [
+				"itemCommon"
+			],
+			"accusations": [],
+			"de": "1d8"
+		},
+		"profession": {
+			"templates": [
+				"itemCommon"
+			],
+			"professions": [],
+			"de": "1d6"
+		},
+		"talent": {
+			"templates": [
+				"itemCommon",
+				"macro"
+			]
+		},
+		"sort": {
+			"templates": [
+				"itemCommon",
+				"macro"
+			]
+		},
+		"equipement": {
+			"templates": [
+				"itemCommon",
+				"macro"
+			],
+			"categorie": "arme",
+			"typeAttaque": "melee",
+			"deuxMains": false,
+			"armeAfeu": false,
+			"protection": "PR0",
+			"equipe": false,
+			"formulePrix": "d6",
+			"prix": 0,
+			"avantageDegats": false,
+			"avantageParade": false,
+			"quantite": 0,
+			"emplacement": "0",
+			"enchantement": {
+				"enchante": false,
+				"arme": {
+					"tueuse": false,
+					"acierIlmarien": false
+				},
+				"objet": {
+					"avantage": false,
+					"attributCode": "",
+					"effetSort": false,
+					"sort": {
+						"id": null,
+						"de-usure": {
+							"actuel": "d6",
+							"max": "d6"
+						}
+					}
+				}
+			},
+			"de-usure": {
+				"actuel": "d6",
+				"max": "d6"
+			}
+		},
+		"etat": {
+			"templates": [
+				"itemCommon",
+				"macro"
+			],
+			"date" : null,
+			"idActeur": "",
+			"typeDuree": "par-scene",
+			"duree":null
+		}
+	}
+}

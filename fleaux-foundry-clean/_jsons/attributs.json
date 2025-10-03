@@ -1,0 +1,79 @@
+[
+	{
+		"type": "attribut",
+		"img": "/systems/fleaux/images/system/attributs/force.webp",
+		"name": "ATTRIBUT.force.nom",
+		"system": {
+			"code": "for",
+			"typeName": "TYPES.Item.attribut",
+			"description": "ATTRIBUT.force.description",
+			"reference": "p. 14"
+		}
+	},
+	{
+		"type": "attribut",
+		"img": "/systems/fleaux/images/system/attributs/charisme.webp",
+		"name": "ATTRIBUT.charisme.nom",
+		"system": {
+			"code": "cha",
+			"typeName": "TYPES.Item.attribut",
+			"description": "ATTRIBUT.charisme.description",
+			"reference": "p. 14"
+		}
+	},
+	{
+		"type": "attribut",
+		"img": "/systems/fleaux/images/system/attributs/sang-froid.webp",
+		"name": "ATTRIBUT.sang-froid.nom",
+		"system": {
+			"code": "sfr",
+			"typeName": "TYPES.Item.attribut",
+			"description": "ATTRIBUT.sang-froid.description",
+			"reference": "p. 14"
+		}
+	},
+	{
+		"type": "attribut",
+		"img": "/systems/fleaux/images/system/attributs/dexterite.webp",
+		"name": "ATTRIBUT.dexterite.nom",
+		"system": {
+			"code": "dex",
+			"typeName": "TYPES.Item.attribut",
+			"description": "ATTRIBUT.dexterite.description",
+			"reference": "p. 14"
+		}
+	},
+	{
+		"type": "attribut",
+		"img": "/systems/fleaux/images/system/attributs/erudition.webp",
+		"name": "ATTRIBUT.erudition.nom",
+		"system": {
+			"code": "eru",
+			"typeName": "TYPES.Item.attribut",
+			"description": "ATTRIBUT.erudition.description",
+			"reference": "p. 14"
+		}
+	},
+	{
+		"type": "attribut",
+		"img": "/systems/fleaux/images/system/attributs/melee.webp",
+		"name": "ATTRIBUT.melee.nom",
+		"system": {
+			"code": "mel",
+			"typeName": "TYPES.Item.attribut",
+			"description": "ATTRIBUT.melee.description",
+			"reference": "p. 14"
+		}
+	},
+	{
+		"type": "attribut",
+		"img": "/systems/fleaux/images/system/attributs/tir.webp",
+		"name": "ATTRIBUT.tir.nom",
+		"system": {
+			"code": "tir",
+			"typeName": "TYPES.Item.attribut",
+			"description": "ATTRIBUT.tir.description",
+			"reference": "p. 14"
+		}
+	}
+]

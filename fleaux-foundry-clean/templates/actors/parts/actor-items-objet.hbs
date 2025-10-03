@@ -1,0 +1,9 @@
+{{#with item}}
+	<div style="{{../headers.1.style}}"></div>
+	<div style="{{../headers.2.style}}">
+		{{#if (booleenNonNul system.deuxMains) }}
+			<i class="fas fa-hand-paper"></i>{{#if system.deuxMains}}<i class="fas fa-hand-paper"></i>{{/if}}
+		{{/if}}
+	</div>
+	{{> (actorPartial "actor-items-commun") style-usure=../headers.3.style style-equipe=../headers.4.style style-prix=../headers.5.style}}
+{{/with}}

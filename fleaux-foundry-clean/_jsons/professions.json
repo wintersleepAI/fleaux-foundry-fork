@@ -1,0 +1,222 @@
+[
+	{
+		"type": "profession",
+		"img": "/systems/fleaux/images/system/professions/violence.webp",
+		"name": "PROFESSION.violence.nom",
+		"system": {
+			"typeName": "TYPES.Item.profession",
+			"description": "PROFESSION.violence.description",
+			"reference": "p. 21",
+			"professions": [
+				[
+					1,
+					"PROFESSION.violence.profession.1.nom",
+					"PROFESSION.violence.profession.1.description",
+					1,
+					"mel"
+				],
+				[
+					2,
+					"PROFESSION.violence.profession.2.nom",
+					"PROFESSION.violence.profession.2.description",
+					1,
+					"tir"
+				],
+				[
+					3,
+					"PROFESSION.violence.profession.3.nom",
+					"PROFESSION.violence.profession.3.description",
+					1,
+					"mel"
+				],
+				[
+					4,
+					"PROFESSION.violence.profession.4.nom",
+					"PROFESSION.violence.profession.4.description",
+					1,
+					"mel"
+				],
+				[
+					5,
+					"PROFESSION.violence.profession.5.nom",
+					"PROFESSION.violence.profession.5.description",
+					1,
+					"for"
+				],
+				[
+					6,
+					"PROFESSION.violence.profession.6.nom",
+					"PROFESSION.violence.profession.6.description",
+					1,
+					"dex"
+				]
+			],
+			"de": "1d6"
+		}
+	},
+	{
+		"type": "profession",
+		"img": "/systems/fleaux/images/system/professions/isolement.webp",
+		"name": "PROFESSION.isolement.nom",
+		"system": {
+			"typeName": "TYPES.Item.profession",
+			"description": "PROFESSION.isolement.description",
+			"reference": "p. 20",
+			"professions": [
+				[
+					1,
+					"PROFESSION.isolement.profession.1.nom",
+					"PROFESSION.isolement.profession.1.description",
+					1,
+					"for"
+				],
+				[
+					2,
+					"PROFESSION.isolement.profession.2.nom",
+					"PROFESSION.isolement.profession.2.description",
+					1,
+					"sfr"
+				],
+				[
+					3,
+					"PROFESSION.isolement.profession.3.nom",
+					"PROFESSION.isolement.profession.3.description",
+					1,
+					"tir"
+				],
+				[
+					4,
+					"PROFESSION.isolement.profession.4.nom",
+					"PROFESSION.isolement.profession.4.description",
+					1,
+					"sfr"
+				],
+				[
+					5,
+					"PROFESSION.isolement.profession.5.nom",
+					"PROFESSION.isolement.profession.5.description",
+					1,
+					"eru"
+				],
+				[
+					6,
+					"PROFESSION.isolement.profession.6.nom",
+					"PROFESSION.isolement.profession.6.description",
+					1,
+					"sfr"
+				]
+			],
+			"de": "1d6"
+		}
+	},
+	{
+		"type": "profession",
+		"img": "/systems/fleaux/images/system/professions/debrouillardise.webp",
+		"name": "PROFESSION.debrouillardise.nom",
+		"system": {
+			"typeName": "TYPES.Item.profession",
+			"description": "PROFESSION.debrouillardise.description",
+			"reference": "p. 20",
+			"professions": [
+				[
+					1,
+					"PROFESSION.debrouillardise.profession.1.nom",
+					"PROFESSION.debrouillardise.profession.1.description",
+					1,
+					"dex"
+				],
+				[
+					2,
+					"PROFESSION.debrouillardise.profession.2.nom",
+					"PROFESSION.debrouillardise.profession.2.description",
+					1,
+					"cha"
+				],
+				[
+					3,
+					"PROFESSION.debrouillardise.profession.3.nom",
+					"PROFESSION.debrouillardise.profession.3.description",
+					1,
+					"cha"
+				],
+				[
+					4,
+					"PROFESSION.debrouillardise.profession.4.nom",
+					"PROFESSION.debrouillardise.profession.4.description",
+					1,
+					"for"
+				],
+				[
+					5,
+					"PROFESSION.debrouillardise.profession.5.nom",
+					"PROFESSION.debrouillardise.profession.5.description",
+					1,
+					"sfr"
+				],
+				[
+					6,
+					"PROFESSION.debrouillardise.profession.6.nom",
+					"PROFESSION.debrouillardise.profession.6.description",
+					1,
+					"dex"
+				]
+			],
+			"de": "1d6"
+		}
+	},
+	{
+		"type": "profession",
+		"img": "/systems/fleaux/images/system/professions/erudition.webp",
+		"name": "PROFESSION.erudition.nom",
+		"system": {
+			"typeName": "TYPES.Item.profession",
+			"description": "PROFESSION.erudition.description",
+			"reference": "p. 21",
+			"professions": [
+				[
+					1,
+					"PROFESSION.erudition.profession.1.nom",
+					"PROFESSION.erudition.profession.1.description",
+					1,
+					"dex"
+				],
+				[
+					2,
+					"PROFESSION.erudition.profession.2.nom",
+					"PROFESSION.erudition.profession.2.description",
+					1,
+					"sfr"
+				],
+				[
+					3,
+					"PROFESSION.erudition.profession.3.nom",
+					"PROFESSION.erudition.profession.3.description",
+					1,
+					"eru"
+				],
+				[
+					4,
+					"PROFESSION.erudition.profession.4.nom",
+					"PROFESSION.erudition.profession.4.description",
+					1,
+					"cha"
+				],
+				[
+					5,
+					"PROFESSION.erudition.profession.5.nom",
+					"PROFESSION.erudition.profession.5.description",
+					1,
+					"eru"
+				],
+				[
+					6,
+					"PROFESSION.erudition.profession.6.nom",
+					"PROFESSION.erudition.profession.6.description",
+					1,
+					"eru"
+				]
+			],
+			"de": "1d6"
+		}
+	}
+]

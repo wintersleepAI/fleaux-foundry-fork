@@ -1,0 +1,17 @@
+	{{#with item}}
+		<div style="{{../headers.1.style}}">
+			<span>{{system.date}}</span>
+		</div>
+		<div style="{{../headers.2.style}}">
+			<span>{{getLibelleTypeDureeEtat system.typeDuree}}</span>
+		</div>
+		<div style="{{../headers.3.style}}">
+			{{#if (booleenNonNul system.macroScript.active) }}
+				{{#if (etatEstModifiable system.macroScript.parent.modifiable) }}
+					<i class="etat-activation fas fa-toggle-{{#if system.macroScript.active}}on{{else}}off{{/if}}" data-tooltip="{{#if system.macroScript.active}}{{localize "FORMULAIRE.personnage.libelle.desactiver"}}{{else}}{{localize "FORMULAIRE.personnage.libelle.activer"}}{{/if}}" style="color: {{#if system.macroScript.active}} black {{else}} lightgrey {{/if}};"></i>
+				{{else}}
+					<span class=" fas fa-toggle-{{#if system.macroScript.active}}on{{else}}off{{/if}}" style="color: lightgrey; cursor: auto;"></span>
+				{{/if}}					
+			{{/if}}
+		</div>
+	{{/with}}

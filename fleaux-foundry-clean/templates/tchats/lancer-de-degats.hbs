@@ -1,0 +1,18 @@
+{{#with fleaux}}
+	<div class="tchat-de-degats">
+		<h4 class="tchat-de-degats-titre">{{titreTchat}}</h4>
+		<div>
+			{{#unless (eq typeDes 0) }}
+			<span>
+				{{#if (eq typeDes 1)}} {{localize "TCHAT.des.lanceAvecAvantage"}}
+				{{else}} {{localize "TCHAT.des.lanceAvecDesavantage"}} {{/if}} <br>
+			</span>
+			{{/unless}}
+			<span>{{libelleDefoncer}}</span><br>
+			<span>{{libelleSuccesCritique}}</span>
+		</div>
+	</div>
+{{/with}}
+<div class="dice-roll tchat-de-degats">
+	{{> (tchatPartial "des-resultats")}}
+</div>

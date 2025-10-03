@@ -1,0 +1,2307 @@
+[
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/abyssal.webp",
+		"name": "CREATURE.abyssal.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.abyssal.description",
+			"niveau": 2,
+			"attributes": {
+				"pv": {
+					"value": 10,
+					"max": 10
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.abyssal.harpon.nom",
+					"CREATURE.abyssal.harpon.description", 
+					5
+				],
+				[
+					"CREATURE.abyssal.teleportation.nom",
+					"CREATURE.abyssal.teleportation.description", 
+					0
+				]
+			],
+			"reference": "p. 54"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/abyssalpretre.webp",
+		"name": "CREATURE.abyssalpretre.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.abyssal.description",
+			"niveau": 3,
+			"attributes": {
+				"pv": {
+					"value": 15,
+					"max": 15
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.abyssalpretre.tentaculeseau.nom",
+					"CREATURE.abyssalpretre.tentaculeseau.description", 
+					6
+				],
+				[
+					"CREATURE.abyssalpretre.dague.nom",
+					"CREATURE.abyssalpretre.dague.description", 
+					4
+				]
+			],
+			"reference": "p. 54"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/araigneegeante.webp",
+		"name": "CREATURE.araigneegeante.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.araigneegeante.description",
+			"niveau": 4,
+			"attributes": {
+				"pv": {
+					"value": 20,
+					"max": 20
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.araigneegeante.dardempoissonne.nom",
+					"CREATURE.araigneegeante.dardempoissonne.description", 
+					6
+				],
+				[
+					"CREATURE.araigneegeante.jetdetoile.nom",
+					"CREATURE.araigneegeante.jetdetoile.description", 
+					4
+				]
+			],
+			"reference": "p. 54"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/arakneen.webp",
+		"name": "CREATURE.arakneen.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.arakneen.description",
+			"niveau": 4,
+			"attributes": {
+				"pv": {
+					"value": 20,
+					"max": 20
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.arakneen.glaviotdetoile.nom",
+					"CREATURE.arakneen.glaviotdetoile.description", 
+					6
+				],
+				[
+					"CREATURE.arakneen.kriss.nom",
+					"CREATURE.arakneen.kriss.description", 
+					4
+				]
+			],
+			"reference": "p. 54"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/berserker.webp",
+		"name": "CREATURE.berserker.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.berserker.description",
+			"niveau": 4,
+			"attributes": {
+				"pv": {
+					"value": 20,
+					"max": 20
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.berserker.chargefurieuse.nom",
+					"CREATURE.berserker.chargefurieuse.description", 
+					7
+				],
+				[
+					"CREATURE.berserker.crideguerre.nom",
+					"CREATURE.berserker.crideguerre.description", 
+					0
+				]
+			],
+			"reference": "p. 54"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/blob.webp",
+		"name": "CREATURE.blob.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.blob.description",
+			"niveau": 2,
+			"attributes": {
+				"pv": {
+					"value": 10,
+					"max": 10
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.blob.absorber.nom",
+					"CREATURE.blob.absorber.description", 
+					4
+				],
+				[
+					"CREATURE.blob.jetdacide.nom",
+					"CREATURE.blob.jetdacide.description", 
+					5
+				]
+			],
+			"reference": "p. 54"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/brule.webp",
+		"name": "CREATURE.brule.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.brule.description",
+			"niveau": 2,
+			"attributes": {
+				"pv": {
+					"value": 10,
+					"max": 10
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.brule.souffledevapeur.nom",
+					"CREATURE.brule.souffledevapeur.description", 
+					5
+				],
+				[
+					"CREATURE.brule.touchebrulant.nom",
+					"CREATURE.brule.touchebrulant.description", 
+					5
+				]
+			],
+			"reference": "p. 54"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/changelin.webp",
+		"name": "CREATURE.changelin.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.changelin.description",
+			"niveau": 3,
+			"attributes": {
+				"pv": {
+					"value": 15,
+					"max": 15
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.changelin.memeattaque.nom",
+					"CREATURE.changelin.memeattaque.description", 
+					6
+				]
+			],
+			"reference": "p. 54"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/crapot.webp",
+		"name": "CREATURE.crapot.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.crapot.description",
+			"niveau": 1,
+			"attributes": {
+				"pv": {
+					"value": 5,
+					"max": 5
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.crapot.sarbacane.nom",
+					"CREATURE.crapot.sarbacane.description", 
+					4
+				],
+				[
+					"CREATURE.crapot.epee.nom",
+					"CREATURE.crapot.epee.description", 
+					4
+				]
+			],
+			"reference": "p. 54"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/crapotshaman.webp",
+		"name": "CREATURE.crapotshaman.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.crapotshaman.description",
+			"niveau": 3,
+			"attributes": {
+				"pv": {
+					"value": 15,
+					"max": 15
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.crapotshaman.molard.nom",
+					"CREATURE.crapotshaman.molard.description", 
+					0
+				],
+				[
+					"CREATURE.crapotshaman.croassementlugubre.nom",
+					"CREATURE.crapotshaman.croassementlugubre.description", 
+					0
+				]
+			],
+			"reference": "p. 54"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/decapite.webp",
+		"name": "CREATURE.decapite.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.decapite.description",
+			"niveau": 2,
+			"attributes": {
+				"pv": {
+					"value": 10,
+					"max": 10
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.decapite.hache.nom",
+					"CREATURE.decapite.hache.description", 
+					5
+				]
+			],
+			"reference": "p. 54"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/demondeguerre.webp",
+		"name": "CREATURE.demondeguerre.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.demondeguerre.description",
+			"niveau": 5,
+			"attributes": {
+				"pv": {
+					"value": 25,
+					"max": 25
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.demondeguerre.marteaudeguerre.nom",
+					"CREATURE.demondeguerre.marteaudeguerre.description", 
+					9
+				],
+				[
+					"CREATURE.demondeguerre.crideguerre.nom",
+					"CREATURE.demondeguerre.crideguerre.description", 
+					0
+				]
+			],
+			"reference": "p. 54"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/demondelacorruption.webp",
+		"name": "CREATURE.demondelacorruption.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.demondelacorruption.description",
+			"niveau": 4,
+			"attributes": {
+				"pv": {
+					"value": 20,
+					"max": 20
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.demondelacorruption.zizanie.nom",
+					"CREATURE.demondelacorruption.zizanie.description", 
+					0
+				]
+			],
+			"reference": "p. 54"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/dragongrincheux.webp",
+		"name": "CREATURE.dragongrincheux.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.dragongrincheux.description",
+			"niveau": 10,
+			"attributes": {
+				"pv": {
+					"value": 50,
+					"max": 50
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.dragongrincheux.souffleenflamme.nom",
+					"CREATURE.dragongrincheux.souffleenflamme.description", 
+					13
+				],
+				[
+					"CREATURE.dragongrincheux.battementdaile.nom",
+					"CREATURE.dragongrincheux.battementdaile.description", 
+					0
+				],
+				[
+					"CREATURE.dragongrincheux.immunite.nom",
+					"CREATURE.dragongrincheux.immunite.description", 
+					0
+				]
+			],
+			"reference": "p. 54"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/dragondesbrumes.webp",
+		"name": "CREATURE.dragondesbrumes.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.dragondesbrumes.description",
+			"niveau": 10,
+			"attributes": {
+				"pv": {
+					"value": 50,
+					"max": 50
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.dragondesbrumes.effluvesempoissonnes.nom",
+					"CREATURE.dragondesbrumes.effluvesempoissonnes.description", 
+					1
+				],
+				[
+					"CREATURE.dragondesbrumes.morsure.nom",
+					"CREATURE.dragondesbrumes.morsure.description", 
+					13
+				],
+				[
+					"CREATURE.dragondesbrumes.resistance.nom",
+					"CREATURE.dragondesbrumes.resistance.description", 
+					0
+				]
+			],
+			"reference": "p. 55"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/ecorche.webp",
+		"name": "CREATURE.ecorche.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.ecorche.description",
+			"niveau": 2,
+			"attributes": {
+				"pv": {
+					"value": 10,
+					"max": 10
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.ecorche.crochets.nom",
+					"CREATURE.ecorche.crochets.description", 
+					5
+				],
+				[
+					"CREATURE.ecorche.apparenceepouvantable.nom",
+					"CREATURE.ecorche.apparenceepouvantable.description", 
+					0
+				]
+			],
+			"reference": "p. 55"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/ecartele.webp",
+		"name": "CREATURE.ecartele.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.ecartele.description",
+			"niveau": 2,
+			"attributes": {
+				"pv": {
+					"value": 10,
+					"max": 10
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.ecartele.chaine.nom",
+					"CREATURE.ecartele.chaine.description", 
+					5
+				]
+			],
+			"reference": "p. 55"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/elfegardien.webp",
+		"name": "CREATURE.elfegardien.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.elfegardien.description",
+			"niveau": 5,
+			"attributes": {
+				"pv": {
+					"value": 25,
+					"max": 25
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.elfegardien.dansedeguerre.nom",
+					"CREATURE.elfegardien.dansedeguerre.description", 
+					8
+				]
+			],
+			"reference": "p. 55"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/elfe.webp",
+		"name": "CREATURE.elfe.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.elfe.description",
+			"niveau": 7,
+			"attributes": {
+				"pv": {
+					"value": 35,
+					"max": 35
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.elfe.lumiereaveuglante.nom",
+					"CREATURE.elfe.lumiereaveuglante.description", 
+					0
+				],
+				[
+					"CREATURE.elfe.sommeil.nom",
+					"CREATURE.elfe.sommeil.description", 
+					0
+				]
+			],
+			"reference": "p. 55"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/epouvantail.webp",
+		"name": "CREATURE.epouvantail.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.epouvantail.description",
+			"niveau": 6,
+			"attributes": {
+				"pv": {
+					"value": 30,
+					"max": 30
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.epouvantail.doublefantomatique.nom",
+					"CREATURE.epouvantail.doublefantomatique.description", 
+					0
+				],
+				[
+					"CREATURE.epouvantail.nueedecorbeaux.nom",
+					"CREATURE.epouvantail.nueedecorbeaux.description", 
+					9
+				]
+			],
+			"reference": "p. 55"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/espritdesmaladies.webp",
+		"name": "CREATURE.espritdesmaladies.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.espritdesmaladies.description",
+			"niveau": 2,
+			"attributes": {
+				"pv": {
+					"value": 6,
+					"max": 10
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.espritdesmaladies.affaiblir.nom",
+					"CREATURE.espritdesmaladies.affaiblir.description", 
+					0
+				],
+				[
+					"CREATURE.espritdesmaladies.immunise.nom",
+					"CREATURE.espritdesmaladies.immunise.description", 
+					0
+				]
+			],
+			"reference": "p. 55"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/fantome.webp",
+		"name": "CREATURE.fantome.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.fantome.description",
+			"niveau": 2,
+			"attributes": {
+				"pv": {
+					"value": 10,
+					"max": 10
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.fantome.terreur.nom",
+					"CREATURE.fantome.terreur.description", 
+					5
+				],
+				[
+					"CREATURE.fantome.immunise.nom",
+					"CREATURE.fantome.immunise.description", 
+					0
+				]
+			],
+			"reference": "p. 55"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/fomore.webp",
+		"name": "CREATURE.fomore.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.fomore.description",
+			"niveau": 5,
+			"attributes": {
+				"pv": {
+					"value": 25,
+					"max": 25
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.fomore.hachedestempetes.nom",
+					"CREATURE.fomore.hachedestempetes.description", 
+					8
+				],
+				[
+					"CREATURE.fomore.eclair.nom",
+					"CREATURE.fomore.eclair.description", 
+					7
+				],
+				[
+					"CREATURE.fomore.resistance.nom",
+					"CREATURE.fomore.resistance.description", 
+					0
+				]
+			],
+			"reference": "p. 55"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/garde.webp",
+		"name": "CREATURE.garde.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.garde.description",
+			"niveau": 1,
+			"attributes": {
+				"pv": {
+					"value": 5,
+					"max": 5
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.garde.morningstar.nom",
+					"CREATURE.garde.morningstar.description", 
+					4
+				],
+				[
+					"CREATURE.garde.renforts.nom",
+					"CREATURE.garde.renforts.description", 
+					0
+				]
+			],
+			"reference": "p. 55"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/gardiendesforets.webp",
+		"name": "CREATURE.gardiendesforets.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.gardiendesforets.description",
+			"niveau": 5,
+			"attributes": {
+				"pv": {
+					"value": 25,
+					"max": 25
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.gardiendesforets.brancheenpleinepoire.nom",
+					"CREATURE.gardiendesforets.brancheenpleinepoire.description", 
+					8
+				],
+				[
+					"CREATURE.gardiendesforets.piegederonce.nom",
+					"CREATURE.gardiendesforets.piegederonce.description", 
+					0
+				]
+			],
+			"reference": "p. 55"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/gardiendepierre.webp",
+		"name": "CREATURE.gardiendepierre.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.gardiendepierre.description",
+			"niveau": 5,
+			"attributes": {
+				"pv": {
+					"value": 25,
+					"max": 25
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.gardiendepierre.epeedepierre.nom",
+					"CREATURE.gardiendepierre.epeedepierre.description", 
+					8
+				],
+				[
+					"CREATURE.gardiendepierre.jetdepierre.nom",
+					"CREATURE.gardiendepierre.jetdepierre.description", 
+					6
+				]
+			],
+			"reference": "p. 55"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/gargouille.webp",
+		"name": "CREATURE.gargouille.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.gargouille.description",
+			"niveau": 4,
+			"attributes": {
+				"pv": {
+					"value": 12,
+					"max": 20
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.gargouille.griffes.nom",
+					"CREATURE.gargouille.griffes.description", 
+					7
+				]
+			],
+			"reference": "p. 56"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/geant.webp",
+		"name": "CREATURE.geant.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.geant.description",
+			"niveau": 5,
+			"attributes": {
+				"pv": {
+					"value": 25,
+					"max": 25
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.geant.attraper.nom",
+					"CREATURE.geant.attraper.description", 
+					0
+				],
+				[
+					"CREATURE.geant.devorer.nom",
+					"CREATURE.geant.devorer.description", 
+					8
+				]
+			],
+			"reference": "p. 56"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/golemdebronze.webp",
+		"name": "CREATURE.golemdebronze.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.golemdebronze.description",
+			"niveau": 7,
+			"attributes": {
+				"pv": {
+					"value": 35,
+					"max": 35
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.golemdebronze.ecraser.nom",
+					"CREATURE.golemdebronze.ecraser.description",
+					10 
+				],
+				[
+					"CREATURE.golemdebronze.claquerdesmains.nom",
+					"CREATURE.golemdebronze.claquerdesmains.description", 
+					0
+				]
+			],
+			"reference": "p. 56"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/goule.webp",
+		"name": "CREATURE.goule.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.goule.description",
+			"niveau": 2,
+			"attributes": {
+				"pv": {
+					"value": 10,
+					"max": 10
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.goule.griffes.nom",
+					"CREATURE.goule.griffes.description",
+					5 
+				],
+				[
+					"CREATURE.goule.morsure.nom",
+					"CREATURE.goule.morsure.description", 
+					0
+				]
+			],
+			"reference": "p. 56"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/gremlin.webp",
+		"name": "CREATURE.gremlin.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.gremlin.description",
+			"niveau": 1,
+			"attributes": {
+				"pv": {
+					"value": 5,
+					"max": 5
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.gremlin.portepoisse.nom",
+					"CREATURE.gremlin.portepoisse.description",
+					0
+				],
+				[
+					"CREATURE.gremlin.griffes.nom",
+					"CREATURE.gremlin.griffes.description", 
+					4
+				]
+			],
+			"reference": "p. 56"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/herautduchaos.webp",
+		"name": "CREATURE.herautduchaos.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.herautduchaos.description",
+			"niveau": 5,
+			"attributes": {
+				"pv": {
+					"value": 25,
+					"max": 25
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.herautduchaos.lamedemoniaque.nom",
+					"CREATURE.herautduchaos.lamedemoniaque.description",
+					8
+				],
+				[
+					"CREATURE.herautduchaos.ouraganduchaos.nom",
+					"CREATURE.herautduchaos.ouraganduchaos.description", 
+					5
+				]
+			],
+			"reference": "p. 56"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/hurleur.webp",
+		"name": "CREATURE.hurleur.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.hurleur.description",
+			"niveau": 3,
+			"attributes": {
+				"pv": {
+					"value": 15,
+					"max": 15
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.hurleur.cripercant.nom",
+					"CREATURE.hurleur.cripercant.description",
+					4
+				]
+			],
+			"reference": "p. 56"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/liche.webp",
+		"name": "CREATURE.liche.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.liche.description",
+			"niveau": 8,
+			"attributes": {
+				"pv": {
+					"value": 40,
+					"max": 40
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.liche.lacererlame.nom",
+					"CREATURE.liche.lacererlame.description",
+					11
+				],
+				[
+					"CREATURE.liche.epeebarbelee.nom",
+					"CREATURE.liche.epeebarbelee.description",
+					8
+				]
+			],
+			"reference": "p. 56"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/loupmeute.webp",
+		"name": "CREATURE.loupmeute.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.loupmeute.description",
+			"niveau": 2,
+			"attributes": {
+				"pv": {
+					"value": 10,
+					"max": 10
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.loupmeute.encercler.nom",
+					"CREATURE.loupmeute.encercler.description",
+					0
+				],
+				[
+					"CREATURE.loupmeute.morsure.nom",
+					"CREATURE.loupmeute.morsure.description",
+					5					
+				]
+			],
+			"reference": "p. 56"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/loupgarou.webp",
+		"name": "CREATURE.loupgarou.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.loupgarou.description",
+			"niveau": 4,
+			"attributes": {
+				"pv": {
+					"value": 20,
+					"max": 20
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.loupgarou.griffes.nom",
+					"CREATURE.loupgarou.griffes.description",
+					7
+				],
+				[
+					"CREATURE.loupgarou.hurlement.nom",
+					"CREATURE.loupgarou.hurlement.description",
+					0					
+				]
+			],
+			"reference": "p. 56"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/loupgeant.webp",
+		"name": "CREATURE.loupgeant.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.loupgeant.description",
+			"niveau": 4,
+			"attributes": {
+				"pv": {
+					"value": 20,
+					"max": 20
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.loupgeant.arracherunearme.nom",
+					"CREATURE.loupgeant.arracherunearme.description",
+					0
+				],
+				[
+					"CREATURE.loupgeant.morsure.nom",
+					"CREATURE.loupgeant.morsure.description",
+					7					
+				]
+			],
+			"reference": "p. 56"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/mangeurdame.webp",
+		"name": "CREATURE.mangeurdame.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.mangeurdame.description",
+			"niveau": 3,
+			"attributes": {
+				"pv": {
+					"value": 15,
+					"max": 15
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.mangeurdame.affaiblirlavolonte.nom",
+					"CREATURE.mangeurdame.affaiblirlavolonte.description",
+					0
+				],
+				[
+					"CREATURE.mangeurdame.devorerlame.nom",
+					"CREATURE.mangeurdame.devorerlame.description",
+					6
+				]
+			],
+			"reference": "p. 56"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/mercenaire.webp",
+		"name": "CREATURE.mercenaire.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.mercenaire.description",
+			"niveau": 3,
+			"attributes": {
+				"pv": {
+					"value": 15,
+					"max": 15
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.mercenaire.claymore.nom",
+					"CREATURE.mercenaire.claymore.description",
+					6
+				],
+				[
+					"CREATURE.mercenaire.arc.nom",
+					"CREATURE.mercenaire.arc.description",
+					6
+				]
+			],
+			"reference": "p. 56"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/mercenairearbaletrier.webp",
+		"name": "CREATURE.mercenairearbaletrier.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.mercenairearbaletrier.description",
+			"niveau": 3,
+			"attributes": {
+				"pv": {
+					"value": 15,
+					"max": 15
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.mercenairearbaletrier.arbalete.nom",
+					"CREATURE.mercenairearbaletrier.arbalete.description",
+					6
+				],
+				[
+					"CREATURE.mercenairearbaletrier.epeecourte.nom",
+					"CREATURE.mercenairearbaletrier.epeecourte.description",
+					4
+				]
+			],
+			"reference": "p. 56"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/mercenairesergent.webp",
+		"name": "CREATURE.mercenairesergent.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.mercenairesergent.description",
+			"niveau": 4,
+			"attributes": {
+				"pv": {
+					"value": 20,
+					"max": 20
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.mercenairesergent.epee.nom",
+					"CREATURE.mercenairesergent.epee.description",
+					7
+				],
+				[
+					"CREATURE.mercenairesergent.esquive.nom",
+					"CREATURE.mercenairesergent.esquive.description",
+					0
+				]
+			],
+			"reference": "p. 57"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/minotaure.webp",
+		"name": "CREATURE.minotaure.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.minotaure.description",
+			"niveau": 8,
+			"attributes": {
+				"pv": {
+					"value": 40,
+					"max": 40
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.minotaure.coupdemassue.nom",
+					"CREATURE.minotaure.coupdemassue.description",
+					11
+				],
+				[
+					"CREATURE.minotaure.charge.nom",
+					"CREATURE.minotaure.charge.description",
+					11
+				]
+			],
+			"reference": "p. 57"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/mignonduchaos.webp",
+		"name": "CREATURE.mignonduchaos.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.mignonduchaos.description",
+			"niveau": 1,
+			"attributes": {
+				"pv": {
+					"value": 1,
+					"max": 5
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.mignonduchaos.armesridicules.nom",
+					"CREATURE.mignonduchaos.armesridicules.description",
+					1
+				],
+				[
+					"CREATURE.mignonduchaos.riresagacants.nom",
+					"CREATURE.mignonduchaos.riresagacants.description",
+					0
+				],
+				[
+					"CREATURE.mignonduchaos.sedeplacent.nom",
+					"CREATURE.mignonduchaos.sedeplacent.description",
+					0
+				]
+			],
+			"reference": "p. 57"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/molosse.webp",
+		"name": "CREATURE.molosse.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.molosse.description",
+			"niveau": 3,
+			"attributes": {
+				"pv": {
+					"value": 15,
+					"max": 15
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.molosse.renverser.nom",
+					"CREATURE.molosse.renverser.description",
+					0
+				],
+				[
+					"CREATURE.molosse.morsure.nom",
+					"CREATURE.molosse.morsure.description",
+					6
+				]
+			],
+			"reference": "p. 57"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/molossemecanique.webp",
+		"name": "CREATURE.molossemecanique.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.molossemecanique.description",
+			"niveau": 2,
+			"attributes": {
+				"pv": {
+					"value": 6,
+					"max": 10
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.molossemecanique.percuter.nom",
+					"CREATURE.molossemecanique.percuter.description",
+					5
+				],
+				[
+					"CREATURE.molossemecanique.morsure.nom",
+					"CREATURE.molossemecanique.morsure.description",
+					5
+				],
+				[
+					"CREATURE.molossemecanique.resistance.nom",
+					"CREATURE.molossemecanique.resistance.description",
+					0
+				]
+			],
+			"reference": "p. 57"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/momie.webp",
+		"name": "CREATURE.momie.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.momie.description",
+			"niveau": 6,
+			"attributes": {
+				"pv": {
+					"value": 30,
+					"max": 30
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.momie.nueesdinsectes.nom",
+					"CREATURE.momie.nueesdinsectes.description",
+					0
+				],
+				[
+					"CREATURE.momie.khopesh.nom",
+					"CREATURE.momie.khopesh.description",
+					9
+				],
+				[
+					"CREATURE.momie.souffledesable.nom",
+					"CREATURE.momie.souffledesable.description",
+					0
+				]
+			],
+			"reference": "p. 57"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/momieserviteur.webp",
+		"name": "CREATURE.momieserviteur.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.momieserviteur.description",
+			"niveau": 2,
+			"attributes": {
+				"pv": {
+					"value": 10,
+					"max": 10
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.momieserviteur.khopesh.nom",
+					"CREATURE.momieserviteur.khopesh.description",
+					5
+				],
+				[
+					"CREATURE.momieserviteur.fideleserviteur.nom",
+					"CREATURE.momieserviteur.fideleserviteur.description",
+					0
+				]
+			],
+			"reference": "p. 57"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/nainmecontent.webp",
+		"name": "CREATURE.nainmecontent.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.nainmecontent.description",
+			"niveau": 2,
+			"attributes": {
+				"pv": {
+					"value": 10,
+					"max": 10
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.nainmecontent.hache.nom",
+					"CREATURE.nainmecontent.hache.description",
+					5
+				],
+				[
+					"CREATURE.nainmecontent.arbalete.nom",
+					"CREATURE.nainmecontent.arbalete.description",
+					5
+				]
+			],
+			"reference": "p. 57"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/nainveteran.webp",
+		"name": "CREATURE.nainveteran.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.nainveteran.description",
+			"niveau": 5,
+			"attributes": {
+				"pv": {
+					"value": 25,
+					"max": 25
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.nainveteran.hachedebataille.nom",
+					"CREATURE.nainveteran.hachedebataille.description",
+					8
+				],
+				[
+					"CREATURE.nainveteran.faucher.nom",
+					"CREATURE.nainveteran.faucher.description",
+					0
+				]
+			],
+			"reference": "p. 57"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/necromant.webp",
+		"name": "CREATURE.necromant.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.necromant.description",
+			"niveau": 6,
+			"attributes": {
+				"pv": {
+					"value": 30,
+					"max": 30
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.necromant.dagueempoissonee.nom",
+					"CREATURE.necromant.dagueempoissonee.description",
+					0
+				],
+				[
+					"CREATURE.necromant.invocation.nom",
+					"CREATURE.necromant.invocation.description",
+					0
+				]
+			],
+			"reference": "p. 57"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/nueederats.webp",
+		"name": "CREATURE.nueederats.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.nueederats.description",
+			"niveau": 2,
+			"attributes": {
+				"pv": {
+					"value": 10,
+					"max": 10
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.nueederats.morsure.nom",
+					"CREATURE.nueederats.morsure.description",
+					4
+				]
+			],
+			"reference": "p. 57"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/ogre.webp",
+		"name": "CREATURE.ogre.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.ogre.description",
+			"niveau": 5,
+			"attributes": {
+				"pv": {
+					"value": 25,
+					"max": 25
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.ogre.hachoir.nom",
+					"CREATURE.ogre.hachoir.description",
+					8
+				],
+				[
+					"CREATURE.ogre.morsure.nom",
+					"CREATURE.ogre.morsure.description",
+					0
+				]
+			],
+			"reference": "p. 57"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/ombreassassine.webp",
+		"name": "CREATURE.ombreassassine.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.ombreassassine.description",
+			"niveau": 3,
+			"attributes": {
+				"pv": {
+					"value": 15,
+					"max": 15
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.ombreassassine.fauxfuligineuse.nom",
+					"CREATURE.ombreassassine.fauxfuligineuse.description",
+					6
+				]
+			],
+			"reference": "p. 57"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/paysanenerve.webp",
+		"name": "CREATURE.paysanenerve.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.paysanenerve.description",
+			"niveau": 1,
+			"attributes": {
+				"pv": {
+					"value": 5,
+					"max": 5
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.paysanenerve.fourche.nom",
+					"CREATURE.paysanenerve.fourche.description",
+					4
+				],
+				[
+					"CREATURE.paysanenerve.torche.nom",
+					"CREATURE.paysanenerve.torche.description",
+					0
+				]
+			],
+			"reference": "p. 57"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/pieuvregeante.webp",
+		"name": "CREATURE.pieuvregeante.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.pieuvregeante.description",
+			"niveau": 7,
+			"attributes": {
+				"pv": {
+					"value": 35,
+					"max": 35
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.pieuvregeante.saisiretbroyer.nom",
+					"CREATURE.pieuvregeante.saisiretbroyer.description",
+					10
+				],
+				[
+					"CREATURE.pieuvregeante.attaquerlembarcation.nom",
+					"CREATURE.pieuvregeante.attaquerlembarcation.description",
+					0
+				]
+			],
+			"reference": "p. 58"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/pirate.webp",
+		"name": "CREATURE.pirate.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.pirate.description",
+			"niveau": 1,
+			"attributes": {
+				"pv": {
+					"value": 5,
+					"max": 5
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.pirate.sabre.nom",
+					"CREATURE.pirate.sabre.description",
+					4
+				],
+				[
+					"CREATURE.pirate.mousquet.nom",
+					"CREATURE.pirate.mousquet.description",
+					4
+				],
+				[
+					"CREATURE.pirate.agilecommeunsinge.nom",
+					"CREATURE.pirate.agilecommeunsinge.description",
+					0
+				]
+			],
+			"reference": "p. 58"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/piratecapitaine.webp",
+		"name": "CREATURE.piratecapitaine.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.piratecapitaine.description",
+			"niveau": 4,
+			"attributes": {
+				"pv": {
+					"value": 20,
+					"max": 20
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.piratecapitaine.sabre.nom",
+					"CREATURE.piratecapitaine.sabre.description",
+					7
+				],
+				[
+					"CREATURE.piratecapitaine.bouclierhumain.nom",
+					"CREATURE.piratecapitaine.bouclierhumain.description",
+					0
+				]
+			],
+			"reference": "p. 58"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/ratlingbrigand.webp",
+		"name": "CREATURE.ratlingbrigand.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.ratlingbrigand.description",
+			"niveau": 2,
+			"attributes": {
+				"pv": {
+					"value": 10,
+					"max": 10
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.ratlingbrigand.arc.nom",
+					"CREATURE.ratlingbrigand.arc.description",
+					5
+				],
+				[
+					"CREATURE.ratlingbrigand.dague.nom",
+					"CREATURE.ratlingbrigand.dague.description",
+					4
+				]
+			],
+			"reference": "p. 58"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/ratlingillumine.webp",
+		"name": "CREATURE.ratlingillumine.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.ratlingillumine.description",
+			"niveau": 3,
+			"attributes": {
+				"pv": {
+					"value": 15,
+					"max": 15
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.ratlingillumine.effluvesempoissonnes.nom",
+					"CREATURE.ratlingillumine.effluvesempoissonnes.description",
+					0
+				],
+				[
+					"CREATURE.ratlingillumine.kriss.nom",
+					"CREATURE.ratlingillumine.kriss.description",
+					5
+				]
+			],
+			"reference": "p. 58"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/rejetonduchaos.webp",
+		"name": "CREATURE.rejetonduchaos.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.rejetonduchaos.description",
+			"niveau": 7,
+			"attributes": {
+				"pv": {
+					"value": 35,
+					"max": 35
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.rejetonduchaos.armebarbelee.nom",
+					"CREATURE.rejetonduchaos.armebarbelee.description",
+					10
+				],
+				[
+					"CREATURE.rejetonduchaos.fletrissement.nom",
+					"CREATURE.rejetonduchaos.fletrissement.description",
+					5
+				],
+				[
+					"CREATURE.rejetonduchaos.resistance.nom",
+					"CREATURE.rejetonduchaos.resistance.description",
+					0
+				]
+			],
+			"reference": "p. 58"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/requin.webp",
+		"name": "CREATURE.requin.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.requin.description",
+			"niveau": 3,
+			"attributes": {
+				"pv": {
+					"value": 15,
+					"max": 15
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.requin.morsure.nom",
+					"CREATURE.requin.morsure.description",
+					6
+				],
+				[
+					"CREATURE.requin.attirerequins.nom",
+					"CREATURE.requin.attirerequins.description",
+					0
+				]
+			],
+			"reference": "p. 58"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/requingeant.webp",
+		"name": "CREATURE.requingeant.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.requingeant.description",
+			"niveau": 6,
+			"attributes": {
+				"pv": {
+					"value": 30,
+					"max": 30
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.requingeant.avaler.nom",
+					"CREATURE.requingeant.avaler.description",
+					0
+				],
+				[
+					"CREATURE.requingeant.entrainer.nom",
+					"CREATURE.requingeant.entrainer.description",
+					0
+				]
+			],
+			"reference": "p. 58"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/sangliergeant.webp",
+		"name": "CREATURE.sangliergeant.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.sangliergeant.description",
+			"niveau": 5,
+			"attributes": {
+				"pv": {
+					"value": 25,
+					"max": 25
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.sangliergeant.charge.nom",
+					"CREATURE.sangliergeant.charge.description",
+					8
+				]
+			],
+			"reference": "p. 58"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/sangrelinarcher.webp",
+		"name": "CREATURE.sangrelinarcher.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.sangrelinarcher.description",
+			"niveau": 2,
+			"attributes": {
+				"pv": {
+					"value": 10,
+					"max": 10
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.sangrelinarcher.arc.nom",
+					"CREATURE.sangrelinarcher.arc.description",
+					5
+				],
+				[
+					"CREATURE.sangrelinarcher.voleedefleches.nom",
+					"CREATURE.sangrelinarcher.voleedefleches.description",
+					1
+				]
+			],
+			"reference": "p. 58"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/sangrelinbrute.webp",
+		"name": "CREATURE.sangrelinbrute.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.sangrelinbrute.description",
+			"niveau": 2,
+			"attributes": {
+				"pv": {
+					"value": 10,
+					"max": 10
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.sangrelinbrute.hachedebataille.nom",
+					"CREATURE.sangrelinbrute.hachedebataille.description",
+					5
+				],
+				[
+					"CREATURE.sangrelinbrute.crideguerre.nom",
+					"CREATURE.sangrelinbrute.crideguerre.description",
+					0
+				]
+			],
+			"reference": "p. 58"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/sangrelinchef.webp",
+		"name": "CREATURE.sangrelinchef.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.sangrelinchef.description",
+			"niveau": 4,
+			"attributes": {
+				"pv": {
+					"value": 20,
+					"max": 20
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.sangrelinchef.attaquebrutale.nom",
+					"CREATURE.sangrelinchef.attaquebrutale.description",
+					7
+				],
+				[
+					"CREATURE.sangrelinchef.coupvicieux.nom",
+					"CREATURE.sangrelinchef.coupvicieux.description",
+					5
+				]
+			],
+			"reference": "p. 58"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/scorpiongeant.webp",
+		"name": "CREATURE.scorpiongeant.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.scorpiongeant.description",
+			"niveau": 4,
+			"attributes": {
+				"pv": {
+					"value": 20,
+					"max": 20
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.scorpiongeant.dardempoissonne.nom",
+					"CREATURE.scorpiongeant.dardempoissonne.description",
+					0
+				],
+				[
+					"CREATURE.scorpiongeant.pinces.nom",
+					"CREATURE.scorpiongeant.pinces.description",
+					7
+				]
+			],
+			"reference": "p. 58"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/sectateursuicidaire.webp",
+		"name": "CREATURE.sectateursuicidaire.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.sectateursuicidaire.description",
+			"niveau": 2,
+			"attributes": {
+				"pv": {
+					"value": 10,
+					"max": 10
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.sectateursuicidaire.dague.nom",
+					"CREATURE.sectateursuicidaire.dague.description",
+					4
+				]
+			],
+			"reference": "p. 59"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/sectateurgourou.webp",
+		"name": "CREATURE.sectateurgourou.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.sectateurgourou.description",
+			"niveau": 4,
+			"attributes": {
+				"pv": {
+					"value": 20,
+					"max": 20
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.sectateurgourou.morningstar.nom",
+					"CREATURE.sectateurgourou.morningstar.description",
+					7
+				],
+				[
+					"CREATURE.sectateurgourou.transformation.nom",
+					"CREATURE.sectateurgourou.transformation.description",
+					0
+				]
+			],
+			"reference": "p. 59"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/serpentgeant.webp",
+		"name": "CREATURE.serpentgeant.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.serpentgeant.description",
+			"niveau": 6,
+			"attributes": {
+				"pv": {
+					"value": 30,
+					"max": 30
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.serpentgeant.capturer.nom",
+					"CREATURE.serpentgeant.capturer.description",
+					0
+				],
+				[
+					"CREATURE.serpentgeant.hypnotiser.nom",
+					"CREATURE.serpentgeant.hypnotiser.description",
+					0
+				]
+			],
+			"reference": "p. 59"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/shoggoth.webp",
+		"name": "CREATURE.shoggoth.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.shoggoth.description",
+			"niveau": 8,
+			"attributes": {
+				"pv": {
+					"value": 40,
+					"max": 40
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.shoggoth.tentacules.nom",
+					"CREATURE.shoggoth.tentacules.description",
+					11
+				],
+				[
+					"CREATURE.shoggoth.desarmer.nom",
+					"CREATURE.shoggoth.desarmer.description",
+					0
+				]
+			],
+			"reference": "p. 59"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/squelette.webp",
+		"name": "CREATURE.squelette.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.squelette.description",
+			"niveau": 3,
+			"attributes": {
+				"pv": {
+					"value": 15,
+					"max": 15
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.squelette.cimeterre.nom",
+					"CREATURE.squelette.cimeterre.description",
+					6
+				],
+				[
+					"CREATURE.squelette.resistance.nom",
+					"CREATURE.squelette.resistance.description",
+					0
+				]
+			],
+			"reference": "p. 59"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/squelettearcher.webp",
+		"name": "CREATURE.squelettearcher.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.squelettearcher.description",
+			"niveau": 2,
+			"attributes": {
+				"pv": {
+					"value": 10,
+					"max": 10
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.squelettearcher.arc.nom",
+					"CREATURE.squelettearcher.arc.description",
+					5
+				],
+				[
+					"CREATURE.squelettearcher.resistance.nom",
+					"CREATURE.squelettearcher.resistance.description",
+					0
+				]
+			],
+			"reference": "p. 59"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/squelettecavalier.webp",
+		"name": "CREATURE.squelettecavalier.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.squelettecavalier.description",
+			"niveau": 3,
+			"attributes": {
+				"pv": {
+					"value": 15,
+					"max": 15
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.squelettecavalier.lance.nom",
+					"CREATURE.squelettecavalier.lance.description",
+					6
+				],
+				[
+					"CREATURE.squelettecavalier.galop.nom",
+					"CREATURE.squelettecavalier.galop.description",
+					0
+				],
+				[
+					"CREATURE.squelettecavalier.resistance.nom",
+					"CREATURE.squelettecavalier.resistance.description",
+					0
+				]
+			],
+			"reference": "p. 59"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/troll.webp",
+		"name": "CREATURE.troll.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.troll.description",
+			"niveau": 4,
+			"attributes": {
+				"pv": {
+					"value": 20,
+					"max": 20
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.troll.griffes.nom",
+					"CREATURE.troll.griffes.description",
+					7
+				],
+				[
+					"CREATURE.troll.regenerer.nom",
+					"CREATURE.troll.regenerer.description",
+					0
+				]
+			],
+			"reference": "p. 59"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/tyrannosaure.webp",
+		"name": "CREATURE.tyrannosaure.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.tyrannosaure.description",
+			"niveau": 7,
+			"attributes": {
+				"pv": {
+					"value": 35,
+					"max": 35
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.tyrannosaure.morsure.nom",
+					"CREATURE.tyrannosaure.morsure.description",
+					10
+				]
+			],
+			"reference": "p. 59"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/vampirejeune.webp",
+		"name": "CREATURE.vampirejeune.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.vampirejeune.description",
+			"niveau": 4,
+			"attributes": {
+				"pv": {
+					"value": 20,
+					"max": 20
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.vampirejeune.griffes.nom",
+					"CREATURE.vampirejeune.griffes.description",
+					7
+				],				
+				[
+					"CREATURE.vampirejeune.morsure.nom",
+					"CREATURE.vampirejeune.morsure.description",
+					0
+				]
+			],
+			"reference": "p. 59"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/vampireaine.webp",
+		"name": "CREATURE.vampireaine.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.vampireaine.description",
+			"niveau": 8,
+			"attributes": {
+				"pv": {
+					"value": 40,
+					"max": 40
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.vampireaine.regardparalysant.nom",
+					"CREATURE.vampireaine.regardparalysant.description",
+					0
+				],				
+				[
+					"CREATURE.vampireaine.griffes.nom",
+					"CREATURE.vampireaine.griffes.description",
+					7
+				]
+			],
+			"reference": "p. 59"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/vergeant.webp",
+		"name": "CREATURE.vergeant.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.vergeant.description",
+			"niveau": 8,
+			"attributes": {
+				"pv": {
+					"value": 40,
+					"max": 40
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.vergeant.engloutir.nom",
+					"CREATURE.vergeant.engloutir.description",
+					0
+				],				
+				[
+					"CREATURE.vergeant.tremblementdeterre.nom",
+					"CREATURE.vergeant.tremblementdeterre.description",
+					0
+				]
+			],
+			"reference": "p. 59"
+		}
+	},
+	{
+		"type": "creature",
+		"img": "/systems/fleaux/images/system/bestiaire/zombie.webp",
+		"name": "CREATURE.zombie.nom",
+		"system": {
+			"typeName": "TYPES.Actor.creature",
+			"description": "CREATURE.zombie.description",
+			"niveau": 1,
+			"attributes": {
+				"pv": {
+					"value": 5,
+					"max": 5
+				}
+			},
+			"actions": [
+				[
+					"CREATURE.zombie.arracher.nom",
+					"CREATURE.zombie.arracher.description",
+					4
+				],				
+				[
+					"CREATURE.zombie.morsure.nom",
+					"CREATURE.zombie.morsure.description",
+					0
+				]
+			],
+			"reference": "p. 59"
+		}
+	}
+] 

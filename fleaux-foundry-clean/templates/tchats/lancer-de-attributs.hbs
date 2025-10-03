@@ -1,0 +1,27 @@
+{{#with fleaux}}
+	<div class="tchat-de-attributs">
+		<h4 class="tchat-de-attributs-titre">{{localize "TCHAT.des.attribut"}} {{titreTchat}}</h4>
+		<div>
+			{{#unless (eq typeDes 0) }}
+			<span>
+				{{#if (eq typeDes 1) }} {{localize "TCHAT.des.lanceAvecAvantage"}}
+				{{else}} {{localize "TCHAT.des.lanceAvecDesavantage"}} {{/if}} <br>
+			</span>
+			{{/unless}}
+			{{#unless (eq bonusMalus 0) }}
+			<span>
+				{{#if (estPositive bonusMalus)}} {{ localize "TCHAT.des.avecBonus" }} {{bonusMalus}}.
+				{{else}} {{ localize "TCHAT.des.avecMalus" }} {{bonusMalus}}. {{/if}}
+				<br>
+				{{ localize "TCHAT.des.nouvelleDifficulte" }} {{nouvelleDifficulte}}.
+				<br>
+			</span>
+			{{/unless}}
+			{{#if succes}} {{localize "TCHAT.des.success"}} {{else}} {{localize "TCHAT.des.echec"}} {{/if}}
+			{{#if critique}}<br><span>{{localize "TCHAT.des.critique"}}</span>{{/if}}
+		</div>
+	</div>
+{{/with}}	
+<div class="dice-roll tchat-de-attributs">
+	{{> (tchatPartial "des-resultats")}}
+</div>

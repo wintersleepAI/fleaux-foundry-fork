@@ -1,0 +1,48 @@
+<ol class="items-box expanded">
+	<li class="items-header">
+		{{#each headers as |header|}}
+			<div style="{{header.style}}">{{localize header.name}}</div>
+		{{/each}}
+		<div class="item-controls" style="flex: 1; text-align: left;">
+			<a class="item-control item-create" data-type="{{data-type}}" data-categorie="{{data-categorie}}">
+				<i class="fas fa-plus"></i>&nbsp;{{localize 'FORMULAIRE.commun.libelle.creer'}}&nbsp;&nbsp;
+			</a>
+		</div>
+	</li>
+	{{#each items}}
+		<li class="items-list" data-item-id="{{_id}}">
+			<div class="item-image" style="{{../headers.0.style}}">
+				<img src="{{img}}" style="background-color: black; filter: drop-shadow(2px 3px 3px black);" width="24" height="24"/>
+				<span style="cursor: pointer;">&nbsp;&nbsp;{{name}}</span>
+			</div>
+			{{#if ../data-categorie}}
+				{{>(itemsActorPartial ../data-categorie) item=this headers=../headers }}
+			{{/if}} 
+			<div class="item-controls" style="flex: 1; text-align: center;">
+				{{#if (eq type "sort") }}
+					{{#if ./actor.system.sorcellerie.effetsRevancheDuChaos.reduitAuSilence}}
+						<i class="fas fa-dice" style="color: lightgrey;"></i>
+					{{else}}
+						<a class="roll-des-usage" data-tooltip="{{localize "FORMULAIRE.personnage.libelle.lancersort" }}" data-de-usage="de-volonte" data-title="{{localize 'FORMULAIRE.commun.libelle.desvolonte'}}">
+							<i class="fas fa-dice" style="color: #820912;"></i>
+						</a>					
+					{{/if}}
+				{{/if}}
+				{{#if (etatEstModifiable system.macroScript.parent.modifiable) }}
+					<a class="item-control item-edit" data-tooltip="{{localize "FORMULAIRE.commun.libelle.editer"}}">
+						<i class="fas fa-edit"></i>
+					</a>
+				{{else}}
+						<i class="fas fa-edit" style="color: lightgrey;"></i>
+				{{/if}}
+				{{#if (etatEstsupprimable system.macroScript.parent.supprimable) }}
+					<a class="item-control item-delete" data-tooltip="{{localize "FORMULAIRE.commun.libelle.supprimer"}}">
+						<i class="fas fa-trash"></i>
+					</a>
+				{{else}}
+						<i class="fas fa-trash" style="color: lightgrey;"></i>
+				{{/if}}
+			</div>
+		</li>
+	{{/each}}
+</ol>
