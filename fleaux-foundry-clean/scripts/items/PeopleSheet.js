@@ -1,5 +1,5 @@
 /**
- * PeupleSheet.js - People/Nation Item Sheet for Fleaux Foundry VTT Module
+ * PeopleSheet.js - People/Nation Item Sheet for Fleaux Foundry VTT Module
  * 
  * Item sheet for people/nation backgrounds in the Fleaux game system.
  * Handles education systems, attribute bonuses, and cultural backgrounds.
@@ -12,7 +12,7 @@ import { ItemSheetAbstract } from './ItemSheetAbstract.js';
  * People/Nation sheet class extending the abstract item sheet
  * Provides repeater-based management for education systems
  */
-export class PeupleSheet extends ItemSheetAbstract {
+export class PeopleSheet extends ItemSheetAbstract {
     
     /** @type {Repeaters} Private repeater manager for education system */
     #repeaters = new Repeaters(

@@ -1,5 +1,5 @@
 /**
- * EtatSheet.js - State Effect Item Sheet for Fleaux Foundry VTT Module
+ * StateSheet.js - State Effect Item Sheet for Fleaux Foundry VTT Module
  * 
  * Item sheet for state effects/conditions in the Fleaux game system.
  * Provides interface for managing character state effects and conditions.
@@ -11,7 +11,7 @@ import { ItemSheetAbstract } from './ItemSheetAbstract.js';
  * State effect sheet class extending the abstract item sheet
  * Provides state-specific functionality for conditions and effects
  */
-export class EtatSheet extends ItemSheetAbstract {
+export class StateSheet extends ItemSheetAbstract {
 
     /**
      * Get default sheet options

@@ -1,8 +1,8 @@
 /**
- * EquipementSheet.js - Equipment Item Sheet for Fleaux Foundry VTT Module
+ * EquipmentSheet.js - Equipment Item Sheet for Fleaux Foundry VTT Module
  * 
  * Item sheet for equipment objects in the Fleaux game system.
- * Handles equipment stats, emplacement management, and usage dice functionality.
+ * Handles equipment stats, slot management, and usage dice functionality.
  */
 
 import { ItemSheetAbstract } from './ItemSheetAbstract.js';
@@ -11,7 +11,7 @@ import { ItemSheetAbstract } from './ItemSheetAbstract.js';
  * Equipment sheet class extending the abstract item sheet
  * Provides equipment-specific functionality
  */
-export class EquipementSheet extends ItemSheetAbstract {
+export class EquipmentSheet extends ItemSheetAbstract {
 
     /**
      * Get default sheet options
@@ -19,7 +19,7 @@ export class EquipementSheet extends ItemSheetAbstract {
      */
     static get defaultOptions() {
         return foundry.utils.mergeObject(super.defaultOptions, {
-            'template': game.fleaux.templatesItemsPath + game.fleaux.typeItem.equipement + '-sheet.hbs',
+            'template': game.fleaux.templatesItemsPath + game.fleaux.itemType.equipment + '-sheet.hbs',
             'width': 700,
             'height': 'auto'
         });

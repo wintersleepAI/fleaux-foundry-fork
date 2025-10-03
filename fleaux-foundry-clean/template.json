@@ -2,66 +2,66 @@
 	"Actor": {
 		"types": [
 			"character",
-			"pnj",
+			"npc",
 			"creature"
 		],
 		"templates": {
-			"attributs": {
-				"attributs": {
-					"for": {
-						"actuel": 0,
+			"attributes": {
+				"attributes": {
+					"str": {
+						"current": 0,
 						"init2d6": false,
-						"malus": 0
+						"penalty": 0
 					},
 					"dex": {
-						"actuel": 0,
+						"current": 0,
 						"init2d6": false,
-						"malus": 0
+						"penalty": 0
 					},
-					"eru": {
-						"actuel": 0,
+					"end": {
+						"current": 0,
 						"init2d6": false,
-						"malus": 0
+						"penalty": 0
 					},
 					"cha": {
-						"actuel": 0,
+						"current": 0,
 						"init2d6": false,
-						"malus": 0
+						"penalty": 0
 					},
-					"sfr": {
-						"actuel": 0,
+					"cool": {
+						"current": 0,
 						"init2d6": false,
-						"malus": 0
+						"penalty": 0
 					},
-					"mel": {
-						"actuel": 0,
+					"melee": {
+						"current": 0,
 						"init2d6": false,
-						"malus": 0
+						"penalty": 0
 					},
-					"tir": {
-						"actuel": 0,
+					"ranged": {
+						"current": 0,
 						"init2d6": false,
-						"malus": 0
+						"penalty": 0
 					}
 				}
 			},
-			"actorCommun": {
+			"actorCommon": {
 				"typeName": "ACTOR.TypeCharacter",
-				"niveau": 1,
+				"level": 1,
 				"description": "",
 				"relations": "",
 				"notes":"",
-				"objectifs":"",
+				"objectives":"",
 				"attributes": {
-					"pv": {
+					"hp": {
 						"value": 0,
 						"max": 0
 					}
 				},
 				"fortune": 0,
-				"critique": {
-					"reussite": 1,
-					"echec": 20
+				"critical": {
+					"success": 1,
+					"failure": 20
 				}
 			},
 			"character": {
@@ -69,73 +69,73 @@
 				"accusation": null,
 				"profession1": null,
 				"profession2": null,
-				"de-volonte": {
-					"actuel": "d6",
+				"willpower-die": {
+					"current": "d6",
 					"max": "d6"
 				},
-				"bouclier": false,
-				"affame-et-sale": false,
-				"effetsMordreLaPoussiere": {
-					"eraflure": false,
-					"rateDePeu": false,
-					"handicape": false,
-					"blesse": false,
-					"amoche": false,
-					"mort": false
+				"shield": false,
+				"hungry-and-dirty": false,
+				"biteTheDustEffects": {
+					"scratch": false,
+					"barelyMissed": false,
+					"handicapped": false,
+					"wounded": false,
+					"bruised": false,
+					"dead": false
 				},
-				"de-degats": {
-					"actuel": "d4",
+				"damage-die": {
+					"current": "d4",
 					"max": "d4"
 				},
-				"de-degats-arme": {
-					"actuel": "d6",
+				"weapon-damage-die": {
+					"current": "d6",
 					"max": "d6"
 				},
-				"sorcellerie": {
-					"dernierSortLance": {
-						"sort": null,
-						"resultatDesVolonte": null
+				"sorcery": {
+					"lastSpellCast": {
+						"spell": null,
+						"willpowerResult": null
 					},
-					"effetsRevancheDuChaos": {
-						"reduitAuSilence" : false,
-						"arrongance": false,
-						"espritConsume": false,
-						"autreDimension": false
+					"chaosRevengeEffects": {
+						"silenced" : false,
+						"arrogance": false,
+						"consumedSpirit": false,
+						"otherDimension": false
 					}
 				},
 				"experience": {
-					"niveau2": {"attribut": null, "nom": null, "valeur": null},
-					"niveau3": {"talent": null},
-					"niveau4": {"attribut": null, "nom": null, "valeur": null},
-					"niveau5": {"profession": null},
-					"niveau6": {"attribut": null, "nom": null, "valeur": null},
-					"niveau7": {"talent": null},
-					"niveau8": {"attribut": null, "nom": null, "valeur": null},
-					"niveau9": {"talent": null},
-					"niveau10": {"de-volonte": null}
+					"level2": {"attribute": null, "name": null, "value": null},
+					"level3": {"talent": null},
+					"level4": {"attribute": null, "name": null, "value": null},
+					"level5": {"profession": null},
+					"level6": {"attribute": null, "name": null, "value": null},
+					"level7": {"talent": null},
+					"level8": {"attribute": null, "name": null, "value": null},
+					"level9": {"talent": null},
+					"level10": {"willpower-die": null}
 				}
 			}
 		},
 		"character": {
 			"templates": [
-				"actorCommun",
-				"attributs", 
+				"actorCommon",
+				"attributes", 
 				"character"
 			]
 		}, 
-		"pnj": {
+		"npc": {
 			"templates": [
-				"actorCommun",
-				"attributs",
+				"actorCommon",
+				"attributes",
 				"character"
 			]
 		},
 		"creature": {
-			"typeName": "BESTIAIRE.TypeBestiaire",
-            "niveau": 1,
+			"typeName": "BESTIARY.TypeBestiary",
+            "level": 1,
 			"description": "",
 			"attributes": {
-				"pv": {
+				"hp": {
 					"value": 5,
 					"max": 5
 				}
@@ -146,14 +146,14 @@
 	},
 	"Item": {
 		"types": [
-			"attribut",
-			"peuple",
+			"attribute",
+			"people",
 			"crime",
 			"profession",
 			"talent",
-			"sort",
-			"equipement",
-			"etat"
+			"spell",
+			"equipment",
+			"state"
 		],
 		"templates": {
 			"itemCommon": {
@@ -167,37 +167,37 @@
 					"active": false,
 					"parent": {
 						"modifiable": true,
-						"supprimable": true
+						"deletable": true
 					}
 				}
 			} 
 		},
-		"attribut": {
+		"attribute": {
 			"templates": [
 				"itemCommon"
 			],
 			"code": ""
 		},
-		"peuple": {
+		"people": {
 			"templates": [
 				"itemCommon"
 			],
 			"educations": [],
-			"de": "1d6"
+			"die": "1d6"
 		},
 		"crime": {
 			"templates": [
 				"itemCommon"
 			],
 			"accusations": [],
-			"de": "1d8"
+			"die": "1d8"
 		},
 		"profession": {
 			"templates": [
 				"itemCommon"
 			],
 			"professions": [],
-			"de": "1d6"
+			"die": "1d6"
 		},
 		"talent": {
 			"templates": [
@@ -205,62 +205,62 @@
 				"macro"
 			]
 		},
-		"sort": {
+		"spell": {
 			"templates": [
 				"itemCommon",
 				"macro"
 			]
 		},
-		"equipement": {
+		"equipment": {
 			"templates": [
 				"itemCommon",
 				"macro"
 			],
-			"categorie": "arme",
-			"typeAttaque": "melee",
-			"deuxMains": false,
-			"armeAfeu": false,
+			"category": "weapon",
+			"attackType": "melee",
+			"twoHanded": false,
+			"firearm": false,
 			"protection": "PR0",
-			"equipe": false,
-			"formulePrix": "d6",
-			"prix": 0,
-			"avantageDegats": false,
-			"avantageParade": false,
-			"quantite": 0,
-			"emplacement": "0",
-			"enchantement": {
-				"enchante": false,
-				"arme": {
-					"tueuse": false,
-					"acierIlmarien": false
+			"equipped": false,
+			"priceFormula": "d6",
+			"price": 0,
+			"damageAdvantage": false,
+			"parryAdvantage": false,
+			"quantity": 0,
+			"slot": "0",
+			"enchantment": {
+				"enchanted": false,
+				"weapon": {
+					"killer": false,
+					"ilmarienSteel": false
 				},
-				"objet": {
-					"avantage": false,
-					"attributCode": "",
-					"effetSort": false,
-					"sort": {
+				"object": {
+					"advantage": false,
+					"attributeCode": "",
+					"spellEffect": false,
+					"spell": {
 						"id": null,
-						"de-usure": {
-							"actuel": "d6",
+						"wear-die": {
+							"current": "d6",
 							"max": "d6"
 						}
 					}
 				}
 			},
-			"de-usure": {
-				"actuel": "d6",
+			"wear-die": {
+				"current": "d6",
 				"max": "d6"
 			}
 		},
-		"etat": {
+		"state": {
 			"templates": [
 				"itemCommon",
 				"macro"
 			],
 			"date" : null,
-			"idActeur": "",
-			"typeDuree": "par-scene",
-			"duree":null
+			"actorId": "",
+			"durationType": "per-scene",
+			"duration":null
 		}
 	}
 }

@@ -1,7 +1,7 @@
 {
 	"id": "fleaux",
-	"title": "Fléaux ! ",
-	"description": "Un jeu de rôle écrit par Kobayashi, Direction Artistique EDgarra Studio",
+	"title": "Fléaux!",
+	"description": "A role-playing game written by Kobayashi, Art Direction EDgarra Studio",
 	"version": "2024.4.2",
 	"authors": [
 		{
@@ -29,71 +29,71 @@
 	],
 	"packs": [
 		{
-			"name": "bestiaire",
-			"label": "Le bestiaire",
+			"name": "bestiary",
+			"label": "The Bestiary",
 			"system": "fleaux",
 			"path": "./packs/bestiaire.db",
 			"type": "Actor"
 		},
 		{
-			"name": "attributs",
-			"label": "Les attributs",
+			"name": "attributes",
+			"label": "The Attributes",
 			"system": "fleaux",
 			"path": "./packs/attributs.db",
 			"type": "Item"
 		},
 		{
-			"name": "peuples",
-			"label": "Les peuples",
+			"name": "peoples",
+			"label": "The Peoples",
 			"system": "fleaux",
 			"path": "./packs/peuples.db",
 			"type": "Item"
 		},
 		{
 			"name": "crimes",
-			"label": "Les crimes",
+			"label": "The Crimes",
 			"system": "fleaux",
 			"path": "./packs/crimes.db",
 			"type": "Item"
 		},
 		{
 			"name": "professions",
-			"label": "Les professions",
+			"label": "The Professions",
 			"system": "fleaux",
 			"path": "./packs/professions.db",
 			"type": "Item"
 		},
 		{
-			"name": "equipements",
-			"label": "L'Equipement",
+			"name": "equipment",
+			"label": "The Equipment",
 			"system": "fleaux",
 			"path": "./packs/equipements.db",
 			"type": "Item"
 		},
 		{
 			"name": "talents",
-			"label": "Les talents",
+			"label": "The Talents",
 			"system": "fleaux",
 			"path": "./packs/talents.db",
 			"type": "Item"
 		},
 		{
-			"name": "sorts",
-			"label": "Les sorts",
+			"name": "spells",
+			"label": "The Spells",
 			"system": "fleaux",
 			"path": "./packs/sorts.db",
 			"type": "Item"
 		},
 		{
 			"name": "tables",
-			"label": "Les tables",
+			"label": "The Tables",
 			"system": "fleaux",
 			"path": "./packs/tables.db",
 			"type": "RollTable"
 		},
 		{
 			"name": "scenes",
-			"label": "Les scènes",
+			"label": "The Scenes",
 			"system": "fleaux",
 			"path": "./packs/scenes.db",
 			"type": "Scene"
@@ -102,12 +102,12 @@
 	"languages": [
 		{
 			"lang": "fr",
-			"name": "Français",
+			"name": "French",
 			"path": "./lang/fr.json"
 		},
 		{
 			"lang": "en",
-			"name": "Anglais",
+			"name": "English",
 			"path": "./lang/en.json"
 		}
 	],

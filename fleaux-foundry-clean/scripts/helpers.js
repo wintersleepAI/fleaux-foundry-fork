@@ -1,6 +1,6 @@
 /**
  * Handlebars Helper Functions for Fléaux RPG System
- * Deobfuscated version of scripts/helpers.js
+ * Deobfuscated and translated version of scripts/helpers.js
  */
 
 /**
@@ -13,7 +13,7 @@ export const registerHandlebarsHelpers = async function() {
      * @param {Array} list - The array to check
      * @returns {boolean} True if array has length > 0
      */
-    Handlebars.registerHelper('listeNonVide', function(list) {
+    Handlebars.registerHelper('listNotEmpty', function(list) {
         return list.length > 0;
     });
 
@@ -23,12 +23,12 @@ export const registerHandlebarsHelpers = async function() {
      * @param {Object} data - The data containing the information
      * @returns {string} Formatted display string
      */
-    Handlebars.registerHelper('getAttributProfession', function(type, data) {
+    Handlebars.registerHelper('getAttributeProfession', function(type, data) {
         // Handle attribute bonuses/penalties
-        if (type === 'attribut' && data?.bonusMalus) {
-            return '[+' + data?.bonusMalus[2] + ' ' + 
-                   game.i18n.localize(data?.bonusMalus[3]).toUpperCase() + '] ' + 
-                   game.i18n.localize(data?.bonusMalus[1]);
+        if (type === 'attribute' && data?.bonusPenalty) {
+            return '[+' + data?.bonusPenalty[2] + ' ' + 
+                   game.i18n.localize(data?.bonusPenalty[3]).toUpperCase() + '] ' + 
+                   game.i18n.localize(data?.bonusPenalty[1]);
         } else {
             // Handle profession information
             if (type === 'profession' && data?.profession[0]) {

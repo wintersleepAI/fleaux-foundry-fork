@@ -1,35 +1,35 @@
 /**
  * Main Fléaux RPG System Module for Foundry VTT
- * Deobfuscated version of the original fleaux.js
+ * Deobfuscated and translated version of the original fleaux.js
  */
 
 // Import core functionality
 import { 
-    changerLogo, 
-    ajouterUrlSuiviTickets, 
+    changeLogo, 
+    addTicketTrackingUrl, 
     Compendium as CompendiumManager 
 } from './libs/core-foundry/core-foundry.mjs';
 
 // Import game classes
-import { FleauxDes } from './scripts/FleauxDes.js';
-import { FleauxActeur } from './scripts/actors/FleauxActeur.js';
+import { FleauxDice } from './scripts/FleauxDes.js';
+import { FleauxActor } from './scripts/actors/FleauxActeur.js';
 import { FleauxCombat } from './scripts/combat/FleauxCombat.js';
 
 // Import character sheets
-import { PersonnageSheet } from './scripts/actors/PersonnageSheet.js';
+import { CharacterSheet } from './scripts/actors/PersonnageSheet.js';
 import { CreatureSheet } from './scripts/actors/CreatureSheet.js';
 
 // Import item sheets
 import { CrimeSheet } from './scripts/items/CrimeSheet.js';
-import { EquipementSheet } from './scripts/items/EquipementSheet.js';
-import { EtatSheet } from './scripts/items/EtatSheet.js';
+import { EquipmentSheet } from './scripts/items/EquipementSheet.js';
+import { StateSheet } from './scripts/items/EtatSheet.js';
 import { FleauxItem } from './scripts/items/FleauxItem.js';
 import { ItemSheetAbstract } from './scripts/items/ItemSheetAbstract.js';
-import { PeupleSheet } from './scripts/items/PeupleSheet.js';
+import { PeopleSheet } from './scripts/items/PeupleSheet.js';
 import { ProfessionSheet } from './scripts/items/ProfessionSheet.js';
 
 // Import utility modules
-import * as tchatModule from './scripts/tchat.js';
+import * as chatModule from './scripts/tchat.js';
 import { registerHandlebarsHelpers } from './scripts/helpers.js';
 import { preloadHandlebarsTemplates } from './scripts/templates.js';
 
@@ -39,10 +39,10 @@ let socket = null;
  * Initialize the system when socketlib is ready
  */
 Hooks.once('socketlib.ready', async function() {
-    console.log('Initialisation de fleaux en cours.');
+    console.log('Initializing Fleaux system...');
     
     // Set logo and home URL
-    changerLogo(null, 'https://foundryvtt.wiki/fr/home');
+    changeLogo(null, 'https://foundryvtt.wiki/fr/home');
     
     // Configure game paths and settings
     game.fleaux = {
@@ -50,37 +50,37 @@ Hooks.once('socketlib.ready', async function() {
         templatesPath: 'systems/' + game.system.id + '/templates/',
         templatesActorsPath: 'systems/' + game.system.id + '/templates/actors/',
         templatesItemsPath: 'systems/' + game.system.id + '/templates/items/',
-        templatesDialoguesChemin: 'systems/' + game.system.id + '/templates/dialogues/',
-        templatesTchatsChemin: 'systems/' + game.system.id + '/templates/tchats/',
+        templatesDialoguesPath: 'systems/' + game.system.id + '/templates/dialogues/',
+        templatesChatsPath: 'systems/' + game.system.id + '/templates/tchats/',
         imagesPath: 'systems/' + game.system.id + '/images/',
         
         // Actor types
-        typeActor: {
+        actorType: {
             character: 'character',
-            pnj: 'pnj',
+            npc: 'npc',
             creature: 'creature'
         },
         
         // Item types
-        typeItem: {
-            attribut: 'attribut',
-            peuple: 'peuple',
+        itemType: {
+            attribute: 'attribute',
+            people: 'people',
             crime: 'crime',
             profession: 'profession',
             talent: 'talent',
-            sort: 'sort',
-            equipement: 'equipement',
-            etat: 'etat'
+            spell: 'spell',
+            equipment: 'equipment',
+            state: 'state'
         },
         
         config: FLEAUX,
         itemClasses: ['fleaux', 'item', 'talent'],
-        acteurClasses: ['fleaux', 'item', 'pnj', 'character'],
-        des: FleauxDes,
+        actorClasses: ['fleaux', 'item', 'npc', 'character'],
+        dice: FleauxDice,
         socket: socket,
-        TCHAT_TEMPLATE: {
+        CHAT_TEMPLATE: {
             TOOLTIP_TEMPLATE: 'systems/fleaux/templates/tchats/infobulle.hbs',
-            TCHAT_TEMPLATE: 'systems/fleaux/templates/tchats/lancer-des-dialogue.html'
+            CHAT_TEMPLATE: 'systems/fleaux/templates/tchats/lancer-des-dialogue.html'
         }
     };
 
@@ -89,7 +89,7 @@ Hooks.once('socketlib.ready', async function() {
     
     // Configure core systems
     CONFIG.Combat.documentClass = FleauxCombat;
-    CONFIG.Actor.documentClass = FleauxActeur;
+    CONFIG.Actor.documentClass = FleauxActor;
     CONFIG.Item.documentClass = FleauxItem;
     CONFIG.Macro.documentClass = 'systems/fleaux/images/ui/macro-script.webp';
     
@@ -99,29 +99,29 @@ Hooks.once('socketlib.ready', async function() {
     CONFIG.JournalEntry.compendiumBanner = 'systems/fleaux/images/ui/compendiums.png';
     
     // Register dice configuration
-    CONFIG.Dice.rolls.push(game.fleaux.des);
+    CONFIG.Dice.rolls.push(game.fleaux.dice);
     
     // Register actor sheets
     let fleauxSystem = game.fleaux;
     Actors.unregisterSheet('core', ActorSheet);
     
     // Character sheet
-    Actors.registerSheet('fleaux', PersonnageSheet, {
-        types: [fleauxSystem.typeActor.character],
+    Actors.registerSheet('fleaux', CharacterSheet, {
+        types: [fleauxSystem.actorType.character],
         makeDefault: true,
         label: 'TYPES.Actor.character'
     });
     
     // NPC sheet
-    Actors.registerSheet('fleaux', PersonnageSheet, {
-        types: [fleauxSystem.typeActor.pnj],
+    Actors.registerSheet('fleaux', CharacterSheet, {
+        types: [fleauxSystem.actorType.npc],
         makeDefault: true,
-        label: 'TYPES.Actor.pnj'
+        label: 'TYPES.Actor.npc'
     });
     
     // Creature sheet
     Actors.registerSheet('fleaux', CreatureSheet, {
-        types: [fleauxSystem.typeActor.creature],
+        types: [fleauxSystem.actorType.creature],
         makeDefault: true,
         label: 'TYPES.Actor.creature'
     });
@@ -130,51 +130,51 @@ Hooks.once('socketlib.ready', async function() {
     Items.unregisterSheet('core', ItemSheet);
     
     Items.registerSheet('fleaux', ItemSheetAbstract, {
-        types: [fleauxSystem.typeItem.attribut],
+        types: [fleauxSystem.itemType.attribute],
         makeDefault: true,
-        label: 'TYPES.Item.attribut'
+        label: 'TYPES.Item.attribute'
     });
     
-    Items.registerSheet('fleaux', PeupleSheet, {
-        types: [fleauxSystem.typeItem.peuple],
+    Items.registerSheet('fleaux', PeopleSheet, {
+        types: [fleauxSystem.itemType.people],
         makeDefault: true,
-        label: 'TYPES.Item.peuple'
+        label: 'TYPES.Item.people'
     });
     
     Items.registerSheet('fleaux', CrimeSheet, {
-        types: [fleauxSystem.typeItem.crime],
+        types: [fleauxSystem.itemType.crime],
         makeDefault: true,
         label: 'TYPES.Item.crime'
     });
     
     Items.registerSheet('fleaux', ProfessionSheet, {
-        types: [fleauxSystem.typeItem.profession],
+        types: [fleauxSystem.itemType.profession],
         makeDefault: true,
         label: 'TYPES.Item.profession'
     });
     
     Items.registerSheet('fleaux', ItemSheetAbstract, {
-        types: [fleauxSystem.typeItem.talent],
+        types: [fleauxSystem.itemType.talent],
         makeDefault: true,
         label: 'TYPES.Item.talent'
     });
     
     Items.registerSheet('fleaux', ItemSheetAbstract, {
-        types: [fleauxSystem.typeItem.sort],
+        types: [fleauxSystem.itemType.spell],
         makeDefault: true,
-        label: 'TYPES.Item.sort'
+        label: 'TYPES.Item.spell'
     });
     
-    Items.registerSheet('fleaux', EquipementSheet, {
-        types: [fleauxSystem.typeItem.equipement],
+    Items.registerSheet('fleaux', EquipmentSheet, {
+        types: [fleauxSystem.itemType.equipment],
         makeDefault: true,
-        label: 'TYPES.Item.equipement'
+        label: 'TYPES.Item.equipment'
     });
     
-    Items.registerSheet('fleaux', EtatSheet, {
-        types: [fleauxSystem.typeItem.etat],
+    Items.registerSheet('fleaux', StateSheet, {
+        types: [fleauxSystem.itemType.state],
         makeDefault: true,
-        label: 'TYPES.Item.etat'
+        label: 'TYPES.Item.state'
     });
     
     // Preload templates and register helpers
@@ -188,7 +188,7 @@ Hooks.once('socketlib.ready', async function() {
  * Ready hook - Initialize compendiums and data
  */
 Hooks.once('ready', async () => {
-    ajouterUrlSuiviTickets();
+    addTicketTrackingUrl();
     
     let systemData = game.system.debug.system;
     
@@ -218,14 +218,14 @@ Hooks.once('ready', async () => {
             });
         
         // Import various compendium data
-        await CompendiumManager.import(systemData.packs[0].name, game.fleaux.jsonsPath, game.i18n.localize('BESTIAIRE.minuscule.nom'));
-        await CompendiumManager.import(systemData.packs[1].name, game.fleaux.jsonsPath, game.i18n.localize('ATTRIBUTS.minuscule.nom'));
-        await CompendiumManager.import(systemData.packs[2].name, game.fleaux.jsonsPath, game.i18n.localize('PEUPLES.minuscule.nom'));
+        await CompendiumManager.import(systemData.packs[0].name, game.fleaux.jsonsPath, game.i18n.localize('BESTIARY.minuscule.nom'));
+        await CompendiumManager.import(systemData.packs[1].name, game.fleaux.jsonsPath, game.i18n.localize('ATTRIBUTES.minuscule.nom'));
+        await CompendiumManager.import(systemData.packs[2].name, game.fleaux.jsonsPath, game.i18n.localize('PEOPLES.minuscule.nom'));
         await CompendiumManager.import(systemData.packs[3].name, game.fleaux.jsonsPath, game.i18n.localize('CRIMES.minuscule.nom'));
         await CompendiumManager.import(systemData.packs[4].name, game.fleaux.jsonsPath, game.i18n.localize('PROFESSIONS.minuscule.nom'));
-        await CompendiumManager.import(systemData.packs[5].name, game.fleaux.jsonsPath, game.i18n.localize('EQUIPEMENTS.minuscule.nom'));
+        await CompendiumManager.import(systemData.packs[5].name, game.fleaux.jsonsPath, game.i18n.localize('EQUIPMENT.minuscule.nom'));
         await CompendiumManager.import(systemData.packs[6].name, game.fleaux.jsonsPath, game.i18n.localize('TALENTS.minuscule.nom'));
-        await CompendiumManager.import(systemData.packs[7].name, game.fleaux.jsonsPath, game.i18n.localize('SORTS.minuscule.nom'));
+        await CompendiumManager.import(systemData.packs[7].name, game.fleaux.jsonsPath, game.i18n.localize('SPELLS.minuscule.nom'));
         
         // Configure ownership for different compendiums
         await CompendiumManager.configure(systemData.packs[0].name, {
@@ -304,18 +304,18 @@ Hooks.once('ready', async () => {
     }
 
     // Load compendium content into global arrays
-    FLEAUX.bestiaire = await CompendiumManager.getContent(systemData.packs[0].name);
-    FLEAUX.attributs = await CompendiumManager.getContent(systemData.packs[1].name);
-    FLEAUX.peuples = await CompendiumManager.getContent(systemData.packs[2].name);
+    FLEAUX.bestiary = await CompendiumManager.getContent(systemData.packs[0].name);
+    FLEAUX.attributes = await CompendiumManager.getContent(systemData.packs[1].name);
+    FLEAUX.peoples = await CompendiumManager.getContent(systemData.packs[2].name);
     FLEAUX.crimes = await CompendiumManager.getContent(systemData.packs[3].name);
     FLEAUX.professions = await CompendiumManager.getContent(systemData.packs[4].name);
-    FLEAUX.equipements = await CompendiumManager.getContent(systemData.packs[5].name);
+    FLEAUX.equipment = await CompendiumManager.getContent(systemData.packs[5].name);
     FLEAUX.talents = await CompendiumManager.getContent(systemData.packs[6].name);
-    FLEAUX.sorts = await CompendiumManager.getContent(systemData.packs[7].name);
+    FLEAUX.spells = await CompendiumManager.getContent(systemData.packs[7].name);
     
-    console.log('Initialisation de fleaux terminé.');
-    await nettoyerMacros();
-    console.log('Nettoyer les macros obsolètes.');
+    console.log('Fleaux system initialization complete.');
+    await cleanupMacros();
+    console.log('Cleaned up obsolete macros.');
 });
 
 /**
@@ -332,7 +332,7 @@ Hooks.on('renderApplication', () => {
 });
 
 Hooks.on('renderChatMessage', async (message, html, data) => {
-    tchatModule.affichageTchatSuccesEchec(message, html, data);
+    chatModule.displayChatSuccessFailure(message, html, data);
 });
 
 /**
@@ -342,61 +342,61 @@ Hooks.once('socketlib.ready', () => {
     socket = socketlib.register('fleaux');
     
     // Register socket functions
-    socket.register('desarmement', desarmement);
-    socket.register('affecterDegats', affecterDegats);
-    socket.register('hurlementDePanique', hurlementDePanique);
+    socket.register('disarm', disarm);
+    socket.register('applyDamage', applyDamage);
+    socket.register('panicScream', panicScream);
 });
 
 /**
  * Socket functions for Game Master interactions
  */
 
-function desarmement(actorId) {
-    return game.actors.get(actorId).desarmerEnnemi();
+function disarm(actorId) {
+    return game.actors.get(actorId).disarmEnemy();
 }
 
-function affecterDegats(actorId, tokenIds, damages, isPublic = true) {
+function applyDamage(actorId, tokenIds, damages, isPublic = true) {
     let tokens = [];
     tokenIds.forEach(tokenId => {
         tokens.push((
             game.scenes?.active?.tokens?.find(token => token?.actorId === tokenId)
         )?.object);
     });
-    game.actors.get(actorId).affecterDegats(tokens, damages, isPublic);
+    game.actors.get(actorId).applyDamage(tokens, damages, isPublic);
 }
 
-function hurlementDePanique(actorId) {
+function panicScream(actorId) {
     const actor = game.actors.get(actorId);
-    actor.spell(game.i18n.localize('TCHAT.lancerDesTablePanique.pour.titre') + ' ' + actor.name);
+    actor.spell(game.i18n.localize('CHAT.rollPanicTable.for.title') + ' ' + actor.name);
 }
 
 /**
  * Clean up obsolete macros
  */
-async function nettoyerMacros() {
-    const allItems = FLEAUX.equipements.concat(FLEAUX.talents);
-    allItems.push(...FLEAUX.sorts);
+async function cleanupMacros() {
+    const allItems = FLEAUX.equipment.concat(FLEAUX.talents);
+    allItems.push(...FLEAUX.spells);
     
     await game.macros.forEach(async (macro) => {
-        const typeItem = macro.name.split('.')[0]?.toLowerCase();
+        const itemType = macro.name.split('.')[0]?.toLowerCase();
         const itemId = macro.name.split('.')[1];
-        const itemDansActeur = game.actors.get(macro.actorId);
+        const itemInActor = game.actors.get(macro.actorId);
         
-        if (typeItem && (
-            typeItem === game.fleaux.typeItem.talent ||
-            typeItem === game.fleaux.typeItem.sort ||
-            typeItem === game.fleaux.typeItem.etat ||
-            typeItem === game.fleaux.typeItem.equipement
+        if (itemType && (
+            itemType === game.fleaux.itemType.talent ||
+            itemType === game.fleaux.itemType.spell ||
+            itemType === game.fleaux.itemType.state ||
+            itemType === game.fleaux.itemType.equipment
         )) {
-            const itemDansCompendium = allItems.find(item => item.id === itemId)?.id;
+            const itemInCompendium = allItems.find(item => item.id === itemId)?.id;
             
-            if (itemDansCompendium == null || itemDansCompendium == undefined) {
-                const itemDansActor = itemDansActeur?.items?.get(itemId);
+            if (itemInCompendium == null || itemInCompendium == undefined) {
+                const itemInActor = itemInActor?.items?.get(itemId);
                 
-                if (itemDansActor == null || itemDansActor == undefined) {
-                    const itemGlobal = game?.items?.get(itemId);
+                if (itemInActor == null || itemInActor == undefined) {
+                    const globalItem = game?.items?.get(itemId);
                     
-                    if (itemGlobal == null || itemGlobal == undefined) {
+                    if (globalItem == null || globalItem == undefined) {
                         macro.delete();
                     }
                 }
@@ -408,7 +408,7 @@ async function nettoyerMacros() {
 /**
  * String sanitizer - remove accents from French text
  */
-String.prototype.sansAccent = function() {
+String.prototype.removeAccents = function() {
     var patterns = [
         /[\300-\306]/g, /[\340-\346]/g,  // A, a
         /[\310-\313]/g, /[\350-\353]/g,  // E, e

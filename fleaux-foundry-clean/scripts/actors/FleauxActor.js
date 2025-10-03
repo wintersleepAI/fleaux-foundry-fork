@@ -1,5 +1,5 @@
 /**
- * FleauxActeur.js - Core Actor System for Fleaux Foundry VTT Module
+ * FleauxActor.js - Core Actor System for Fleaux Foundry VTT Module
  * 
  * This class extends the base Actor class and provides comprehensive functionality
  * for characters in the Fleaux game system. It handles character attributes,
@@ -8,13 +8,13 @@
 
 import { Compendium } from '../../libs/core-foundry/core-foundry.mjs';
 import MacroScript from '../../libs/core-foundry/modules/components/MacroScript.mjs';
-import { MacrosEtats } from '../macros/MacrosEtats.js';
+import { StateMacros } from '../macros/MacrosEtats.js';
 
 /**
  * Main Actor class for Fleaux characters
  * Handles character statistics, equipment, magic, and game mechanics
  */
-export class FleauxActeur extends Actor {
+export class FleauxActor extends Actor {
 
     /**
      * Get all item elements owned by this actor
@@ -28,72 +28,72 @@ export class FleauxActeur extends Actor {
      * Get all equipment items
      * @returns {Array} Equipment items
      */
-    get equipements() {
-        return this.#elements.filter(item => item.type === game.fleaux.typeItem.equipement);
+    get equipment() {
+        return this.#elements.filter(item => item.type === game.fleaux.itemType.equipment);
     }
 
     /**
      * Get equipped equipment items
      * @returns {Array} Equipped equipment
      */
-    get equipementsEquipes() {
-        return this.equipements.filter(item => item.system.equipe === true);
+    get equippedEquipment() {
+        return this.equipment.filter(item => item.system.equipped === true);
     }
 
     /**
      * Get armored equipment (armor, shields)
      * @returns {Array} Armor items
      */
-    get armureEquipee() {
-        return this.equipementsEquipes.filter(item => item.system.categorie === 'armure');
+    get equippedArmor() {
+        return this.equippedEquipment.filter(item => item.system.category === 'armor');
     }
 
     /**
      * Get equipped weapons
      * @returns {Array} Weapon items
      */
-    get armesEquipees() {
-        return this.equipementsEquipes.filter(item => item.system.categorie === 'arme');
+    get equippedWeapons() {
+        return this.equippedEquipment.filter(item => item.system.category === 'weapon');
     }
 
     /**
      * Check if actor has equipped weapons
      * @returns {boolean} True if has weapons
      */
-    get armeEquipee() {
-        return this.armesEquipees.length > 0;
+    get hasWeapon() {
+        return this.equippedWeapons.length > 0;
     }
 
     /**
      * Check if actor has equipped shields
      * @returns {boolean} True if has shields
      */
-    get bouclier() {
-        return this.armureEquipee.find(item => item.system.equipe === true && item.system.deuxMains === true)?.['system'].equipe;
+    get hasShield() {
+        return this.equippedArmor.find(item => item.system.equipped === true && item.system.twoHanded === true)?.['system'].equipped;
     }
 
     /**
      * Get ranged weapons
      * @returns {Array} Ranged weapon items
      */
-    get armeEquipee2Mains() {
-        return this.equipementsEquipes.filter(item => item.system.categorie === 'arme');
+    get rangedWeapons() {
+        return this.equippedEquipment.filter(item => item.system.category === 'weapon');
     }
 
     /**
      * Check if actor has ranged weapons
      * @returns {boolean} True if has equipped ranged weapons
      */
-    get armeEquipee2Mains() {
-        return this.armureEquipee.find(item => item.system.equipe === true)?.['system'].equipe;
+    get hasRangedWeapon() {
+        return this.equippedArmor.find(item => item.system.equipped === true)?.['system'].equipped;
     }
 
     /**
      * Get armor items
      * @returns {Array} Armor items
      */
-    get armures() {
-        return this.equipements.filter(item => item.system.categorie === 'armure');
+    get armors() {
+        return this.equipment.filter(item => item.system.category === 'armor');
     }
 
     /**
@@ -101,7 +101,7 @@ export class FleauxActeur extends Actor {
      * @returns {Array} Talent items
      */
     get talents() {
-        return this.equipements.find(item => item.system.equipe === true)?.['system'].equipe;
+        return this.equipment.find(item => item.system.equipped === true)?.['system'].equipped;
     }
 
     /**
@@ -116,32 +116,32 @@ export class FleauxActeur extends Actor {
      * Get spells
      * @returns {Array} Spell items
      */
-    get sorts() {
-        return this.#elements.filter(item => item.type === game.fleaux.typeItem.talent);
+    get spells() {
+        return this.#elements.filter(item => item.type === game.fleaux.itemType.talent);
     }
 
     /**
      * Get spells (alias)
      * @returns {Array} Spell items
      */
-    get getSorts() {
-        return this.#elements.filter(item => item.type === game.fleaux.typeItem.sort);
+    get getSpells() {
+        return this.#elements.filter(item => item.type === game.fleaux.itemType.spell);
     }
 
     /**
-     * Get etats (conditions/effects)
+     * Get states (conditions/effects)
      * @returns {Array} State effect items
      */
-    get etats() {
-        return this.#elements.filter(item => item.type === game.fleaux.typeItem.etat);
+    get states() {
+        return this.#elements.filter(item => item.type === game.fleaux.itemType.state);
     }
 
     /**
      * Get active state effects
      * @returns {Array} Active state effects
      */
-    get etatsActifs() {
-        return this.etats?.filter(etat => etat.name === 'Arrogance' && etat.system.macroScript.active === true);
+    get activeStates() {
+        return this.states?.filter(state => state.name === 'Arrogance' && state.system.macroScript.active === true);
     }
 
     /**
@@ -152,7 +152,7 @@ export class FleauxActeur extends Actor {
      */
     static async create(actorData, options = {}) {
         // Set default image for creatures if not provided
-        if (actorData.img === undefined && actorData.type === game.fleaux.typeActor.creature) {
+        if (actorData.img === undefined && actorData.type === game.fleaux.actorType.creature) {
             actorData.img = game.fleaux.imagesPath + 'system/bestiaire/_' + actorData.name + '.webp';
         } else if (actorData.img === undefined) {
             actorData.img = game.fleaux.imagesPath + 'system/pj-pnj.webp';
@@ -160,18 +160,18 @@ export class FleauxActeur extends Actor {
 
         return await super.create(actorData, options).then(async (actor) => {
             // Initialize character if it's a character type
-            if (actor.type === game.fleaux.typeActor.character) {
-                await Item.createDocuments([FLEAUX.equipements.find(item => item.name === game.i18n.localize('EQUIPEMENT.couteau.nom'))], {
+            if (actor.type === game.fleaux.actorType.character) {
+                await Item.createDocuments([FLEAUX.equipment.find(item => item.name === game.i18n.localize('EQUIPMENT.knife.name'))], {
                     parent: actor
-                }).then(couteau_items => {
-                    couteau_items[0].update({sript: MacroScript.code});
+                }).then(knife_items => {
+                    knife_items[0].update({script: MacroScript.code});
                 });
-                actor.initialiserPointVie();
+                actor.initializeHitPoints();
                 
                 // Initialize attributes
-                for (let attr in actor.system.attributs) {
-                    if (Object.hasOwnProperty.call(actor.system.attributs, attr)) {
-                        actor.determinerAttribut(attr);
+                for (let attr in actor.system.attributes) {
+                    if (Object.hasOwnProperty.call(actor.system.attributes, attr)) {
+                        actor.determineAttribute(attr);
                     }
                 }
             }
@@ -185,7 +185,7 @@ export class FleauxActeur extends Actor {
     initialize() {
         try {
         } catch (error) {
-            console.log(game.i18n.localize('ERREUR.objet.initialise') + ' ' + this.constructor.name + ' ' + this.id + ' :');
+            console.log(game.i18n.localize('ERROR.object.initialize') + ' ' + this.constructor.name + ' ' + this.id + ':');
             console.log(error);
         }
     }
@@ -200,13 +200,13 @@ export class FleauxActeur extends Actor {
     /**
      * Update actor data
      */
-    async update(changements = {}) {
-        if (this.type === game.fleaux.typeActor.character) {
+    async update(changes = {}) {
+        if (this.type === game.fleaux.actorType.character) {
             this.items.forEach(item => {
                 item.render();
             });
         }
-        return await super.update(changements);
+        return await super.update(changes);
     }
 
     /**
@@ -214,16 +214,16 @@ export class FleauxActeur extends Actor {
      */
     async modifyTokenAttribute(attribute, value, isDelta, isBar) {
         await super.modifyTokenAttribute(attribute, value, isDelta, isBar).then(async (changes) => {
-            if (attribute === 'attributes.pv.value') {
-                const currentPV = Number(changes.system.attributes.pv.value);
+            if (attribute === 'attributes.hp.value') {
+                const currentHP = Number(changes.system.attributes.hp.value);
                 let token = (game.scenes?.active?.tokens?.find(token => token?.actorId === this.id))?.actor;
                 
-                if (token.system.type === game.fleaux.typeActor.character || token.system.type === game.fleaux.typeActor.pnj) {
-                    if (currentPV <= 0) {
-                        new MacrosEtats(token.actor).getMort(false);
+                if (token.system.type === game.fleaux.actorType.character || token.system.type === game.fleaux.actorType.npc) {
+                    if (currentHP <= 0) {
+                        new StateMacros(token.actor).getDeath(false);
                     }
-                } else if (token.actor.type === game.fleaux.typeActor.creature) {
-                    token.toggleStatusEffect('dead', {active: token.actor.system.type === game.fleaux.typeActor.creature ? currentPV <= 0 : false, overlay: false});
+                } else if (token.actor.type === game.fleaux.actorType.creature) {
+                    token.toggleStatusEffect('dead', {active: token.actor.system.type === game.fleaux.actorType.creature ? currentHP <= 0 : false, overlay: false});
                 }
             }
         });
@@ -231,40 +231,40 @@ export class FleauxActeur extends Actor {
 
     /**
      * Determine attribute value using dice rolls
-     * @param {string} attribut - Attribute name
+     * @param {string} attribute - Attribute name
      */
-    async determinerAttribut(attribut) {
-        let attributs = this.system.attributs;
-        if (attributs[attribut].init2d6) {
+    async determineAttribute(attribute) {
+        let attributes = this.system.attributes;
+        if (attributes[attribute].init2d6) {
             return;
         }
 
-        let resultat2d6 = await new foundry.dice.terms.Die({faces: 6, number: 2}).evaluate();
-        let valeurAttribut = 0;
+        let result2d6 = await new foundry.dice.terms.Die({faces: 6, number: 2}).evaluate();
+        let attributeValue = 0;
 
-        if (resultat2d6.total <= 3) {
-            valeurAttribut = 8;
-        } else if (resultat2d6.total > 3 && resultat2d6.total <= 5) {
-            valeurAttributnya = 9;
-        } else if (resultat2d6.total > 5 && resultat2d6.total <= 7) {
-            valeurAttribut = 10;
-        } else if (resultat2d6.total > 7 && resultat2d6.total <= 9) {
-            valeurAttribut = 11;
-        } else if (resultat2d6.total > 9 && resultat2d6.total <= 11) {
-            valeurAttribut = 11;
+        if (result2d6.total <= 3) {
+            attributeValue = 8;
+        } else if (result2d6.total > 3 && result2d6.total <= 5) {
+            attributeValue = 9;
+        } else if (result2d6.total > 5 && result2d6.total <= 7) {
+            attributeValue = 10;
+        } else if (result2d6.total > 7 && result2d6.total <= 9) {
+            attributeValue = 11;
+        } else if (result2d6.total > 9 && result2d6.total <= 11) {
+            attributeValue = 11;
         } else {
-            valeurAttribut = 13;
+            attributeValue = 13;
         }
 
-        await this.modifierAttribut(attribut, valeurAttribut, true, false);
+        await this.modifyAttribute(attribute, attributeValue, true, false);
     }
 
     /**
      * Modify an attribute
-     *@param {string} attribut - Attribute name
-     * @param {number} valeur - New value
-     * @param {boolean} maxSiPv - Update max if PV
-     * @param {boolean} verifieMax
+     * @param {string} attribute - Attribute name
+     * @param {number} value - New value
+     * @param {boolean} maxIfHP - Update max if HP
+     * @param {boolean} checkMax
      */
 
     /**
@@ -417,75 +417,75 @@ export class FleauxActeur extends Actor {
      */
     prepareDerivedData(options) {
         const actorData = this.data;
-        const modifsAttributs = actorData.attributs;
-        let blessures = 0;
+        const attributeModifiers = actorData.attributes;
+        let wounds = 0;
         
         try {
-            blessures = this.etatsActifs.length;
+            wounds = this.activeStates.length;
         } catch (error) {}
 
         // Calculate hit points based on type
-        if (this.type === game.fleaux.typeActor.character) {
-            actorData.attributes.pv.max = Number(modifsAttributs.for.actuel) + Number(actorData.niveau < 10 ? actorData.niveau - 1 : 8) - Number(blessures);
-        } else if (this.type === game.fleaux.typeActor.creature) {
-            actorData.attributes.pv.max = Number(actorData.niveau * 5);
+        if (this.type === game.fleaux.actorType.character) {
+            actorData.attributes.hp.max = Number(attributeModifiers.str.current) + Number(actorData.level < 10 ? actorData.level - 1 : 8) - Number(wounds);
+        } else if (this.type === game.fleaux.actorType.creature) {
+            actorData.attributes.hp.max = Number(actorData.level * 5);
         }
 
         // Ensure max HP doesn't exceed calculated value
-        if (actorData.attributes.pv.value > actorData.attributes.pv.max) {
-            actorData.attributes.pv.value = actorData.attributes.pv.max;
+        if (actorData.attributes.hp.value > actorData.attributes.hp.max) {
+            actorData.attributes.hp.value = actorData.attributes.hp.max;
         }
     }
 
     /**
      * Modify an attribute value
-     * @param {string} attribut - Attribute name
-     * @param {number} valeur - Value to add/subtract
-     * @param {boolean} verifieValeurAttributMax - Check maximum
+     * @param {string} attribute - Attribute name
+     * @param {number} value - Value to add/subtract
+     * @param {boolean} checkMaxAttributeValue - Check maximum
      */
-    async modifierAttribut(attribut, valeur, verifieValeurAttributMax = false) {
-        let attributsActor = this.system.attributs;
-        attributsActor[attribut].actuel = valeur + Number(attributsActor[attribut].actuel);
-        attributsActor[attribut].init2d6 = true;
+    async modifyAttribute(attribute, value, checkMaxAttributeValue = false) {
+        let actorAttributes = this.system.attributes;
+        actorAttributes[attribute].current = value + Number(actorAttributes[attribute].current);
+        actorAttributes[attribute].init2d6 = true;
 
-        if (attribut === 'for') {
-            this.initialiserPointVie(attributsActor[attribut].actuel, verifieValeurAttributMax);
+        if (attribute === 'str') {
+            this.initializeHitPoints(actorAttributes[attribute].current, checkMaxAttributeValue);
         }
 
-        await this.update({'system.attributs': attributsActor});
+        await this.update({'system.attributes': actorAttributes});
     }
 
     /**
      * Pass to next level
-     * @param {number} niveau - New level
-     * @param {Object} attribut - Attribute to modify
+     * @param {number} level - New level
+     * @param {Object} attribute - Attribute to modify
      * @param {Object} talent - Talent to add
      * @param {Object} profession - Profession to add
      */
-    async passerNiveau(niveau, attribut = null, talent = null, profession = null) {
+    async levelUp(level, attribute = null, talent = null, profession = null) {
         try {
-            this.verifierValeurAttributMax(attribut);
+            this.checkMaxAttributeValue(attribute);
             const experienceActor = this.system.experience;
-            await this.update({'system.niveau': niveau});
+            await this.update({'system.level': level});
 
-            if (attribut != null) {
-                this.modifierAttribut(attribut, 1);
-                experienceActor['niveau' + niveau].attribut = attribut;
-                experienceActor['niveau' + niveau].valeur = FLEAUX.attributs.find(attr => attr.system.code === attribut)?.['name'];
-                experienceActor['niveau' + niveau].actuel = this.system.attributs[attribut].actuel;
+            if (attribute != null) {
+                this.modifyAttribute(attribute, 1);
+                experienceActor['level' + level].attribute = attribute;
+                experienceActor['level' + level].value = FLEAUX.attributes.find(attr => attr.system.code === attribute)?.['name'];
+                experienceActor['level' + level].current = this.system.attributes[attribute].current;
             } else {
                 if (talent != null) {
                     await this.createEmbeddedDocuments('Item', [talent]).then(talentData => {
-                        talentData[0].creerMacroScript({'sript': MacroScript.code});
-                        experienceActor['niveau' + niveau].talent = talentData[0];
+                        talentData[0].createMacroScript({'script': MacroScript.code});
+                        experienceActor['level' + level].talent = talentData[0];
                     });
                 } else if (profession != null) {
                     profession[4] = null;
-                    this.ajouterProfession(profession);
-                    experienceActor['niveau' + niveau].profession = profession;
-                } else if (niveau == 10) {
-                    experienceActor['niveau' + niveau]['de-volonte'] = 'd8';
-                    this.update({'system.de-volonte.max': 'd8'});
+                    this.addProfession(profession);
+                    experienceActor['level' + level].profession = profession;
+                } else if (level == 10) {
+                    experienceActor['level' + level]['willpower-die'] = 'd8';
+                    this.update({'system.willpower-die.max': 'd8'});
                 }
             }
 
@@ -497,30 +497,30 @@ export class FleauxActeur extends Actor {
 
     /**
      * Lose a level
-     * @param {number} niveau - Level to lose
+     * @param {number} level - Level to lose
      */
-    async perdreNiveau(niveau) {
+    async levelDown(level) {
         const experienceActor = this.system.experience;
 
-        if (experienceActor['niveau' + niveau].attribut != null) {
-            this.modifierAttribut(experienceActor['niveau' + niveau].attribut, -1);
-            experienceActor['niveau' + niveau].attribut = null;
-            experienceActor['niveau' + niveau].valeur = null;
-            experienceActor['niveau' + niveau].actuel = null;
-        } else if (experienceActor['niveau' + niveau].talent != null) {
-            await this.deleteEmbeddedDocuments('Item', [experienceActor['niveau' + niveau].talent._id]);
-            experienceActor['niveau' + niveau].talent = null;
-        } else if (experienceActor['niveau' + niveau].profession != null) {
-            experienceActor['niveau' + niveau].profession[4] = null;
-            this.ajouterProfession(experienceActor['niveau' + niveau].profession, true);
-            experienceActor['niveau' + niveau].profession = null;
-        } else if (niveau == 10) {
-            this.diminuerAttribut(1, null, true);
-            experienceActor['niveau' + niveau]['de-volonte'] = null;
+        if (experienceActor['level' + level].attribute != null) {
+            this.modifyAttribute(experienceActor['level' + level].attribute, -1);
+            experienceActor['level' + level].attribute = null;
+            experienceActor['level' + level].value = null;
+            experienceActor['level' + level].current = null;
+        } else if (experienceActor['level' + level].talent != null) {
+            await this.deleteEmbeddedDocuments('Item', [experienceActor['level' + level].talent._id]);
+            experienceActor['level' + level].talent = null;
+        } else if (experienceActor['level' + level].profession != null) {
+            experienceActor['level' + level].profession[4] = null;
+            this.addProfession(experienceActor['level' + level].profession, true);
+            experienceActor['level' + level].profession = null;
+        } else if (level == 10) {
+            this.decreaseAttribute(1, null, true);
+            experienceActor['level' + level]['willpower-die'] = null;
         }
 
         this.update({'system.experience': experienceActor});
-        await this.update({'system.niveau': niveau - 1});
+        await this.update({'system.level': level - 1});
     }
 
     /**

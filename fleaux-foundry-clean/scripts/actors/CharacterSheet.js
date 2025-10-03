@@ -1,17 +1,17 @@
 /**
- * PersonnageSheet.js - Character Sheet for Fleaux Foundry VTT Module
+ * CharacterSheet.js - Character Sheet for Fleaux Foundry VTT Module
  * 
- * Actor sheet handling for character players (Personnage). Provides
+ * Actor sheet handling for character players. Provides
  * interactive character sheet with tabs for various character elements.
  */
 import MacroScript from '../../libs/core-foundry/modules/components/MacroScript.mjs';
-import { MacrosEtats } from '../macros/MacrosEtats.js';
+import { StateMacros } from '../macros/MacrosEtats.js';
 
 /**
- * Character sheet class for Personnage actors
+ * Character sheet class for character actors
  * Provides interactive UI for character management
  */
-export class PersonnageSheet extends ActorSheet {
+export class CharacterSheet extends ActorSheet {
 
     /**
      * Get default sheet options
@@ -19,11 +19,11 @@ export class PersonnageSheet extends ActorSheet {
      */
     static get defaultOptions() {
         return foundry.utils.mergeObject(super.defaultOptions, {
-            'classes': game.fleaux.acteurClasses,
+            'classes': game.fleaux.actorClasses,
             'template': game.fleaux.templatesActorsPath + 'character-sheet.hbs',
             'width': 950,
             'height': 'auto',
-            'tabs': [{'navSelector': '.sheet-tabs', 'contentSelector': '.sheet-body', 'initial': 'tabEquipements'}]
+            'tabs': [{'navSelector': '.sheet-tabs', 'contentSelector': '.sheet-body', 'initial': 'tabEquipment'}]
         });
     }
 
@@ -33,9 +33,9 @@ export class PersonnageSheet extends ActorSheet {
      */
     get tabs() {
         return [
-            {'name': game.i18n.localize('EQUIPEMENT'), 'style': 'flex: 2; text-align: center;'},
-            {'name': game.i18n.localize('TCHAT.lancerDesAttributs.difficulte.titre'), 'style': 'flex: 2; text-align: center;'},
-            {'name': game.i18n.localize('FORMULAIRE.personnage.onglet.etats'), 'style': 'flex: 2; text-align: center;'}
+            {'name': game.i18n.localize('EQUIPMENT'), 'style': 'flex: 2; text-align: center;'},
+            {'name': game.i18n.localize('CHAT.rollAttributes.difficulty.title'), 'style': 'flex: 2; text-align: center;'},
+            {'name': game.i18n.localize('FORM.character.tab.states'), 'style': 'flex: 2; text-align: center;'}
         ];
     }
 
@@ -45,10 +45,10 @@ export class PersonnageSheet extends ActorSheet {
      */
     get colTalents() {
         return [
-            {'name': '-' + game.i18n.localize('FORMULAIRE.personnage.libelle.talents').toUpperCase() + ' [ ' + this.actor.talents?.length + ' ]', 'style': 'flex: 10; align-items: center; cursor: pointer;'},
+            {'name': '-' + game.i18n.localize('FORM.character.label.talents').toUpperCase() + ' [ ' + this.actor.talents?.length + ' ]', 'style': 'flex: 10; align-items: center; cursor: pointer;'},
             {'name': 'Date', 'style': 'flex: 2; text-align: center;'},
-            {'name': game.i18n.localize('FORMULAIRE.personnage.libelle.actif'), 'style': 'flex: 2; text-align: center;'},
-            {'name': game.i18n.localize('FORMULAIRE.personnage.libelle.emplacement'), 'style': 'flex: 4; text-align: center; cursor: pointer;'}
+            {'name': game.i18n.localize('FORM.character.label.active'), 'style': 'flex: 2; text-align: center;'},
+            {'name': game.i18n.localize('FORM.character.label.slot'), 'style': 'flex: 4; text-align: center; cursor: pointer;'}
         ];
     }
 

@@ -1,6 +1,6 @@
-# Fleaux Foundry VTT - Clean Version
+# Fleaux Foundry VTT - Clean English Version
 
-This is a **deobfuscated and cleaned version** of the Fleaux Foundry VTT module, created from the original obfuscated codebase.
+This is a **deobfuscated, cleaned, and fully translated** version of the Fleaux Foundry VTT module, created from the original obfuscated French codebase.
 
 ## 🎯 What's Different
 
@@ -11,11 +11,18 @@ This is a **deobfuscated and cleaned version** of the Fleaux Foundry VTT module,
 - Control flow obfuscation removed
 - Dead code eliminated
 
+### 🌍 **Fully Translated**
+- **All code comments** translated from French to English
+- **All variable and function names** translated to English
+- **All user-facing strings** translated to English
+- **All documentation** translated to English
+- **README files** translated to English
+
 ### 📁 **File Structure**
 ```
 fleaux-foundry-clean/
-├── fleaux.js                    # Main module entry (deobfuscated)
-├── scripts/                     # All JavaScript files (deobfuscated)
+├── fleaux.js                    # Main module entry (deobfuscated & translated)
+├── scripts/                     # All JavaScript files (deobfuscated & translated)
 │   ├── actors/                  # Actor sheet classes
 │   ├── combat/                  # Combat system
 │   ├── items/                   # Item sheet classes
@@ -33,40 +40,42 @@ fleaux-foundry-clean/
 ├── _jsons/                      # JSON data files
 ├── system.json                  # Module configuration
 ├── template.json                # Template configuration
-└── README.md                    # Original documentation
+├── README.md                    # Translated documentation
+└── README-CLEAN.md              # This file
 ```
 
 ## 🚀 **Benefits**
 
 1. **Readable Code**: All JavaScript is now human-readable and maintainable
-2. **Easy Debugging**: Clear variable names and structure make debugging simple
-3. **Modification Ready**: Code can be easily modified and extended
-4. **Learning Resource**: Perfect for understanding Foundry VTT module development
-5. **Clean Architecture**: Well-organized file structure
+2. **English Language**: Everything is in English for international developers
+3. **Easy Debugging**: Clear variable names and structure make debugging simple
+4. **Modification Ready**: Code can be easily modified and extended
+5. **Learning Resource**: Perfect for understanding Foundry VTT module development
+6. **Clean Architecture**: Well-organized file structure
 
 ## 🔧 **Core Components**
 
 ### **Actor System**
-- `FleauxActeur.js` - Base actor class with core functionality
-- `PersonnageSheet.js` - Player character sheet management
+- `FleauxActor.js` - Base actor class with core functionality
+- `CharacterSheet.js` - Player character sheet management
 - `CreatureSheet.js` - Creature/monster sheet management
 
 ### **Item System**
 - `FleauxItem.js` - Base item class
 - `ItemSheetAbstract.js` - Abstract item sheet base
-- `EquipementSheet.js` - Equipment management
-- `EtatSheet.js` - Status effect management
-- `PeupleSheet.js` - Cultural background management
+- `EquipmentSheet.js` - Equipment management
+- `StateSheet.js` - Status effect management
+- `PeopleSheet.js` - Cultural background management
 - `ProfessionSheet.js` - Career management
 - `CrimeSheet.js` - Accusation system
 
 ### **Combat System**
-- `FleauxCombat.js` - Custom combat mechanics with Sang-froid initiative
+- `FleauxCombat.js` - Custom combat mechanics with Cool initiative
 
 ### **Utilities**
-- `FleauxDes.js` - Dice rolling system
-- `MacrosEtats.js` - Status effect macros
-- `tchat.js` - Chat integration
+- `FleauxDice.js` - Dice rolling system
+- `StateMacros.js` - Status effect macros
+- `chat.js` - Chat integration
 - `templates.js` - Template preloader
 - `settings.js` - Module settings
 - `helpers.js` - Utility functions
@@ -81,25 +90,27 @@ fleaux-foundry-clean/
 
 ## 🛠️ **Development**
 
-This clean version is perfect for:
+This clean English version is perfect for:
 - **Learning**: Understanding Foundry VTT module architecture
 - **Modification**: Adding new features or customizing behavior
 - **Debugging**: Easily identifying and fixing issues
 - **Extension**: Building upon the existing functionality
+- **International Development**: Working in English language environment
 
-## 📝 **Notes**
+## 📝 **Translation Notes**
 
-- All original functionality has been preserved
-- The code structure follows Foundry VTT best practices
-- Comments have been added to explain complex logic
-- Variable names are descriptive and follow JavaScript conventions
+- All French comments have been translated to English
+- Variable names follow English conventions (e.g., `PersonnageSheet` → `CharacterSheet`)
+- Function names are in English (e.g., `affichageTchatSuccesEchec` → `displayChatSuccessFailure`)
+- String literals and user-facing text translated to English
+- Documentation completely translated to English
 
 ## 🎮 **Original Module**
 
-This is based on the Fleaux RPG system for Foundry VTT. The original obfuscated version can be found in the parent directory.
+This is based on the Fleaux RPG system for Foundry VTT. The original obfuscated French version can be found in the parent directory.
 
 ---
 
 **Created**: $(date)  
-**Source**: Deobfuscated from fleaux-foundry-fork  
-**Status**: Ready for use and modification
+**Source**: Deobfuscated and translated from fleaux-foundry-fork  
+**Status**: Ready for use, modification, and international development

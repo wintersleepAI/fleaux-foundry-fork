@@ -1,50 +1,50 @@
 /**
- * MacrosEtats - Macro system for state management
- * Deobfuscated version of scripts/macros/MacrosEtats.js
+ * StateMacros - Macro system for state management
+ * Deobfuscated and translated version of scripts/macros/MacrosEtats.js
  */
 
 import MacroScript from '../../libs/core-foundry/modules/components/MacroScript.mjs';
 
-export default class MacrosEtats {
+export default class StateMacros {
     /*
      * Static macro codes for effects states
      */
     
     // Handicapped state code
-    static HANDICAPE_CODE = `actor.system.effetsMordreLaPoussiere.handicape=active;
+    static HANDICAPPED_CODE = `actor.system.biteTheDustEffects.handicapped=active;
     actor?.toggleStatusEffect('degen', {active: active, overlay: false});
     actor.update({system: actor.system});`;
     
     // Bruised state code
-    static AMOCHE_CODE = `actor.system.effetsMordreLaPoussiere.amoche=active;
+    static BRUISED_CODE = `actor.system.biteTheDustEffects.bruised=active;
     actor?.toggleStatusEffect('downgrade', {active: active, overlay: false});
     actor.update({system: actor.system});`;
     
     // Dead state code
-    static MORT_CODE = `actor.system.effetsMordreLaPoussiere.mort=active;
+    static DEATH_CODE = `actor.system.biteTheDustEffects.dead=active;
     actor?.toggleStatusEffect('dead', {active: active, overlay: false});
     actor.update({system: actor.system});`;
     
     // Fear state code
-    static HURLE_CODE = `actor?.toggleStatusEffect('fear', {active: active, overlay: false});`;
+    static SCREAM_CODE = `actor?.toggleStatusEffect('fear', {active: active, overlay: false});`;
     
     // Silence state code
-    static REDUITAUSILENCE_CODE = `actor.system.sorcellerie.effetsRevancheDuChaos.reduitAuSilence=active;
+    static SILENCED_CODE = `actor.system.sorcery.chaosRevengeEffects.silenced=active;
     actor?.toggleStatusEffect('silence', {active: active, overlay: false});
     actor.update({system: actor.system});`;
     
     // Spirit Consumed state code
-    static ESPRITCONSUME_CODE = `actor.system.sorcellerie.effetsRevancheDuChaos.espritConsume=active;
-    //-actor.system.attributs.sfr.actuel = Number(actor.system.attributs.sfr.actuel) + ((active: active, overlay: false)});
+    static CONSUMED_SPIRIT_CODE = `actor.system.sorcery.chaosRevengeEffects.consumedSpirit=active;
+    //-actor.system.attributes.cool.current = Number(actor.system.attributes.cool.current) + ((active: active, overlay: false)});
     actor.update({system: actor.system});`;
     
     // Other Dimension state code
-    static AUTREDIMENSION_CODE = `actor.system.sorcellerie.effetsRevancheDuChaos.autreDimension=active;
+    static OTHER_DIMENSION_CODE = `actor.system.sorcery.chaosRevengeEffects.otherDimension=active;
     actor.update({system: actor.system});`;
     
     // Arrogance state code
-    static ARROGANCE_CODE = `actor.system.sorcellerie.effetsRevancheDuChaos.arrongance=active;
-    //actor.system.attributes.pv.value = Number(actor.system.attributes.pv.value) + ((active) ? -1 : 1);
+    static ARROGANCE_CODE = `actor.system.sorcery.chaosRevengeEffects.arrogance=active;
+    //actor.system.attributes.hp.value = Number(actor.system.attributes.hp.value) + ((active) ? -1 : 1);
     actor.update({system: actor.system});`;
 
     /**

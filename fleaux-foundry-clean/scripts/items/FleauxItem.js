@@ -1,6 +1,6 @@
 /**
  * FleauxItem - Core Item class for Fleaux system
- * Deobfuscated version of scripts/items/FleauxItem.js
+ * Deobfuscated and translated version of scripts/items/FleauxItem.js
  */
 
 import MacroScript from '../../libs/core-foundry/modules/components/MacroScript.mjs';
@@ -8,32 +8,32 @@ import MacroScript from '../../libs/core-foundry/modules/components/MacroScript.
 export class FleauxItem extends Item {
     
     /**
-     * Check if item is broken (de-usure is zero)
+     * Check if item is broken (wear-die is zero)
      */
-    get cassé() {
-        return this.system['de-usure'].actuel === '0';
+    get isBroken() {
+        return this.system['wear-die'].current === '0';
     }
 
     /**
      * Check if item can be equipped
      */
-    get peutEtreEquipable() {
-        return !(this.system.categorie === 'armure' && 
-                this.system.emplacement === '3' && 
-                this.system.equipe === true);
+    get canBeEquipped() {
+        return !(this.system.category === 'armor' && 
+                this.system.slot === '3' && 
+                this.system.equipped === true);
     }
 
     /**
      * Static method to create item documents
      */
-    static async createDocuments(itemData, options = { activer: false, script: null }) {
+    static async createDocuments(itemData, options = { activate: false, script: null }) {
         // Set default image if not specified
         if (itemData.img === undefined) {
             itemData.img = game.fleaux.imagesPath + 
                          'system/' + 
-                         game.fleaux.typeItem[itemData.type] + 
+                         game.fleaux.itemType[itemData.type] + 
                          '/_' + 
-                         game.i18n.typeItem[itemData.type] + 
+                         game.i18n.itemType[itemData.type] + 
                          '.webp';
         }
 
@@ -41,12 +41,12 @@ export class FleauxItem extends Item {
         
         // Initialize equipment items
         item.then(createdItem => {
-            if (createdItem.type === game.fleaux.typeItem.equipement && 
-                createdItem.system.categorie === undefined) {
-                createdItem.system.categorie = 'objet';
+            if (createdItem.type === game.fleaux.itemType.equipment && 
+                createdItem.system.category === undefined) {
+                createdItem.system.category = 'object';
             }
             createdItem.initialize({
-                activer: options.activer,
+                activate: options.activate,
                 script: options.script
             });
         });
@@ -61,8 +61,8 @@ export class FleauxItem extends Item {
         try {
             console.log('FleauxItem.initialize');
         } catch (error) {
-            console.error(game.i18n.localize('ERREUR.objet.initialise') + ' ' + 
-                         this.constructor.name + ' ' + this.id + ' :');
+            console.error(game.i18n.localize('ERROR.object.initialize') + ' ' + 
+                         this.constructor.name + ' ' + this.id + ':');
             console.error(error);
         }
     }
@@ -70,25 +70,25 @@ export class FleauxItem extends Item {
     /**
      * Execute usage dice roll
      */
-    async lancerDesUsage(title, diceType) {
+    async rollUsageDice(title, diceType) {
         let diceValue = null;
 
-        if (diceType === FLEAUX.deUsageEnum.eEquipement) {
-            diceValue = this.system.deUsure?.actuel;
+        if (diceType === FLEAUX.usageDieEnum.equipment) {
+            diceValue = this.system.wearDie?.current;
         } else {
-            if (diceType === FLEAUX.deUsageEnum.eSort) {
-                diceValue = this.system?.enchantement?.objet?.sort?.deUsure?.actuel;
+            if (diceType === FLEAUX.usageDieEnum.spell) {
+                diceValue = this.system?.enchantment?.object?.spell?.wearDie?.current;
             }
         }
 
         let currentDice = parseInt(diceValue?.replace('d', ''));
 
         if (diceValue === null || diceValue === '0') {
-            ui.notifications.error(game.i18n.localize('NOTIFICATION.estEquipable.dejaepuise.avertissement'));
+            ui.notifications.error(game.i18n.localize('NOTIFICATION.isEquipable.alreadyExhausted.warning'));
         } else {
-            let dice = new game.fleaux.des(diceValue, this.actor);
-            await dice.afficher(title, {
-                typeLancerDes: FLEAUX.typeLancerDesEnum.eUsage
+            let dice = new game.fleaux.dice(diceValue, this.actor);
+            await dice.display(title, {
+                rollType: FLEAUX.rollTypeEnum.usage
             });
 
             if (dice && dice._evaluated) {
@@ -99,18 +99,18 @@ export class FleauxItem extends Item {
                     currentDice = null;
                 }
 
-                if (diceType === FLEAUX.deUsageEnum.eEquipement) {
+                if (diceType === FLEAUX.usageDieEnum.equipment) {
                     this.update({
-                        'system.de-usure.actuel': currentDice === null ? '0' : 'd' + currentDice
+                        'system.wear-die.current': currentDice === null ? '0' : 'd' + currentDice
                     }).then(updatedItem => {
                         if (currentDice === null) {
-                            updatedItem.casse();
+                            updatedItem.break();
                         }
                     });
                 } else {
-                    if (diceType === FLEAUX.deUsageEnum.eSort) {
+                    if (diceType === FLEAUX.usageDieEnum.spell) {
                         this.update({
-                            'system.enchantement.objet.sort.de-usure.actuel': currentDice === null ? '0' : 'd' + currentDice
+                            'system.enchantment.object.spell.wear-die.current': currentDice === null ? '0' : 'd' + currentDice
                         });
                     }
                 }
@@ -121,14 +121,14 @@ export class FleauxItem extends Item {
     /**
      * Verify usage dice roll
      */
-    verifierDesUsage(diceResult, diceType) {
+    verifyUsageDice(diceResult, diceType) {
         let expectedValue = null;
 
-        if (diceType === FLEAUX.deUsageEnum.eEquipement) {
-            expectedValue = this.system.deUsure?.max;
+        if (diceType === FLEAUX.usageDieEnum.equipment) {
+            expectedValue = this.system.wearDie?.max;
         } else {
-            if (diceType === FLEAUX.deUsageEnum.eSort) {
-                expectedValue = this.system?.enchantement?.objet?.sort?.deUsure?.max;
+            if (diceType === FLEAUX.usageDieEnum.spell) {
+                expectedValue = this.system?.enchantment?.object?.spell?.wearDie?.max;
             }
         }
 
@@ -142,12 +142,12 @@ export class FleauxItem extends Item {
     /**
      * Toggle equipment state
      */
-    équiper(forceEquip = null) {
+    equip(forceEquip = null) {
         let errorMessage = null;
-        const currentlyEquipped = this.system.equipe;
+        const currentlyEquipped = this.system.equipped;
 
-        if (this.cassé) {
-            errorMessage = game.i18n.localize('NOTIFICATION.estEquipable.estcasse.erreur');
+        if (this.isBroken) {
+            errorMessage = game.i18n.localize('NOTIFICATION.isEquipable.isBroken.error');
         } else {
             if (this?.actor?.mainsEncombrees && this?.actor?.mainsEncombrees(this.system)) {
                 errorMessage = !this?.system?.equipe ? 

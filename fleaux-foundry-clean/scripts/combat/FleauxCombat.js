@@ -2,18 +2,18 @@
  * FleauxCombat.js - Combat System for Fleaux Foundry VTT Module
  * 
  * Extended combat system for the Fleaux game. Provides customized
- * initiative rolling using the Sang-froid (Cool) attribute for combat.
+ * initiative rolling using the Cool attribute for combat.
  */
 
 /**
  * Fleaux combat class extending the base Foundry Combat system
- * Implements initiative using Sang-froid rolls
+ * Implements initiative using Cool rolls
  */
 export class FleauxCombat extends Combat {
 
     /**
      * Roll initiative for combatants
-     * Uses Sang-froid (Cool) attribute for initiative determination
+     * Uses Cool attribute for initiative determination
      * @param {string|Array} combatants - Combatant ID or array of IDs
      * @param {Object} options - Initiative roll options  
      * @returns {Promise<Combat>} Updated combat instance
@@ -31,8 +31,8 @@ export class FleauxCombat extends Combat {
                 return null;
             }
 
-            // Roll Sang-froid for initiative (force initiative = true)
-            await combatant.actor.lancerDesAttributs('sfr', true);
+            // Roll Cool for initiative (force initiative = true)
+            await combatant.actor.rollAttributes('cool', true);
         }
 
         return this;
