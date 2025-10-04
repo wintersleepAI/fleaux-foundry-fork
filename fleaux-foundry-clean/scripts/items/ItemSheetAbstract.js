@@ -53,17 +53,17 @@ export class ItemSheetAbstract extends ItemSheet {
 
         // Macro execution
         html.find('.macro-icon').click(async () => {
-            this.item.executerMacroScript();
+            this.item.executer();
         });
 
         // Equipping/usage functionality based on item type
         html.find('.macro-active').on('click', async () => {
-            if (this.item.type === game.fleaux.typeItem.equipement) {
+            if (this.item.type === game.fleaux.typeItem.equipment) {
                 // Equipment items get equip/unequip functionality
-                this.item.estEquipable();
+                this.item.equip();
             } else {
                 // Other items get macro execution
-                this.item.executerMacroScript();
+                this.item.executer();
             }
         });
     }

@@ -19,7 +19,7 @@ export class StateSheet extends ItemSheetAbstract {
      */
     static get defaultOptions() {
         return foundry.utils.mergeObject(super.defaultOptions, {
-            'template': game.fleaux.templatesItemsPath + game.fleaux.typeItem.etat + '-sheet.hbs'
+            'template': game.fleaux.templatesItemsPath + game.fleaux.typeItem.state + '-sheet.hbs'
         });
     }
 }

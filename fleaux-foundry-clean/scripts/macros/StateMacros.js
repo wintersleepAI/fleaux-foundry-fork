@@ -1,6 +1,6 @@
 /**
  * StateMacros - Macro system for state management
- * Deobfuscated and translated version of scripts/macros/MacrosEtats.js
+ * Deobfuscated and translated version of scripts/macros/StateMacros.js
  */
 
 import MacroScript from '../../libs/core-foundry/modules/components/MacroScript.mjs';
@@ -65,11 +65,11 @@ export default class StateMacros {
                 tableLocalization.split(': ')[0], 
                 'icons/svg/degen.svg', 
                 tableLocalization.split(': ')[1], 
-                FLEAUX.typeDureeEtat.eParPartie
+                FLEAUX.stateDurationType.perSession
             )
         ]).then(item => {
             new MacroScript(item[0], true).creer(
-                MacroScript.CODE.replace(MacroScript.CODE, MacrosEtats.HANDICAPE_CODE), 
+                MacroScript.CODE.replace(MacroScript.CODE, StateMacros.HANDICAPE_CODE), 
                 true
             );
         });
@@ -86,11 +86,11 @@ export default class StateMacros {
                 tableLocalization.split(': ')[0], 
                 'icons/svg/downgrade.svg', 
                 tableLocalization.split(': ')[1], 
-                FLEAUX.typeDureeEtat.eParPartie
+                FLEAUX.stateDurationType.perSession
             )
         ]).then(item => {
             new MacroScript(item[0], true).creer(
-                MacroScript.CODE.replace(MacroScript.CODE, MacrosEtats.BLESSE_CODE), 
+                MacroScript.CODE.replace(MacroScript.CODE, StateMacros.BLESSE_CODE), 
                 true
             );
         });
@@ -107,12 +107,12 @@ export default class StateMacros {
                 tableLocalization.split(': ')[0], 
                 'icons/svg/blood.svg', 
                 tableLocalization.split(': ')[1].replace('{nom}', game.i18n.localize('MACROETATS.personnage.nom')), 
-                FLEAUX.typeDureeEtat.eParTour
+                FLEAUX.stateDurationType.perTurn
             )
         ]).then(item => {
             this.acteur.toggleStatusEffect(item[0]);
             new MacroScript(item[0], true, false, false).creer(
-                MacroScript.CODE.replace(MacroScript.SCRIPT, MacrosEtats.BLESSE_CODE), 
+                MacroScript.CODE.replace(MacroScript.SCRIPT, StateMacros.BLESSE_CODE), 
                 true
             );
         });
@@ -129,12 +129,12 @@ export default class StateMacros {
                 tableLocalization.split(': ')[0], 
                 'icons/svg/skull.svg', 
                 tableLocalization.split(': ')[1].replace('{nom}', game.i18n.localize('MACROETATS.personnage.nom')), 
-                FLEAUX.typeDureeEtat.eParJournee
+                FLEAUX.stateDurationType.perDay
             )
         ]).then(item => {
             this.acteur.toggleStatusEffect(killPlayer);
             new MacroScript(item[0], true, false, false).creer(
-                MacroScript.CODE.replace(MacroScript.SCRIPT, MacrosEtats.MORT_CODE), 
+                MacroScript.CODE.replace(MacroScript.SCRIPT, StateMacros.MORT_CODE), 
                 true
             );
         });
@@ -151,11 +151,11 @@ export default class StateMacros {
                 game.i18n.localize('MACROETATS.Fuir.nom'), 
                 'icons/svg/pawprint.svg', 
                 tableLocalization, 
-                FLEAUX.typeDureeEtat.eParTour
+                FLEAUX.stateDurationType.perTurn
             )
         ]).then(item => {
             new MacroScript(item[0], true).creer(
-                MacroScript.CODE.replace(MacroScript.CODE, MacrosEtats.HURLE_CODE), 
+                MacroScript.CODE.replace(MacroScript.CODE, StateMacros.HURLE_CODE), 
                 true
             );
         });
@@ -178,7 +178,7 @@ export default class StateMacros {
             )
         ]).then(item => {
             new MacroScript(item[0], true).creer(
-                MacroScript.CODE.replace(MacroScript.SCRIPT, MacrosEtats.HURLE_CODE), 
+                MacroScript.CODE.replace(MacroScript.SCRIPT, StateMacros.HURLE_CODE), 
                 true
             );
         });
@@ -195,11 +195,11 @@ export default class StateMacros {
                 game.i18n.localize('MACROETATS.EspritConsume.nom'), 
                 'icons/svg/silhouteted.svg', 
                 tableLocalization, 
-                FLEAUX.typeDureeEtat.eParJournee
+                FLEAUX.stateDurationType.perDay
             )
         ]).then(item => {
             new MacroScript(item[0], true).creer(
-                MacroScript.CODE.replace(MacroScript.CODE, MacrosEtats.REDUITAUSILENCE_CODE), 
+                MacroScript.CODE.replace(MacroScript.CODE, StateMacros.REDUITAUSILENCE_CODE), 
                 true
             );
         });
@@ -216,11 +216,11 @@ export default class StateMacros {
                 game.i18n.localize('MACROETATS.Arrogance.nom'), 
                 'icons/svg/terror.svg', 
                 tableLocalization, 
-                FLEAUX.typeDureeEtat.eParJournee
+                FLEAUX.stateDurationType.perDay
             )
         ]).then(item => {
             new MacroScript(item[0], true, false, false).creer(
-                MacroScript.CODE.replace(MacroScript.SCRIPT, MacrosEtats.ARROGANCE_CODE), 
+                MacroScript.CODE.replace(MacroScript.SCRIPT, StateMacros.ARROGANCE_CODE), 
                 true
             );
         });
@@ -237,11 +237,11 @@ export default class StateMacros {
                 game.i18n.localize('MACROETATS.ReduitAuSilence.nom'), 
                 'icons/svg/silence.svg', 
                 tableLocalization, 
-                FLEAUX.typeDureeEtat.eParJournee
+                FLEAUX.stateDurationType.perDay
             )
         ]).then(item => {
             new MacroScript(item[0], true, false, false).creer(
-                MacroScript.CODE.replace(MacroScript.SCRIPT, MacrosEtats.ESPRITCONSUME_CODE), 
+                MacroScript.CODE.replace(MacroScript.SCRIPT, StateMacros.ESPRITCONSUME_CODE), 
                 true
             );
         });
@@ -258,11 +258,11 @@ export default class StateMacros {
                 game.i18n.localize('MACROETATS.AutreDimension.nom'), 
                 'icons/svg/blinded.svg', 
                 tableLocalization, 
-                FLEAUX.typeDureeEtat.eParJournee
+                FLEAUX.stateDurationType.perDay
             )
         ]).then(item => {
             new MacroScript(item[0], true, false, false).creer(
-                MacroScript.CODE.replace(MacroScript.CODE, MacrosEtats.AUTREDIMENSION_CODE), 
+                MacroScript.CODE.replace(MacroScript.CODE, StateMacros.AUTREDIMENSION_CODE), 
                 true
             );
         });
@@ -279,11 +279,11 @@ export default class StateMacros {
                 game.i18n.localize('MACROETATS.CeciteHysterique.nom'), 
                 'icons/svg/blind.svg', 
                 tableLocalization, 
-                FLEAUX.typeDureeEtat.eParJournee
+                FLEAUX.stateDurationType.perDay
             )
         ]).then(item => {
             new MacroScript(item[0], true, false, false).creer(
-                MacroScript.CODE.replace(MacroScript.SCRIPT, MacrosEtats.HURLE_CODE), 
+                MacroScript.CODE.replace(MacroScript.SCRIPT, StateMacros.HURLE_CODE), 
                 true
             );
         });
@@ -297,7 +297,7 @@ export default class StateMacros {
         
         return {
             name: name,
-            type: game.fleaux.typeItem.etat,
+            type: game.fleaux.itemType.state,
             img: icon,
             system: {
                 description: description,

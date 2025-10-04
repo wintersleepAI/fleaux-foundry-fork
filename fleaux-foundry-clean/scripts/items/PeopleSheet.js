@@ -25,7 +25,7 @@ export class PeopleSheet extends ItemSheetAbstract {
      */
     static get defaultOptions() {
         return foundry.utils.mergeObject(super.defaultOptions, {
-            'template': game.fleaux.templatesItemsPath + game.fleaux.typeItem.peuple + '-sheet.hbs',
+            'template': game.fleaux.templatesItemsPath + game.fleaux.typeItem.people + '-sheet.hbs',
             'width': 720,
             'height': 'auto'
         });
@@ -40,7 +40,7 @@ export class PeopleSheet extends ItemSheetAbstract {
         const superData = super.getData(options);
         
         // Add Fleaux-specific data
-        superData.attributs = FLEAUX.attributs;
+        superData.attributes = FLEAUX.attributes;
 
         let peupleData = this.item;
         const educationsData = peupleData?.system?.education;

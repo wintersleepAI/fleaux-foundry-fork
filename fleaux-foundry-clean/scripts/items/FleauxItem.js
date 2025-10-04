@@ -213,11 +213,11 @@ export class FleauxItem extends Item {
     activer(options = { activer: false, modifiable: true, supprimable: true, script: null }) {
         // Create macro scripts for specific item types
         if (this.type === game.fleaux.typeItem.talent || 
-            this.type === game.fleaux.typeItem.equipement || 
-            this.type === game.fleaux.typeItem.sort || 
-            this.type === game.fleaux.typeItem.etat) {
+            this.type === game.fleaux.typeItem.equipment || 
+            this.type === game.fleaux.typeItem.spell || 
+            this.type === game.fleaux.typeItem.state) {
             
-            if (this.type === game.fleaux.typeItem.equipement) {
+            if (this.type === game.fleaux.typeItem.equipment) {
                 let currentDate = new Date(Date.now());
                 this.system.date = currentDate.toLocaleDateString() + ' ' + currentDate.toLocaleTimeString();
             }
@@ -231,10 +231,10 @@ export class FleauxItem extends Item {
      * Remove macro script
      */
     supprimerMacroScript() {
-        if ((this.type === game.fleaux.typeItem.equipement || 
-             this.type === game.fleaux.typeItem.sort || 
+        if ((this.type === game.fleaux.typeItem.equipment || 
+             this.type === game.fleaux.typeItem.spell || 
              this.type === game.fleaux.typeItem.talent || 
-             this.type === game.fleaux.typeItem.etat)) {
+             this.type === game.fleaux.typeItem.state)) {
             new MacroScript(this, false).supprimer();
         }
     }
@@ -257,10 +257,10 @@ export class FleauxItem extends Item {
      * Activate/deactivate macro
      */
     executer(active = null) {
-        if (this.type === game.fleaux.typeItem.equipement || 
-            this.type === game.fleaux.typeItem.sort || 
+        if (this.type === game.fleaux.typeItem.equipment || 
+            this.type === game.fleaux.typeItem.spell || 
             this.type === game.fleaux.typeItem.talent || 
-            this.type === game.fleaux.typeItem.etat) {
+            this.type === game.fleaux.typeItem.state) {
             
             const macroScript = this.system.macroScript;
             

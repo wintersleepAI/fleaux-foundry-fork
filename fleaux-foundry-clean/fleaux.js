@@ -5,31 +5,29 @@
 
 // Import core functionality
 import { 
-    changeLogo, 
-    addTicketTrackingUrl, 
     Compendium as CompendiumManager 
 } from './libs/core-foundry/core-foundry.mjs';
 
 // Import game classes
-import { FleauxDice } from './scripts/FleauxDes.js';
-import { FleauxActor } from './scripts/actors/FleauxActeur.js';
+import { FleauxDes } from './scripts/FleauxDes.js';
+import { FleauxActor } from './scripts/actors/FleauxActor.js';
 import { FleauxCombat } from './scripts/combat/FleauxCombat.js';
 
 // Import character sheets
-import { CharacterSheet } from './scripts/actors/PersonnageSheet.js';
+import { CharacterSheet } from './scripts/actors/CharacterSheet.js';
 import { CreatureSheet } from './scripts/actors/CreatureSheet.js';
 
 // Import item sheets
 import { CrimeSheet } from './scripts/items/CrimeSheet.js';
-import { EquipmentSheet } from './scripts/items/EquipementSheet.js';
-import { StateSheet } from './scripts/items/EtatSheet.js';
+import { EquipmentSheet } from './scripts/items/EquipmentSheet.js';
+import { StateSheet } from './scripts/items/StateSheet.js';
 import { FleauxItem } from './scripts/items/FleauxItem.js';
 import { ItemSheetAbstract } from './scripts/items/ItemSheetAbstract.js';
-import { PeopleSheet } from './scripts/items/PeupleSheet.js';
+import { PeopleSheet } from './scripts/items/PeopleSheet.js';
 import { ProfessionSheet } from './scripts/items/ProfessionSheet.js';
 
 // Import utility modules
-import * as chatModule from './scripts/tchat.js';
+import * as chatModule from './scripts/chat.js';
 import { registerHandlebarsHelpers } from './scripts/helpers.js';
 import { preloadHandlebarsTemplates } from './scripts/templates.js';
 
@@ -42,7 +40,7 @@ Hooks.once('socketlib.ready', async function() {
     console.log('Initializing Fleaux system...');
     
     // Set logo and home URL
-    changeLogo(null, 'https://foundryvtt.wiki/fr/home');
+    //changeLogo(null, 'https://foundryvtt.wiki/fr/home');
     
     // Configure game paths and settings
     game.fleaux = {
@@ -73,10 +71,23 @@ Hooks.once('socketlib.ready', async function() {
             state: 'state'
         },
         
+        // Type item mapping (alias for itemType)
+        typeItem: {
+            attribute: 'attribute',
+            people: 'people',
+            crime: 'crime',
+            profession: 'profession',
+            talent: 'talent',
+            spell: 'spell',
+            equipment: 'equipment',
+            state: 'state',
+            commun: 'common'
+        },
+        
         config: FLEAUX,
         itemClasses: ['fleaux', 'item', 'talent'],
         actorClasses: ['fleaux', 'item', 'npc', 'character'],
-        dice: FleauxDice,
+        dice: FleauxDes,
         socket: socket,
         CHAT_TEMPLATE: {
             TOOLTIP_TEMPLATE: 'systems/fleaux/templates/tchats/infobulle.hbs',
@@ -99,7 +110,7 @@ Hooks.once('socketlib.ready', async function() {
     CONFIG.JournalEntry.compendiumBanner = 'systems/fleaux/images/ui/compendiums.png';
     
     // Register dice configuration
-    CONFIG.Dice.rolls.push(game.fleaux.dice);
+    CONFIG.Dice.rolls.push(FleauxDes);
     
     // Register actor sheets
     let fleauxSystem = game.fleaux;
@@ -188,7 +199,7 @@ Hooks.once('socketlib.ready', async function() {
  * Ready hook - Initialize compendiums and data
  */
 Hooks.once('ready', async () => {
-    addTicketTrackingUrl();
+    //addTicketTrackingUrl();
     
     let systemData = game.system.debug.system;
     

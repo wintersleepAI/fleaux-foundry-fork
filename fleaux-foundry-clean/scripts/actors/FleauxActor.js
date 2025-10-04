@@ -8,7 +8,7 @@
 
 import { Compendium } from '../../libs/core-foundry/core-foundry.mjs';
 import MacroScript from '../../libs/core-foundry/modules/components/MacroScript.mjs';
-import { StateMacros } from '../macros/MacrosEtats.js';
+import StateMacros from '../macros/StateMacros.js';
 
 /**
  * Main Actor class for Fleaux characters
@@ -622,12 +622,12 @@ export class FleauxActor extends Actor {
         systemActor.niveau = 1;
         systemActor.attributes.pv.value = 0;
         systemActor.attributes.pv.max = 0;
-        systemActor[FLEAUX.typeLancerDesEnum.eDegats].actuel = 'd6';
-        systemActor[FLEAUX.typeLancerDesEnum.eDegats].max = 'd6';
-        systemActor[FLEAUX.typeLancerDesEnum.eVolonte].actuel = 'd4';
-        systemActor[FLEAUX.typeLancerDesEnum.eDegats].max = 'd4';
-        systemActor[FLEAUX.typeLancerDesEnum.eVolonte + '-' + 'actuel'].actuel = 'd6';
-        systemActor[FLEAUX.typeLancerDesEnum.eVolonte + '-' + 'max'].max = 'd6';
+        systemActor[FLEAUX.rollTypeEnum.damage].actuel = 'd6';
+        systemActor[FLEAUX.rollTypeEnum.damage].max = 'd6';
+        systemActor[FLEAUX.rollTypeEnum.willpower].actuel = 'd4';
+        systemActor[FLEAUX.rollTypeEnum.damage].max = 'd4';
+        systemActor[FLEAUX.rollTypeEnum.willpower + '-' + 'actuel'].actuel = 'd6';
+        systemActor[FLEAUX.rollTypeEnum.willpower + '-' + 'max'].max = 'd6';
         systemActor.education = null;
         systemActor.accusation = null;
         systemActor.profession1 = null;
@@ -662,8 +662,7 @@ export class FleauxActor extends Actor {
         this.system.sorcellerie.effetsRevancheDuChaos.resultatDesVolonte = null;
 
         const etatsNonPermanents = this.etats?.filter(etat => 
-            etat.system.typeDuree !== FLEAUX.typeDureeEtat.ePermanent && 
-            etat.system.typeDuree !== FLEAUX.typeDureeEtat.deUsage && 
+            etat.system.typeDuree !== FLEAUX.stateDurationType.permanent && 
             etat.system.macroScript.active === true
         );
 

@@ -1,17 +1,17 @@
 /**
- * CharacterSheet.js - Character Sheet for Fleaux Foundry VTT Module
+ * PersonnageSheet.js - Character Sheet for Fleaux Foundry VTT Module
  * 
- * Actor sheet handling for character players. Provides
+ * Actor sheet handling for character players (Personnage). Provides
  * interactive character sheet with tabs for various character elements.
  */
 import MacroScript from '../../libs/core-foundry/modules/components/MacroScript.mjs';
-import StateMacros from '../macros/StateMacros.js';
+import { MacrosEtats } from '../macros/MacrosEtats.js';
 
 /**
- * Character sheet class for character actors
+ * Character sheet class for Personnage actors
  * Provides interactive UI for character management
  */
-export class CharacterSheet extends ActorSheet {
+export class PersonnageSheet extends ActorSheet {
 
     /**
      * Get default sheet options
@@ -19,11 +19,11 @@ export class CharacterSheet extends ActorSheet {
      */
     static get defaultOptions() {
         return foundry.utils.mergeObject(super.defaultOptions, {
-            'classes': game.fleaux.actorClasses,
+            'classes': game.fleaux.acteurClasses,
             'template': game.fleaux.templatesActorsPath + 'character-sheet.hbs',
             'width': 950,
             'height': 'auto',
-            'tabs': [{'navSelector': '.sheet-tabs', 'contentSelector': '.sheet-body', 'initial': 'tabEquipment'}]
+            'tabs': [{'navSelector': '.sheet-tabs', 'contentSelector': '.sheet-body', 'initial': 'tabEquipements'}]
         });
     }
 
@@ -33,9 +33,9 @@ export class CharacterSheet extends ActorSheet {
      */
     get tabs() {
         return [
-            {'name': game.i18n.localize('EQUIPMENT'), 'style': 'flex: 2; text-align: center;'},
-            {'name': game.i18n.localize('CHAT.rollAttributes.difficulty.title'), 'style': 'flex: 2; text-align: center;'},
-            {'name': game.i18n.localize('FORM.character.tab.states'), 'style': 'flex: 2; text-align: center;'}
+            {'name': game.i18n.localize('EQUIPEMENT'), 'style': 'flex: 2; text-align: center;'},
+            {'name': game.i18n.localize('TCHAT.lancerDesAttributs.difficulte.titre'), 'style': 'flex: 2; text-align: center;'},
+            {'name': game.i18n.localize('FORMULAIRE.personnage.onglet.etats'), 'style': 'flex: 2; text-align: center;'}
         ];
     }
 
@@ -45,10 +45,10 @@ export class CharacterSheet extends ActorSheet {
      */
     get colTalents() {
         return [
-            {'name': '-' + game.i18n.localize('FORM.character.label.talents').toUpperCase() + ' [ ' + this.actor.talents?.length + ' ]', 'style': 'flex: 10; align-items: center; cursor: pointer;'},
+            {'name': '-' + game.i18n.localize('FORMULAIRE.personnage.libelle.talents').toUpperCase() + ' [ ' + this.actor.talents?.length + ' ]', 'style': 'flex: 10; align-items: center; cursor: pointer;'},
             {'name': 'Date', 'style': 'flex: 2; text-align: center;'},
-            {'name': game.i18n.localize('FORM.character.label.active'), 'style': 'flex: 2; text-align: center;'},
-            {'name': game.i18n.localize('FORM.character.label.slot'), 'style': 'flex: 4; text-align: center; cursor: pointer;'}
+            {'name': game.i18n.localize('FORMULAIRE.personnage.libelle.actif'), 'style': 'flex: 2; text-align: center;'},
+            {'name': game.i18n.localize('FORMULAIRE.personnage.libelle.emplacement'), 'style': 'flex: 4; text-align: center; cursor: pointer;'}
         ];
     }
 
@@ -233,14 +233,14 @@ export class CharacterSheet extends ActorSheet {
             const parentElement = target.parents('.items-list');
             let itemActor = this.actor.items.get(parentElement.attr('data-item-id'));
 
-            if (itemId === FLEAUX.usageDieEnum.usage || itemId === FLEAUX['usageDieEnum'].willpower) {
+            if (itemId === FLEAUX.deUsageEnum.deUsage || itemId === FLEAUX['deUsageEnum'].deVolonte) {
                 this.actor.lancerDesUsage(itemName, itemId);
-            } else if (itemId === FLEAUX.usageDieEnum.damage) {
+            } else if (itemId === FLEAUX.deUsageEnum.deDegats) {
                 if (itemActor) {
                     itemActor.lancerDesDegats(game.i18n.format('DIALOGUE.deusage.titre', {'nom': itemActor.name}), itemId);
                 }
             } else {
-                this.actor.lancerDesAttributs(itemName, itemActor?.type === game.fleaux.typeItem.equipment ? itemActor : null);
+                this.actor.lancerDesAttributs(itemName, itemActor?.type === game.fleaux.typeItem.equipement ? itemActor : null);
             }
         });
 
@@ -503,7 +503,7 @@ export class CharacterSheet extends ActorSheet {
         html.find('.pv-actuel').change(async event => {
             const targetInput = $(event.currentTarget)[0];
             if (Number(targetInput?.value) <= 0) {
-                await new StateMacros(this.actor).getMort();
+                await new MacrosEtats(this.actor).getMort();
             }
         });
 
@@ -681,20 +681,24 @@ export class CharacterSheet extends ActorSheet {
         if (itemData.type === fleauxTypeItem.equipement && this.actor.items.find(item => item.img === itemData.img) ||
             itemData.type === fleauxTypeItem.talent && this.actor.items.find(item => item.img === itemData.img) ||
             itemData.type === fleauxTypeItem.accusation && this.actor.items.find(item => item.type === fleauxTypeItem.accusation) ||
-            itemData.type === fleauxTypeItem.profession && this.actor.items.find(item => item.type === fleauxTypeItem.profession)) {
+            itemData.type === fleauxTypeItem.profession && this.actor.items.find(item => item.type === fleauxTypeItem.profession) ||
+            itemData.type === fleauxTypeItem.profession && this.actor.items.find(item => item.type === fleauxTypeItem.profession)[0]) {
             ui.notifications.warn(game.i18n.format('NOTIFICATION.typeexistedeja.avertissement', {'nom': this.actor.name, 'type': game.i18n.localize('TYPES.Item.' + itemData.type)}));
-            return false;
         } else {
             return super._onDrop(event).then(createdItems => {
-                this.actor.items.add(itemData.name);
-                const macroScript = createdItems?.[0]?.system?.macroScript?.idMacro?.command;
-                if (macroScript) {
-                    createdItems[0].update({'script': game.i18n.localize(macroScript)});
+                // Add the item to the actor if not already present
+                if (!this.actor.items.find(item => item.name === itemData.name)) {
+                    this.actor.createEmbeddedDocuments('Item', [itemData]);
+                }
+                // Update the created item with the localized macro script command if available
+                if (createdItems && createdItems[0] && createdItems[0].system?.macroScript?.idMacro) {
+                    const command = game.i18n.localize(createdItems[0].system.macroScript.idMacro)?.command;
+                    createdItems[0].update({'script': command});
                 }
             });
         }
     }
-
+    /**
     /**
      * Calculate fortune for character
      */
@@ -706,9 +710,9 @@ export class CharacterSheet extends ActorSheet {
         let imagePath = '';
         let displayName = game.fleaux.imagesPath + 'system/' + game.fleaux.typeItem[itemActorData.type] + '/' + game.fleaux.typeItem[itemActorData.type] + '/' + itemActorData.name + '.webp';
         
-        if (itemActorData.type === game.fleaux.typeItem.equipment || itemActorData.type === game.fleaux.typeItem.talent) {
+        if (itemActorData.type === game.fleaux.typeItem.equipement || itemActorData.type === game.fleaux.typeItem.talent) {
             displayName = game.i18n.localize('FORMULAIRE.equipement.libelle') + ' ' + game.i18n.localize('TYPES.Item.' + itemActorData.type);
-        } else if (itemActorData.type === game.fleaux.typeItem.state) {
+        } else if (itemActorData.type === game.fleaux.typeItem.etat) {
             displayName = game.i18n.localize('FORMULAIRE.personnage.libelle.equiper') + ' ' + game.i18n.localize('TYPES.Item.' + itemActorData.type);
         } else if (itemActorData.type === game.fleaux.typeItem.commun) {
             imagePath = game.fleaux.imagesPath + 'system/' + game.fleaux.typeItem[itemActorData.categorie] + '/' + itemActorData.categorie + '.webp';
@@ -727,7 +731,7 @@ export class CharacterSheet extends ActorSheet {
         delete createData['system']['type'];
         
         return this.actor.createEmbeddedDocuments('Item', [createData]).then(itemsCreated => {
-            itemsCreated[0].update({'script': MacroScript.code});
+            itemsCreated[0].update({'sript': MacroScript.code});
         });
     }
 
