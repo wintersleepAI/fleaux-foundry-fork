@@ -1,5 +1,22 @@
+
 <div class="dice-tooltip">
+    {{log 'this'}}
+    <section class="tooltip-part">
+        <div class="dice" style="margin-top: 5px;">
+            <header class="part-header flexrow" style="border-radius: 10px 0px;">
+                <span class="part-formula">{{this.formula}}</span>
+                {{#if this.flavor}}<span class="part-flavor">{{this.flavor}}</span>{{/if}}
+                <span class="part-total">{{this.total}}</span>
+            </header>
+            <ol class="dice-rolls">
+                {{#each this.rolls}}
+                <li class="roll des-usage" {{{getStyleForDice ../this.faces false}}}>{{this.result}}</li>
+                {{/each}}
+            </ol>
+        </div>
+    </section>
     {{#each parts}}
+
     <section class="tooltip-part">
         <div class="dice" style="margin-top: 5px;">
             <header class="part-header flexrow" style="border-radius: 10px 0px;">

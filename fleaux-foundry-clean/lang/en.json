@@ -32,6 +32,14 @@
 	"TYPES.Item.etat": "State",
 
 	"BESTIAIRE.minuscule.nom": "The bestiary",
+	"BESTIARY.minuscule.nom": "The bestiary",
+	"ATTRIBUTES.minuscule.nom": "The attributes",
+	"PEOPLES.minuscule.nom": "The peoples",
+	"EQUIPMENT.minuscule.nom": "The equipment",
+	"SPELLS.minuscule.nom": "The spells",
+	
+	"CHAT.rollPanicTable.for.title": "Panic Table Roll",
+	
 	"CREATURE.abyssal.nom": "Abyssal",
 	"CREATURE.abyssal.description": "The Abyssals are a very ancient aquatic people who have little affection for people on the surface. They reign supreme under the oceans and exact a heavy toll on all the navies of the world.",
 	"CREATURE.abyssal.harpon.nom": "Harpoon",

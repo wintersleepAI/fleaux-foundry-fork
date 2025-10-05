@@ -32,6 +32,14 @@
 	"TYPES.Item.etat": "Etat",
 
 	"BESTIAIRE.minuscule.nom": "Le bestiaire",
+	"BESTIARY.minuscule.nom": "Le bestiaire",
+	"ATTRIBUTES.minuscule.nom": "Les attributs",
+	"PEOPLES.minuscule.nom": "Les peuples",
+	"EQUIPMENT.minuscule.nom": "L'équipement",
+	"SPELLS.minuscule.nom": "Les sorts",
+	
+	"CHAT.rollPanicTable.for.title": "Lancer de Table de Panique",
+	
 	"CREATURE.abyssal.nom": "Abyssal",
 	"CREATURE.abyssal.description": "Les Abyssaux sont un peuple aquatique très ancien qui n'a que peu d'affection pour les gens de la surface. Ils règnent en maître sous les océans et font payer un lourd tribut à toutes les marines du monde.",
 	"CREATURE.abyssal.harpon.nom": "Harpon",
